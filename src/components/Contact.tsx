@@ -1,0 +1,283 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import Header from "./Header";
+import Footer from "./Footer";
+import StickyHeader from "./sticky-header";
+import { useEffect, useRef, useState } from "react";
+
+const Contact = () => {
+  const contactInfo = [
+    {
+      icon: MapPin,
+      title: "Location",
+      details: [
+        "1234 Industrial Way",
+        "Manufacturing District",
+        "Cityville, ST 12345",
+      ],
+    },
+    {
+      icon: Phone,
+      title: "Phone",
+      details: ["Main: (555) 123-4567", "Emergency: (555) 123-4568"],
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      details: ["info@arkfabrications.com", "quotes@arkfabrications.com"],
+    },
+    {
+      icon: Clock,
+      title: "Hours",
+      details: [
+        "Mon-Fri: 7:00 AM - 6:00 PM",
+        "Sat: 8:00 AM - 4:00 PM",
+        "24/7 Emergency Service",
+      ],
+    },
+  ];
+
+  const [showSticky, setShowSticky] = useState(false);
+  const lastScrollY = useRef(0);
+  const ticking = useRef(false);
+
+  const handleScroll = () => {
+    const currentScroll = window.scrollY;
+
+    if (!ticking.current) {
+      window.requestAnimationFrame(() => {
+        const goingDown = currentScroll > lastScrollY.current;
+
+        if (currentScroll <= 0 || (!goingDown && currentScroll < 100)) {
+          setShowSticky(false);
+        } else if (goingDown && currentScroll > 100) {
+          setShowSticky(true);
+        }
+
+        lastScrollY.current = currentScroll;
+        ticking.current = false;
+      });
+
+      ticking.current = true;
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className="min-h-screen relative bg-background">
+      <div
+        className={`transition-opacity duration-300 ${
+          showSticky ? "opacity-0 pointer-events-none" : "opacity-100"
+        }`}
+      >
+        <Header />
+      </div>
+      {showSticky && <StickyHeader />}
+      <div className="relative w-full">
+        <img
+          src="/Contact-us1.jpg"
+          alt="About Us Banner"
+          className="w-full h-[200px] object-cover"
+        />
+        <div className="absolute inset-0 bg-[#1a2940] opacity-20"></div>
+        <div className="absolute z-10 top-[150px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto ">
+          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 md:p-6 text-center rounded-lg ">
+            <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
+              HOME &nbsp; - &nbsp; Contact
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact" className="pb-12 my-20 bg-muted/50">
+        <div className="container mx-auto max-w-6xl px-6 ">
+          <div className=" mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Contact
+            </h2>
+            <p
+              className="text-[16px] text-muted-foreground mx-auto font-[400]"
+              style={{ lineHeight: "31px" }}
+            >
+              We invite you to share your project details with us using this
+              form, so we can better understand how to assist you. Providing
+              this information will help us gain an initial insight into your
+              project, enabling us to assign the right team swiftly. You can
+              simply provide your company name, your name, email, and phone
+              number, or you can complete the form with additional details. An
+              Arko Fabrications representative will respond to your inquiry
+              promptly. For urgent assistance, please contact us directly. Thank
+              you, and we look forward to working with you!
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-md py-8 px-4 bg-white rounded-lg">
+            <div
+              className="bg-cover bg-center rounded-lg "
+              style={{ backgroundImage: "url('/project-1.jpg')" }}
+            >
+              <div className="bg-opacity-50 px-6  py-12 rounded-lg">
+                <div className="flex  items-center gap-4">
+                  <div className="bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
+                    Corporate Office
+                  </div>
+                  <div className="bg-white hover:bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
+                    Our Reach
+                  </div>
+                </div>
+
+                <h2 className="text-2xl font-bold text-white">
+                  Bengaluru - Office and Plant
+                </h2>
+
+                <p className="text-white text-[19px]  my-4 font-[500]">
+                  Address :
+                </p>
+                <p className="text-white text-[21px] my-4 font-[500]">
+                  Arko Fabrications
+                </p>
+                <p className="text-white font-[400] ">
+                  Arko Fabrications Pvt. Ltd. 44, 12th Main, 2nd Phase, Royal
+                  Enclave, Jakkur post, Srirampura, Rachenahalli, Thanisandra,
+                  Bengaluru, Karnataka 560064
+                </p>
+
+                <p className="text-white my-4 text-[19px] font-[500]">
+                  Mobile Number
+                </p>
+                <p className="text-white text-[18px]">
+                  +91 9036974070 &nbsp; +91 9036974061
+                </p>
+
+                <p className="text-white my-4 text-[19px] font-[500]">Email</p>
+                <p className="text-white text-[18px]">
+                  sales@arkofabrications.com
+                </p>
+
+                <p className="text-white my-4 text-[19px] font-[500]">
+                  Website
+                </p>
+                <p className="text-white text-[18px]">arkofabrications.com</p>
+              </div>
+            </div>
+
+            <form>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="Mobile"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="Full Address"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="City"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="State"
+                  className="border rounded-lg p-2 w-full"
+                />
+                <input
+                  type="text"
+                  placeholder="Country"
+                  className="border rounded-lg p-2 w-full"
+                />
+              </div>
+
+              <div className="mt-4">
+                <label className="block font-semibold mb-2">
+                  Select Products
+                </label>
+                <div className="grid grid-cols-2 gap-2">
+                  <label>
+                    <input type="checkbox" /> Entrance Gates
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Garage Doors
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Rolling Shutters
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Motorised Skylights
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Boom Barriers
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Fire Rated Shutters & Doors
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Loading Bay Equipments
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Sectional Overhead Doors
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Sliding Doors
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Heavy Hangar Doors
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Turnstiles
+                  </label>
+                  <label>
+                    <input type="checkbox" /> High Speed Doors
+                  </label>
+                  <label>
+                    <input type="checkbox" /> Others
+                  </label>
+                </div>
+              </div>
+
+              <textarea
+                placeholder="Message"
+                className="border rounded-lg p-2 w-full mt-4"
+              ></textarea>
+              <div>
+                <label>
+                  <input type="checkbox" /> I agree to the terms and conditions.
+                </label>{" "}
+              </div>
+              <button className="bg-[#fcc729] w-full text-white font-bold py-2 px-4 rounded-lg mt-4">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </div>
+  );
+};
+
+export default Contact;
