@@ -16,45 +16,54 @@ const Services = () => {
     { url: "/grill-rolling-shutter", name: "Grill Rolling Shutter" },
     { url: "/galvanized-rolling-shutter", name: "Galvanised Rolling Shutter" },
     { url: "/aluminium-rolling-shutter", name: "Aluminum Rolling Shutter" },
-    { url: "/transparent-rolling-shutter", name: "Transparent/Polycarbonate Rolling Shutter" },
+    {
+      url: "/transparent-rolling-shutter",
+      name: "Transparent/Polycarbonate Rolling Shutter",
+    },
     { url: "/fire-rated-shurtter", name: "Fire-Rated Rolling Shutter" },
-    { url: "/aluminium-puff-rolling-shutter", name: "Aluminum Puff Insulated Rolling Shutter" },
-    { url: "/powder-coated-rolling-shutter", name: "Powder Coated Rolling Shutter" },
+    {
+      url: "/aluminium-puff-rolling-shutter",
+      name: "Aluminum Puff Insulated Rolling Shutter",
+    },
+    {
+      url: "/powder-coated-rolling-shutter",
+      name: "Powder Coated Rolling Shutter",
+    },
   ];
 
   const entranceAutomation = [
-    "MS Gates",
-    "SS Gates",
-    "Automatic Gates",
-    "Swing Gates",
-    "Sliding Gate",
-    "Telescopic Gate",
-    "Curve Sliding Gate",
-    "Curve Garage Gate",
-    "Bi-Folding Gate",
-    "Tri-Folding Gate",
-    "Collapsible Gate",
-    "High Speed Door",
-    "Automatic Overhead Garage Door",
-    "Automatic Sensor Glass Door",
-    "Automatic Barriers",
-    "Dock Levers",
-    "Dock Shelters",
-    "Turnstile",
+    { url: "/ms-gates", name: "MS Gates" },
+    { url: "/ss-gates", name: "SS Gates" },
+    { url: "/automatic-gates", name: "Automatic Gates" },
+    { url: "/swing-gates", name: "Swing Gates" },
+    { url: "/sliding-gates", name: "Sliding Gate" },
+    { url: "/telescopic-gate", name: "Telescopic Gate" },
+    { url: "/curve-slide-gate", name: "Curve Sliding Gate" },
+    { url: "/curve-garage-gate", name: "Curve Garage Gate" },
+    { url: "/bi-folding-gate", name: "Bi-Folding Gate" },
+    { url: "/tri-folding-gate", name: "Tri-Folding Gate" },
+    { url: "/collapsible-gate", name: "Collapsible Gate" },
+    { url: "/high-speed-door", name: "High Speed Door" },
+    { url: "/automatic-garage-door", name: "Automatic Overhead Garage Door" },
+    { url: "/automatic-sensor-glass-door", name: "Automatic Sensor Glass Door" },
+    { url: "/automatic-barries", name: "Automatic Barriers" },
+    { url: "/dock-levers", name: "Dock Levers" },
+    { url: "/dock-shelters", name: "Dock Shelters" },
+    { url: "/turnstile", name: "Turnstile" },
   ];
 
   const generalFabrication = [
-    "MS Railings",
-    "SS Railings",
-    "Structural Fabrication",
-    "Staircase",
-    "Pergola",
-    "Window Grill",
-    "Compound Grill",
-    "Building Elevation Work",
-    "Roofing Work",
-    "Collapsible Gate",
-    "Safety Grill",
+   {url:'/ms-railing', name: "MS Railings"},
+   {url:'/ss-railing', name: "SS Railings"},
+   {url:'/structural-metal4craft', name: "Structural metal4craft"},
+   {url:'/staircase', name: "Staircase"},
+   {url:'/pergola', name: "Pergola"},
+   {url:'/window-grill', name: "Window Grill"},
+   {url:'/compound-grill', name: "Compound Grill"},
+   {url:'/elevation', name: "Building Elevation Work"},
+   {url:'/roofing', name: "Roofing Work"},
+   {url:'/collapsible', name: "Collapsible Gate"},
+   {url:'/safety-grill', name: "Safety Grill"},
   ];
 
   const [showSticky, setShowSticky] = useState(false);
@@ -141,7 +150,9 @@ const Services = () => {
                     className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-[#fcc729] transition-colors"
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
-                    <span>{item}</span>
+                    <Link to={item?.url}>
+                    <span>{item?.name}</span>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -159,7 +170,9 @@ const Services = () => {
                     className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-[#fcc729] transition-colors"
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
-                    <span>{item}</span>
+                      <Link to={item?.url}>
+                    <span>{item?.name}</span>
+                    </Link>
                   </div>
                 ))}
               </div>

@@ -7,45 +7,45 @@ const arr = [
   {
     heading: "Enhanced Security:",
     description:
-      "Manual rolling shutters act as a formidable deterrent against break-ins. Their robust construction makes it difficult for intruders to gain access, ensuring peace of mind for property owners.",
+      "While offering visibility, perforated rolling shutters create a formidable barrier against unauthorized access. Their sturdy construction ensures your property remains secure without sacrificing style.",
   },
   {
-    heading: "Affordability:",
+    heading: "Visibility and Airflow:",
     description:
-      "Compared to automated options, manual rolling shutters are generally more budget-friendly. They offer an economical choice for those looking to enhance security without breaking the bank.",
+      "The unique design allows light and air to flow through while providing a view of the outside. This makes them ideal for storefronts and cafes, attracting customers while keeping space secure.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Durability:",
     description:
-      "Manual rolling shutters can be installed in various settings, from windows to doors. Their straightforward design allows for quick installation, making them an attractive option for property owners.",
+      "Made from high-quality materials, perforated rolling shutters withstand harsh weather conditions and daily wear. Their robust design ensures a long lifespan, making them a reliable investment.",
   },
   {
-    heading: "Versatile Design:",
+    heading: "Versatile Applications:",
     description:
-      "Available in various colors and styles, manual rolling shutters can complement any architecture. Customize your shutters to fit your property’s aesthetic while adding an extra layer of protection.",
+      "These shutters are perfect for a variety of settings, including retail stores, warehouses, and industrial facilities. Their versatility makes them a popular choice for many commercial properties.",
   },
   {
-    heading: "Energy Efficiency:",
+    heading: "Aesthetic Appeal:",
     description:
-      "These shutters can provide insulation, helping to regulate indoor temperatures. This can lead to lower energy costs, especially during extreme weather conditions.",
+      "Available in various colors and finishes, perforated rolling shutters can enhance the aesthetic of any building. Customize your shutters to match your brand or personal style.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Retail Stores:",
     description:
-      "Protect windows and doors in homes, providing added security and privacy.",
+      "Secure merchandise while allowing potential customers to see products, encouraging foot traffic.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Cafes and Restaurants:",
     description:
-      "Ideal for storefronts and warehouses, ensuring security for valuable inventory.",
+      "Protect outdoor seating areas while maintaining an open atmosphere.",
   },
   {
-    heading: "Outdoor Areas:",
+    heading: "Industrial Facilities:",
     description:
-      "Secure patios and balconies, allowing for versatile usage of outdoor spaces.",
+      "Ensure safety and security in warehouses while allowing airflow and visibility.",
   },
 ];
 
@@ -96,41 +96,43 @@ export const PerfortedRollingShutters = () => {
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
+        <div className="absolute inset-0 flex items-center justify-center z-10 ">
+          <div className="text-7xl font-[900] text-white">
+            {" "}
+            PERFORTED ROLLING SHUTTERS
+          </div>
+        </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; Service &nbsp; - &nbsp;Manual Rolling
-              Shutters
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;  PERFORTED ROLLING SHUTTERS
             </h2>
           </div>
         </div>
       </div>
 
-      <section className="bg-[#f8f8f8] p-10">
-        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 p-10 gap-8 ">
+      <section className="bg-[#f8f8f8] mt-20 pt-10">
+        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2  gap-12 ">
           {/* Text Content */}
           <div className="py-12">
-            <h2 className="text-3xl font-bold mb-4">Manual Rolling Shutters</h2>
-            <h3 className="text-2xl font-semibold mb-4">
-              Manual Rolling Shutters: A Blend Of Security And Convenience
+            <h2 className="text-[40px] font-[500] mb-4 text-[#181614]text-[#181614]">
+              Perforated Rollong Shutter
+            </h2>
+            <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
+             Perforated Rolling Shutters: Combining Security and Visibility
             </h3>
             <p
-              className="text-md leading-relaxed"
+              className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Manual rolling shutters are an efficient and cost-effective
-              solution for enhancing security and privacy in both residential
-              and commercial properties. Designed for easy operation, these
-              shutters provide a reliable barrier against intruders and adverse
-              weather while allowing you to control access and visibility as
-              needed.
+             Perforated rolling shutters are an innovative solution that provides the perfect blend of security and visibility. Designed with a series of small holes or slits, these shutters allow for air circulation and visibility while still offering protection against intruders and the elements. They are ideal for commercial applications where aesthetics and security are equally important.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/manual-rolling-shutter.jpg"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -138,63 +140,63 @@ export const PerfortedRollingShutters = () => {
         </div>
       </section>
 
-      <section className="p-10">
+      <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
-          <div className="text-2xl font-bold my-4 ">
-            What Are Manual Rolling Shutters?
+          <div className="text-[23px] font-semibold my-4 text-[#181614]">
+          What Are Perforated Rolling Shutters?
           </div>
-          <div className="text-lg text-[14px]" style={{ lineHeight: "30px" }}>
-            Powder-coated rolling shutters are constructed from high-quality
-            materials and finished with a durable powder coating. This process
-            not only enhances their appearance but also provides a protective
-            layer that resists chipping, fading, and corrosion.
+          <div
+            className="text-lg text-[14px] my-6"
+            style={{ lineHeight: "30px" }}
+          >
+            Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
           </div>
 
-          <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+          <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
-              <div className="border bg-white p-4 rounded">
-                <div className="my-4 font-bold text-xl">{ele.heading}</div>
+              <div className="shadow-md bg-white p-4 rounded">
+                <div className="my-4 font-semibold text-lg text-[#000]">
+                  {ele.heading}
+                </div>
                 <div>{ele.description}</div>
               </div>
             ))}
           </div>
 
-          <div className="text-2xl font-bold my-4">
-            Applications of Manual Rolling Shutters
+          <div className="text-[23px] font-semibold my-8 text-[#181614]">
+          Applications of Perforated Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
-              <div className="font-semibold mt-2 ">{ele?.heading}</div>
+              <div className="font-semibold mt-4 text-[#000]">
+                {ele?.heading}
+              </div>
               <div className="mb-2">{ele?.description}</div>
             </>
           ))}
-          <div className="text-2xl font-bold my-4">How to Operate</div>
-          <div className=" font-semibold ">
-            How to Operate Manual Rolling Shutters:
+          <div className="text-[23px] font-semibold text-[#181614] mt-4 mb-8">
+            How to Operate
+          </div>
+          <div className=" font-semibold text-[#000] ">
+        How to Operate Perforated Rolling Shutters:
           </div>
           <div>
             Operating manual rolling shutters is straightforward: Grasp the
             handle and pull the shutter down smoothly to the desired position.
             Engage the locking mechanism to secure the shutter in place. To
-            open, simply unlock and lift the shutter back into its housing
+            open, simply unlock and lift the shutter back into its housingHow to Operate Perforated Rolling Shutters:
           </div>
-          <div className="text-2xl font-bold my-4">Maintenance Tips</div>
-          <div>
-            To ensure the longevity of your manual rolling shutters, wipe down
-            the surface regularly to remove dust and debris. A mild soap
-            solution works best. Periodically check for wear and tear on the
-            mechanisms and replace any damaged components promptly. Apply a
-            suitable lubricant to the tracks and moving parts to ensure smooth
-            operation.
+          <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
+            Maintenance Tips
           </div>
-          <div className="text-2xl font-bold my-4">Conclusion</div>
           <div>
-            Manual rolling shutters are a practical and economical choice for
-            enhancing the security of your property. With their easy operation,
-            customizable designs, and added benefits like energy efficiency,
-            they are suitable for various applications. Invest in manual rolling
-            shutters today to protect your space without compromising on style
-            or convenience.
+           To ensure the longevity and functionality of your perforated rolling shutters, clean the surface with a mild detergent and water to prevent dirt buildup and maintain appearance. Regularly check the operating mechanisms for any signs of wear or malfunction. Apply lubricant to moving parts to ensure smooth operation.
+          </div>
+          <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
+            Conclusion
+          </div>
+          <div>
+           Perforated rolling shutters offer an ideal combination of security, visibility, and durability. Perfect for commercial properties looking to enhance aesthetics while providing protection, these shutters are a smart investment. Choose perforated rolling shutters today to secure your space while maintaining an inviting atmosphere.
           </div>
         </div>
       </section>

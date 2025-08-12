@@ -5,29 +5,29 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
-    description:
-      "Manual rolling shutters act as a formidable deterrent against break-ins. Their robust construction makes it difficult for intruders to gain access, ensuring peace of mind for property owners.",
-  },
-  {
-    heading: "Affordability:",
-    description:
-      "Compared to automated options, manual rolling shutters are generally more budget-friendly. They offer an economical choice for those looking to enhance security without breaking the bank.",
-  },
-  {
-    heading: "Easy Installation:",
-    description:
-      "Manual rolling shutters can be installed in various settings, from windows to doors. Their straightforward design allows for quick installation, making them an attractive option for property owners.",
-  },
-  {
-    heading: "Versatile Design:",
-    description:
-      "Available in various colors and styles, manual rolling shutters can complement any architecture. Customize your shutters to fit your property’s aesthetic while adding an extra layer of protection.",
-  },
-  {
     heading: "Energy Efficiency:",
     description:
-      "These shutters can provide insulation, helping to regulate indoor temperatures. This can lead to lower energy costs, especially during extreme weather conditions.",
+      "The insulating core helps regulate indoor temperatures, reducing reliance on heating and cooling systems and leading to lower energy bills.",
+  },
+  {
+    heading: "Superior Insulation:",
+    description:
+      "These shutters effectively minimize heat transfer, keeping your space comfortable year-round.",
+  },
+  {
+    heading: "Enhanced Security:",
+    description:
+      "Constructed from robust aluminum, these shutters provide an added layer of security against break-ins and vandalism.",
+  },
+  {
+    heading: "Noise Reduction:",
+    description:
+      "The insulated design helps dampen outside noise, creating a quieter indoor environment.",
+  },
+  {
+    heading: "Weather Resistance:",
+    description:
+      "Built to withstand harsh weather conditions, aluminum puff insulated rolling shutters protect your windows and doors from the elements.",
   },
 ];
 
@@ -35,17 +35,12 @@ const useRolling = [
   {
     heading: "Residential Use:",
     description:
-      "Protect windows and doors in homes, providing added security and privacy.",
+      "Perfect for homes looking to improve energy efficiency and security while adding aesthetic value.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Commercial Use:",
     description:
-      "Ideal for storefronts and warehouses, ensuring security for valuable inventory.",
-  },
-  {
-    heading: "Outdoor Areas:",
-    description:
-      "Secure patios and balconies, allowing for versatile usage of outdoor spaces.",
+      "Ideal for shops, warehouses, and industrial facilities that require reliable protection and insulation",
   },
 ];
 
@@ -96,41 +91,47 @@ export const AluminiumpuffShutters = () => {
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
+        <div className="absolute inset-0 flex items-center justify-center z-10 ">
+          <div className="text-7xl font-[900] text-white text-center">
+            {" "}
+            ALUMINIUM PULL INSULATED ROLLING SHUTTERS
+          </div>
+        </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; Service &nbsp; - &nbsp;Manual Rolling
-              Shutters
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; ALUMINIUM PULL
+              INSULATED ROLLING SHUTTERS
             </h2>
           </div>
         </div>
       </div>
 
-      <section className="bg-[#f8f8f8] p-10">
-        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 p-10 gap-8 ">
+      <section className="bg-[#f8f8f8] mt-20 pt-10">
+        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2  gap-12 ">
           {/* Text Content */}
           <div className="py-12">
-            <h2 className="text-3xl font-bold mb-4">Manual Rolling Shutters</h2>
-            <h3 className="text-2xl font-semibold mb-4">
-              Manual Rolling Shutters: A Blend Of Security And Convenience
+            <h2 className="text-[40px] font-[500] mb-4 text-[#181614]text-[#181614]">
+              Aluminum Puff Insulated Rolling Shutter
+            </h2>
+            <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
+              Discover the Benefits of Aluminum Puff Insulated Rolling Shutters
             </h3>
             <p
-              className="text-md leading-relaxed"
+              className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Manual rolling shutters are an efficient and cost-effective
-              solution for enhancing security and privacy in both residential
-              and commercial properties. Designed for easy operation, these
-              shutters provide a reliable barrier against intruders and adverse
-              weather while allowing you to control access and visibility as
-              needed.
+              Aluminum puff insulated rolling shutters are an innovative
+              solution for energy efficiency, security, and noise reduction.
+              Ideal for both residential and commercial properties, these
+              shutters combine durability with advanced insulation technology.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/manual-rolling-shutter.jpg"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -138,63 +139,77 @@ export const AluminiumpuffShutters = () => {
         </div>
       </section>
 
-      <section className="p-10">
+      <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
-          <div className="text-2xl font-bold my-4 ">
-            What Are Manual Rolling Shutters?
+          <div className="text-[23px] font-semibold my-4 text-[#181614]">
+            What Are Aluminum Puff Insulated Rolling Shutters?
           </div>
-          <div className="text-lg text-[14px]" style={{ lineHeight: "30px" }}>
-            Powder-coated rolling shutters are constructed from high-quality
-            materials and finished with a durable powder coating. This process
-            not only enhances their appearance but also provides a protective
-            layer that resists chipping, fading, and corrosion.
+          <div
+            className="text-lg text-[14px] my-6"
+            style={{ lineHeight: "30px" }}
+          >
+            Aluminum puff insulated rolling shutters are made with a core of
+            insulating material sandwiched between aluminum layers. This design
+            enhances thermal performance while providing strength and security,
+            making them suitable for various applications.
           </div>
 
-          <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+          <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
-              <div className="border bg-white p-4 rounded">
-                <div className="my-4 font-bold text-xl">{ele.heading}</div>
+              <div className="shadow-md bg-white p-4 rounded">
+                <div className="my-4 font-semibold text-lg text-[#000]">
+                  {ele.heading}
+                </div>
                 <div>{ele.description}</div>
               </div>
             ))}
           </div>
 
-          <div className="text-2xl font-bold my-4">
-            Applications of Manual Rolling Shutters
+          <div className="text-[23px] font-semibold my-8 text-[#181614]">
+            Applications of Aluminum Puff Insulated Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
-              <div className="font-semibold mt-2 ">{ele?.heading}</div>
+              <div className="font-semibold mt-4 text-[#000]">
+                {ele?.heading}
+              </div>
               <div className="mb-2">{ele?.description}</div>
             </>
           ))}
-          <div className="text-2xl font-bold my-4">How to Operate</div>
-          <div className=" font-semibold ">
-            How to Operate Manual Rolling Shutters:
+          <div className="text-[23px] font-semibold text-[#181614] mt-4 mb-8">
+            How to Operate
+          </div>
+          <div className=" font-semibold text-[#000] ">Durability:</div>
+          <div>
+            Aluminum is resistant to rust and corrosion, ensuring a long
+            lifespan with minimal maintenance.
+          </div>
+          <div className=" font-semibold text-[#000] ">Customization:</div>
+          <div>
+            Available in various colors and sizes, these shutters can be
+            tailored to fit any architectural style
+          </div>
+          <div className=" font-semibold text-[#000] ">Ease of Use:</div>
+          <div>
+            Designed for smooth operation, whether manual or motorized, making
+            them user-friendly for all.
+          </div>
+          <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
+            Installation and Maintenance
           </div>
           <div>
-            Operating manual rolling shutters is straightforward: Grasp the
-            handle and pull the shutter down smoothly to the desired position.
-            Engage the locking mechanism to secure the shutter in place. To
-            open, simply unlock and lift the shutter back into its housing
+            Proper installation is crucial for optimal performance. Regular
+            maintenance, such as cleaning and inspection of the mechanical
+            components, will ensure longevity and functionality.
           </div>
-          <div className="text-2xl font-bold my-4">Maintenance Tips</div>
-          <div>
-            To ensure the longevity of your manual rolling shutters, wipe down
-            the surface regularly to remove dust and debris. A mild soap
-            solution works best. Periodically check for wear and tear on the
-            mechanisms and replace any damaged components promptly. Apply a
-            suitable lubricant to the tracks and moving parts to ensure smooth
-            operation.
+          <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
+            Conclusion
           </div>
-          <div className="text-2xl font-bold my-4">Conclusion</div>
           <div>
-            Manual rolling shutters are a practical and economical choice for
-            enhancing the security of your property. With their easy operation,
-            customizable designs, and added benefits like energy efficiency,
-            they are suitable for various applications. Invest in manual rolling
-            shutters today to protect your space without compromising on style
-            or convenience.
+            Investing in aluminum puff insulated rolling shutters is a smart
+            choice for enhancing energy efficiency, security, and comfort in
+            your property. Explore our selection to find the perfect solution
+            tailored to your needs.
           </div>
         </div>
       </section>

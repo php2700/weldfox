@@ -5,47 +5,42 @@ import Footer from "../Footer";
 
 const arr = [
   {
+    heading: "Fire Resistance:",
+    description:
+      "Designed to withstand high temperatures, these shutters provide critical time for evacuation and minimize fire damage.",
+  },
+  {
+    heading: "Smoke Containment:",
+    description:
+      "Fire-rated shutters help contain smoke, reducing its spread and improving safety for occupants.",
+  },
+  {
+    heading: "Compliance with Regulations:",
+    description:
+      "Installing fire-rated shutters ensures compliance with codes and regulations, essential for commercial properties.",
+  },
+  {
+    heading: "Versatility:",
+    description:
+      "Suitable for a variety of applications, including warehouses, restaurants, and retail spaces.",
+  },
+  {
     heading: "Enhanced Security:",
     description:
-      "Manual rolling shutters act as a formidable deterrent against break-ins. Their robust construction makes it difficult for intruders to gain access, ensuring peace of mind for property owners.",
-  },
-  {
-    heading: "Affordability:",
-    description:
-      "Compared to automated options, manual rolling shutters are generally more budget-friendly. They offer an economical choice for those looking to enhance security without breaking the bank.",
-  },
-  {
-    heading: "Easy Installation:",
-    description:
-      "Manual rolling shutters can be installed in various settings, from windows to doors. Their straightforward design allows for quick installation, making them an attractive option for property owners.",
-  },
-  {
-    heading: "Versatile Design:",
-    description:
-      "Available in various colors and styles, manual rolling shutters can complement any architecture. Customize your shutters to fit your property’s aesthetic while adding an extra layer of protection.",
-  },
-  {
-    heading: "Energy Efficiency:",
-    description:
-      "These shutters can provide insulation, helping to regulate indoor temperatures. This can lead to lower energy costs, especially during extreme weather conditions.",
+      "In addition to fire protection, these shutters offer security against unauthorized access when closed.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Commercial Buildings:",
     description:
-      "Protect windows and doors in homes, providing added security and privacy.",
+      "Essential for shopping malls, offices, and factories to protect assets and comply with safety regulations.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Industrial Facilities:",
     description:
-      "Ideal for storefronts and warehouses, ensuring security for valuable inventory.",
-  },
-  {
-    heading: "Outdoor Areas:",
-    description:
-      "Secure patios and balconies, allowing for versatile usage of outdoor spaces.",
+      "Perfect for warehouses and manufacturing plants that require fire separation in compliance with safety standards.",
   },
 ];
 
@@ -96,26 +91,34 @@ export const FireRatedShutters = () => {
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
+        <div className="absolute inset-0 flex items-center justify-center z-10 ">
+          <div className="text-7xl font-[900] text-white">
+            {" "}
+            FIRE RATED ROLLING SHUTTERS
+          </div>
+        </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; Service &nbsp; - &nbsp;Manual Rolling
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; FIRE RATED Rolling
               Shutters
             </h2>
           </div>
         </div>
       </div>
 
-      <section className="bg-[#f8f8f8] p-10">
-        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 p-10 gap-8 ">
+      <section className="bg-[#f8f8f8] mt-20 pt-10">
+        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2  gap-12 ">
           {/* Text Content */}
           <div className="py-12">
-            <h2 className="text-3xl font-bold mb-4">Manual Rolling Shutters</h2>
-            <h3 className="text-2xl font-semibold mb-4">
-              Manual Rolling Shutters: A Blend Of Security And Convenience
+            <h2 className="text-[40px] font-[500] mb-4 text-[#181614]text-[#181614]">
+              Fire-Rated Rolling Shutter
+            </h2>
+            <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
+              Enhance Safety with Fire-Rated Rolling Shutters
             </h3>
             <p
-              className="text-md leading-relaxed"
+              className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
               Manual rolling shutters are an efficient and cost-effective
@@ -123,14 +126,17 @@ export const FireRatedShutters = () => {
               and commercial properties. Designed for easy operation, these
               shutters provide a reliable barrier against intruders and adverse
               weather while allowing you to control access and visibility as
-              needed.
+              needed.Fire-rated rolling shutters provide essential protection
+              against fire hazards, making them an ideal choice for commercial
+              and industrial applications. Learn about their benefits, features,
+              and why they are crucial for safeguarding your property.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/manual-rolling-shutter.jpg"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -138,63 +144,78 @@ export const FireRatedShutters = () => {
         </div>
       </section>
 
-      <section className="p-10">
+      <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
-          <div className="text-2xl font-bold my-4 ">
-            What Are Manual Rolling Shutters?
+          <div className="text-[23px] font-semibold my-4 text-[#181614]">
+            What Are Fire-Rated Rolling Shutters?
           </div>
-          <div className="text-lg text-[14px]" style={{ lineHeight: "30px" }}>
-            Powder-coated rolling shutters are constructed from high-quality
-            materials and finished with a durable powder coating. This process
-            not only enhances their appearance but also provides a protective
-            layer that resists chipping, fading, and corrosion.
+          <div
+            className="text-lg text-[14px] my-6"
+            style={{ lineHeight: "30px" }}
+          >
+            Fire-rated rolling shutters are specially designed barriers that
+            prevent the spread of fire and smoke. Made from durable materials,
+            these shutters comply with safety standards and are an effective
+            solution for protecting openings in buildings.
           </div>
-
-          <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-4">
+          <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
-              <div className="border bg-white p-4 rounded">
-                <div className="my-4 font-bold text-xl">{ele.heading}</div>
+              <div className="shadow-md bg-white p-4 rounded">
+                <div className="my-4 font-semibold text-lg text-[#000]">
+                  {ele.heading}
+                </div>
                 <div>{ele.description}</div>
               </div>
             ))}
           </div>
-
-          <div className="text-2xl font-bold my-4">
-            Applications of Manual Rolling Shutters
+          <div className="text-[23px] font-semibold my-8 text-[#181614]">
+            Applications of Fire-Rated Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
-              <div className="font-semibold mt-2 ">{ele?.heading}</div>
+              <div className="font-semibold mt-4 text-[#000]">
+                {ele?.heading}
+              </div>
               <div className="mb-2">{ele?.description}</div>
             </>
           ))}
-          <div className="text-2xl font-bold my-4">How to Operate</div>
-          <div className=" font-semibold ">
-            How to Operate Manual Rolling Shutters:
+          <div className="text-[23px] font-semibold text-[#181614] mt-4 mb-8">
+            How to Operate
+          </div>
+          <div className=" font-semibold text-[#000] mt-4">Durability:</div>
+          <div>
+            Built to last, these shutters are made from high-quality materials
+            that can withstand intense conditions.
+          </div>
+          <div className=" font-semibold text-[#000] mt-4">
+            Customizable Options:
           </div>
           <div>
-            Operating manual rolling shutters is straightforward: Grasp the
-            handle and pull the shutter down smoothly to the desired position.
-            Engage the locking mechanism to secure the shutter in place. To
-            open, simply unlock and lift the shutter back into its housing
+            Available in various sizes, finishes, and fire ratings to meet
+            specific safety requirements and aesthetic preferences.
           </div>
-          <div className="text-2xl font-bold my-4">Maintenance Tips</div>
+          <div className=" font-semibold text-[#000] mt-4">Easy Operation:</div>
           <div>
-            To ensure the longevity of your manual rolling shutters, wipe down
-            the surface regularly to remove dust and debris. A mild soap
-            solution works best. Periodically check for wear and tear on the
-            mechanisms and replace any damaged components promptly. Apply a
-            suitable lubricant to the tracks and moving parts to ensure smooth
-            operation.
+            Designed for seamless operation, whether manual or motorized,
+            ensuring quick deployment in emergencies.
           </div>
-          <div className="text-2xl font-bold my-4">Conclusion</div>
+          <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
+            Installation and Maintenance
+          </div>
           <div>
-            Manual rolling shutters are a practical and economical choice for
-            enhancing the security of your property. With their easy operation,
-            customizable designs, and added benefits like energy efficiency,
-            they are suitable for various applications. Invest in manual rolling
-            shutters today to protect your space without compromising on style
-            or convenience.
+            Professional installation is crucial to ensure that fire-rated
+            rolling shutters function correctly and meet safety standards.
+            Regular inspections and maintenance will help maintain their
+            effectiveness and prolong their lifespan.
+          </div>
+          <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
+            Conclusion
+          </div>
+          <div>
+            Investing in fire-rated rolling shutters is a proactive measure to
+            protect your property and its occupants from fire hazards. Explore
+            our range of fire-rated rolling shutters to find the perfect
+            solution for your safety needs.
           </div>
         </div>
       </section>
