@@ -112,7 +112,7 @@ const Contact = () => {
               project, enabling us to assign the right team swiftly. You can
               simply provide your company name, your name, email, and phone
               number, or you can complete the form with additional details. An
-              Arko Fabrications representative will respond to your inquiry
+              Metal4craftT Automation representative will respond to your inquiry
               promptly. For urgent assistance, please contact us directly. Thank
               you, and we look forward to working with you!
             </p>
@@ -141,10 +141,10 @@ const Contact = () => {
                   Address :
                 </p>
                 <p className="text-white text-[21px] my-4 font-[500]">
-                  Arko Fabrications
+                  Metal4craftT Automation
                 </p>
                 <p className="text-white font-[400] ">
-                  Arko Fabrications Pvt. Ltd. 44, 12th Main, 2nd Phase, Royal
+                  Metal4craftT Automation Pvt. Ltd. 44, 12th Main, 2nd Phase, Royal
                   Enclave, Jakkur post, Srirampura, Rachenahalli, Thanisandra,
                   Bengaluru, Karnataka 560064
                 </p>
@@ -153,18 +153,18 @@ const Contact = () => {
                   Mobile Number
                 </p>
                 <p className="text-white text-[18px]">
-                  +91 9036974070 &nbsp; +91 9036974061
+                  +91 63630 91384
                 </p>
 
                 <p className="text-white my-4 text-[19px] font-[500]">Email</p>
                 <p className="text-white text-[18px]">
-                  sales@arkofabrications.com
+                  info@metal4craft.com
                 </p>
 
                 <p className="text-white my-4 text-[19px] font-[500]">
                   Website
                 </p>
-                <p className="text-white text-[18px]">arkofabrications.com</p>
+                <p className="text-white text-[18px]">metal4craft.com</p>
               </div>
             </div>
 
