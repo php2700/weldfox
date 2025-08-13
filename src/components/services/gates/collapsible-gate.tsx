@@ -5,98 +5,114 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space Efficiency:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Collapsible gates are designed to take up minimal space when not in use. Their retractable design allows them to fold neatly out of the way, making them ideal for areas with limited room, such as narrow corridors or small entryways.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "These gates provide a strong physical barrier against unauthorized access. Made from tough materials like steel, they are highly secure and can be locked when needed, making them suitable for homes, businesses, and industrial sites.",
   },
   {
-    heading: "Customization:",
+    heading: "Flexibility:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Collapsible gates can be used in a wide variety of settings, from residential doorways and windows to commercial storefronts and industrial sites. They are ideal for both temporary and permanent security needs.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Durable Construction:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "Built to withstand heavy use and harsh weather conditions, collapsible gates are a long-term investment. Their durable construction ensures they can provide reliable security for years to come with minimal maintenance.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Aesthetic Appeal:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Available in various styles and finishes, collapsible gates can be customized to suit your property. From modern designs to traditional styles, these gates complement both residential and commercial spaces.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Manual Collapsible Gates:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "These gates are operated by hand, making them a cost-effective option for smaller properties or areas with less frequent access needs. Manual collapsible gates are easy to use and require no additional power source.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
-  },
-  {
-    name: "Powder Coating:",
-    description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+    name: "Automatic Collapsible Gates:",
+    description: `For properties that require frequent access, automatic collapsible gates can be operated with a remote control or integrated into a security system, ideal for commercial and industrial applications.`,
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Collapsible gates can be customized to fit any entryway, whether for a small residential window or a large industrial garage.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Finish:",
+    description: `your property’s aesthetic. Powder-coated finishes offer colors, providing added protection against corrosion.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Security Features:",
+    description:
+      "Enhance your collapsible gate with added security options such as reinforced locks, smart locking mechanisms, or integration with alarm systems.",
+  },
+  {
+    name: "Automation:",
+    description:
+      "Opt for motorized, automated collapsible gates for larger properties or commercial settings where convenience and quick access are a priority.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Space Availability:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Ensure that the gate you choose fits the dimensions of your entryway and can retract fully without obstruction.",
   },
   {
-    name: "Easy Installation:",
+    name: "Security Needs:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Choose a gate made from strong materials like steel if security is your concern, and consider adding advanced locking mechanisms or smart features.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Usage Frequency:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "If the gate will be used frequently, an automatic or motorized gate may provide greater convenience.",
+  },
+  {
+    name: "Aesthetic Preferences:",
+    description:
+      "Select a finish or design that complements your property’s style, whether you need a sleek, modern look or a more traditional aesthetic.",
+  },
+  {
+    name: "Budget:",
+    description:
+      "Collapsible gates come in various price ranges depending on the material, size, and features. Choose a gate that meets both your security needs and budget.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Residential Properties:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Collapsible gates can be used for securing front doors, patios, or windows in homes. They provide a strong deterrent against intruders while maintaining a sleek, unobtrusive look.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Commercial Properties:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "In retail environments, collapsible gates are commonly used to secure storefronts and display windows. They provide security after business hours while allowing visibility into the store.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Industrial Properties:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "For warehouses, factories, and storage facilities, collapsible gates offer a robust security solution. They can be used to secure entry points, loading docks, and sensitive areas.",
+  },
+  {
+    heading: "Parking Garages & Driveways:",
+    description:
+      "Collapsible gates are also ideal for parking garages or driveways that need secure, space-saving access solutions.",
   },
 ];
 
@@ -142,18 +158,18 @@ export const Collapsible = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/collapsible-gate.avif"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">COLLAPSING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;COLLAPSING GATES
             </h2>
           </div>
         </div>
@@ -164,26 +180,32 @@ export const Collapsible = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Collapsible Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Secure & Space-Saving Solutions with Collapsible Gates – Perfect
+              for Home & Commercial Use
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Collapsible gates, also known as retractable gates, are an
+              excellent solution for properties that require security without
+              sacrificing space. These gates operate by folding or retracting,
+              allowing for efficient use of space while maintaining high levels
+              of security. Ideal for residential, commercial, and industrial
+              properties, collapsible gates are versatile, durable, and stylish.
+              Whether you need to secure a storefront, garage, or residential
+              entryway, collapsible gates offer a practical and modern approach
+              to property protection.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/collapsible-gate.avif" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +216,18 @@ export const Collapsible = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What is a Collapsible Gate?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            A collapsible gate is a gate system that retracts or folds when
+            opened, allowing it to take up minimal space when not in use. These
+            gates are typically made from durable materials such as steel or
+            aluminum and are designed for maximum security and flexibility. They
+            are ideal for areas where space is limited or where a traditional
+            swinging or sliding gate may not be practical.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Benefits of Installing a Collapsible Gate
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +246,7 @@ export const Collapsible = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials for Collapsible Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +264,7 @@ export const Collapsible = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Collapsible Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +280,7 @@ export const Collapsible = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Collapsible Gate for Your Property
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +296,35 @@ export const Collapsible = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+            Installation & Maintenance of Collapsible Gates
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            Proper installation is key to ensuring the security and smooth
+            operation of your collapsible gate. It’s recommended to hire
+            professionals to install the gate, especially if you choose an
+            automated model.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Minimal Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Collapsible gates are designed for durability and require little
+            maintenance. Regular checks to ensure that the tracks and hinges are
+            clean and lubricated will keep the gate functioning smoothly.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Weather Resistance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            If your gate is exposed to outdoor conditions, opt for a
+            weather-resistant finish or material such as galvanized steel or
+            aluminum to protect against rust and wear.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Collapsible Gates
           </div>
 
           {useRolling?.map((ele) => (

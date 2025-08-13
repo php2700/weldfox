@@ -96,7 +96,7 @@ export const MsRollingShutters = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/ms-rolling-shutter.webp"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -137,7 +137,7 @@ export const MsRollingShutters = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg"
+              src="/ms-rolling-shutter.webp"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

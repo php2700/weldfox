@@ -5,98 +5,102 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space-Saving Design:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Tri-folding gates fold into three sections, using less space than traditional swing gates. This makes them perfect for properties with limited room, such as those with narrow driveways or confined entranceways.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "Built with robust materials and often integrated with advanced security features, tri-folding gates offer excellent protection for your property. Automated options provide additional security with remote access, cameras, and smart locks.",
   },
   {
-    heading: "Customization:",
+    heading: "Quick & Efficient Operation:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Tri-folding gates are designed for smooth, fast operation, ideal for busy homes or commercial properties. Their efficient mechanism allows quick entry and exit without occupying space.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Modern Aesthetic:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "With a sleek and modern design, tri-folding gates can enhance the appearance of any property. Available in various finishes and materials, these gates can be customized to match the architectural style of your property.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Durable & Low Maintenance:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Made from high-quality materials like steel or aluminum, tri-folding gates are built to last. They are weather-resistant and require minimal maintenance, making them a long-term solution.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Steel Tri-Folding Gates:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Known for their strength and durability, steel tri-folding gates offer maximum security and can withstand harsh weather conditions. They are ideal for high-security applications, including commercial and industrial settings.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminum Tri-Folding Gates:",
+    description: `Lightweight yet durable, aluminum tri-folding gates are rust-resistant and require less maintenance. They are perfect for residential properties with a modern, sleek appearance and minimal upkeep.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Wooden Tri-Folding Gates:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "For properties with a more traditional or rustic aesthetic, wooden tri-folding gates offer natural beauty. While they require more maintenance than metal gates, they provide a warm, timeless look.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Tri-folding gates can be custom-designed to fit any entrance size, whether for a small residential driveway or a large commercial entrance.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Finishes & Colors:",
+    description: `Choose from a variety of finishes and colors to match your property’s style, including powder-coated finishes for metal gates or stains for wooden gates.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Automation & Security:",
+    description: "Enhance your gate with smart automation features such as remote control access, smartphone integration, or CCTV for improved security and convenience.",
+  },
+  {
+    name: "Design:",
+    description: "Tri-folding gates can be designed with decorative elements or clean lines to suit your property’s aesthetic, whether modern or traditional.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Space & Layout:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Ensure that the gate will fit the dimensions and layout of your driveway or entrance.",
   },
   {
-    name: "Easy Installation:",
+    name: "Security Needs:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "For properties requiring heightened security, choose a tri-folding gate made from steel and consider adding automation for remote access.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Aesthetic Preferences:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Choose a design that complements your property’s architectural style, whether it’s modern, traditional, or industrial.",
+  },
+   {
+    name: "Budget:",
+    description:
+      "Tri-folding gates come in various price ranges depending on materials, size, and features. Select a gate that meets both your functional needs and budget.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Manual Tri-Folding Gates:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "These gates are manually operated and are ideal for smaller residential properties. While they require more physical effort, they still offer the space-saving benefits of the tri-folding design.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Automatic Tri-Folding Gates:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
-  },
-  {
-    heading: "Industrial Applications:",
-    description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Automated tri-folding gates are controlled via remote or smart systems. They are perfect for commercial properties or homes seeking the convenience of hands-free operation, combined with the enhanced security of an automatic system.",
   },
 ];
 
@@ -142,18 +146,18 @@ export const Trifolding = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/Tri-Folding-gate.png"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">TRI FOLDING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;TRI FOLDING GATES
             </h2>
           </div>
         </div>
@@ -164,26 +168,23 @@ export const Trifolding = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+             Tri-Folding Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+            Maximize Space and Security with Tri-Folding Gates – Sleek & Efficient Entry Solutions
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+             Tri-folding gates are an innovative solution for properties requiring secure, space-saving entrances. These gates fold into three sections, providing a compact and efficient design ideal for properties with limited space. Whether for residential driveways or commercial applications, tri-folding gates offer a modern and functional approach to property security. With their quick operation and sleek appearance, tri-folding gates combine both form and function, making them a popular choice for a wide range of entryways.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/Tri-Folding-gate.png" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +195,13 @@ export const Trifolding = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+           What is a Tri-Folding Gate?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            A tri-folding gate, also known as a folding or multi-panel gate, is designed to open by folding three panels together. Unlike traditional swing or sliding gates, tri-folding gates fold inward to minimize the space required for operation. This makes them ideal for areas where space is limited, such as narrow driveways or compact entrances, while also providing a highly secure entry system.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Benefits of Installing a Tri-Folding Gate
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +220,7 @@ export const Trifolding = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+           Materials for Tri-Folding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +238,7 @@ export const Trifolding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Tri-Folding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +254,7 @@ export const Trifolding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Tri-Folding Gate for Your Property
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +270,28 @@ export const Trifolding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+        Installation & Maintenance of Tri-Folding Gates
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+           Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+          Due to the complexity of the folding mechanism, it’s important to have your tri-folding gate installed by professionals to ensure proper alignment and smooth operation.
+          </div>
+             <div className="text-lg font-semibold mt-4 text-[#000]">
+           Regular Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+          Keep the gate’s hinges and tracks clean and lubricated to maintain smooth operation. Automated gates may also require periodic servicing to check the motor and electronic components.
+          </div>
+             <div className="text-lg font-semibold mt-4 text-[#000]">
+           Weather Protection:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+          To prolong the life of your gate, opt for weather-resistant materials and finishes, particularly in areas with extreme weather conditions.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Tri-Folding Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +306,7 @@ export const Trifolding = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+           Tri-folding gates offer a modern, efficient, and secure solution for properties with limited space or unique entrance designs. Their space-saving folding mechanism, combined with customizable security and style options, makes them an excellent choice for both residential and commercial properties. By choosing a tri-folding gate, you can enhance the functionality, security, and appearance of your property.
           </div>
         </div>
       </section>

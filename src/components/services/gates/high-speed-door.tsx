@@ -5,98 +5,115 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Increased Operational Efficiency:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "High-speed doors minimize wait times for employees, vehicles, and equipment entering or leaving a facility. Their fast operation ensures a smooth workflow, particularly in high-traffic areas like loading docks or manufacturing floors."
   },
   {
-    heading: "Security:",
+    heading: "Energy Efficiency:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "By reducing the time the door remains open, high-speed doors help maintain stable indoor temperatures, significantly lowering energy costs for climate-controlled environments such as cold storage rooms, cleanrooms, and warehouses.",
   },
   {
-    heading: "Customization:",
+    heading: "Enhanced Security:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "With their fast operating speeds, high-speed doors reduce the risk of unauthorized access. They can be easily and seamlessly integrated with advanced security systems, offering improved protection and enhanced security for your facility.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Improved Safety:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "High-speed doors come equipped with advanced safety features like sensors that prevent the door from closing if objects or people are in the way. This reduces the risk of accidents, improves efficiency, and enhances overall safety in busy work environments.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Durability and Low Maintenance:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Made from high-quality materials such as reinforced PVC or stainless steel, high-speed doors are designed to withstand frequent use and harsh conditions. Their robust design ensures long-term performance with minimal maintenance.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "PVC Fabric:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Lightweight and flexible, PVC fabric is commonly used in high-speed doors due to its durability and ability to withstand frequent use. It is ideal for interior doors and environments requiring quick, efficient access.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Steel and Aluminum:",
+    description: `For areas requiring high security or extreme durability, high-speed doors made from steel or aluminum are an excellent choice. They provide strength and protection while still offering the benefits of rapid operation.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Insulated Panels:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "High-speed doors with insulated panels are perfect for climate-controlled environments. These doors maintain internal temperatures while reducing energy loss, making them ideal for cold storage or freezer rooms.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Many automatic overhead garage doors feature insulated panels that maintain temperatures, reducing energy costs and improving efficiency. This insulation enhances comfort year-round.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Colors & Finishes:",
+    description: `Choose from a wide variety of colors and finishes to match your branding or facility design. Powder-coated options are available for added durability and aesthetic appeal.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Security Features:",
+    description: "High-speed doors can be integrated with advanced security systems, including keypads, card readers, or biometric access for restricted areas.",
+  },
+  {
+    name: "Safety Features:",
+    description: `Equip your high-speed door with features such as motion sensors, light curtains, or emergency stop functions to ensure the safety of your staff and equipment.`,
+  },
+  {
+    name: "Insulation:",
+    description: "Insulated high-speed doors help control temperature and reduce energy costs, making them a great option for cold storage or energy-efficient buildings.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Usage Frequency:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "High-speed doors are ideal for high-traffic areas. Consider how often the door will be used and choose a model that can handle frequent operation.",
   },
   {
-    name: "Easy Installation:",
+    name: "Environmental Needs:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "If your facility requires temperature control or contamination prevention, opt for insulated or PVC fabric high-speed doors that provide the appropriate sealing.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Security Requirements:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "For areas requiring high security, choose a rigid or sectional high-speed door made from durable materials like steel or aluminum.",
+  },{
+    name: "Security Requirements:",
+    description:
+      "High-speed doors vary in price based on material, size, and features. Choose one that meets your needs and budget while maximizing efficiency and durability.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Roll-Up High-Speed Doors:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Roll-up high-speed doors are commonly used in industrial applications. They operate by rolling vertically into a compact housing, saving space and allowing for quick access.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Sectional High-Speed Doors:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "These doors open by lifting individual panels into the ceiling. They provide durability and insulation, making them suitable for environments where energy efficiency and security are important.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "PVC Fabric High-Speed Doors:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Lightweight and fast, PVC fabric high-speed doors are ideal for areas where frequent access is needed. They are commonly used in food processing, cleanrooms, and temperature-sensitive environments.",
+  },
+    {
+    heading: "Rigid High-Speed Doors:",
+    description:
+      "Made from durable materials such as aluminum or steel, rigid high-speed doors offer enhanced security and insulation. They are perfect for areas that require both speed and strong protection.",
   },
 ];
 
@@ -142,18 +159,18 @@ export const Highspeeddoor = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/high-speed-door.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">HIGH SPEED DOORS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;HIGH SPEED DOORS
             </h2>
           </div>
         </div>
@@ -164,26 +181,23 @@ export const Highspeeddoor = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              High Speed Door
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Boost Efficiency and Security with High-Speed Doors – Ideal for Industrial & Commercial Use
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              High-speed doors are the go-to solution for industrial and commercial spaces that require quick access, enhanced security, and temperature control. These doors are designed to open and close at exceptional speeds, reducing energy loss and minimizing downtime during operations. Ideal for warehouses, factories, cleanrooms, and loading docks, high-speed doors not only improve operational efficiency but also offer long-term durability and low maintenance. Whether you’re looking to optimize your workflow or maintain strict environmental controls, high-speed doors are a smart investment for modern businesses.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/high-speed-door.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +208,13 @@ export const Highspeeddoor = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+           What is a High-Speed Door?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            A high-speed door is a specialized industrial or commercial door designed for rapid opening and closing, typically operating much faster than traditional doors. They are commonly used in environments where fast access is necessary, such as warehouses, cold storage facilities, and production areas. High-speed doors help to maintain climate control, reduce air contamination, improve traffic flow, and enhance security.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Key Benefits of Installing a High-Speed Door
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +233,7 @@ export const Highspeeddoor = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials Used for High-Speed Doors
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +251,7 @@ export const Highspeeddoor = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+          Customization Options for High-Speed Doors
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +267,7 @@ export const Highspeeddoor = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right High-Speed Door for Your Facility
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +283,28 @@ export const Highspeeddoor = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+         Installation & Maintenance of High-Speed Doors
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+           Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            Due to their specialized nature, high-speed doors should be installed by professionals to ensure correct setup, alignment, and smooth operation. Proper installation also maximizes energy savings and security benefits.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+           Minimal Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            High-speed doors are designed for durability and minimal maintenance. Regular checks of the motor, tracks, and sensors will keep the door operating efficiently. Many models feature self-repairing capabilities, further reducing downtime.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+           Safety Inspections:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            It’s essential to conduct routine safety inspections to ensure the sensors and safety systems are functioning correctly. Regular maintenance will also prolong the life of the door and ensure it remains in optimal condition.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of High-Speed Doors
           </div>
 
           {useRolling?.map((ele) => (

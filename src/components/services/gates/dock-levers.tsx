@@ -5,98 +5,99 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
+    heading: "Improved Safety:",
+    description:
+      "Dock levers help eliminate the gap between the trailer and the loading dock, reducing the risk of accidents and injuries. By ensuring a stable and secure loading environment, dock levers enhance safety for workers and equipment.",
+  },
+  {
+    heading: "Increased Efficiency:",
+    description:
+      "By allowing quick adjustments to the dock height, dock levers streamline the loading and unloading process. This efficiency helps reduce downtime, increases productivity, and enhances operational flow in busy operations.",
+  },
+  {
+    heading: "Versatility:",
+    description:
+      "Dock levers are designed to accommodate various trailer heights and loading requirements. This versatility makes them suitable for a wide range of industries, including retail, logistics, and manufacturing.",
+  },
+  {
     heading: "Durability:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Constructed from high-quality materials, dock levers are built to withstand the rigors of daily use. Their robust design ensures long-lasting performance, reducing the need for frequent replacements.",
   },
   {
-    heading: "Security:",
+    heading: "Ease of Use:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
-  },
-  {
-    heading: "Customization:",
-    description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
-  },
-  {
-    heading: "Cost-Effectiveness:",
-    description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
-  },
-  {
-    heading: "Low Maintenance:",
-    description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Dock levers are designed for simple operation, allowing workers to make quick adjustments without the need for complex tools or equipment. This user-friendly design enhances overall workflow efficiency.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Steel:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Steel is the most common material used for dock levers due to its strength and durability. Steel dock levers can withstand heavy loads and harsh working conditions, making them ideal for industrial applications.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminum:",
+    description: `Aluminum dock levers are lightweight and resistant to corrosion, making them suitable for environments with high humidity or exposure to chemicals. They offer good strength-to-weight ratios and are easy to maneuver.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Composite Materials:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Some dock levers are made from composite materials, providing a balance between durability and lightweight properties. These materials are often designed to resist wear and tear while maintaining functionality.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size and Capacity:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Dock levers can be customized to fit specific loading dock dimensions and weight requirements, ensuring compatibility with various trailer heights and loads.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Color and Finish:",
+    description: `Choose from different colors and finishes to match your branding or enhance visibility in the workplace. Customization options can improve safety and aesthetics.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Features:",
+    description:
+      "Some dock levers come equipped with additional features, such as safety guards, non-slip grips, or integrated sensors, providing added safety, functionality, durability, and enhanced performance.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Traffic Volume:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Assess the expected traffic volume at your loading dock to determine the appropriate type (manual, hydraulic, or electric) and size of dock lever needed for your operations.",
   },
   {
-    name: "Easy Installation:",
+    name: "Weight Capacity:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Evaluate the weight capacity requirements based on the types of vehicles and loads you will be handling to ensure you choose a dock lever that can safely accommodate your needs.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Budget:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Dock levers come in various price ranges. Set a budget that considers both initial costs and maintenance, ensuring you receive a high-quality product that meets your operational needs.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Manual Dock Levers:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Manual dock levers are operated by hand, allowing workers to adjust the height of the loading dock as needed. These levers are cost-effective and ideal for operations with lower traffic volumes.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Hydraulic Dock Levers:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Hydraulic dock levers use hydraulic power to raise and lower the dock platform, providing smoother and more effortless adjustments. These levers are suitable for high-traffic operations where speed and efficiency are essential.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Electric Dock Levers:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Electric dock levers offer automated operation for quick adjustments at the touch of a button. This type of dock lever is ideal for busy environments where frequent height adjustments are necessary.",
   },
 ];
 
@@ -142,18 +143,18 @@ export const Docklevers = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/dock-levers.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">DOCK LEVERS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;DOCK LEVERS
             </h2>
           </div>
         </div>
@@ -164,26 +165,30 @@ export const Docklevers = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Dock Levers
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Enhance Dock Operations with Reliable Dock Levers
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Dock levers are critical components for any loading dock,
+              providing essential support in the efficient and safe operation of
+              loading and unloading cargo. Designed to facilitate the seamless
+              movement of goods between trucks and loading bays, dock levers
+              ensure that the loading process is safe, reliable, and easy to
+              manage. Whether you operate a warehouse, distribution center, or
+              manufacturing facility, investing in high-quality dock levers can
+              enhance your operational efficiency and improve workplace safety.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/dock-levers.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +199,20 @@ export const Docklevers = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What are Dock Levers?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            Dock levers are mechanical devices used to adjust the height and
+            position of a loading dock platform to match the trailer bed. They
+            typically feature a lever mechanism that allows operators to raise
+            or lower the dock level, ensuring a smooth transition for forklifts
+            and other material handling equipment. Available in various designs
+            and weight capacities, dock levers can accommodate different trailer
+            heights and loading requirements, making them an essential tool for
+            any loading dock operation.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Benefits of Using Dock Levers
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +231,7 @@ export const Docklevers = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials Used for Dock Levers
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +249,7 @@ export const Docklevers = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Dock Levers
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +265,7 @@ export const Docklevers = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Dock Lever for Your Operations
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +281,34 @@ export const Docklevers = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+            Installation & Maintenance of Dock Levers
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            Proper installation is crucial for the safe and effective operation
+            of dock levers. It is recommended to have them installed by
+            qualified professionals to ensure compliance with safety standards.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Routine Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Regular maintenance is essential for ensuring optimal performance.
+            This includes checking for wear and tear, lubricating moving parts,
+            and inspecting safety features.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Safety Inspections:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Conduct routine safety inspections to ensure that dock levers are
+            functioning correctly and to identify any potential issues before
+            they become major problems.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Dock Levers
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +323,12 @@ export const Docklevers = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Dock levers are a vital component of any loading dock operation,
+            providing safety, efficiency, and versatility. By investing in
+            high-quality dock levers, you can improve the loading and unloading
+            process, enhance workplace safety, and streamline your operations.
+            Choose dock levers that meet your specific requirements and elevate
+            the functionality of your loading dock.
           </div>
         </div>
       </section>

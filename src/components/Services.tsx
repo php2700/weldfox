@@ -55,7 +55,7 @@ const Services = () => {
   const generalFabrication = [
    {url:'/ms-railing', name: "MS Railings"},
    {url:'/ss-railing', name: "SS Railings"},
-   {url:'/structural-metal4craft', name: "Structural metal4craft"},
+   {url:'/structural-fabrication', name: "Structural fabrication"},
    {url:'/staircase', name: "Staircase"},
    {url:'/pergola', name: "Pergola"},
    {url:'/window-grill', name: "Window Grill"},

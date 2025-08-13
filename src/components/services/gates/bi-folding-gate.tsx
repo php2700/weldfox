@@ -5,93 +5,102 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space-Saving Design:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Bi-folding gates are ideal for properties where space is at a premium. They require less space to operate, as the panels fold inwards, unlike swing gates which need more clearance to open fully.",
   },
   {
-    heading: "Security:",
+    heading: "Fast Opening & Closing:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "These gates can open and close faster than traditional gates, which is beneficial for busy driveways or commercial properties where quick access is essential.",
   },
   {
-    heading: "Customization:",
+    heading: "Enhanced Security:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Bi-folding gates are sturdy and can be fitted with high-security locks, making them an excellent choice for securing your property. Many include automation for enhanced control and monitoring.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Modern Aesthetic:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "With their sleek, minimalist design, bi-folding gates add modern elegance to any property. Available in various materials and finishes, they can be customized to complement any style.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Versatility:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "These gates are suitable for residential, commercial, and industrial applications, from small driveways to large entrances. They can be customized to fit any size or opening.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Steel Bi-Folding Gates:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Known for their strength and durability, steel bi-folding gates are ideal for properties requiring high security, such as commercial or industrial premises.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminum Bi-Folding Gates:",
+    description: `Aluminum is lightweight, rust-resistant, and ideal for residential properties that require a sleek, modern look with minimal maintenance.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Wooden Bi-Folding Gates:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "For a more traditional or rustic appearance, wooden bi-folding gates offer a natural aesthetic. While beautiful, they may require more maintenance compared to metal gates.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Bi-folding gates can be custom-built to fit any driveway or entrance size.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Finish:",
+    description: `Choose from a variety of finishes, including powder-coated colors for metal gates or stained finishes for wooden gates, to match your property's style.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Security Features:",
+    description: "Consider adding smart security features such as CCTV, intercom systems, or automatic locking mechanisms for increased control and safety.",
+  },
+    {
+    name: "Automation:",
+    description: "Automate your bi-folding gate with electric motors and control it via remote, keypad, or even a smartphone app for added convenience.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Property Size & Layout:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "The available space, entrance width, and overall layout of your driveway or entrance will determine the size and type of bi-folding gate you need.",
   },
   {
-    name: "Easy Installation:",
+    name: "Security Needs:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "If security is a top priority, opt for a strong material like steel and consider automated locking systems or integrated security features.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Design Preferences:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Select a style and material that complements the architectural style of your property, whether it’s modern, traditional, or industrial.",
+  },
+  {
+    name: "Budget:",
+    description:
+      "Bi-folding gates come in a range of prices, so choose a solution that fits your budget while still meeting your functional and aesthetic needs.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Manual Bi-Folding Gates:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Simple and cost-effective, manual bi-folding gates are operated by hand and are a good option for residential properties that don’t require frequent access.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Automatic Bi-Folding Gates:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Automated bi-folding gates offer the ultimate in convenience and security. Controlled by a remote, keypad, or smartphone, these gates provide quick and easy access without leaving your vehicle.",
   },
   {
     heading: "Industrial Applications:",
@@ -142,18 +151,18 @@ export const Bifolding = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/Bi-Folding-gate.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">BI FOLDING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;BI FOLDING GATES
             </h2>
           </div>
         </div>
@@ -164,26 +173,23 @@ export const Bifolding = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+             Bi-Folding Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+            Enhance Your Property with Bi-Folding Gates – Space-Saving, Secure & Stylish Solutions
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Bi-folding gates, also known as folding gates or concertina gates, are the perfect blend of functionality, security, and style. These gates fold in on themselves to open, offering an efficient solution for properties with limited space or unique entrance designs. Whether for residential driveways or commercial properties, bi-folding gates provide a contemporary solution that maximizes both space and convenience.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/Bi-Folding-gate.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +200,13 @@ export const Bifolding = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+        What is a Bi-Folding Gate?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+           A bi-folding gate is a type of gate that opens by folding sections together. Unlike traditional swing or sliding gates, bi-folding gates are hinged in the middle and fold back onto themselves, creating a compact, space-saving solution. They are commonly used for driveways, pedestrian entrances, and commercial properties where space and security are top priorities.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+           Key Benefits of Installing a Bi-Folding Gate
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +225,7 @@ export const Bifolding = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+           Materials for Bi-Folding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +243,7 @@ export const Bifolding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+      Customization Options for Bi-Folding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +259,7 @@ export const Bifolding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Bi-Folding Gate for Your Property
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +275,28 @@ export const Bifolding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+           Installation & Maintenance of Bi-Folding Gates
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+           Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+           Due to the complexity of the folding mechanism and the potential for automation, it’s important to have your bi-folding gate professionally installed to ensure proper function and longevity.
+          </div>
+             <div className="text-lg font-semibold mt-4 text-[#000]">
+           Regular Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+          While bi-folding gates are built for durability, they still require periodic maintenance to ensure smooth operation. This includes lubricating the hinges, cleaning the tracks, and checking the automation system if applicable.
+          </div>
+             <div className="text-lg font-semibold mt-4 text-[#000]">
+           Weather Resistance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+          Opt for weather-resistant finishes and materials, especially in areas prone to harsh weather conditions, to protect your gate from rust and wear.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+           Types of Bi-Folding Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +311,7 @@ export const Bifolding = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+         Bi-folding gates offer a smart, stylish, and practical solution for property entrances. Whether you’re looking to enhance security, save space, or add a modern touch to your driveway, these gates are a versatile choice. Their space-saving design, quick operation, and customization options make them an ideal investment for both residential and commercial properties.
           </div>
         </div>
       </section>

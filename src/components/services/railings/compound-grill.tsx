@@ -5,52 +5,52 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: "Enhanced Security:",
     description:
-      "MS railings are highly durable and can withstand harsh weather conditions, making them suitable for both indoor and outdoor applications. Their strength ensures long-lasting performance and minimal maintenance.",
+      "Compound grills are built to withstand forced entry, providing an effective barrier against break-ins. Their robust construction offers peace of mind for homeowners and business owners alike.",
   },
   {
-    heading: "Versatile Designs:",
+    heading: "Aesthetic Appeal:",
     description:
-      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. This versatility makes them ideal for residential homes, commercial buildings, and public spaces.",
+      "With various designs and finishes, compound grills enhance the visual appeal of your property. Choose from contemporary, traditional, or decorative styles to complement your architecture.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Durability:",
     description:
-      "MS railings offer an economical choice without compromising on quality or safety. Their affordability makes them accessible for various budgets while providing robust security and long-lasting durability in both residential and commercial settings.",
+      "The combination of mild steel and stainless steel ensures that compound grills are resistant to wear and tear, maintaining their strength and appearance over time.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Low Maintenance:",
     description:
-      "MS railings are relatively easy to install, reducing labor costs and project timelines. Their lightweight nature allows for quick assembly and installation, making them a preferred choice for contractors, builders, and renovation projects.",
+      "Compound grills require minimal upkeep. With proper coating and finishes, they resist rust and corrosion, ensuring a long-lasting and attractive addition to your property.",
   },
   {
-    heading: "Enhanced Safety:",
+    heading: "Versatility:",
     description:
-      "By providing a sturdy barrier, MS railings help prevent falls and accidents, especially in elevated areas such as balconies and staircases. This safety feature is essential for both residential and commercial properties.",
+      "Suitable for both residential and commercial applications, compound grills can be customized to fit different window and door sizes, making them a versatile choice for any setting.",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Residential Properties:",
     description:
-      "MS balcony railings are designed to enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement the architectural style of your home.",
+      "Homeowners can enhance the security and style of their homes with compound grills, protecting windows and doors while adding to the overall aesthetics.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Commercial Buildings:",
     description:
-      "MS stair railings offer robust support and safety on staircases, ensuring stability for users. They can be designed to match the overall theme of your interior space.",
+      "Businesses benefit from the added security provided by compound grills, ensuring the safety of valuable assets and creating a welcoming environment for customers.",
   },
   {
-    heading: "Garden Railings:",
+    heading: "Industrial Facilities:",
     description:
-      "Ideal for outdoor areas, MS garden railings provide a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
+      "In industrial settings, compound grills offer protection for windows and doors against potential break-ins and vandalism.",
   },
   {
-    heading: "Commercial Railings:",
+    heading: "Public Buildings:",
     description:
-      "For businesses and commercial buildings, MS railings can be designed to meet specific safety standards while enhancing the property’s overall appearance. Custom designs can include branding elements or specific color schemes.",
+      "Schools, hospitals, and government facilities utilize compound grills to enhance safety while maintaining an inviting atmosphere.",
   },
 ];
 
@@ -58,35 +58,45 @@ const maintainenceRailing = [
   {
     heading: "Professional Installation:",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "For optimal performance and security, compound grills should be installed by professionals. This ensures proper fitting and compliance with local building codes.",
   },
   {
     heading: "Regular Inspections:",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "Periodically check your compound grills for signs of wear, rust, or damage. Addressing minor issues early can prolong the life of your grills.",
   },
   {
     heading: "Cleaning and Care:",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "Regular cleaning with mild soap and water will keep your compound grills looking new. Avoid harsh chemicals that can damage the finish.",
+  },
+    {
+    heading: "Rust Prevention:",
+    description:
+      "Inspect the grills for any signs of rust and apply protective coatings as needed to maintain their appearance and integrity.",
   },
 ];
 
 const coatingRailing = [
   {
-    heading: "Powder Coating:",
+    heading: "Decorative Patterns:",
     description:
-      "Powder coating provides a durable and attractive finish, protecting MS railings from corrosion and wear. Available in various colors, this finish enhances the aesthetic appeal and longevity of the railings.",
+      "Choose from a variety of intricate designs, including geometric patterns, floral motifs, or custom artwork, to add a unique touch to your property.",
   },
   {
-    heading: "Galvanizing:",
+    heading: "Minimalist Designs:",
     description:
-      "Hot-dip galvanizing is a process that coats MS railings with a layer of zinc, providing excellent corrosion resistance. This treatment is especially beneficial for outdoor applications where exposure to moisture is a concern.",
+      "Opt for sleek, minimalist compound grills that provide security without overwhelming the aesthetics of your property.",
   },
   {
-    heading: "Painting:",
+    heading: "Classic Styles:",
     description:
-      "A painted finish allows for a wide range of color options, making it easy to match the railings to the surrounding décor. Regular maintenance may be required to keep the paint in good condition.",
+      "Traditional designs can enhance the character of older buildings, combining modern materials with classic charm.",
+  },
+    {
+    heading: "Color Customization:",
+    description:
+      "Compound grills can be painted or powder-coated in various colors to match your property’s exterior and interior décor.",
   },
 ];
 
@@ -132,18 +142,18 @@ export const Compoundgrill = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/compound-grill.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS RAILINGS</div>
+          <div className="text-7xl text-white font-bold">COMPOUND GRILL</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS RAILINGS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;COMPOUND GRILL
             </h2>
           </div>
         </div>
@@ -154,29 +164,23 @@ export const Compoundgrill = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Railings
+              Compound Grill
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Durable and Stylish MS Railings for Your Property
+             Enhance Security and Style with Durable Compound Grills
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) railings are an essential addition to any
-              property, providing both safety and visual appeal. Known for their
-              durability and versatility, MS railings can be used in various
-              applications, including residential balconies, commercial
-              staircases, and industrial facilities. With their robust
-              construction and customizable designs, MS railings offer an ideal
-              solution for enhancing the safety and aesthetics of your space.
+              Compound grills are essential for enhancing the security and visual appeal of your property. These grills, made from a combination of materials like mild steel and stainless steel, offer robust protection against intruders while adding a stylish touch to your windows and doors. Available in various designs and finishes, compound grills can be customized to fit any architectural style, making them a versatile choice for both residential and commercial properties.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/compound-grill.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -187,19 +191,13 @@ export const Compoundgrill = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Railings?
+            What Are Compound Grills?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS railings are made from mild steel, a material known for its
-            excellent strength-to-weight ratio, making it an ideal choice for
-            railings that require durability and stability. These railings can
-            be fabricated in various designs, styles, and finishes to suit
-            different architectural needs. Whether for indoor or outdoor use, MS
-            railings provide reliable support and protection while enhancing the
-            overall look of your property.
+           Compound grills are security barriers constructed from a blend of materials, primarily mild steel and stainless steel. This combination results in a strong yet aesthetically pleasing product that provides optimal security while allowing for ventilation and light. Designed to be installed over windows and doors, compound grills can be tailored to suit different styles, offering both safety and elegance to your space.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Benefits of Using MS Railings
+           Benefits of Compound Grills
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -218,7 +216,7 @@ export const Compoundgrill = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Types of MS Railings
+            Applications of Compound Grills
           </div>
 
           {typesRailing?.map((ele) => (
@@ -231,7 +229,7 @@ export const Compoundgrill = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Installation and Maintenance of MS Railings
+        Installation and Maintenance of Compound Grills
           </div>
 
           {maintainenceRailing?.map((ele) => (
@@ -244,7 +242,7 @@ export const Compoundgrill = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Finishes and Coatings for MS Railings
+           Custom Design Options for Compound Grills
           </div>
 
           {coatingRailing?.map((ele) => (
@@ -260,7 +258,7 @@ export const Compoundgrill = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            MS railings are a practical and stylish solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, versatility, and cost-effectiveness make them a popular choice among homeowners and builders alike. By choosing high-quality MS railings, you can protect your property while adding a touch of elegance to your space.
+           Compound grills are an excellent investment for enhancing both the security and aesthetic appeal of your property. Their durability, low maintenance requirements, and design versatility make them suitable for various applications, from residential to commercial. Protect your windows and doors while elevating the aesthetic appeal of your home or business with custom-designed compound grills.
           </div>
         </div>
       </section>

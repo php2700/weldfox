@@ -5,52 +5,52 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: " Durability:",
     description:
-      "MS railings are highly durable and can withstand harsh weather conditions, making them suitable for both indoor and outdoor applications. Their strength ensures long-lasting performance and minimal maintenance.",
+      "MS roofing is highly durable and can endure harsh weather conditions, including heavy rain, snow, and strong winds, ensuring long-lasting protection for your property.",
   },
   {
-    heading: "Versatile Designs:",
+    heading: "Cost-Effectiveness:",
     description:
-      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. This versatility makes them ideal for residential homes, commercial buildings, and public spaces.",
+      "Mild steel roofing is an affordable option compared to other roofing materials. Its longevity and minimal maintenance requirements make it a wise investment in the long run.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Aesthetic Flexibility:",
     description:
-      "MS railings offer an economical choice without compromising on quality or safety. Their affordability makes them accessible for various budgets while providing robust security and long-lasting durability in both residential and commercial settings.",
+      "MS roofing can be finished in various colors and styles, allowing you to customize the look of your roof to match your property's design and enhance curb appeal.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Low Maintenance:",
     description:
-      "MS railings are relatively easy to install, reducing labor costs and project timelines. Their lightweight nature allows for quick assembly and installation, making them a preferred choice for contractors, builders, and renovation projects.",
+      "MS roofing requires minimal upkeep. Regular inspections and occasional cleaning are usually sufficient to maintain its appearance and functionality.",
   },
   {
-    heading: "Enhanced Safety:",
+    heading: "Eco-Friendly Option:",
     description:
-      "By providing a sturdy barrier, MS railings help prevent falls and accidents, especially in elevated areas such as balconies and staircases. This safety feature is essential for both residential and commercial properties.",
+      "Mild steel is recyclable, making MS roofing an environmentally friendly choice for sustainable construction practices",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Residential Roofing:",
     description:
-      "MS balcony railings are designed to enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement the architectural style of your home.",
+      "Enhance the durability and style of your home with MS roofing. It offers effective protection while contributing to a modern and attractive exterior.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Commercial Roofing:",
     description:
-      "MS stair railings offer robust support and safety on staircases, ensuring stability for users. They can be designed to match the overall theme of your interior space.",
+      "Businesses can benefit from MS roofing’s strength and aesthetic appeal, creating a professional appearance while ensuring safety and durability.",
   },
   {
-    heading: "Garden Railings:",
+    heading: "Industrial Roofing:",
     description:
-      "Ideal for outdoor areas, MS garden railings provide a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
+      "MS roofing is ideal for industrial buildings, providing robust protection against heavy machinery and environmental factors.",
   },
   {
-    heading: "Commercial Railings:",
+    heading: "Agricultural Structures:",
     description:
-      "For businesses and commercial buildings, MS railings can be designed to meet specific safety standards while enhancing the property’s overall appearance. Custom designs can include branding elements or specific color schemes.",
+      "MS roofing is also suitable for barns, storage sheds, and other agricultural structures, offering durability and protection from the elements.",
   },
 ];
 
@@ -58,35 +58,45 @@ const maintainenceRailing = [
   {
     heading: "Professional Installation:",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "Proper installation is critical for the performance and longevity of MS roofing. Our skilled team ensures that all roofing systems are installed according to industry standards and best practices.",
   },
   {
     heading: "Regular Inspections:",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "While MS roofing is low maintenance, regular inspections can help identify potential issues early. We offer maintenance services to keep your roof in excellent condition.",
   },
   {
-    heading: "Cleaning and Care:",
+    heading: "Quality Control:",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "We conduct thorough quality checks throughout the installation process, ensuring that every aspect of your MS roofing work meets our high standards.",
+  },
+   {
+    heading: "Repairs and Upgrades:",
+    description:
+      "Should any issues arise, our team is equipped to handle repairs and upgrades to ensure your MS roofing remains effective and visually appealing.",
   },
 ];
 
 const coatingRailing = [
   {
-    heading: "Powder Coating:",
+    heading: "Custom Profiles:",
     description:
-      "Powder coating provides a durable and attractive finish, protecting MS railings from corrosion and wear. Available in various colors, this finish enhances the aesthetic appeal and longevity of the railings.",
+      "MS roofing sheets can be manufactured in various profiles (such as corrugated or standing seam) to suit your design preferences and functional requirements.",
   },
   {
-    heading: "Galvanizing:",
+    heading: "Color Coating:",
     description:
-      "Hot-dip galvanizing is a process that coats MS railings with a layer of zinc, providing excellent corrosion resistance. This treatment is especially beneficial for outdoor applications where exposure to moisture is a concern.",
+      "Choose from a range of color coatings to match your property’s exterior and enhance its visual appeal.",
   },
   {
-    heading: "Painting:",
+    heading: "Insulation Options:",
     description:
-      "A painted finish allows for a wide range of color options, making it easy to match the railings to the surrounding décor. Regular maintenance may be required to keep the paint in good condition.",
+      "Incorporating insulation within the roofing system can improve energy efficiency and reduce heat transfer, making your building more comfortable and cost-effective.",
+  },
+   {
+    heading: "Additional Features:",
+    description:
+      "Consider integrating skylights, vents, or solar panels into your MS roofing design for added functionality and energy efficiency.",
   },
 ];
 
@@ -132,18 +142,18 @@ export const Roofingwork = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/Roofing-work.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS RAILINGS</div>
+          <div className="text-7xl text-white font-bold">ROOFING WORK</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS RAILINGS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;ROOFING WORK
             </h2>
           </div>
         </div>
@@ -154,29 +164,23 @@ export const Roofingwork = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Railings
+             Roofing Work
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Durable and Stylish MS Railings for Your Property
+            Reliable MS Roofing Work for Durable and Stylish Roofs
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) railings are an essential addition to any
-              property, providing both safety and visual appeal. Known for their
-              durability and versatility, MS railings can be used in various
-              applications, including residential balconies, commercial
-              staircases, and industrial facilities. With their robust
-              construction and customizable designs, MS railings offer an ideal
-              solution for enhancing the safety and aesthetics of your space.
+        Mild Steel (MS) roofing is an excellent choice for those seeking durability, strength, and aesthetic appeal in their roofing solutions. Ideal for both residential and commercial buildings, MS roofing provides reliable protection against the elements while offering design flexibility and cost-effectiveness. Our expert team specializes in MS roofing work, ensuring your property is equipped with a roof that stands the test of time.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/Roofing-work.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -187,19 +191,13 @@ export const Roofingwork = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Railings?
+            What is MS Roofing?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS railings are made from mild steel, a material known for its
-            excellent strength-to-weight ratio, making it an ideal choice for
-            railings that require durability and stability. These railings can
-            be fabricated in various designs, styles, and finishes to suit
-            different architectural needs. Whether for indoor or outdoor use, MS
-            railings provide reliable support and protection while enhancing the
-            overall look of your property.
+            MS roofing involves the use of mild steel sheets or panels to create a robust roofing structure. Known for its strength and resilience, mild steel can withstand various weather conditions while maintaining its integrity. MS roofing can be customized to suit different architectural styles, making it a versatile choice for any building type.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Benefits of Using MS Railings
+           Benefits of MS Roofing Work
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -218,7 +216,7 @@ export const Roofingwork = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Types of MS Railings
+           Applications of MS Roofing Work
           </div>
 
           {typesRailing?.map((ele) => (
@@ -231,7 +229,7 @@ export const Roofingwork = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Installation and Maintenance of MS Railings
+        Installation and Maintenance of MS Roofing Work
           </div>
 
           {maintainenceRailing?.map((ele) => (
@@ -244,7 +242,7 @@ export const Roofingwork = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Finishes and Coatings for MS Railings
+          Design Options for MS Roofing Work
           </div>
 
           {coatingRailing?.map((ele) => (
@@ -260,7 +258,7 @@ export const Roofingwork = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            MS railings are a practical and stylish solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, versatility, and cost-effectiveness make them a popular choice among homeowners and builders alike. By choosing high-quality MS railings, you can protect your property while adding a touch of elegance to your space.
+            MS roofing work is an excellent investment for those seeking a durable, cost-effective, and visually appealing roofing solution. With our expertise in mild steel roofing, you can trust us to deliver high-quality installations that enhance the safety and aesthetic appeal of your property.
           </div>
         </div>
       </section>

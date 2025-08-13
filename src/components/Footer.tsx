@@ -9,14 +9,14 @@ const Footer = () => {
           <span className="text-orange-600 text-xl">📞</span>
           <div>
             <p className="text-[15px]">Give Us A Call</p>
-            <p className="text-[14px]">+91 9036974070 / 61</p>
+            <p className="text-[14px]">+91 63630 91384</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
           <span className="text-orange-600 text-xl">📧</span>
           <div>
             <p className="text-[15px]">Email Address</p>
-            <p className="text-[14px]">sales@arkofabrications.com</p>
+            <p className="text-[14px]">info@metal4craft.com</p>
           </div>
         </div>
         <div className="flex items-center gap-2">
@@ -97,8 +97,8 @@ const Footer = () => {
             <br />
             Bengaluru, Karnataka 560064
           </p>
-          <p className="mb- 2 text-[15px] font-[500]" style={{lineHeight:'32px'}}>📧 sales@arkofabrications.com</p>
-          <p className="mb- 2 text-[15px] font-[500]" style={{lineHeight:'32px'}}>📞 +91 9036974070, +91 9036974061</p>
+          <p className="mb- 2 text-[15px] font-[500]" style={{lineHeight:'32px'}}>📧 info@metal4craft.com</p>
+          <p className="mb- 2 text-[15px] font-[500]" style={{lineHeight:'32px'}}>📞 +91 63630 91384</p>
         </div>
       </div>
 

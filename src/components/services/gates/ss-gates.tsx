@@ -138,7 +138,7 @@ export const Ssgates = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/SS-gates.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -179,7 +179,7 @@ export const Ssgates = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/SS-gates.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

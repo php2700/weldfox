@@ -5,98 +5,98 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Weather Protection:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Dock shelters provide essential protection from adverse weather conditions, including rain, snow, and extreme temperatures. This protection ensures that your products remain dry, safe, secure, and undamaged during loading and unloading operations.",
   },
   {
-    heading: "Security:",
+    heading: "Improved Energy Efficiency:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "By creating a seal around the trailer, dock shelters help maintain the temperature of your products and reduce energy loss in temperature-sensitive environments. This is particularly beneficial for warehouses that store perishable goods.",
   },
   {
-    heading: "Customization:",
+    heading: "Enhanced Safety:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Dock shelters improve safety for employees by minimizing exposure to harsh weather conditions and reducing the risk of slips, trips, and falls during loading operations. A safer working environment contributes to higher productivity and morale.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Increased Productivity:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "With better protection and a more comfortable working environment, dock shelters enable faster and more efficient loading and unloading operations. This results in reduced downtime and increased throughput.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Versatility:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Dock shelters are adaptable to various types of vehicles and loading dock configurations, making them suitable for different industries and applications, including logistics, manufacturing, and retail.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Heavy-Duty Fabric:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Many dock shelters are constructed from heavy-duty, weather-resistant fabrics that provide durability and protection against harsh conditions. These fabrics are often treated for UV resistance and water repellency.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Steel Frames:",
+    description: `Rigid dock shelters typically feature robust steel frames that provide stability and support. Steel is resistant to corrosion and wear, making it an ideal choice for high-traffic environments and long-term durability.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Insulated Panels:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Some dock shelters are equipped with insulated panels to enhance energy efficiency. These panels help maintain temperature control in loading environments, making them ideal for cold storage facilities.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size and Configuration:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Dock shelters can be customized to fit various loading dock dimensions and trailer heights, ensuring a perfect fit for your specific operational needs.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Colors and Branding:",
+    description: `Choose from different colors and branding options to enhance visibility and align with your company’s branding, creating a professional appearance.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Accessories:",
+    description: "Many dock shelters can be equipped with additional features such as LED lighting, safety striping, and ventilation systems to improve functionality and safety.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Loading Dock Dimensions:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Measure your loading dock to determine the appropriate size and configuration for the shelter, ensuring compatibility with various trailer heights and widths.",
   },
   {
-    name: "Easy Installation:",
+    name: "Environmental Conditions:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Assess the weather in your area to select a dock shelter that provides protection against rain, snow, and temperatures.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Budget:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Dock shelters come in a range of price points. Establish a budget that considers both initial costs and long-term maintenance to ensure you receive a high-quality product.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Rigid Dock Shelters:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Rigid dock shelters are constructed with solid frames and rigid panels, providing a stable and durable solution for loading docks. They offer excellent weather resistance and can be customized to fit various dock heights and widths.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Flexible Dock Shelters:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Flexible dock shelters are made from heavy-duty fabric and are designed to flex and adapt to different trailer heights. These shelters provide a reliable weather seal while accommodating changes in trailer sizes.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Inflatable Dock Shelters:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Inflatable dock shelters feature air-filled chambers that create a seal around the trailer when inflated. These shelters are easy to deploy and offer excellent insulation and weather protection.",
   },
 ];
 
@@ -142,18 +142,18 @@ export const Dockshelter = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/dock-shelters.webp"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">DOCK SHELTERS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;DOCK SHELTERS
             </h2>
           </div>
         </div>
@@ -164,26 +164,23 @@ export const Dockshelter = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Dock Shelters
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+           Maximize Efficiency and Protection with Premium Dock Shelters
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+            Dock shelters are critical components for any loading dock, providing protection and support during the loading and unloading of goods. These structures create a weather-tight seal around the trailer, ensuring that your products and workforce are shielded from the elements. With various designs and materials available, dock shelters not only enhance operational efficiency but also contribute to safety and energy savings. Explore how investing in high-quality dock shelters can optimize your loading dock operations.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/dock-shelters.webp" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +191,13 @@ export const Dockshelter = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What are Dock Shelters?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+           Dock shelters are flexible, weather-resistant structures positioned at loading docks to provide an effective seal between the dock and the trailer. They are typically made of durable materials, such as heavy-duty fabrics, and are designed to withstand various environmental conditions. By creating a barrier against rain, wind, snow, and dust, dock shelters improve loading conditions and protect both your cargo and employees.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Benefits of Using Dock Shelters
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +216,7 @@ export const Dockshelter = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials Used for Dock Shelters
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +234,7 @@ export const Dockshelter = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Dock Shelters
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +250,7 @@ export const Dockshelter = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+           How to Choose the Right Dock Shelter for Your Operations
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +266,28 @@ export const Dockshelter = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+           Installation & Maintenance of Dock Shelters
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Size and Configuration:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+           Dock shelters can be customized to fit various loading dock dimensions and trailer heights, ensuring a perfect fit for your specific operational needs.
+          </div>
+           <div className="text-lg font-semibold mt-4 text-[#000]">
+            Colors and Branding:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+           Choose from different colors and branding options to enhance visibility and align with your company’s branding, creating a professional appearance.  
+          </div>
+           <div className="text-lg font-semibold mt-4 text-[#000]">
+            Accessories:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+           Many dock shelters can be equipped with additional features such as LED lighting, safety striping, and ventilation systems to improve functionality and safety.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Dock Shelters
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +302,7 @@ export const Dockshelter = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Dock shelters are vital for ensuring efficient and safe loading and unloading operations. By investing in high-quality dock shelters, you can protect your products, enhance energy efficiency, and create a safer working environment for your employees. Choose the right dock shelter solutions to optimize your loading dock operations and improve overall productivity.
           </div>
         </div>
       </section>

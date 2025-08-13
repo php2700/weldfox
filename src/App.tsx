@@ -9,7 +9,7 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import About from "./components/About";
-import './App.css'
+import "./App.css";
 import { ManualRollingShutters } from "./components/services/mannual";
 import { MotorizedShutters } from "./components/services/motorized-shutter";
 import { MsRollingShutters } from "./components/services/ms-rolling-shuuter";
@@ -63,60 +63,79 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path='/blog' element={<Blog/>} /> 
-          <Route path='/contact' element={<Contact/>} />
-          <Route path="/services" element={<Services/>} />
-          <Route path="/about" element={<About/>} />
-
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
 
           {/* services-rolling shutter */}
-          <Route path="/mannual-rolling" element={<ManualRollingShutters/>} /> 
-          <Route path="/rolling-shutter" element={<RollingShutters/>} />  
-          <Route path="/motorized-shutter" element={<MotorizedShutters/>} />  
-          <Route path="/ms-rolling-shtter" element={<MsRollingShutters/>} />  
-          <Route path="/ss-rolling-shtter" element={<SsRollingShutters/>} />  
-          <Route path="/perforted-rolling-shutter" element={<PerfortedRollingShutters/>} />  
-          <Route path="/grill-rolling-shutter" element={<GrillShutters/>} />  
-          <Route path="/galvanized-rolling-shutter" element={<GalvanizedShutters/>} />  
-          <Route path="/aluminium-rolling-shutter" element={<AluminiumShutters/>} />  
-          <Route path="/transparent-rolling-shutter" element={<TransparentRollingShutters/>} />  
-          <Route path="/fire-rated-shurtter" element={<FireRatedShutters/>} />  
-          <Route path="/aluminium-puff-rolling-shutter" element={<AluminiumpuffShutters/>} />  
-          <Route path="/powder-coated-rolling-shutter" element={<PowderCoatedShutters/>} />  
+          <Route path="/mannual-rolling" element={<ManualRollingShutters />} />
+          <Route path="/rolling-shutter" element={<RollingShutters />} />
+          <Route path="/motorized-shutter" element={<MotorizedShutters />} />
+          <Route path="/ms-rolling-shtter" element={<MsRollingShutters />} />
+          <Route path="/ss-rolling-shtter" element={<SsRollingShutters />} />
+          <Route
+            path="/perforted-rolling-shutter"
+            element={<PerfortedRollingShutters />}
+          />
+          <Route path="/grill-rolling-shutter" element={<GrillShutters />} />
+          <Route
+            path="/galvanized-rolling-shutter"
+            element={<GalvanizedShutters />}
+          />
+          <Route
+            path="/aluminium-rolling-shutter"
+            element={<AluminiumShutters />}
+          />
+          <Route
+            path="/transparent-rolling-shutter"
+            element={<TransparentRollingShutters />}
+          />
+          <Route path="/fire-rated-shurtter" element={<FireRatedShutters />} />
+          <Route
+            path="/aluminium-puff-rolling-shutter"
+            element={<AluminiumpuffShutters />}
+          />
+          <Route
+            path="/powder-coated-rolling-shutter"
+            element={<PowderCoatedShutters />}
+          />
 
           {/* services-ms gates */}
-          <Route path="/ms-gates" element={<Msgates/>} /> 
-          <Route path="/ss-gates" element={<Ssgates/>} /> 
-          <Route path="/automatic-gates" element={<Automaticgates/>} /> 
-          <Route path="/swing-gates" element={<Swinggates/>} /> 
-          <Route path="/sliding-gates" element={<Slidegates/>} /> 
-          <Route path="/telescopic-gate" element={<Telescopic/>} /> 
-          <Route path="/curve-slide-gate" element={<CurveSliding/>} /> 
-          <Route path="/curve-garage-gate" element={<CurveGarage/>} /> 
-          <Route path="/bi-folding-gate" element={<Bifolding/>} /> 
-          <Route path="/tri-folding-gate" element={<Trifolding/>} /> 
-          <Route path="/collapsible-gate" element={<Collapsible/>} /> 
-          <Route path="/high-speed-door" element={<Highspeeddoor/>} /> 
-          <Route path="/automatic-garage-door" element={<Automaticgarage/>} /> 
-          <Route path="/automatic-sensor-glass-door" element={<Automaticsensorglass/>} /> 
-          <Route path="/automatic-barries" element={<Automaticbarrier/>} /> 
-          <Route path="/dock-levers" element={<Docklevers/>} /> 
-          <Route path="/dock-shelters" element={<Dockshelter/>} /> 
-          <Route path="/turnstile" element={<Turnstile/>} /> 
+          <Route path="/ms-gates" element={<Msgates />} />
+          <Route path="/ss-gates" element={<Ssgates />} />
+          <Route path="/automatic-gates" element={<Automaticgates />} />
+          <Route path="/swing-gates" element={<Swinggates />} />
+          <Route path="/sliding-gates" element={<Slidegates />} />
+          <Route path="/telescopic-gate" element={<Telescopic />} />
+          <Route path="/curve-slide-gate" element={<CurveSliding />} />
+          <Route path="/curve-garage-gate" element={<CurveGarage />} />
+          <Route path="/bi-folding-gate" element={<Bifolding />} />
+          <Route path="/tri-folding-gate" element={<Trifolding />} />
+          <Route path="/collapsible-gate" element={<Collapsible />} />
+          <Route path="/high-speed-door" element={<Highspeeddoor />} />
+          <Route path="/automatic-garage-door" element={<Automaticgarage />} />
+          <Route
+            path="/automatic-sensor-glass-door"
+            element={<Automaticsensorglass />}
+          />
+          <Route path="/automatic-barries" element={<Automaticbarrier />} />
+          <Route path="/dock-levers" element={<Docklevers />} />
+          <Route path="/dock-shelters" element={<Dockshelter />} />
+          <Route path="/turnstile" element={<Turnstile />} />
 
           {/* services-railing */}
-          <Route path="/ms-railing" element={<Msrailing/>} />
-          <Route path="/ss-railing" element={<Ssrailing/>} />
-          <Route path="/structural-metal4craft" element={<Structural/>} />
-          <Route path="/staircase" element={<Staircase/>} />
-          <Route path="/pergola" element={<Pargola/>} />
-          <Route path="/window-grill" element={<Windowgrill/>} />
-          <Route path="/compound-grill" element={<Compoundgrill/>} />
-          <Route path="/elevation" element={<Elevation/>} />
-          <Route path="/roofing" element={<Roofingwork/>} />
-          <Route path="/collapsible" element={<Collapsable/>} />
-          <Route path="/safety-grill" element={<Safety/>} />
-            
+          <Route path="/ms-railing" element={<Msrailing />} />
+          <Route path="/ss-railing" element={<Ssrailing />} />
+          <Route path="/structural-fabrication" element={<Structural />} />
+          <Route path="/staircase" element={<Staircase />} />
+          <Route path="/pergola" element={<Pargola />} />
+          <Route path="/window-grill" element={<Windowgrill />} />
+          <Route path="/compound-grill" element={<Compoundgrill />} />
+          <Route path="/elevation" element={<Elevation />} />
+          <Route path="/roofing" element={<Roofingwork />} />
+          <Route path="/collapsible" element={<Collapsable />} />
+          <Route path="/safety-grill" element={<Safety />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -35,33 +35,36 @@ const Blog = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const articles = [
-    {
-      title: "IT JOINS TWO PIECES OF METAL",
-      date: "20 AUG, 2020",
-      author: "Admin",
-      comments: "2 Comments",
-      excerpt:
-        "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    },
-    {
-      title: "IT JOINS TWO PIECES OF METAL",
-      date: "20 AUG, 2020",
-      author: "Admin",
-      comments: "2 Comments",
-      excerpt:
-        "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    },
-    {
-      title: "IT JOINS TWO PIECES OF METAL",
-      date: "20 AUG, 2020",
-      author: "Admin",
-      comments: "2 Comments",
-      excerpt:
-        "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-    },
-  ];
+  // const articles = [
+  //   {
+  //     title: "IT JOINS TWO PIECES OF METAL",
+  //     date: "20 AUG, 2020",
+  //     author: "Admin",
+  //     comments: "2 Comments",
+  //     excerpt:
+  //       "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+  //   },
+  //   {
+  //     title: "IT JOINS TWO PIECES OF METAL",
+  //     date: "20 AUG, 2020",
+  //     author: "Admin",
+  //     comments: "2 Comments",
+  //     excerpt:
+  //       "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+  //   },
+  //   {
+  //     title: "IT JOINS TWO PIECES OF METAL",
+  //     date: "20 AUG, 2020",
+  //     author: "Admin",
+  //     comments: "2 Comments",
+  //     excerpt:
+  //       "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+  //   },
+  // ];
 
+  const articles = [
+    '/Pargola.jpg','/grill-rolling-shutter.jpg','/Turnstile.jpg','/motorized-rolling-shutters.jpg','/gear-operated-rolling-shutters.jpg'
+  ];
   return (
     <div className="min-h-screen relative bg-background">
       <div
@@ -75,25 +78,26 @@ const Blog = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 border-2 border-secondary text-secondary font-bold text-sm rounded mb-6">
-              From The Blog
-            </div>
+            {/* <div className="inline-block px-4 py-2 border-2 border-[#fcc729] text-[#fcc729] font-bold text-sm rounded mb-6">
+              Gallery
+            </div> */}
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-              NEWS & ARTICLES
+              GALLERY
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, index) => (
               <div
                 key={index}
                 className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
                 {/* Article Image Placeholder */}
-                <div className="h-48 bg-gradient-steel"></div>
+                <img src={article} className="h-80 bg-gradient-steel object-cover w-full" />
+                {/* <div className="h-48 bg-gradient-steel"></div> */}
 
                 {/* Article Content */}
-                <div className="p-6">
+                {/* <div className="p-6">
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-4 text-sm text-muted-foreground">
                       <div className="flex items-center space-x-1">
@@ -117,7 +121,7 @@ const Blog = () => {
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {article.excerpt}
                   </p>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>

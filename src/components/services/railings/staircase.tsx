@@ -7,50 +7,50 @@ const arr = [
   {
     heading: "Exceptional Durability:",
     description:
-      "MS railings are highly durable and can withstand harsh weather conditions, making them suitable for both indoor and outdoor applications. Their strength ensures long-lasting performance and minimal maintenance.",
+      "MS staircases are constructed from mild steel, known for its high tensile strength and resistance to wear and tear. This durability makes them ideal for high-traffic areas in both residential and commercial settings.",
   },
   {
-    heading: "Versatile Designs:",
+    heading: "Cost-Effective:",
     description:
-      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. This versatility makes them ideal for residential homes, commercial buildings, and public spaces.",
+      "Mild steel offers excellent value for money, making MS staircases an affordable yet durable option. This material allows for quality construction without high costs, ensuring long-lasting performance and reliability.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Design Versatility:",
     description:
-      "MS railings offer an economical choice without compromising on quality or safety. Their affordability makes them accessible for various budgets while providing robust security and long-lasting durability in both residential and commercial settings.",
+      "MS staircases can be customized in various styles, including straight, spiral, and curved designs. Whether you prefer a bold industrial look or sleek minimalist style, MS staircases offer flexibility to match your vision.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Low Maintenance:",
     description:
-      "MS railings are relatively easy to install, reducing labor costs and project timelines. Their lightweight nature allows for quick assembly and installation, making them a preferred choice for contractors, builders, and renovation projects.",
+      "MS staircases require minimal upkeep. With proper coatings and finishes, they resist rust and corrosion, maintaining their appearance and functionality over time.",
   },
   {
-    heading: "Enhanced Safety:",
+    heading: " Safety:",
     description:
-      "By providing a sturdy barrier, MS railings help prevent falls and accidents, especially in elevated areas such as balconies and staircases. This safety feature is essential for both residential and commercial properties.",
+      "MS staircases are built to support heavy foot traffic and often come with sturdy handrails, providing additional support and ensuring compliance with building safety regulations.",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Residential Staircases:",
     description:
-      "MS balcony railings are designed to enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement the architectural style of your home.",
+      "MS staircases are ideal for modern homes, offering a sleek and contemporary design that complements various interior styles. Whether used indoors or outdoors, they add a unique aesthetic to your property while providing reliable functionality.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Commercial Staircases:",
     description:
-      "MS stair railings offer robust support and safety on staircases, ensuring stability for users. They can be designed to match the overall theme of your interior space.",
+      "In commercial spaces such as offices, malls, and hotels, MS staircases are favored for their durability and ability to handle large volumes of foot traffic. They provide a professional and polished look while ensuring safety and structural integrity.",
   },
   {
-    heading: "Garden Railings:",
+    heading: "Industrial Staircases:",
     description:
-      "Ideal for outdoor areas, MS garden railings provide a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
+      "MS staircases are commonly used in industrial settings such as warehouses and factories due to their strength and durability. These staircases can withstand heavy use and are designed to meet industrial safety standards.",
   },
   {
-    heading: "Commercial Railings:",
+    heading: "Outdoor Staircases:",
     description:
-      "For businesses and commercial buildings, MS railings can be designed to meet specific safety standards while enhancing the property’s overall appearance. Custom designs can include branding elements or specific color schemes.",
+      "With appropriate finishes, MS staircases can be installed outdoors, providing a durable solution for gardens, terraces, and other exterior areas. Their corrosion-resistant coatings help protect against weather conditions.",
   },
 ];
 
@@ -58,17 +58,17 @@ const maintainenceRailing = [
   {
     heading: "Professional Installation:",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "MS staircases require expert installation to ensure structural integrity and safety. Hiring professional installers ensures that your staircase is compliant with building codes and constructed to withstand daily use.",
   },
   {
-    heading: "Regular Inspections:",
+    heading: "Routine Maintenance:",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "Regular inspections and maintenance, such as cleaning and checking for signs of wear or rust, can help extend the lifespan of your MS staircase. Minor repairs or touch-ups may be needed to keep it in optimal condition.",
   },
   {
-    heading: "Cleaning and Care:",
+    heading: "Corrosion Prevention:",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "Applying rust-resistant coatings or finishes can prevent corrosion, especially for outdoor installations. This simple maintenance step ensures the longevity of your MS staircase.",
   },
 ];
 
@@ -76,17 +76,22 @@ const coatingRailing = [
   {
     heading: "Powder Coating:",
     description:
-      "Powder coating provides a durable and attractive finish, protecting MS railings from corrosion and wear. Available in various colors, this finish enhances the aesthetic appeal and longevity of the railings.",
+      "Powder-coated MS staircases offer excellent protection against rust and corrosion. Available in a wide range of colors, powder coating provides a durable and attractive finish that enhances the staircase’s aesthetic appeal.",
   },
   {
     heading: "Galvanizing:",
     description:
-      "Hot-dip galvanizing is a process that coats MS railings with a layer of zinc, providing excellent corrosion resistance. This treatment is especially beneficial for outdoor applications where exposure to moisture is a concern.",
+      "Galvanized MS staircases are treated with a layer of zinc to prevent rust and corrosion, making them ideal for outdoor or industrial applications. This protective coating ensures long-lasting durability even in harsh environments.",
   },
   {
     heading: "Painting:",
     description:
-      "A painted finish allows for a wide range of color options, making it easy to match the railings to the surrounding décor. Regular maintenance may be required to keep the paint in good condition.",
+      "A painted finish allows for customization of MS staircases in various colors, matching the overall design scheme of your property. Regular maintenance may be required to keep the paint looking fresh.",
+  },
+  {
+    heading: "Polishing:",
+    description:
+      "Polished MS staircases offer a sleek, shiny finish, enhancing the modern and stylish look of the structure. Polishing gives the staircase a premium appearance that is ideal for upscale residential or commercial spaces.",
   },
 ];
 
@@ -132,18 +137,18 @@ export const Staircase = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/Staircase.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS RAILINGS</div>
+          <div className="text-7xl text-white font-bold">STAIRCASE</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS RAILINGS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;STAIRCASE
             </h2>
           </div>
         </div>
@@ -154,29 +159,23 @@ export const Staircase = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Railings
+              Staircase
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Durable and Stylish MS Railings for Your Property
+              Durable and Stylish MS Staircase Solutions for Your Home or Business
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) railings are an essential addition to any
-              property, providing both safety and visual appeal. Known for their
-              durability and versatility, MS railings can be used in various
-              applications, including residential balconies, commercial
-              staircases, and industrial facilities. With their robust
-              construction and customizable designs, MS railings offer an ideal
-              solution for enhancing the safety and aesthetics of your space.
+              MS (Mild Steel) staircases are a popular choice for both residential and commercial properties, offering a perfect blend of durability, strength, and design flexibility. Known for their robust construction and ability to withstand heavy loads, MS staircases are ideal for various architectural styles. Whether you need a modern, sleek staircase for your home or a functional and durable structure for an industrial setting, MS staircases provide an excellent solution that meets safety standards while enhancing the visual appeal of your space.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/Staircase.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -190,16 +189,10 @@ export const Staircase = () => {
             What Are MS Railings?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS railings are made from mild steel, a material known for its
-            excellent strength-to-weight ratio, making it an ideal choice for
-            railings that require durability and stability. These railings can
-            be fabricated in various designs, styles, and finishes to suit
-            different architectural needs. Whether for indoor or outdoor use, MS
-            railings provide reliable support and protection while enhancing the
-            overall look of your property.
+           An MS staircase is a staircase made from mild steel, a strong and malleable material that is well-suited for creating durable and stylish staircases. Mild steel is highly versatile, making it ideal for a wide range of designs, from minimalist modern staircases to more intricate, decorative options. MS staircases are often favored for their structural integrity, low maintenance, and long-lasting performance in both indoor and outdoor settings.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Benefits of Using MS Railings
+            Benefits of MS Staircases
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -218,8 +211,7 @@ export const Staircase = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Types of MS Railings
-          </div>
+Applications of MS Staircases          </div>
 
           {typesRailing?.map((ele) => (
             <>
@@ -231,7 +223,7 @@ export const Staircase = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Installation and Maintenance of MS Railings
+        Installation and Maintenance of MS Staircases
           </div>
 
           {maintainenceRailing?.map((ele) => (
@@ -244,7 +236,7 @@ export const Staircase = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Finishes and Coatings for MS Railings
+          Finishes and Coatings for MS Staircases
           </div>
 
           {coatingRailing?.map((ele) => (
@@ -260,7 +252,7 @@ export const Staircase = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            MS railings are a practical and stylish solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, versatility, and cost-effectiveness make them a popular choice among homeowners and builders alike. By choosing high-quality MS railings, you can protect your property while adding a touch of elegance to your space.
+            MS staircases are the perfect choice for those seeking a durable, cost-effective, and stylish solution for their property. Whether used in residential, commercial, or industrial settings, these staircases offer superior strength, design flexibility, and easy maintenance, making them a popular choice for builders and property owners alike.
           </div>
         </div>
       </section>

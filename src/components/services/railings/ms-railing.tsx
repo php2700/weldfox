@@ -132,7 +132,7 @@ export const Msrailing = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/MS-railings.jpeg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -176,7 +176,7 @@ export const Msrailing = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/MS-railings.jpeg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

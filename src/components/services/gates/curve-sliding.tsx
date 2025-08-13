@@ -5,98 +5,93 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space-Saving Design:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Curve sliding gates are ideal for properties with limited space or irregular entrances. They don't swing like traditional gates, making them perfect for tight spaces.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "These gates are sturdy and can be fitted with advanced locking systems, cameras, and other security features, ensuring your property is protected.",
   },
   {
-    heading: "Customization:",
+    heading: "Smooth, Quiet Operation:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Curve sliding gates are designed for smooth and quiet movement, offering a seamless experience every time they open or close.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Aesthetic Appeal:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "With their sleek design, curve sliding gates enhance your property. They can be customized in various materials, colors, and finishes to complement your style.",
   },
   {
     heading: "Low Maintenance:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "These gates are designed to be durable and weather-resistant, requiring minimal maintenance over time.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Steel:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Known for its strength and security, steel curve sliding gates are highly durable and offer a sleek, industrial look. They can be powder-coated for corrosion resistance and are perfect for high-security applications.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminum:",
+    description: `Aluminum is lightweight yet sturdy, making it a great option for automated curve sliding gates. It’s also rust-resistant, making it suitable for coastal properties or areas prone to moisture.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Wood:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Wooden curve sliding gates provide a more traditional, rustic look. While they require more maintenance than metal gates, they offer a warm, natural aesthetic that blends well with landscape designs.",
+  },
+   {
+    name: "Composite Materials:",
+    description:
+      "Composite materials offer the beauty of wood with the durability of synthetic materials. They are low-maintenance and resistant to weathering, making them a smart choice for homeowners who want both style and longevity.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Perfect for Uneven Terrain:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Curve sliding gates can easily be installed on sloped or uneven ground where traditional gates might struggle.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Greater Flexibility:",
+    description: `The curved sliding mechanism allows for flexible designs that can adapt to various property shapes and sizes.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Space Efficiency:",
+    description: "If you have limited space or need to maximize the available area, curve sliding gates are a superior choice.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Professional Installation:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Always opt for professional installation to ensure the gate is aligned and operates smoothly on its track.",
   },
   {
-    name: "Easy Installation:",
+    name: "Regular Maintenance:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
-  },
-  {
-    name: "Weather Resistance:",
-    description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Lubricate the track and inspect the gate for any signs of wear. Automatic gates may require periodic servicing of the motor.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Manual Curve Sliding Gates:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "A cost-effective solution for smaller properties, these gates are operated by hand but still provide the benefits of space-saving and security.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Automatic Curve Sliding Gates:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
-  },
-  {
-    heading: "Industrial Applications:",
-    description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "These motorized gates offer the convenience of remote control or sensor-based operation. Ideal for commercial properties or homeowners seeking enhanced ease of use.",
   },
 ];
 
@@ -142,18 +137,18 @@ export const CurveSliding = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/curve-sliding-gate.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">CURVE SLIDING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;CURVE SLIDING GATES
             </h2>
           </div>
         </div>
@@ -164,26 +159,23 @@ export const CurveSliding = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Curve Sliding Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+             Enhance Security and Aesthetic with Curve Sliding Gates – Durable & Stylish Solutions
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+            If you’re looking to upgrade your property’s entrance with a gate that combines security, functionality, and visual appeal, curve sliding gates offer the perfect solution. Unlike traditional gates, curve sliding gates are designed to slide along a curved track, providing a smooth, space-saving operation. They are ideal for properties with limited space or uniquely shaped driveways. Learn why curve sliding gates are becoming increasingly popular for both residential and commercial properties.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/curve-sliding-gate.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +186,13 @@ export const CurveSliding = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What are Curve Sliding Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+           Curve sliding gates are advanced gate systems that operate by sliding along a specially designed curved track. This feature is particularly beneficial in locations where a straight track would not be feasible, such as properties with angled boundaries or curved driveways. These gates maximize space and are often motorized for ease of use and enhanced security.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Advantages of Installing Curve Sliding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +211,7 @@ export const CurveSliding = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials for Curve Sliding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +229,7 @@ export const CurveSliding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Why Choose Curve Sliding Gates Over Traditional Gates?
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +245,7 @@ export const CurveSliding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            Choosing the Right Curve Sliding Gate for Your Property
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +261,28 @@ export const CurveSliding = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+            Installation and Maintenance Tips
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Material:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+          Choose from materials like steel, aluminum, or wood, depending on your preference for durability and appearance.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Automation:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+          Decide if you need manual or automatic operation. Automatic gates are ideal for those seeking convenience and increased security.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+           Customization Options:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+          Many manufacturers offer customizable options, including colors, finishes, and designs, to match your property’s style.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+           Types of Curve Sliding Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +297,7 @@ export const CurveSliding = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+          Curve sliding gates are a smart investment for anyone looking to enhance their property’s security, functionality, and curb appeal. With their space-saving design and stylish appearance, these gates are perfect for both residential and commercial applications. Choose a curve sliding gate today to transform your entrance into a secure, stylish gateway.
           </div>
         </div>
       </section>

@@ -5,88 +5,113 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: "Customization:",
     description:
-      "MS railings are highly durable and can withstand harsh weather conditions, making them suitable for both indoor and outdoor applications. Their strength ensures long-lasting performance and minimal maintenance.",
+      "Structural fabrication allows for tailor-made solutions to meet specific project requirements. Custom designs ensure that each structure fits its intended purpose, aesthetic, and functionality while maintaining durability.",
   },
   {
-    heading: "Versatile Designs:",
+    heading: "Strength and Durability:",
     description:
-      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. This versatility makes them ideal for residential homes, commercial buildings, and public spaces.",
+      "Fabricated structures are engineered for strength, ensuring they can support significant loads and withstand harsh environmental conditions. This durability translates to long-lasting performance and reduced maintenance costs.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Cost-Effectiveness:",
     description:
-      "MS railings offer an economical choice without compromising on quality or safety. Their affordability makes them accessible for various budgets while providing robust security and long-lasting durability in both residential and commercial settings.",
+      "By utilizing advanced fabrication techniques and high-quality materials, projects can be completed more efficiently, ultimately reducing labor and material costs while improving overall quality and performance.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Faster Construction:",
     description:
-      "MS railings are relatively easy to install, reducing labor costs and project timelines. Their lightweight nature allows for quick assembly and installation, making them a preferred choice for contractors, builders, and renovation projects.",
+      "Prefabricated components can significantly speed up the construction process. With parts manufactured off-site, on-site assembly can be completed more quickly, minimizing downtime and disruptions.",
   },
   {
-    heading: "Enhanced Safety:",
+    heading: "Quality Assurance:",
     description:
-      "By providing a sturdy barrier, MS railings help prevent falls and accidents, especially in elevated areas such as balconies and staircases. This safety feature is essential for both residential and commercial properties.",
+      "Professional fabrication companies implement rigorous quality control measures to ensure that each component meets industry standards. This commitment to quality results in safer, more reliable structures.",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Commercial Buildings:",
     description:
-      "MS balcony railings are designed to enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement the architectural style of your home.",
+      "Structural fabrication is essential for constructing office buildings, shopping malls, and other commercial structures. Custom steel frames provide stability and support for large spans and open floor plans.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Industrial Facilities:",
     description:
-      "MS stair railings offer robust support and safety on staircases, ensuring stability for users. They can be designed to match the overall theme of your interior space.",
+      "Factories, warehouses, and manufacturing plants require robust structural solutions to accommodate heavy machinery and equipment. Fabricated steel structures can withstand the demands of industrial environments.",
   },
   {
-    heading: "Garden Railings:",
+    heading: "Bridges and Overpasses:",
     description:
-      "Ideal for outdoor areas, MS garden railings provide a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
+      "Structural fabrication is critical in creating the frameworks for bridges and overpasses, ensuring they can safely support vehicular and pedestrian traffic.",
   },
   {
-    heading: "Commercial Railings:",
+    heading: "Residential Projects:",
     description:
-      "For businesses and commercial buildings, MS railings can be designed to meet specific safety standards while enhancing the property’s overall appearance. Custom designs can include branding elements or specific color schemes.",
+      "Homebuilders often utilize fabricated components for steel framing, roofing, and other structural elements, enhancing the durability and longevity of residential properties.",
+  },
+    {
+    heading: "Infrastructure:",
+    description:
+      "From towers to supports for power lines and communication systems, structural fabrication plays a vital role in building essential infrastructure that supports modern society.",
   },
 ];
 
 const maintainenceRailing = [
   {
-    heading: "Professional Installation:",
+    heading: "Commercial Buildings:",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "Structural fabrication is essential for constructing office buildings, shopping malls, and other commercial structures. Custom steel frames provide stability and support for large spans and open floor plans.",
   },
   {
-    heading: "Regular Inspections:",
+    heading: "Industrial Facilities:",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "Factories, warehouses, and manufacturing plants require robust structural solutions to accommodate heavy machinery and equipment. Fabricated steel structures can withstand the demands of industrial environments.",
   },
   {
-    heading: "Cleaning and Care:",
+    heading: "Bridges and Overpasses:",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "Structural fabrication is critical in creating the frameworks for bridges and overpasses, ensuring they can safely support vehicular and pedestrian traffic.",
+  },
+    {
+    heading: "Residential Projects:",
+    description:
+      "Homebuilders often utilize fabricated components for steel framing, roofing, and other structural elements, enhancing the durability and longevity of residential properties.",
+  },
+    {
+    heading: "Infrastructure:",
+    description:
+      "From towers to supports for power lines and communication systems, structural fabrication plays a vital role in building essential infrastructure that supports modern society.",
   },
 ];
 
 const coatingRailing = [
   {
-    heading: "Powder Coating:",
+    heading: "Consultation and Design:",
     description:
-      "Powder coating provides a durable and attractive finish, protecting MS railings from corrosion and wear. Available in various colors, this finish enhances the aesthetic appeal and longevity of the railings.",
+      "The process begins with consultation to understand the project requirements. Designers and engineers collaborate to create detailed plans.",
   },
   {
-    heading: "Galvanizing:",
+    heading: "Material Procurement:",
     description:
-      "Hot-dip galvanizing is a process that coats MS railings with a layer of zinc, providing excellent corrosion resistance. This treatment is especially beneficial for outdoor applications where exposure to moisture is a concern.",
+      "Once the design is finalized, the necessary materials are sourced to ensure high quality and compliance with project specifications.",
   },
   {
-    heading: "Painting:",
+    heading: "Fabrication:",
     description:
-      "A painted finish allows for a wide range of color options, making it easy to match the railings to the surrounding décor. Regular maintenance may be required to keep the paint in good condition.",
+      "Using advanced machinery, skilled fabricators cut, shape, and assemble the components according to the design specifications.",
+  },
+  {
+    heading: "Quality Control:",
+    description:
+      "Each fabricated piece undergoes rigorous inspection to ensure it meets quality standards and tolerances.",
+  },
+   {
+    heading: "Delivery and Installation:",
+    description:
+      "The completed components are delivered to the project site, where they are assembled and installed by trained professionals.",
   },
 ];
 
@@ -132,18 +157,18 @@ export const Structural = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/structural-fabrication.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS RAILINGS</div>
+          <div className="text-7xl text-white font-bold">STRUCTURAL FABRICATION</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS RAILINGS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;STRUCTURAL FABRICATION
             </h2>
           </div>
         </div>
@@ -154,29 +179,23 @@ export const Structural = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Railings
+             Structural Fabrication
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Durable and Stylish MS Railings for Your Property
+              Building the Future with Precision and Strength
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) railings are an essential addition to any
-              property, providing both safety and visual appeal. Known for their
-              durability and versatility, MS railings can be used in various
-              applications, including residential balconies, commercial
-              staircases, and industrial facilities. With their robust
-              construction and customizable designs, MS railings offer an ideal
-              solution for enhancing the safety and aesthetics of your space.
+             Structural fabrication is a crucial process in the construction and manufacturing industries, involving the creation of metal structures from raw materials. This process encompasses cutting, shaping, welding, and assembling components to form frameworks for buildings, bridges, and other infrastructure projects. With the right expertise and equipment, structural fabrication ensures the integrity and durability of the structures that support our communities and industries.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/structural-fabrication.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -187,19 +206,13 @@ export const Structural = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Railings?
+            What is Structural Fabrication?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS railings are made from mild steel, a material known for its
-            excellent strength-to-weight ratio, making it an ideal choice for
-            railings that require durability and stability. These railings can
-            be fabricated in various designs, styles, and finishes to suit
-            different architectural needs. Whether for indoor or outdoor use, MS
-            railings provide reliable support and protection while enhancing the
-            overall look of your property.
+           Structural fabrication involves the construction of steel or metal structures according to specified designs and engineering requirements. Structural fabrication plays a vital role in ensuring that buildings and infrastructure can withstand the stresses and loads they encounter throughout their lifespan.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Benefits of Using MS Railings
+            Benefits of Structural Fabrication
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -218,7 +231,7 @@ export const Structural = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Types of MS Railings
+            Applications of Structural Fabrication
           </div>
 
           {typesRailing?.map((ele) => (
@@ -231,7 +244,7 @@ export const Structural = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Installation and Maintenance of MS Railings
+           The Structural Fabrication Process
           </div>
 
           {maintainenceRailing?.map((ele) => (
@@ -244,7 +257,7 @@ export const Structural = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Finishes and Coatings for MS Railings
+          The Structural Fabrication Process
           </div>
 
           {coatingRailing?.map((ele) => (
@@ -260,7 +273,7 @@ export const Structural = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            MS railings are a practical and stylish solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, versatility, and cost-effectiveness make them a popular choice among homeowners and builders alike. By choosing high-quality MS railings, you can protect your property while adding a touch of elegance to your space.
+            Structural fabrication is a vital component of modern construction, providing the strength and reliability needed for buildings and infrastructure. By choosing a professional fabrication service, you can ensure that your project is completed to the highest standards, delivering a durable and aesthetically pleasing result.
           </div>
         </div>
       </section>

@@ -5,52 +5,52 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: "Superior Strength:",
     description:
-      "MS railings are highly durable and can withstand harsh weather conditions, making them suitable for both indoor and outdoor applications. Their strength ensures long-lasting performance and minimal maintenance.",
+      "SS window grills are constructed from high-quality stainless steel, ensuring exceptional strength and durability. They can withstand impact and resist bending or breaking, providing a reliable security solution.",
   },
   {
-    heading: "Versatile Designs:",
+    heading: "Corrosion Resistance:",
     description:
-      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. This versatility makes them ideal for residential homes, commercial buildings, and public spaces.",
+      "Unlike mild steel, stainless steel is inherently resistant to rust and corrosion, making it ideal for outdoor installations. This quality ensures that your window grills maintain their appearance and functionality over time.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Low Maintenance:",
     description:
-      "MS railings offer an economical choice without compromising on quality or safety. Their affordability makes them accessible for various budgets while providing robust security and long-lasting durability in both residential and commercial settings.",
+      "SS window grills require minimal upkeep compared to other materials. Routine cleaning and inspections can help maintain their shine and structural integrity without the need for frequent repainting or treatment.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Aesthetic Appeal:",
     description:
-      "MS railings are relatively easy to install, reducing labor costs and project timelines. Their lightweight nature allows for quick assembly and installation, making them a preferred choice for contractors, builders, and renovation projects.",
+      "Available in a variety of designs, SS window grills can add a sleek, modern look to your property. Their polished finish enhances the overall aesthetic while complementing various architectural styles.",
   },
   {
-    heading: "Enhanced Safety:",
+    heading: "Versatility:",
     description:
-      "By providing a sturdy barrier, MS railings help prevent falls and accidents, especially in elevated areas such as balconies and staircases. This safety feature is essential for both residential and commercial properties.",
+      "SS window grills can be designed to fit various window sizes and shapes, making them suitable for residential, commercial, industrial, security, aesthetic, functional, high-performance, and customizable applications.",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Residential Properties:",
     description:
-      "MS balcony railings are designed to enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement the architectural style of your home.",
+      "Homeowners can enhance their security and style with SS window grills. They protect windows while adding elegance to the home's exterior and interior.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Commercial Buildings:",
     description:
-      "MS stair railings offer robust support and safety on staircases, ensuring stability for users. They can be designed to match the overall theme of your interior space.",
+      "Businesses often install SS window grills to safeguard valuable assets and ensure the safety of employees and customers.",
   },
   {
-    heading: "Garden Railings:",
+    heading: "Industrial Facilities:",
     description:
-      "Ideal for outdoor areas, MS garden railings provide a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
+      "In warehouses and manufacturing plants, SS window grills provide a reliable security measure, protecting windows from break-ins and vandalism.",
   },
   {
-    heading: "Commercial Railings:",
+    heading: "Public Buildings:",
     description:
-      "For businesses and commercial buildings, MS railings can be designed to meet specific safety standards while enhancing the property’s overall appearance. Custom designs can include branding elements or specific color schemes.",
+      "Schools, hospitals, and government facilities utilize SS window grills to enhance security while maintaining an inviting atmosphere.",
   },
 ];
 
@@ -58,35 +58,45 @@ const maintainenceRailing = [
   {
     heading: "Professional Installation:",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "For optimal performance and security, SS window grills should be installed by professionals. This ensures proper fitting and compliance with local building codes.",
   },
   {
     heading: "Regular Inspections:",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "Routine checks for signs of wear, rust, or damage can help maintain the integrity of your SS window grills. Early detection of issues can prevent costly repairs.",
   },
   {
-    heading: "Cleaning and Care:",
+    heading: "Cleaning and Maintenance:",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "Regularly clean SS window grills with mild soap and water to keep them looking new. Avoid using abrasive materials that can scratch the surface.",
+  },
+   {
+    heading: "Rust Prevention:",
+    description:
+      "Although stainless steel is resistant to rust, applying protective coatings can further enhance durability and maintain the appearance of your window grills.",
   },
 ];
 
 const coatingRailing = [
   {
-    heading: "Powder Coating:",
+    heading: "Decorative Styles:",
     description:
       "Powder coating provides a durable and attractive finish, protecting MS railings from corrosion and wear. Available in various colors, this finish enhances the aesthetic appeal and longevity of the railings.",
   },
   {
-    heading: "Galvanizing:",
+    heading: "Minimalist Designs:",
     description:
-      "Hot-dip galvanizing is a process that coats MS railings with a layer of zinc, providing excellent corrosion resistance. This treatment is especially beneficial for outdoor applications where exposure to moisture is a concern.",
+      "Opt for sleek, minimalist SS window grills that provide security without overwhelming the aesthetics of your property.",
   },
   {
-    heading: "Painting:",
+    heading: "Classic Styles:",
     description:
-      "A painted finish allows for a wide range of color options, making it easy to match the railings to the surrounding décor. Regular maintenance may be required to keep the paint in good condition.",
+      "Traditional designs can enhance the character of older buildings, combining modern materials with classic charm.",
+  },
+   {
+    heading: "Color Customization:",
+    description:
+      "Stainless steel can be brushed or polished to achieve a variety of finishes, allowing for customization that suits your property’s design.",
   },
 ];
 
@@ -132,18 +142,18 @@ export const Windowgrill = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/window-grill.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS RAILINGS</div>
+          <div className="text-7xl text-white font-bold">WINDOW GRILL </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS RAILINGS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;WINDOW GRILL
             </h2>
           </div>
         </div>
@@ -154,29 +164,23 @@ export const Windowgrill = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Railings
+              Window Grill
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Durable and Stylish MS Railings for Your Property
+        Enhance Your Home with Durable and Stylish SS Window Grills
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) railings are an essential addition to any
-              property, providing both safety and visual appeal. Known for their
-              durability and versatility, MS railings can be used in various
-              applications, including residential balconies, commercial
-              staircases, and industrial facilities. With their robust
-              construction and customizable designs, MS railings offer an ideal
-              solution for enhancing the safety and aesthetics of your space.
+              SS (Stainless Steel) window grills are an excellent solution for enhancing the security and visual appeal of your property. Known for their strength and resistance to corrosion, SS window grills not only protect your windows from unauthorized entry but also add a modern touch to your home or business. With a variety of designs, sizes, and finishes available, SS window grills can be customized to meet your specific needs while ensuring long-lasting performance and beauty.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/window-grill.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -187,19 +191,13 @@ export const Windowgrill = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Railings?
+            What Are SS Window Grills?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS railings are made from mild steel, a material known for its
-            excellent strength-to-weight ratio, making it an ideal choice for
-            railings that require durability and stability. These railings can
-            be fabricated in various designs, styles, and finishes to suit
-            different architectural needs. Whether for indoor or outdoor use, MS
-            railings provide reliable support and protection while enhancing the
-            overall look of your property.
+        SS window grills are protective barriers made from stainless steel, designed to be installed over windows. These grills serve as a physical deterrent against break-ins while allowing natural light and air to flow into your space. Available in multiple styles, SS window grills can enhance the overall aesthetics of your property, providing a unique and modern look.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Benefits of Using MS Railings
+            Benefits of SS Window Grills
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -218,7 +216,7 @@ export const Windowgrill = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Types of MS Railings
+            Applications of SS Window Grills
           </div>
 
           {typesRailing?.map((ele) => (
@@ -231,7 +229,7 @@ export const Windowgrill = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Installation and Maintenance of MS Railings
+           Installation and Maintenance of SS Window Grills
           </div>
 
           {maintainenceRailing?.map((ele) => (
@@ -244,7 +242,7 @@ export const Windowgrill = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-            Finishes and Coatings for MS Railings
+            Custom Design Options for SS Window Grills
           </div>
 
           {coatingRailing?.map((ele) => (

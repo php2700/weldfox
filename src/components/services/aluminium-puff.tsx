@@ -86,7 +86,7 @@ export const AluminiumpuffShutters = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/aluminum-puff-insulated-rolling-shutter.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -131,7 +131,7 @@ export const AluminiumpuffShutters = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg"
+              src="/aluminum-puff-insulated-rolling-shutter.jpg"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

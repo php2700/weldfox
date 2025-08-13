@@ -5,98 +5,123 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space Efficiency:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Curve garage gates are ideal for garages where space is limited. Since they do not swing outward or require overhead space for operation, they can be installed in tight or awkward locations.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "These gates are robust, often constructed from durable materials like steel or aluminum. They can be integrated with advanced locking systems, providing security for your vehicle and belongings.",
   },
   {
-    heading: "Customization:",
+    heading: "Smooth, Effortless Operation:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Curve garage gates are engineered for smooth, quiet operation. Many of them are motorized, allowing for easy opening and closing with the push of a button.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Customizable Designs:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "Curve garage gates can be tailored to your style preferences. From sleek modern designs to more traditional looks, they come in a variety of materials, finishes, and colors to complement your property.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Durability & Low Maintenance:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Built from high-quality materials, curve garage gates are resistant to weather and wear, requiring minimal maintenance over time.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Material:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "The material you choose should balance durability with style. Common materials include steel, aluminum, and wood.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Security Features:",
+    description: `Look for gates with strong locking mechanisms, and consider integrating smart security systems such as cameras or remote monitoring.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Automation:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Decide if you prefer a manual gate or the convenience of automatic operation with remote or app-based controls.",
+  },
+  {
+    name: "Aesthetic Options:",
+    description:
+      "Choose from a range of finishes and styles to ensure the gate complements your home’s exterior.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Professional Installation:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Installing a curve garage gate is a specialized process that should be carried out by professionals to ensure smooth operation and longevity.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Regular Maintenance:",
+    description: `Keep the gate’s track clean and lubricated to prevent debris from interfering with its operation. Regular checks on the motor (if automated) can help avoid any potential issues.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Weather Protection:",
+    description: "Choose materials that are resistant to rust and wear, especially if you live in areas with extreme weather conditions.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Steel Sliding Gates:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Steel is a popular choice for sliding gates due to its strength and durability. Steel gates offer excellent security and can be powder-coated for added protection against rust and weather damage.",
   },
   {
-    name: "Easy Installation:",
+    name: "Aluminum Sliding Gates:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Aluminum is lightweight, resistant to corrosion, and requires little maintenance. It’s an ideal option for coastal areas or regions with high humidity, where rust can be an issue. Aluminum gates are also easier to automate due to their lighter weight.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Wooden Sliding Gates:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Wood provides a more traditional, rustic aesthetic for sliding gates. Wooden gates offer natural beauty and can be stained or painted to suit the style of your property. While they require more maintenance than metal gates, wooden sliding gates can be treated to resist weather damage and pests.",
+  },
+    {
+    name: "Composite Materials:",
+    description:
+      "Composite sliding gates combine the appearance of wood with the durability of synthetic materials. These gates require less maintenance than natural wood and offer better resistance to weather conditions, making them a popular choice for homeowners who want the look of wood without the upkeep.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Manual Curve Garage Gates:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "These are hand-operated gates that offer the space-saving benefits of a curved design without the need for automated mechanisms. Ideal for smaller garages or properties with limited traffic.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Automatic Curve Garage Gates:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Equipped with motors and remote control systems, automatic curve garage gates provide convenience and enhanced security. They are perfect for homeowners who prioritize ease of use and want an automated solution.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Track Sliding Gates:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "These gates run on a track installed along the ground. The gate slides along this track using rollers, providing smooth and reliable movement. Track sliding gates are commonly used for residential driveways and commercial entrances where space is limited.",
+  },
+    {
+    heading: "Cantilever Sliding Gates:",
+    description:
+      "Cantilever gates do not require a ground track. Instead, they are supported by rollers mounted on a post and 'float' above the driveway or entrance. Cantilever gates are ideal for uneven or sloped surfaces where a ground track may not be feasible. They are often used in industrial and commercial settings due to their durability and low maintenance.",
+  },
+     {
+    heading: "Automated Sliding Gates:",
+    description:
+      "Automated sliding gates offer convenience by allowing you to open and close the gate with a remote control, keypad, or even a smartphone app. Automation is a common feature for both residential and commercial sliding gates, providing added security and ease of access.",
+  },
+   {
+    heading: "Telescopic Sliding Gates:",
+    description:
+      "Telescopic sliding gates consist of multiple panels that slide one behind the other, allowing the gate to open in a smaller space. This is an excellent option for properties where space is extremely limited, but security is a priority.",
   },
 ];
 
@@ -142,18 +167,18 @@ export const CurveGarage = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/curve-garage-gate.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">CURVE GARAGE GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;CURVE GARAGE GATES
             </h2>
           </div>
         </div>
@@ -164,26 +189,23 @@ export const CurveGarage = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+             Curve Garage Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Maximize Space & Style with Curve Garage Gates – Smart & Secure Solutions
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+             Curve garage gates are revolutionizing the way homeowners and businesses approach garage door design. With their ability to glide smoothly along a curved track, these gates offer an ideal solution for properties with space limitations or non-standard driveway shapes. If you’re seeking to enhance your property’s security while adding a sleek, modern touch, a curve garage gate is the perfect fit.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/curve-garage-gate.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +216,13 @@ export const CurveGarage = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+           What is a Curve Garage Gate?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            A curve garage gate is a specialized garage door system designed to slide along a curved path rather than moving in a straight line. This allows for efficient use of space in garages where traditional straight sliding or overhead garage doors may not be feasible due to architectural constraints or limited space.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+           Key Benefits of Installing a Curve Garage Gate
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +241,7 @@ export const CurveGarage = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+           Features to Look for in a Curve Garage Gate
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +259,7 @@ export const CurveGarage = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+           Installation and Maintenance Tips for Curve Garage Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +275,7 @@ export const CurveGarage = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+           Materials for Sliding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +291,30 @@ export const CurveGarage = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+            How to Choose the Right Curve Garage Gate for Your Property
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+          Garage Size & Layout:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            The dimensions and shape of your garage and driveway will dictate the size and type of curve garage gate that will work best.
+          </div>
+
+           <div className="text-lg font-semibold mt-4 text-[#000]">
+          Budget:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+           Curve garage gates come in a variety of price ranges depending on material, size, and additional features like automation or enhanced security.
+          </div>
+
+           <div className="text-lg font-semibold mt-4 text-[#000]">
+         Customization:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Work with a supplier that offers custom design options so you can get a gate that perfectly matches your aesthetic and functional needs.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+           Types of Curve Garage Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +329,7 @@ export const CurveGarage = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Curve garage gates offer an innovative solution for properties with unique layouts or space restrictions. Their space-saving design, coupled with enhanced security and customization options, makes them a top choice for modern homeowners and businesses alike. By investing in a curve garage gate, you can not only boost your property’s functionality but also its curb appeal.
           </div>
         </div>
       </section>

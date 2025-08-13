@@ -5,98 +5,109 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Improved Accessibility:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Automatic sensor glass doors provide easy access for all individuals, including those with disabilities, parents with strollers, and customers carrying items. This inclusivity enhances customer satisfaction and improves your business’s reputation.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Energy Efficiency:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "By reducing the time the door remains open, automatic sensor glass doors help minimize energy loss and maintain indoor temperatures. This can lead to significant energy savings, particularly in climate-controlled environments.",
   },
   {
-    heading: "Customization:",
+    heading: "Increased Security:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "These doors often come equipped with advanced locking mechanisms and security features that prevent unauthorized access, ensuring safety and peace of mind. They can also be integrated with access control systems for added protection.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Aesthetic Appeal:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "The sleek design of automatic sensor glass doors adds a touch of elegance to any business. Their transparent structure allows natural light to flow into the space, creating a welcoming, bright, stylish, modern, and inviting atmosphere for customers.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Convenience and Hygiene:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "With hands-free operation, automatic sensor glass doors eliminate the need for manual opening, making them a hygienic option, especially in high-traffic areas. This feature is particularly beneficial in restaurants, hospitals, and retail settings.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Tempered Glass:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Tempered glass is a popular choice for automatic sensor doors due to its strength and durability. It is designed to withstand impact and is resistant to thermal stress, making it a safe option for commercial applications.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Laminated Glass:",
+    description: `Laminated glass consists of two or more layers of glass with an interlayer that holds the pieces together if shattered. This provides added safety, strength, and security, making it ideal for high-risk areas.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Aluminum Frames:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Automatic sensor glass doors often feature aluminum frames, providing strength and lightweight properties. Aluminum is also resistant to corrosion, making it a durable choice for various weather conditions.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Sizes and Configurations:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Automatic sensor glass doors can be customized to fit any entryway, with various sizes and configurations to accommodate your business’s specific needs.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Glass Types:",
+    description: `Choose from clear, tinted, or frosted glass options to achieve the desired level of visibility, privacy, durability, and security while enhancing the aesthetics of your entrance.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Frame Finishes:",
+    description:
+      "Select from a range of frame finishes, including anodized aluminum, painted, or powder-coated options, to match your business’s branding and architectural style.",
+  },
+  {
+    name: "Sensor Technology:",
+    description:
+      "Automatic sensor glass doors can be equipped with various sensor types, including infrared, radar, or touchless sensors, providing flexibility in operation and convenience.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Traffic Flow:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Evaluate the expected traffic flow at your entrance to determine the appropriate type of door (sliding, swinging, or telescopic) and size to accommodate high volumes of visitors.",
   },
   {
-    name: "Easy Installation:",
+    name: "Design Preferences:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Choose a design that aligns with your business’s branding and aesthetic goals. Consider glass types, frame finishes, and overall appearance to create an inviting atmosphere.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Security Requirements:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Assess your security needs to ensure that the door you choose includes advanced locking mechanisms and is compatible with access control systems if necessary.",
+  },
+  {
+    name: "Budget:",
+    description:
+      "Automatic sensor glass doors come in a range of price points. Establish a budget that considers both initial installation costs and long-term maintenance expenses while maximizing value.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Sliding Automatic Glass Doors:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "These doors slide open horizontally, providing a wide entrance that is perfect for busy retail environments or commercial buildings. They are easy to operate and save space compared to traditional swinging doors.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Swinging Automatic Glass Doors:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Swinging doors open outward or inward, providing an elegant solution for entrances where space allows. They are ideal for hotels and upscale retail stores, offering both functionality and style.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Telescopic Automatic Glass Doors:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Telescopic doors feature multiple panels that slide open in a compact manner, allowing for even wider openings. They are perfect for high-traffic areas that require maximum accessibility.",
   },
 ];
 
@@ -142,18 +153,21 @@ export const Automaticsensorglass = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/automatic-sensor-glass-door.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">
+            AUTOMATIC SENSOR GLASS DOORS
+          </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC SENSOR GLASS
+              DOORS
             </h2>
           </div>
         </div>
@@ -164,26 +178,33 @@ export const Automaticsensorglass = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Automatic Sensor Glass Door
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Enhance Your Business's Accessibility and Style with Automatic
+              Sensor Glass Doors
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Automatic sensor glass doors are an ideal solution for businesses
+              seeking to enhance accessibility, improve energy efficiency, and
+              create an inviting atmosphere. Equipped with advanced motion
+              sensors, these doors automatically open and close as customers
+              approach, providing a seamless entry experience. Suitable for a
+              variety of commercial settings, including retail stores, hotels,
+              offices, and hospitals, automatic sensor glass doors offer a
+              modern touch while ensuring security and convenience. Elevate your
+              business’s entrance with sleek, functional automatic sensor glass
+              doors.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/automatic-sensor-glass-door.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +215,20 @@ export const Automaticsensorglass = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What is an Automatic Sensor Glass Door?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            An automatic sensor glass door is a type of entrance system that
+            utilizes motion sensors to detect approaching individuals. Once
+            motion is detected, the door opens automatically, allowing for
+            hands-free access. These doors are typically made of glass,
+            providing visibility and an open feel while enhancing the overall
+            aesthetic of your building. Ideal for high-traffic areas, automatic
+            sensor glass doors are both functional and stylish, making them a
+            popular choice for businesses looking to modernize their entrances.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Benefits of Installing Automatic Sensor Glass Doors
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +247,7 @@ export const Automaticsensorglass = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials Used for Automatic Sensor Glass Doors
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +265,7 @@ export const Automaticsensorglass = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Automatic Sensor Glass Doors
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +281,8 @@ export const Automaticsensorglass = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Automatic Sensor Glass Door for Your
+            Business
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +298,37 @@ export const Automaticsensorglass = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+            Installation & Maintenance of Automatic Sensor Glass Doors
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            To ensure optimal performance and safety, automatic sensor glass
+            doors should be installed by qualified professionals. Proper
+            installation guarantees smooth operation and compliance with safety
+            regulations.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Routine Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Regular maintenance is essential for keeping your automatic sensor
+            glass doors in optimal condition. This includes checking sensor
+            functionality, lubricating moving parts, and inspecting seals for
+            wear.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Safety Inspections:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Conduct routine safety inspections to ensure that all safety
+            features, such as automatic reversal and sensor sensitivity, are
+            functioning correctly. Regular checks can prevent accidents and
+            enhance the lifespan of the doors.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Automatic Sensor Glass Doors
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +343,13 @@ export const Automaticsensorglass = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Automatic sensor glass doors provide an exceptional blend of
+            accessibility, energy efficiency, and modern aesthetics for any
+            business. By investing in these advanced entrance systems, you can
+            create a welcoming environment for your customers while ensuring
+            safety and convenience. Upgrade your business’s entrance with
+            automatic sensor glass doors and experience the benefits of modern
+            technology and design.
           </div>
         </div>
       </section>

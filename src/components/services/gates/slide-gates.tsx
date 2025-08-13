@@ -5,98 +5,104 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space Efficiency:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Sliding gates do not require additional space to swing open, making them perfect for driveways or areas with limited room.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "Built with durable materials, sliding gates provide a solid barrier against unauthorized access, increasing safety for your property.",
   },
   {
-    heading: "Customization:",
+    heading: "Versatile Designs:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Available in various materials such as aluminum, steel, and wood, sliding gates can be customized to match your property's aesthetic.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Smooth Operation:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "Equipped with advanced mechanisms, sliding gates open and close smoothly, ensuring ease of use.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Weather Resistance:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "High-quality materials and coatings protect against rust and corrosion, ensuring durability in various weather conditions.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Steel:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Steel sliding gates are highly durable and offer robust security, making them suitable for commercial and industrial applications.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminum:",
+    description: `Lightweight and rust-resistant, aluminum sliding gates provide a stylish and durable option for residential properties.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Wood:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Wooden sliding gates add a classic look and can be customized for aesthetic appeal, though they may require more maintenance.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Finishes:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Choose from various finishes, including powder-coated, painted, or stained options to enhance your gate's appearance.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Colors:",
+    description: `Select from a wide palette of colors to match your property's design and personal preferences.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Automation Features:",
+    description:
+      "Add automation features such as remote access, intercom systems, or sensors for added convenience and security.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Automated Options:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Many sliding gates can be equipped with automation features, allowing for remote access and enhanced convenience.",
   },
   {
-    name: "Easy Installation:",
+    name: "Customization:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Options for finishes, colors, and additional features like intercom systems allow you to create a gate that fits your style and needs.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Low Maintenance:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "With fewer moving parts compared to swing gates, sliding gates often require less maintenance while providing reliable performance.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Single Sliding Gates:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "A single sliding gate consists of one panel that slides open to one side, ideal for residential and smaller commercial spaces.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Bi-parting Sliding Gates:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "These gates consist of two panels that slide open in opposite directions, providing a wider opening for larger vehicles.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Telescopic Sliding Gates:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "These gates feature multiple panels that slide together, allowing for maximum opening width in limited space.",
+  },
+  {
+    heading: "Stacking Sliding Gates:",
+    description:
+      "Stacking gates fold back into a compact area when opened, offering a space-efficient solution for high-traffic locations.",
   },
 ];
 
@@ -142,18 +148,18 @@ export const Slidegates = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/sliding-gate-automation.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">SLIDING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;SLIDING GATES
             </h2>
           </div>
         </div>
@@ -164,26 +170,26 @@ export const Slidegates = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Static Title
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Maximize Space and Security with Sliding Gates
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Sliding gates are an innovative and efficient solution for
+              property access, ideal for both residential and commercial
+              applications. Designed to save space while providing robust
+              security, these gates combine practicality with style.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/sliding-gate-automation.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +200,16 @@ export const Slidegates = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What Are Sliding Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            Sliding gates operate by moving along a track, sliding open
+            horizontally instead of swinging outward or inward. This design
+            makes them an excellent choice for properties with limited space for
+            gate operation.{" "}
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Key Benefits of Sliding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +228,7 @@ export const Slidegates = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials Used for Sliding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +246,7 @@ export const Slidegates = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Sliding Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +262,7 @@ export const Slidegates = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            Why Choose Sliding Gates?
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -278,12 +284,13 @@ export const Slidegates = () => {
             Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            Professional installation is recommended to ensure the gate operates
+            smoothly and meets safety standards. Regular maintenance, including
+            checking tracks and lubrication, will help prolong the gate’s
+            lifespan.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Sliding Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +305,10 @@ export const Slidegates = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Investing in sliding gates is a smart choice for enhancing security,
+            maximizing space, and improving the aesthetic appeal of your
+            property. Explore our selection of high-quality sliding gates to
+            find the perfect solution for your needs!
           </div>
         </div>
       </section>

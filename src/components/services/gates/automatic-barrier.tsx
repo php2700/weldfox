@@ -5,98 +5,109 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Enhanced Security:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Automatic barriers provide a robust security solution for properties, preventing unauthorized vehicles from entering restricted areas. Their visible presence acts as a deterrent to potential intruders, enhancing overall safety, control, and peace of mind.",
   },
   {
-    heading: "Security:",
+    heading: "Improved Traffic Management:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "By controlling the flow of vehicles, automatic barriers help manage congestion in busy areas. This is particularly beneficial in parking lots, event venues, and commercial properties, ensuring a smoother traffic flow.",
   },
   {
-    heading: "Customization:",
+    heading: "Convenience and Accessibility:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "With various operating mechanisms, including remote controls and automatic systems, automatic barriers offer convenient access for authorized vehicles. This reduces wait times and enhances the overall experience for users.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Durability and Low Maintenance:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "Constructed from high-quality materials, automatic barriers are designed to withstand harsh weather conditions and heavy usage. They require minimal maintenance, making them a cost-effective solution for property owners.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Integration with Access Control Systems:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Automatic barriers can easily integrate with existing access control systems, allowing for seamless operation. This provides an added layer of security and allows for tracking and monitoring of vehicle access.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Steel:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Steel barriers are known for their strength and durability, making them ideal for high-security applications. They can withstand impact and provide long-lasting performance.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminium:",
+    description: `Lightweight yet sturdy, aluminum barriers are resistant to corrosion and rust, making them suitable for various environments. They are a popular choice for commercial and residential properties.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Composite Materials:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Some automatic barriers are made from composite materials, offering a balance between durability and weight. These materials can be designed to resist environmental wear while maintaining aesthetic appeal.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Sizes and Configurations:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Automatic barriers can be customized in size and configuration to fit your property. Whether you require a tall barrier for security or a compact design for limited spaces, options are available.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Operating Mechanisms:",
+    description: `Choose from various operating mechanisms, including remote controls, keypad entry, or integrated access control systems, to ensure the barrier meets your operational needs.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Finishes and Colors:",
+    description:
+      "Automatic barriers can be customized with different finishes and colors to match your property’s aesthetic. This enhances visual appeal while maintaining functionality.",
+  },
+  {
+    name: "Safety Features:",
+    description:
+      "Many automatic barriers come equipped with safety features such as sensors to prevent accidents, ensuring safe operation for vehicles and pedestrians.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Traffic Volume:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Assess the traffic volume at your property to determine the appropriate barrier (swing, sliding, or boom) that can efficiently manage vehicle access.",
   },
   {
-    name: "Easy Installation:",
+    name: "Security Needs:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Evaluate your security requirements to choose a barrier that meets your specific needs. Consider durability, height, and locking mechanisms for added protection.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Installation Space:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Measure the space to ensure the chosen barrier fits without obstructing access or visibility. Some barriers may require additional clearance for operation.",
+  },
+  {
+    name: "Budget:",
+    description:
+      "Automatic barriers come in various price ranges. Set a budget that includes both installation and long-term maintenance costs while ensuring you receive a high-quality product.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Swing Barriers:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Swing barriers operate on a pivot system, swinging open or closed to allow vehicle access. They are suitable for wider entrances and can be customized to various heights.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Sliding Barriers:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Sliding barriers move horizontally to open and close, making them ideal for tighter spaces. They are often used in parking garages and commercial properties where space is limited.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Boom Barriers:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Boom barriers consist of a long arm that raises and lowers to control access. They are commonly used in toll booths, parking lots, and security checkpoints, providing efficient and effective vehicle management.",
   },
 ];
 
@@ -142,18 +153,18 @@ export const Automaticbarrier = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/automatic-barriers.webp"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">AUTOMATIC BARRIES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC BARRIES
             </h2>
           </div>
         </div>
@@ -164,26 +175,32 @@ export const Automaticbarrier = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Automatic Barriers
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Enhance Security and Access Control with Automatic Barriers
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Automatic barriers are essential for enhancing security and
+              controlling access at various locations, including parking lots,
+              toll booths, commercial buildings, and residential areas. These
+              systems provide a reliable method for managing vehicle entry and
+              exit while ensuring safety and convenience. With advanced
+              technology, automatic barriers can be operated remotely or through
+              automated systems, making them an excellent investment for any
+              property owner. Discover how automatic barriers can improve your
+              security and access control while offering ease of use and peace
+              of mind.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/automatic-barriers.webp" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +211,20 @@ export const Automaticbarrier = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What Are Automatic Barriers?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            Automatic barriers are mechanical gates that raise and lower to
+            control vehicle access to specific areas. These barriers can be
+            operated through various methods, including remote controls, key
+            cards, or integrated access control systems. Automatic barriers are
+            typically made from durable materials, ensuring longevity and
+            reliable performance in high-traffic environments. Designed for both
+            safety and security, these barriers prevent unauthorized entry while
+            allowing authorized vehicles easy access.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Benefits of Installing Automatic Barriers
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -220,9 +241,8 @@ export const Automaticbarrier = () => {
               </div>
             ))}
           </div>
-
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Materials Used for Automatic Barriers
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +260,7 @@ export const Automaticbarrier = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Customization Options for Automatic Barriers
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +276,7 @@ export const Automaticbarrier = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Automatic Barrier for Your Property
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,20 +292,37 @@ export const Automaticbarrier = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+            Installation & Maintenance of Automatic Barriers
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            It is crucial to have automatic barriers installed by experienced
+            professionals to ensure optimal performance and compliance with
+            safety standards. Proper installation guarantees smooth operation
+            and longevity.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Routine Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Regular maintenance is essential for keeping automatic barriers in
+            optimal condition. This includes inspecting moving parts, checking
+            electronic components, and ensuring proper alignment.
+          </div>{" "}
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Safety Inspections:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Conduct routine safety inspections to ensure that all safety
+            features, such as sensors and emergency stops, are functioning
+            correctly. Regular checks can help prevent accidents and enhance the
+            lifespan of the barrier.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Types of Automatic Barriers
           </div>
-
           {useRolling?.map((ele) => (
             <>
               <div className="font-semibold mt-8 mb-4 text-[#000] ">
@@ -298,10 +335,12 @@ export const Automaticbarrier = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Automatic barriers provide an effective solution for enhancing
+            security and managing access at your property. By investing in these
+            advanced systems, you can create a safer environment for both your
+            customers and employees while improving traffic flow. Choose
+            automatic barriers to secure your entrance and elevate the overall
+            experience of your property.
           </div>
         </div>
       </section>

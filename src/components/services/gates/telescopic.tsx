@@ -5,98 +5,104 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Space-Saving Design:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Unlike traditional sliding gates, telescopic gates open by sliding multiple panels, requiring less space along the side of the opening.",
   },
   {
-    heading: "Security:",
+    heading: "Enhanced Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "Constructed from durable materials like steel or aluminum, telescopic gates provide a strong barrier against access, ensuring the safety of your property.",
   },
   {
-    heading: "Customization:",
+    heading: "Versatile Applications:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Suitable for various environments, from residential driveways to commercial loading docks, telescopic gates can adapt to any setting.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Smooth Operation:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "Equipped with high-quality tracks and rollers, these gates operate smoothly and quietly, providing effortless access.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Customizable Options:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Available in a variety of styles, colors, and finishes, telescopic gates can be tailored to fit your property’s aesthetic while meeting your functional needs.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Initial Site Assessment:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Before installation begins, a professional will conduct a thorough assessment of your property, including measuring the entryway, evaluating the ground’s slope, and identifying potential obstacles like walls or landscaping features. Key considerations include the width of the driveway or entrance, available space for the gate to retract, ground surface conditions (e.g., uneven terrain may require additional leveling or foundation work), and access to power supply if you plan to automate the gate.",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Design and Customization:",
+    description: `Once the site is assessed, you’ll work with the installer to choose the gate’s design, material, and features. Common materials for telescopic gates include steel (durable and secure, ideal for high-security needs), aluminum (lightweight, corrosion-resistant, and easy to maintain), and wood or composite (offering a more traditional look with modern strength). You can also select finishes, colors, and additional features such as automation, safety sensors, or access control systems.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Laying the Foundation and Installing the Track:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "A stable foundation is crucial for the smooth operation of a telescopic gate. Installers will lay the ground track along which the gate panels will slide, which may involve digging trenches for the track, pouring concrete to create a stable base, and installing the track mechanism while ensuring it’s level. Proper alignment of the track is critical for the gate to move smoothly without unnecessary wear and tear.",
   },
 ];
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Residential Properties:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Ideal for homeowners seeking a stylish and secure solution for driveways and garden entrances.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Commercial Use:",
+    description: `Perfect for businesses that require controlled access to parking lots, service areas, or loading docks where space is limited.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Industrial Facilities:",
+    description:
+      "Suitable for warehouses and industrial sites needing secure and efficient entry points.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Automation Features:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Many telescopic gates can be automated for remote access, enhancing convenience and control over entry.",
   },
   {
-    name: "Easy Installation:",
+    name: "Durability:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Built to withstand harsh weather conditions, these gates are designed for longevity and require minimal maintenance.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Aesthetic Appeal:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "The sleek design of telescopic gates adds modern elegance to any property, enhancing curb appeal.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Steel Telescopic Gates:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Steel is a popular choice for telescopic gates due to its strength and durability. Steel gates provide superior security and can be powder-coated for additional protection against rust and corrosion. They are ideal for both residential and commercial properties that require high-security solutions.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Aluminum Telescopic Gates:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Aluminum is lightweight yet sturdy, making it a great option for telescopic gates. It’s also naturally resistant to rust, which makes it a good choice for properties in coastal or high-moisture areas. Aluminum gates require little maintenance and are easier to automate due to their lighter weight.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Wooden Telescopic Gates:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "For those looking for a more traditional or rustic look, wooden telescopic gates are an excellent choice. While they require more maintenance compared to metal gates, they offer a warm, natural aesthetic that blends well with residential landscapes.",
+  },
+  {
+    heading: "Composite Materials:",
+    description:
+      "Composite gates combine the best properties of various materials, offering the appearance of wood with the durability of synthetic materials. They require little maintenance and are weather-resistant, making them a great choice for homeowners who want both style and longevity.",
   },
 ];
 
@@ -142,18 +148,18 @@ export const Telescopic = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/Telescopic-gate.jpeg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">TELESCOPIC GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;TELESCOPIC GATES
             </h2>
           </div>
         </div>
@@ -164,26 +170,26 @@ export const Telescopic = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Telescopic Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Maximize Access and Security with Telescopic Gates
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Telescopic gates are an innovative solution for property access
+              that combines space efficiency with robust security. Ideal for
+              both residential and commercial properties, these gates offer a
+              stylish and functional way to control entry while saving space.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/Telescopic-gate.jpeg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +200,16 @@ export const Telescopic = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What Are Telescopic Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            Telescopic gates are designed to slide open in sections, with each
+            panel stacking neatly behind the other. This unique design allows
+            for wider openings without requiring a large area for gate
+            operation, making them perfect for locations with limited space.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+            Key Benefits of Telescopic Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +228,7 @@ export const Telescopic = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+            Step-by-Step Telescopic Gate Installation Process
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +246,7 @@ export const Telescopic = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+            Applications of Telescopic Gates
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +262,7 @@ export const Telescopic = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            Why Choose Telescopic Gates?
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -274,16 +280,46 @@ export const Telescopic = () => {
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
             Installation and Maintenance
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Initial Site Assessment:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            Before installation begins, a professional will conduct a thorough
+            assessment of your property, including measuring the entryway,
+            evaluating the ground’s slope, and identifying potential obstacles
+            like walls or landscaping features. Key considerations include the
+            width of the driveway or entrance, available space for the gate to
+            retract, ground surface conditions (e.g., uneven terrain may require
+            additional leveling or foundation work), and access to power supply
+            if you plan to automate the gate.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Design and Customization:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Once the site is assessed, you’ll work with the installer to choose
+            the gate’s design, material, and features. Common materials for
+            telescopic gates include steel (durable and secure, ideal for
+            high-security needs), aluminum (lightweight, corrosion-resistant,
+            and easy to maintain), and wood or composite (offering a more
+            traditional look with modern strength). You can also select
+            finishes, colors, and additional features such as automation, safety
+            sensors, or access control systems.
+          </div>
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Laying the Foundation and Installing the Track:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            A stable foundation is crucial for the smooth operation of a
+            telescopic gate. Installers will lay the ground track along which
+            the gate panels will slide, which may involve digging trenches for
+            the track, pouring concrete to create a stable base, and installing
+            the track mechanism while ensuring it’s level. Proper alignment of
+            the track is critical for the gate to move smoothly without
+            unnecessary wear and tear.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+            Materials for Telescopic Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +334,10 @@ export const Telescopic = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Investing in a telescopic gate is a smart choice for those looking
+            to enhance security, save space, and improve the aesthetic appeal of
+            their property. Explore our selection of high-quality telescopic
+            gates to find the perfect fit for your needs!
           </div>
         </div>
       </section>

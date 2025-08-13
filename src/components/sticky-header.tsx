@@ -52,7 +52,7 @@ const StickyHeader = () => {
                     : "border-transparent"
                 }`}
               >
-                Blog
+                Gallery
               </a>
 
               <a
@@ -103,7 +103,7 @@ const StickyHeader = () => {
             className="text-[#1a2940] "
             onClick={toggleMenu}
           >
-            Blog
+            Gallery
           </Link>
           <Link
             to="/contact"

@@ -1,8 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Wrench, Phone, Mail } from "lucide-react";
+import { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
   const location = useLocation();
   const pathname = location.pathname;
 
@@ -13,15 +18,11 @@ const Header = () => {
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
               <Mail className="w-4 h-4 text-[#fcc729]" />
-              <span>sales@arkofabrications.com</span>
+              <span>info@metal4craft.com</span>
             </div>
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4 text-[#fcc729]" />
-              <span>+91 9036974070</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4 text-[#fcc729]" />
-              <span>+91 9036974061</span>
+              <span>+91 63630 91384</span>
             </div>
           </div>
         </div>
@@ -29,19 +30,18 @@ const Header = () => {
 
       <header className="z-50 bg-white backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center px-2 justify-between">
             <div className="flex items-center space-x-3">
               <div className=" rounded-lg flex items-center justify-center">
-                <Link to='/'><img
-                  src="/logo-1.jpeg"
-                  className="h-16 w-auto object-contain"
-                /></Link>
-                
+                <Link to="/">
+                  <img
+                    src="/logo-1.jpeg"
+                    className="h-16 w-auto object-contain"
+                  />
+                </Link>
               </div>
             </div>
-
-            {/* Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
+            <nav className="hidden lg:flex items-center space-x-8">
               <a
                 href="/"
                 className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
@@ -81,7 +81,7 @@ const Header = () => {
                     : "border-transparent"
                 }`}
               >
-                Blog
+                Gallery
               </a>
 
               <a
@@ -95,15 +95,52 @@ const Header = () => {
                 Contact
               </a>
             </nav>
-
-            {/* CTA Button */}
             <div className="hidden lg:flex items-center">
-              
-              <Button className="bg-[#fcc729] text-secondary-foreground px-6 py-3 text-sm font-bold rounded-3xl">
-                REQUEST A QUOTE
-              </Button>
+              <Link to="/contact">
+                <Button className="bg-[#fcc729] text-secondary-foreground px-6 py-3 text-sm font-bold rounded-3xl">
+                  REQUEST A QUOTE
+                </Button>
+              </Link>
+            </div>
+
+            <div
+              className="lg:hidden text-2xl text-[#1a2940]"
+              onClick={toggleMenu}
+            >
+              {menuOpen ? <FaTimes /> : <FaBars />}
             </div>
           </div>
+          {menuOpen && (
+            <div className="lg:hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4">
+              <Link to="/" className="text-[#1a2940] " onClick={toggleMenu}>
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="text-[#1a2940] "
+                onClick={toggleMenu}
+              >
+                About
+              </Link>
+              <Link
+                to="/services"
+                className="text-[#1a2940] "
+                onClick={toggleMenu}
+              >
+                Services
+              </Link>
+              <Link to="/blog" className="text-[#1a2940] " onClick={toggleMenu}>
+                Gallery
+              </Link>
+              <Link
+                to="/contact"
+                className="text-[#1a2940] "
+                onClick={toggleMenu}
+              >
+                Contact
+              </Link>
+            </div>
+          )}
         </div>
       </header>
     </>

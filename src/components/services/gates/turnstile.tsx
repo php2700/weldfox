@@ -5,44 +5,44 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Durability:",
+    heading: "Increased Security:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "Turnstiles act as a physical barrier, preventing unauthorized access and enhancing security in sensitive areas. This is especially important in environments where security is a top priority, such as government buildings, airports, and corporate offices.",
   },
   {
-    heading: "Security:",
+    heading: "Controlled Access:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "Turnstiles help manage the flow of people entering and exiting a facility, reducing congestion at entry points. This control contributes to a smoother entry process and minimizes potential safety hazards.",
   },
   {
-    heading: "Customization:",
+    heading: "Integration with Access Control Systems:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Many turnstiles can be seamlessly integrated with existing access control systems, allowing for efficient monitoring and management of access points. This integration enhances overall security and provides valuable data for operational analysis.",
   },
   {
-    heading: "Cost-Effectiveness:",
+    heading: "Cost-Effective Solution:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "By reducing the need for security personnel at entry points, turnstiles offer a cost-effective solution for access control. They enable businesses to allocate resources more efficiently while maintaining high-security standards.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Improved Safety:  ",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "Turnstiles help prevent overcrowding and ensure orderly access, creating a safer environment for employees and visitors. By controlling entry, they minimize the risk of accidents during peak times.",
   },
 ];
 
 const material = [
   {
-    name: "Mild Steel:",
+    name: "Stainless Steel:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "Stainless steel is a popular material for turnstiles due to its durability and resistance to corrosion. It is suitable for both indoor and outdoor applications, providing a modern and professional appearance",
   },
   {
-    name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    name: "Aluminum :",
+    description: `Aluminum turnstiles are lightweight and resistant to rust, making them ideal for environments where weight is a concern. They offer a cost-effective solution without sacrificing security.`,
   },
   {
-    name: "Powder Coating:",
+    name: "Plastic and Composite Materials:",
     description:
       "A durable finish option that enhances aesthetic appeal while providing additional protection.",
   },
@@ -50,53 +50,58 @@ const material = [
 
 const customization = [
   {
-    name: "Design Variations:",
+    name: "Size and Configuration:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Turnstiles can be customized to fit various entryway dimensions and operational needs, ensuring compatibility with your facility's layout.",
   },
   {
-    name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    name: "Finishes and Colors:",
+    description: `Choose from different finishes and colors to match your branding and enhance the aesthetic appeal of your entry points.`,
   },
   {
-    name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    name: "Access Control Integration:",
+    description: "Many turnstiles can be tailored to work seamlessly with existing access control systems, such as RFID readers, biometrics, and ticketing systems, enhancing security and efficiency.",
   },
 ];
 
 const gates = [
   {
-    name: "Versatile Designs:",
+    name: "Security Requirements:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "Assess your facility's security needs to determine the appropriate type of turnstile (full height, half height, optical, or tripod) that will provide the desired level of protection.",
   },
   {
-    name: "Easy Installation:",
+    name: "Traffic Volume:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "Evaluate the expected traffic volume at entry points to choose a turnstile that can efficiently manage the flow of people without causing delays",
   },
   {
-    name: "Weather Resistance:",
+    name: "Budget:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "Turnstiles vary in price, so establish a budget that includes initial costs and ongoing maintenance to ensure a high-quality product that meets your operational needs.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Full Height Turnstiles:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "These robust turnstiles provide maximum security, extending from floor to ceiling. They are ideal for high-security applications, such as prisons and military installations, where unauthorized entry must be prevented.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Half Height Turnstiles:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Half-height turnstiles are suitable for environments where complete enclosure isn’t necessary. They provide a good balance of security and ease of access, making them popular in office buildings and transportation hubs.",
   },
   {
-    heading: "Industrial Applications:",
+    heading: "Optical Turnstiles:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Optical turnstiles utilize infrared sensors to detect when an individual passes through. They allow for high-speed entry and are often used in corporate settings, museums, and high-end retail environments where aesthetics and efficiency are important.",
+  },
+  {
+    heading: "Tripod Turnstiles:",
+    description:
+      "Tripod turnstiles feature three rotating arms, allowing only one person to enter at a time. They are commonly used in public transit systems and events, where managing access is crucial.",
   },
 ];
 
@@ -142,18 +147,18 @@ export const Turnstile = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/Turnstile.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">MS GATES</div>
+          <div className="text-7xl text-white font-bold">TURNSTILES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;TURNSTILES
             </h2>
           </div>
         </div>
@@ -164,26 +169,23 @@ export const Turnstile = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-              MS Gates
+              Turnstile
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Secure Your Property with Durable MS Gates
+              Turnstiles – Your Solution for Enhanced Security and Access Control
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+             Turnstiles are essential security features designed to control access in various settings, including corporate offices, public transportation, stadiums, and more. They provide a physical barrier to unauthorized entry while allowing seamless access for authorized individuals. By implementing high-quality turnstiles, businesses can enhance security, improve safety, and streamline the flow of foot traffic in high-traffic areas.
             </p>
           </div>
 
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg" // Change to your image path
+              src="/Turnstile.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
@@ -194,16 +196,15 @@ export const Turnstile = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            What Are MS Gates?
+            What Are Turnstiles?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            Turnstiles are mechanical gates that regulate entry into secure areas. They typically consist of rotating arms or barriers that allow only one person to pass at a time. Available in various designs, including full height, half height, optical, and tripod turnstiles, they can be integrated with various access control systems, such as RFID, biometric scanners, or ticketing systems, to enhance security further.
+
+
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-            Key Benefits of MS Gates
+           Benefits of Using Turnstiles
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -222,7 +223,7 @@ export const Turnstile = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Materials Used in MS Gates
+           Materials Used for Turnstiles
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -240,7 +241,7 @@ export const Turnstile = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Customization Options
+           Customization Options for Turnstiles
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -256,7 +257,7 @@ export const Turnstile = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Why Choose MS Gates?
+            How to Choose the Right Turnstile for Your Facility
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {gates?.map((ele) => (
@@ -272,18 +273,28 @@ export const Turnstile = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-            Installation and Maintenance
+           Installation & Maintenance of Turnstiles
           </div>
-          <div className="text-lg font-semibold my-2 text-[#000]">
-            Installation:
+          <div className="text-lg font-semibold mt-4 text-[#000]">
+            Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            Proper installation is crucial for optimal performance and security. It is recommended to hire experienced professionals to ensure compliance with safety standards and functionality.
+          </div>
+           <div className="text-lg font-semibold mt-4 text-[#000]">
+            Routine Maintenance:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            Regular maintenance is essential to keep turnstiles in optimal condition. This includes checking mechanical components, ensuring proper alignment, and maintaining electronic systems.
+          </div>
+           <div className="text-lg font-semibold mt-4 text-[#000]">
+            Software Updates:
+          </div>
+          <div className="text-[15px] font-[400] my-2">
+            If your turnstiles are integrated with software systems, it is important to perform regular updates to ensure compatibility and security.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-            Applications of MS Gates
+           Types of Turnstiles
           </div>
 
           {useRolling?.map((ele) => (
@@ -298,10 +309,7 @@ export const Turnstile = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Turnstiles are a vital investment for enhancing security and managing access in various environments. By choosing high-quality turnstiles, businesses can improve safety, streamline operations, and control entry effectively. Select the right turnstile solutions to optimize your facility's security and accessibility.
           </div>
         </div>
       </section>

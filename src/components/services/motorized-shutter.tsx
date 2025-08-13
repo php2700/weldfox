@@ -91,7 +91,7 @@ export const MotorizedShutters = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/manual-rolling-shutter.jpg"
+          src="/motorized-rolling-shutters.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -132,7 +132,7 @@ export const MotorizedShutters = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/manual-rolling-shutter.jpg"
+              src="/motorized-rolling-shutters.jpg"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />
