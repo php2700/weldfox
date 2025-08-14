@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import CheckIcon from '@mui/icons-material/Check';
 
 export const AboutDescription = () => {
   return (
@@ -35,10 +36,10 @@ export const AboutDescription = () => {
           executed to the highest standards.
         </p>
         <div className="grid grid-cols-2 gap-8 my-4">
-          <div>Entrance Automation</div>
-          <div>Quality Assurance</div>
-          <div>General Fabrication e</div>
-          <div>Rolling Shutters</div>
+          <div><CheckIcon className="text-[#fcc729] mr-2"  />Entrance Automation</div>
+          <div><CheckIcon className="text-[#fcc729] mr-2"  />Quality Assurance</div>
+          <div><CheckIcon className="text-[#fcc729] mr-2"  />General Fabrication</div>
+          <div><CheckIcon className="text-[#fcc729] mr-2"  />Rolling Shutters</div>
         </div>
       </div>
     </section>

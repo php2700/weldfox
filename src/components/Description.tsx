@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Description = () => {
   return (
@@ -33,12 +34,14 @@ export const Description = () => {
           needs of both residential and commercial clients.
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-start gap-4 mb-12 mt-12">
+          <Link to='/about'>
           <Button
           
             className="bg-[#fcc729] hover:bg-secondary/90 text-secondary-foreground px-12 py-10 text-lg font-bold"
           >
             DISCOVER MORE
           </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Wrench, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -44,9 +45,11 @@ const Footer = () => {
             Metal4craftT Automation delivers quality craftsmanship, blending timeless
             design with modern innovation.
           </p>
+          <Link to='/contact'>
           <button className="bg-[#fcc729] hover:bg-[black] px-10 py-6 font-semibold text-white rounded shadow">
             CONTACT US
           </button>
+          </Link>
         </div>
 
         {/* Links */}
@@ -104,14 +107,6 @@ const Footer = () => {
 
       <div className="border-t text-center py-6 text-sm">
         © Copyright 2025 by METAL4CRAFT
-        <div className="flex justify-center gap-4 mt-2">
-          <a href="#">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
-        </div>
       </div>
     </footer>
   );

@@ -7,18 +7,36 @@ export const Enuiry = () => {
     {
       question: "What types of entrance automation systems do you offer?",
       answer:
-        "We offer a wide range of entrance automation systems tailored to your needs.",
+        "We provide a range of entrance automation solutions, including automated gates, sliding doors, and access control systems, all customized to suit your specific needs.",
     },
     {
       question:
         "Are your rolling shutters suitable for both residential and commercial properties?",
       answer:
-        "Yes, our rolling shutters are designed to provide security and weather protection for both residential and commercial spaces, with various design options to match your property's style.",
+        "Yes, our rolling shutters are designed to provide security and weather protection for both residential and commercial spaces, with various design options to match the property’s style.",
     },
     {
-      question: "How long does it take to install an entrance automation?",
+      question:
+        "How long does it take to install an entrance automation system?",
       answer:
-        "Installation time varies depending on the system and site conditions, typically ranging from a few hours to a couple of days.",
+        "The installation time depends on the complexity of the project, but typically, it takes between 2-5 days. We ensure a smooth and efficient installation process.",
+    },
+    {
+      question:
+        "Can you customize fabrication projects to meet specific requirements?",
+      answer:
+        "Absolutely! Our general fabrication services are fully customizable, and we work closely with clients to deliver solutions that meet their unique specifications.",
+    },
+    {
+      question: "What materials do you use for your fabrication projects?",
+      answer:
+        "We work with a variety of materials, including steel, aluminum, and other metals, ensuring high durability and quality for all projects.",
+    },
+    {
+      question:
+        "Do you provide maintenance and repair services for rolling shutters and entrance automation systems?",
+      answer:
+        "Yes, we offer ongoing maintenance and repair services to ensure your systems operate smoothly and remain in top condition.",
     },
   ];
 
@@ -51,7 +69,9 @@ export const Enuiry = () => {
                 className="w-full text-left py-3 flex gap-2  text-lg font-semibold text-[#181614]"
               >
                 {" "}
-                <span >{openIndex === index ? "−" : "+"}</span>
+                <span className="text-[#fcc729] mr-2">
+                  {openIndex === index ? "−" : "+"}
+                </span>
                 <span>{faq.question}</span>
               </button>
               {openIndex === index && (

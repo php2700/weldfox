@@ -3,11 +3,13 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { useEffect, useRef, useState } from "react";
 import StickyHeader from "./sticky-header";
+import { FaTimes } from "react-icons/fa";
 
 const Blog = () => {
   const [showSticky, setShowSticky] = useState(false);
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
@@ -35,35 +37,14 @@ const Blog = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // const articles = [
-  //   {
-  //     title: "IT JOINS TWO PIECES OF METAL",
-  //     date: "20 AUG, 2020",
-  //     author: "Admin",
-  //     comments: "2 Comments",
-  //     excerpt:
-  //       "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-  //   },
-  //   {
-  //     title: "IT JOINS TWO PIECES OF METAL",
-  //     date: "20 AUG, 2020",
-  //     author: "Admin",
-  //     comments: "2 Comments",
-  //     excerpt:
-  //       "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-  //   },
-  //   {
-  //     title: "IT JOINS TWO PIECES OF METAL",
-  //     date: "20 AUG, 2020",
-  //     author: "Admin",
-  //     comments: "2 Comments",
-  //     excerpt:
-  //       "There are not many of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-  //   },
-  // ];
+  const handleView = (article, index) => {};
 
   const articles = [
-    '/Pargola.jpg','/grill-rolling-shutter.jpg','/Turnstile.jpg','/motorized-rolling-shutters.jpg','/gear-operated-rolling-shutters.jpg'
+    "/Pargola.jpg",
+    "/grill-rolling-shutter.jpg",
+    "/Turnstile.jpg",
+    "/motorized-rolling-shutters.jpg",
+    "/gear-operated-rolling-shutters.jpg",
   ];
   return (
     <div className="min-h-screen relative bg-background">
@@ -78,9 +59,6 @@ const Blog = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            {/* <div className="inline-block px-4 py-2 border-2 border-[#fcc729] text-[#fcc729] font-bold text-sm rounded mb-6">
-              Gallery
-            </div> */}
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
               GALLERY
             </h2>
@@ -92,42 +70,37 @@ const Blog = () => {
                 key={index}
                 className="bg-card rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                {/* Article Image Placeholder */}
-                <img src={article} className="h-80 bg-gradient-steel object-cover w-full" />
-                {/* <div className="h-48 bg-gradient-steel"></div> */}
-
-                {/* Article Content */}
-                {/* <div className="p-6">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                      <div className="flex items-center space-x-1">
-                        <User className="w-4 h-4 text-secondary" />
-                        <span>{article.author}</span>
-                      </div>
-                      <div className="flex items-center space-x-1">
-                        <MessageCircle className="w-4 h-4 text-secondary" />
-                        <span>{article.comments}</span>
-                      </div>
-                    </div>
-                    <div className="bg-secondary text-secondary-foreground px-3 py-1 text-sm font-bold rounded">
-                      {article.date}
-                    </div>
-                  </div>
-
-                  <h3 className="text-xl font-bold text-foreground mb-4 hover:text-primary transition-colors cursor-pointer">
-                    {article.title}
-                  </h3>
-
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {article.excerpt}
-                  </p>
-                </div> */}
+                <img
+                  src={article}
+                  className="h-80 bg-gradient-steel cursor-pointer object-cover w-full"
+                  onClick={() => {
+                    setSelectedImage(article);
+                  }}
+                />
               </div>
             ))}
           </div>
         </div>
       </section>
       <Footer />
+      {selectedImage && (
+        <div className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-[9999] overflow-auto p-4">
+          <div className="relative inline-block">
+            <button
+              className="absolute top-2 right-2 text-white text-3xl bg-black/50 rounded-full p-1 hover:bg-black/70"
+              onClick={() => setSelectedImage(null)}
+            >
+              <FaTimes />
+            </button>
+            <img
+              src={selectedImage}
+              className="w-auto h-[700px] object-cover rounded-xl"
+              alt="Preview"
+            />
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };

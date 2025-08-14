@@ -7,8 +7,39 @@ import Header from "./Header";
 import Footer from "./Footer";
 import StickyHeader from "./sticky-header";
 import { useEffect, useRef, useState } from "react";
+import axios from 'axios'
+import { Toast } from "./ui/toast";
+const API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
+
+const checkboxArray = [
+  "Entrance Gates",
+  "Garage Doors",
+  "Rolling Shutters",
+  "Motorised Skylights",
+  "Boom Barriers",
+  "Fire Rated Shutters & Doors",
+  "Loading Bay Equipments",
+  "Sectional Overhead Doors",
+  "Sliding Doors",
+  "Heavy Hangar Doors",
+  "Turnstiles",
+  "High Speed Doors",
+  "Others",
+];
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [company, setCompany] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [country, setCountry] = useState("");
+  const [products, setProducts] = useState([]);
+  const [message, setMessage] = useState("");
+  const [isAgree, setIsAgree] = useState(false);
+
   const contactInfo = [
     {
       icon: MapPin,
@@ -70,6 +101,55 @@ const Contact = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleProducts = (ele) => {
+    let newProducts = [...products];
+    if (newProducts.includes(ele)) {
+      newProducts = newProducts.filter((item) => item != ele);
+    } else {
+      newProducts.push(ele);
+    }
+    setProducts(newProducts);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // if (!products?.length) {
+    //   return;
+    // }
+    let obj = {
+      name,
+      email,
+      address,
+      state,
+      country,
+      mobile,
+      company,
+      city,
+      message,
+      isAgree,
+      products,
+    };
+
+    axios.post(`${API_BASE_URL}mail`,obj).then((res)=>{
+
+      console.log(res?.data)
+      setName("")
+      setEmail("")
+      setAddress("")
+      setState("")
+      setCompany("")
+      setCity("")
+      setIsAgree(false)
+      setMessage("")
+      setProducts([])
+      setCountry("")
+      setMobile("")
+    }).catch((err)=>{
+      console.log(err?.response)
+    })
+  };
+
   return (
     <div className="min-h-screen relative bg-background">
       <div
@@ -112,7 +192,7 @@ const Contact = () => {
               project, enabling us to assign the right team swiftly. You can
               simply provide your company name, your name, email, and phone
               number, or you can complete the form with additional details. An
-              Metal4craftT Automation representative will respond to your inquiry
+              Metal4craft Automation representative will respond to your inquiry
               promptly. For urgent assistance, please contact us directly. Thank
               you, and we look forward to working with you!
             </p>
@@ -128,9 +208,9 @@ const Contact = () => {
                   <div className="bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
                     Corporate Office
                   </div>
-                  <div className="bg-white hover:bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
+                  {/* <div className="bg-white hover:bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
                     Our Reach
-                  </div>
+                  </div> */}
                 </div>
 
                 <h2 className="text-2xl font-bold text-white">
@@ -141,25 +221,21 @@ const Contact = () => {
                   Address :
                 </p>
                 <p className="text-white text-[21px] my-4 font-[500]">
-                  Metal4craftT Automation
+                  Metal4craft Automation
                 </p>
                 <p className="text-white font-[400] ">
-                  Metal4craftT Automation Pvt. Ltd. 44, 12th Main, 2nd Phase, Royal
-                  Enclave, Jakkur post, Srirampura, Rachenahalli, Thanisandra,
-                  Bengaluru, Karnataka 560064
+                  Metal4craft Automation Pvt. Ltd. 44, 12th Main, 2nd Phase,
+                  Royal Enclave, Jakkur post, Srirampura, Rachenahalli,
+                  Thanisandra, Bengaluru, Karnataka 560064
                 </p>
 
                 <p className="text-white my-4 text-[19px] font-[500]">
                   Mobile Number
                 </p>
-                <p className="text-white text-[18px]">
-                  +91 63630 91384
-                </p>
+                <p className="text-white text-[18px]">+91 63630 91384</p>
 
                 <p className="text-white my-4 text-[19px] font-[500]">Email</p>
-                <p className="text-white text-[18px]">
-                  info@metal4craft.com
-                </p>
+                <p className="text-white text-[18px]">info@metal4craft.com</p>
 
                 <p className="text-white my-4 text-[19px] font-[500]">
                   Website
@@ -168,44 +244,68 @@ const Contact = () => {
               </div>
             </div>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  required
                   type="text"
                   placeholder="Name"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   type="email"
                   placeholder="Email"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={mobile}
+                  onChange={(e) => setMobile(e.target.value)}
+                  required
                   type="text"
                   placeholder="Mobile"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={company}
+                  onChange={(e) => setCompany(e.target.value)}
+                  required
                   type="text"
                   placeholder="Company Name"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
+                  required
                   type="text"
                   placeholder="Full Address"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
+                  required
                   type="text"
                   placeholder="City"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={state}
+                  onChange={(e) => setState(e.target.value)}
+                  required
                   type="text"
                   placeholder="State"
                   className="border rounded-lg p-2 w-full"
                 />
                 <input
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  required
                   type="text"
                   placeholder="Country"
                   className="border rounded-lg p-2 w-full"
@@ -213,62 +313,47 @@ const Contact = () => {
               </div>
 
               <div className="mt-4">
-                <label className="block font-semibold mb-2">
+                <label className="block font-semibold mb-2 ">
                   Select Products
                 </label>
-                <div className="grid grid-cols-2 gap-2">
-                  <label>
-                    <input type="checkbox" /> Entrance Gates
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Garage Doors
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Rolling Shutters
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Motorised Skylights
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Boom Barriers
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Fire Rated Shutters & Doors
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Loading Bay Equipments
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Sectional Overhead Doors
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Sliding Doors
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Heavy Hangar Doors
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Turnstiles
-                  </label>
-                  <label>
-                    <input type="checkbox" /> High Speed Doors
-                  </label>
-                  <label>
-                    <input type="checkbox" /> Others
-                  </label>
+                <div className="grid grid-cols-2 gap-2 ">
+                  {checkboxArray?.map((ele) => (
+                    <label>
+                      <input
+                        checked={products.includes(ele)}
+                        type="checkbox"
+                        onChange={() => {
+                          handleProducts(ele);
+                        }}
+                      />{" "}
+                      {ele}
+                    </label>
+                  ))}
                 </div>
               </div>
 
               <textarea
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
                 placeholder="Message"
                 className="border rounded-lg p-2 w-full mt-4"
               ></textarea>
               <div>
                 <label>
-                  <input type="checkbox" /> I agree to the terms and conditions.
+                  <input
+                    type="checkbox"
+                    checked={isAgree}
+                    onChange={(e) => setIsAgree(e.target.checked)}
+                    required
+                  />{" "}
+                  I agree to the terms and conditions.
                 </label>{" "}
               </div>
-              <button className="bg-[#fcc729] w-full text-white font-bold py-2 px-4 rounded-lg mt-4">
+              <button
+                type="submit"
+                className="bg-[#fcc729] w-full text-white font-bold py-2 px-4 rounded-lg mt-4"
+              >
                 Submit
               </button>
             </form>
