@@ -52,14 +52,35 @@ import { Roofingwork } from "./components/services/railings/roofing-work";
 import { Collapsable } from "./components/services/railings/collapsible-gate";
 import { Safety } from "./components/services/railings/safety-grill";
 import { RollingShutters } from "./components/services/rolling-shutter";
+import GeneralFabrication from "./components/general-fabrication";
+import EntranceAutomation from "./components/entrance-automation";
+import { Retracktable } from "./components/services/gates/retracktable-gate";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const queryClient = new QueryClient();
+const handleWhatsApp = () => {
+  const phoneNumber = "916363091384";
+  const message = "Hi Metal4craft Automation! we are looking for your service.";
+  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+  window.open(url, "_blank");
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <div className="fixed bottom-8 right-10 z-10">
+        <div
+          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center  cursor-pointer"
+          onClick={handleWhatsApp}
+        >
+          <WhatsAppIcon className="text-white rounded-full bg-green-500  w-8 h-8 cursor-pointer" />
+        </div>
+      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
@@ -101,7 +122,11 @@ const App = () => (
             element={<PowderCoatedShutters />}
           />
 
+          <Route path="/general-fabrication" element={<GeneralFabrication />} />
+          <Route path="/entrance-automation" element={<EntranceAutomation />} />
+
           {/* services-ms gates */}
+          <Route path="/retracktable" element={<Retracktable />} />
           <Route path="/ms-gates" element={<Msgates />} />
           <Route path="/ss-gates" element={<Ssgates />} />
           <Route path="/automatic-gates" element={<Automaticgates />} />

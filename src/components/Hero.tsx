@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Award, Clock } from "lucide-react";
 import { useState } from "react";
+import EastIcon from "@mui/icons-material/East";
+import WestIcon from "@mui/icons-material/West";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const slides = [
@@ -16,6 +19,7 @@ const Hero = () => {
         </>
       ),
       buttonText: "DISCOVER MORE",
+      url: "/about",
     },
     {
       image: "/aluminum-rolling-shutter.jpg",
@@ -28,7 +32,8 @@ const Hero = () => {
           </span>
         </>
       ),
-      buttonText: "LEARN MORE",
+      buttonText: "DISCOVER MORE",
+      url: "/about",
     },
   ];
 
@@ -59,13 +64,13 @@ const Hero = () => {
         onClick={prevSlide}
         className="absolute left-4 top-1/2  hover:bg-[#fcc729] hover:text-white transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
       >
-        ←
+        <WestIcon />
       </button>
       <button
         onClick={nextSlide}
         className="absolute hover:bg-[#fcc729] hover:text-white right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
       >
-        →
+        <EastIcon />
       </button>
       <div className="relative z-10 container mx-auto px-6 text-left">
         <div className="max-w-5xl mx-auto">
@@ -74,12 +79,14 @@ const Hero = () => {
           </h2>
 
           <div className="flex flex-col sm:flex-row items-center justify-start gap-4 mb-12 mt-12">
-            <Button
-              size="lg"
-              className="bg-[#fcc729] hover:bg-black text-white px-12 py-10 text-lg font-bold"
-            >
-              {currentSlideData.buttonText}
-            </Button>
+            <Link to={currentSlideData?.url}>
+              <Button
+                size="lg"
+                className="bg-[#fcc729] hover:bg-black text-white px-12 py-10 text-lg font-bold"
+              >
+                {currentSlideData.buttonText}
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

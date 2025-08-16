@@ -7,7 +7,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import StickyHeader from "./sticky-header";
 import { useEffect, useRef, useState } from "react";
-import axios from 'axios'
+import axios from "axios";
 import { Toast } from "./ui/toast";
 const API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
 
@@ -131,23 +131,25 @@ const Contact = () => {
       products,
     };
 
-    axios.post(`${API_BASE_URL}mail`,obj).then((res)=>{
-
-      console.log(res?.data)
-      setName("")
-      setEmail("")
-      setAddress("")
-      setState("")
-      setCompany("")
-      setCity("")
-      setIsAgree(false)
-      setMessage("")
-      setProducts([])
-      setCountry("")
-      setMobile("")
-    }).catch((err)=>{
-      console.log(err?.response)
-    })
+    axios
+      .post(`${API_BASE_URL}mail`, obj)
+      .then((res) => {
+        console.log(res?.data);
+        setName("");
+        setEmail("");
+        setAddress("");
+        setState("");
+        setCompany("");
+        setCity("");
+        setIsAgree(false);
+        setMessage("");
+        setProducts([]);
+        setCountry("");
+        setMobile("");
+      })
+      .catch((err) => {
+        console.log(err?.response);
+      });
   };
 
   return (
@@ -164,10 +166,13 @@ const Contact = () => {
         <img
           src="/Contact-us1.jpg"
           alt="About Us Banner"
-          className="w-full h-[200px] object-cover"
+          className="w-full h-[250px] object-cover"
         />
         <div className="absolute inset-0 bg-[#1a2940] opacity-20"></div>
-        <div className="absolute z-10 top-[150px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto ">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-7xl font-[900] text-white">CONTACT </div>
+        </div>
+        <div className="absolute z-10 top-[200px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto ">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 md:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; Contact
@@ -224,9 +229,9 @@ const Contact = () => {
                   Metal4craft Automation
                 </p>
                 <p className="text-white font-[400] ">
-                  Metal4craft Automation Pvt. Ltd. 44, 12th Main, 2nd Phase,
-                  Royal Enclave, Jakkur post, Srirampura, Rachenahalli,
-                  Thanisandra, Bengaluru, Karnataka 560064
+                  Metal4craft Automation Pvt. Ltd. Site No 9, Attur Village,
+                  yelahanka, Near Best Shot Badminton Academy, Yelahanka New
+                  Town, Bengaluru, Karnataka 560064
                 </p>
 
                 <p className="text-white my-4 text-[19px] font-[500]">
@@ -246,73 +251,107 @@ const Contact = () => {
 
             <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="Name"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  type="email"
-                  placeholder="Email"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={mobile}
-                  onChange={(e) => setMobile(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="Mobile"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="Company Name"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={address}
-                  onChange={(e) => setAddress(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="Full Address"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={city}
-                  onChange={(e) => setCity(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="City"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={state}
-                  onChange={(e) => setState(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="State"
-                  className="border rounded-lg p-2 w-full"
-                />
-                <input
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
-                  required
-                  type="text"
-                  placeholder="Country"
-                  className="border rounded-lg p-2 w-full"
-                />
+                <div>
+                  <label>Name</label>
+                  <input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="Name"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+
+                <div>
+                  <label>Email</label>
+
+                  <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                    type="email"
+                    placeholder="Email"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label>Mobile</label>
+
+                  <input
+                    value={mobile}
+                    onChange={(e) => setMobile(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="Mobile"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+
+                <div>
+                  <label>Company</label>
+
+                  <input
+                    value={company}
+                    onChange={(e) => setCompany(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="Company Name"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+
+                <div>
+                  <label>Address</label>
+
+                  <input
+                    value={address}
+                    onChange={(e) => setAddress(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="Full Address"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label>City</label>
+
+                  <input
+                    value={city}
+                    onChange={(e) => setCity(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="City"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label>State</label>
+
+                  <input
+                    value={state}
+                    onChange={(e) => setState(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="State"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
+                <div>
+                  <label>Country</label>
+
+                  <input
+                    value={country}
+                    onChange={(e) => setCountry(e.target.value)}
+                    required
+                    type="text"
+                    placeholder="Country"
+                    className="border rounded-lg p-2 w-full"
+                  />
+                </div>
               </div>
 
-              <div className="mt-4">
+              <div className="my-4">
                 <label className="block font-semibold mb-2 ">
                   Select Products
                 </label>
@@ -331,14 +370,17 @@ const Contact = () => {
                   ))}
                 </div>
               </div>
+              <div>
+                <label>Message</label>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                  placeholder="Message"
+                  className="border rounded-lg p-2 w-full "
+                ></textarea>
+              </div>
 
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-                placeholder="Message"
-                className="border rounded-lg p-2 w-full mt-4"
-              ></textarea>
               <div>
                 <label>
                   <input

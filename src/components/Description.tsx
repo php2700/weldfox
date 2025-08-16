@@ -19,7 +19,7 @@ export const Description = () => {
           Welcome to METAL4CRAFT AUTOMATION
         </p>
 
-        <h2 className="text-[50px] font-bold text-[#181614] leading-tight mb-6">
+        <h2 className="text-[50px] font-[900] text-[#181614] leading-tight mb-6">
           CRAFTING <br />
           EXCELLENCE IN <br />
           FABRICATION

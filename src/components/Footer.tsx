@@ -1,5 +1,11 @@
 import { Wrench, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -40,15 +46,22 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
         {/* Logo & About */}
         <div>
-          <img src="/logo-1.jpeg" alt="metal4craft" className="w-24 h-auto mb-4" />
-          <p className="mb-4 text-[15px] font-[500]" style={{lineHeight:'32px'}}>
-            Metal4craftT Automation delivers quality craftsmanship, blending timeless
-            design with modern innovation.
+          <img
+            src="/logo-1.jpeg"
+            alt="metal4craft"
+            className="w-24 h-auto mb-4"
+          />
+          <p
+            className="mb-4 text-[15px] font-[500]"
+            style={{ lineHeight: "32px" }}
+          >
+            Metal4craft Automation delivers quality craftsmanship, blending
+            timeless design with modern innovation.
           </p>
-          <Link to='/contact'>
-          <button className="bg-[#fcc729] hover:bg-[black] px-10 py-6 font-semibold text-white rounded shadow">
-            CONTACT US
-          </button>
+          <Link to="/contact">
+            <button className="bg-[#fcc729] hover:bg-[black] px-10 py-6 font-semibold text-white rounded shadow">
+              CONTACT US
+            </button>
           </Link>
         </div>
 
@@ -57,32 +70,56 @@ const Footer = () => {
           <h3 className="font-bold text-[20px] mb-3">LINKS</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/about" className="hover:text-[#fcc729] text-[15px] font-[500] " style={{lineHeight:'15px'}}>
+              <a
+                href="/about"
+                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                style={{ lineHeight: "15px" }}
+              >
                 › About
               </a>
             </li>
             <li>
-              <a href="#"  className="hover:text-[#fcc729] text-[15px] font-[500] " style={{lineHeight:'15px'}}>
+              <a
+                href="/general-fabrication"
+                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                style={{ lineHeight: "15px" }}
+              >
                 › General Fabrication
               </a>
             </li>
             <li>
-              <a href="#"  className="hover:text-[#fcc729] text-[15px] font-[500] " style={{lineHeight:'15px'}}>
+              <a
+                href="/entrance-automation"
+                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                style={{ lineHeight: "15px" }}
+              >
                 › Entrance Automation
               </a>
             </li>
             <li>
-              <a href="#"  className="hover:text-[#fcc729] text-[15px] font-[500] " style={{lineHeight:'15px'}}>
+              <a
+                href="/rolling-shutter"
+                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                style={{ lineHeight: "15px" }}
+              >
                 › Rolling Shutter
               </a>
             </li>
             <li>
-              <a href="/blog"  className="hover:text-[#fcc729] text-[15px] font-[500] " style={{lineHeight:'15px'}}>
+              <a
+                href="/blog"
+                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                style={{ lineHeight: "15px" }}
+              >
                 › Blog
               </a>
             </li>
             <li>
-              <a href="/contact"  className="hover:text-[#fcc729] text-[15px] font-[500] " style={{lineHeight:'15px'}}>
+              <a
+                href="/contact"
+                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                style={{ lineHeight: "15px" }}
+              >
                 › Contact Us
               </a>
             </li>
@@ -91,22 +128,57 @@ const Footer = () => {
 
         <div>
           <h3 className="font-bold text-[20px] mb-3">CONTACT</h3>
-          <p className="mb- 2 text-[15px] font-[500] " style={{lineHeight:'32px'}}>
-            📍  METAL4CRAFT AUTOMATION
+          <p
+            className="mb- 2 text-[15px] font-[500] "
+            style={{ lineHeight: "32px" }}
+          >
+            📍 METAL4CRAFT AUTOMATION
             <br />
-            44, 12th Main, 2nd Phase, Royal Enclave,
+            Site No 9, Attur Village, yelahanka,
             <br />
-            Jakkur Post, Srirampura, Rachenahalli, Thanisandra,
+            Near Best Shot Badminton Academy, Yelahanka New Town,
             <br />
             Bengaluru, Karnataka 560064
           </p>
-          <p className="mb- 2 text-[15px] font-[500]" style={{lineHeight:'32px'}}>📧 info@metal4craft.com</p>
-          <p className="mb- 2 text-[15px] font-[500]" style={{lineHeight:'32px'}}>📞 +91 63630 91384</p>
+          <p
+            className="mb- 2 text-[15px] font-[500]"
+            style={{ lineHeight: "32px" }}
+          >
+            📧 info@metal4craft.com
+          </p>
+          <p
+            className="mb- 2 text-[15px] font-[500]"
+            style={{ lineHeight: "32px" }}
+          >
+            📞 +91 63630 91384
+          </p>
         </div>
       </div>
 
-      <div className="border-t text-center py-6 text-sm">
-        © Copyright 2025 by METAL4CRAFT
+      <div className="border-t py-6 text-sm flex items-center justify-center gap-6">
+        <span>© Copyright 2025 by METAL4CRAFT AUTOMATION</span>
+        <div className="flex gap-4">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faFacebookF}
+              className="w-4 h-4 p-2 rounded-full hover:bg-[#fcc729]"
+            />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faInstagram}
+              className="w-4 h-4 p-2 rounded-full hover:bg-[#fcc729]"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   );

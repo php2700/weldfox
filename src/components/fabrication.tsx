@@ -33,7 +33,7 @@ export const Fabrication = () => {
           <p className="text-3xl font-[800]"> SINCE 2014</p>
         </div>
       </div>
-      <div className="absolute bottom-4 right-4 flex space-x-4">
+      {/* <div className="absolute bottom-4 right-4 flex space-x-4">
         <a
           href="https://wa.me/your-whatsapp-number"
           target="_blank"
@@ -52,7 +52,7 @@ export const Fabrication = () => {
         >
           <img src="path-to-email-icon" alt="Email" className="w-10 h-10" />
         </a>
-      </div>
+      </div> */}
     </div>
   );
 };

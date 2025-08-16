@@ -99,13 +99,13 @@ export const PerfortedRollingShutters = () => {
         <div className="absolute inset-0 flex items-center justify-center z-10 ">
           <div className="text-7xl font-[900] text-white">
             {" "}
-            PERFORTED ROLLING SHUTTERS
+            PERFORATED ROLLING SHUTTERS
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;  PERFORTED ROLLING SHUTTERS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;  PERFORATED ROLLING SHUTTERS
             </h2>
           </div>
         </div>

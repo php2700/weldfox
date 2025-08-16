@@ -13,6 +13,7 @@ import { News } from "@/components/news";
 import StickyHeader from "@/components/sticky-header";
 import { Fabrication } from "@/components/fabrication";
 
+
 const Index = () => {
   const [showSticky, setShowSticky] = useState(false);
   const lastScrollY = useRef(0);
@@ -57,6 +58,7 @@ const Index = () => {
 
       {/* Sticky Header */}
       {showSticky && <StickyHeader />}
+ 
 
       <main>
         <Hero />
