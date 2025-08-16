@@ -146,7 +146,7 @@ const GeneralFabrication = () => {
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; GENERAL FABRICATION
-              SERVICESLLING SHUTTERS
+              SERVICES
             </h2>
           </div>
         </div>
