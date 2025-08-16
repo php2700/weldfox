@@ -58,6 +58,8 @@ import { Retracktable } from "./components/services/gates/retracktable-gate";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import RollShutters from "./components/rolling-shutters";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const queryClient = new QueryClient();
 const handleWhatsApp = () => {
@@ -73,6 +75,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
+      <ToastContainer/>
       <Sonner />
       <div className="fixed bottom-8 right-10 z-10">
         <div

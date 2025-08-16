@@ -40,11 +40,45 @@ const Blog = () => {
   const handleView = (article, index) => {};
 
   const articles = [
-    "/Pargola.jpg",
-    "/grill-rolling-shutter.jpg",
-    "/Turnstile.jpg",
-    "/motorized-rolling-shutters.jpg",
-    "/gear-operated-rolling-shutters.jpg",
+    "/gallery-1.jpeg",
+    "/gallery-2.jpeg",
+    "/gallery-3.jpeg",
+    "/gallery-4.jpeg",
+    "/gallery-5.jpeg",
+    "/gallery-6.jpeg",
+    "/gallery-7.jpeg",
+    "/gallery-8.jpeg",
+    "/gallery-9.jpeg",
+    "/gallery-10.jpeg",
+    "/gallery-11.jpeg",
+    "/gallery-12.jpeg",
+    "/gallery-13.jpeg",
+    "/gallery-14.jpeg",
+    "/gallery-15.jpeg",
+    "/gallery-16.jpeg",
+    "/gallery-17.jpeg",
+    "/gallery-18.jpeg",
+    "/gallery-19.jpeg",
+    "/gallery-20.jpeg",
+    "/gallery-21.jpeg",
+    "/gallery-22.jpeg",
+    "/gallery-23.jpeg",
+    "/gallery-24.jpeg",
+    "/gallery-25.jpeg",
+    "/gallery-26.jpeg",
+    "/gallery-27.jpeg",
+    "/gallery-28.jpeg",
+    "/gallery-29.jpeg",
+    "/gallery-30.jpeg",
+    "/gallery-31.jpeg",
+    "/gallery-32.jpeg",
+    "/gallery-33.jpeg",
+    "/gallery-34.jpeg",
+    "/gallery-35.jpeg",
+    "/gallery-36.jpeg",
+    "/gallery-37.jpeg",
+    "/gallery-38.jpeg",
+    "/gallery-39.jpeg",
   ];
   return (
     <div className="min-h-screen relative bg-background">
@@ -100,7 +134,6 @@ const Blog = () => {
           </div>
         </div>
       )}
-
     </div>
   );
 };

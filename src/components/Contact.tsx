@@ -9,6 +9,7 @@ import StickyHeader from "./sticky-header";
 import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { Toast } from "./ui/toast";
+import { toast } from "react-toastify";
 const API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
 
 const checkboxArray = [
@@ -134,7 +135,9 @@ const Contact = () => {
     axios
       .post(`${API_BASE_URL}mail`, obj)
       .then((res) => {
-        console.log(res?.data);
+        toast.success("Added successfully", {
+          position: "top-right",
+        });
         setName("");
         setEmail("");
         setAddress("");
