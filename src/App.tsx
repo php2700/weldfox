@@ -57,6 +57,7 @@ import EntranceAutomation from "./components/entrance-automation";
 import { Retracktable } from "./components/services/gates/retracktable-gate";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import RollShutters from "./components/rolling-shutters";
 
 const queryClient = new QueryClient();
 const handleWhatsApp = () => {
@@ -124,6 +125,7 @@ const App = () => (
 
           <Route path="/general-fabrication" element={<GeneralFabrication />} />
           <Route path="/entrance-automation" element={<EntranceAutomation />} />
+          <Route path='/roll-shutters' element={<RollShutters/>} />
 
           {/* services-ms gates */}
           <Route path="/retracktable" element={<Retracktable />} />

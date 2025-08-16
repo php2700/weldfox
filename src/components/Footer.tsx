@@ -98,7 +98,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="/rolling-shutter"
+                href="/roll-shutters"
                 className="hover:text-[#fcc729] text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >

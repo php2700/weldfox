@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Offer = () => {
   return (
     <section className="bg-white py-20 px-4">
@@ -30,9 +32,11 @@ export const Offer = () => {
                 cutting-edge entrance automation systems, offering seamless
                 access control, remote operation, and customized designs.
               </p>
+              <Link to='/entrance-automation'>
               <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
                 READ MORE
               </div>
+              </Link>
             </div>
           </div>
 
@@ -52,9 +56,11 @@ export const Offer = () => {
                 break-ins and weather, with smooth operation, energy efficiency,
                 and versatile designs.
               </p>
+              <Link to='/roll-shutters'>
                 <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
                 READ MORE
               </div>
+              </Link>
             </div>
           </div>
 
@@ -75,9 +81,11 @@ export const Offer = () => {
                 engineering, tailored to meet the specific needs of your
                 project.
               </p>
+              <Link to='/general-fabrication'>
                 <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
                 READ MORE
               </div>
+              </Link>
             </div>
           </div>
         </div>
