@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   const slides = [
     {
-      image: "/dock-shelters.webp",
+      image: "/banner2.jpg",
       text: (
         <>
           <span className="text-[#fff] text-7xl">SECURE, STYLISH,</span>

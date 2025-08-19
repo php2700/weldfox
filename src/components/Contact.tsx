@@ -156,7 +156,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen relative bg-background">
+    <div className="min-h-screen relative bg-background z-0">
       <div
         className={`transition-opacity duration-300 ${
           showSticky ? "opacity-0 pointer-events-none" : "opacity-100"

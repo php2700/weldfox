@@ -60,8 +60,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import RollShutters from "./components/rolling-shutters";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
+import { FaFilePdf } from 'react-icons/fa';
 
 const queryClient = new QueryClient();
+
 const handleWhatsApp = () => {
   const phoneNumber = "916363091384";
   const message = "Hi Metal4craft Automation! we are looking for your service.";
@@ -71,18 +73,36 @@ const handleWhatsApp = () => {
   window.open(url, "_blank");
 };
 
+const handleTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
-      <ToastContainer/>
+      <ToastContainer />
       <Sonner />
-      <div className="fixed bottom-8 right-10 z-10">
+      <div className="fixed bottom-20 right-10 z-[1010] flex flex-col gap-4">
         <div
-          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center  cursor-pointer"
+          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center cursor-pointer w-14 h-14"
           onClick={handleWhatsApp}
         >
-          <WhatsAppIcon className="text-white rounded-full bg-green-500  w-8 h-8 cursor-pointer" />
+          <WhatsAppIcon className="text-white bg-green-500 w-7 h-7 rounded-full" />
+        </div>
+        <div
+          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center cursor-pointer w-14 h-14"
+          onClick={() => {
+            const pdfUrl = '/Metal4Craft Brochure.pdf';
+            const link = document.createElement('a');
+            link.href = pdfUrl;
+            link.download = 'Metal4Craft Brochure.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
+        >
+          <FaFilePdf className="text-white bg-red-500 w-7 h-7 rounded-full" />
         </div>
       </div>
       <BrowserRouter>

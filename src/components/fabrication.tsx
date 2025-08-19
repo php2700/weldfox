@@ -1,8 +1,8 @@
 export const Fabrication = () => {
   return (
     <div
-      className="bg-cover bg-center opacity-80 color-black-500 h-screen"
-      style={{ backgroundImage: "url('/automatic-barriers.webp')" }}
+      className="bg-cover bg-center opacity-80 color-black-900 h-screen"
+      style={{ backgroundImage: "url('/business.jpg')" }}
     >
       <div className="flex flex-col lg:flex-row items-center lg:justify-between h-full gap-12 text-white px-10 max-w-6xl mx-auto">
         <div className="text-left">

@@ -153,8 +153,7 @@ export const GalvanizedShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
-          </div>
+Galvanized rolling shutters are manufactured from premium-grade steel and coated with a protective layer of zinc. This galvanization process enhances their strength, durability, and resistance to rust and corrosion. Ideal for both indoor and outdoor applications, these shutters provide long-lasting protection while withstanding harsh weather conditions and heavy usage.          </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (

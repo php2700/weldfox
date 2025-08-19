@@ -5,6 +5,7 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const StickyHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const location = useLocation();
@@ -19,62 +20,94 @@ const StickyHeader = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white text-black shadow-md transition-all duration-500">
-        <div className="w-full mx-auto px-20 py-4 flex items-center justify-between">
+      <header className="fixed top-0 left-0 w-full z-[1000] bg-white text-black shadow-md transition-all duration-500">
+        <div className="w-full mx-auto px-6 py-4 flex items-center justify-between">
           <Link to="/">
-            {" "}
             <img src="/logo-1.jpeg" alt="Logo" className="h-16 w-auto" />
           </Link>
-          <nav className="hidden lg:flex space-x-10 text-lg font-medium">
-            <a
-              href="/"
-              className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
-                pathname === "/" ? "border-[#fcc729]" : "border-transparent"
-              }`}
+          <nav className="hidden lg:flex space-x-8 text-lg font-medium items-center">
+            <div className="relative">
+              <a
+                href="/"
+                className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
+                  pathname === "/" ? "border-[#fcc729]" : "border-transparent"
+                }`}
+              >
+                Home
+              </a>
+            </div>
+            <div className="relative">
+              <a
+                href="/about"
+                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+                  pathname === "/about"
+                    ? "border-[#fcc729]"
+                    : "border-transparent"
+                }`}
+              >
+                About Us
+              </a>
+            </div>
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
             >
-              Home
-            </a>
-            <a
-              href="/about"
-              className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                pathname === "/about"
-                  ? "border-[#fcc729]"
-                  : "border-transparent"
-              }`}
-            >
-              About Us
-            </a>
-
-            <a
-              href="/services"
-              className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                pathname === "/services"
-                  ? "border-[#fcc729]"
-                  : "border-transparent"
-              }`}
-            >
-              Services
-            </a>
-
-            <a
-              href="/blog"
-              className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                pathname === "/blog" ? "border-[#fcc729]" : "border-transparent"
-              }`}
-            >
-              Gallery
-            </a>
-
-            <a
-              href="/contact"
-              className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                pathname === "/contact"
-                  ? "border-[#fcc729]"
-                  : "border-transparent"
-              }`}
-            >
-              Contact
-            </a>
+              <a
+                href="/services"
+                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+                  pathname === "/services"
+                    ? "border-[#fcc729]"
+                    : "border-transparent"
+                }`}
+              >
+                Services
+              </a>
+              {dropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-border z-[1010]">
+                  <Link
+                    to="/services"
+                    className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                  >
+                    Rolling Shutters
+                  </Link>
+                  <Link
+                    to="/services"
+                    className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                  >
+                    Entrance Automation
+                  </Link>
+                  <Link
+                    to="/services"
+                    className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                  >
+                    General Fabrication
+                  </Link>
+                </div>
+              )}
+            </div>
+            <div className="relative">
+              <a
+                href="/blog"
+                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+                  pathname === "/blog" ? "border-[#fcc729]" : "border-transparent"
+                }`}
+              >
+                Gallery
+              </a>
+            </div>
+            <div className="relative">
+              <a
+                href="/contact"
+                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+                  pathname === "/contact"
+                    ? "border-[#fcc729]"
+                    : "border-transparent"
+                }`}
+              >
+                Contact
+              </a>
+            </div>
           </nav>
 
           {/* Mobile Menu Icon */}
@@ -88,41 +121,60 @@ const StickyHeader = () => {
 
         {/* Mobile Nav */}
         {menuOpen && (
-          <div className="lg:hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4">
-            <Link to="/" className="text-[#1a2940] " onClick={toggleMenu}>
+          <div className="lg:hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4 z-[1010]">
+            <Link to="/" className="text-[#1a2940]" onClick={toggleMenu}>
               Home
             </Link>
-            <Link to="/about" className="text-[#1a2940] " onClick={toggleMenu}>
+            <Link to="/about" className="text-[#1a2940]" onClick={toggleMenu}>
               About
             </Link>
-            <Link
-              to="/services"
-              className="text-[#1a2940] "
-              onClick={toggleMenu}
-            >
-              Services
-            </Link>
-            <Link to="/blog" className="text-[#1a2940] " onClick={toggleMenu}>
+            <div className="flex flex-col space-y-2">
+              <Link
+                to="/services"
+                className="text-[#1a2940]"
+                onClick={toggleMenu}
+              >
+                Services
+              </Link>
+              <Link
+                to="/services"
+                className="text-[#1a2940] pl-4"
+                onClick={toggleMenu}
+              >
+                Rolling Shutters
+              </Link>
+              <Link
+                to="/services"
+                className="text-[#1a2940] pl-4"
+                onClick={toggleMenu}
+              >
+                Entrance Automation
+              </Link>
+              <Link
+                to="/services"
+                className="text-[#1a2940] pl-4"
+                onClick={toggleMenu}
+              >
+                General Fabrication
+              </Link>
+            </div>
+            <Link to="/blog" className="text-[#1a2940]" onClick={toggleMenu}>
               Gallery
             </Link>
-            <Link
-              to="/contact"
-              className="text-[#1a2940] "
-              onClick={toggleMenu}
-            >
+            <Link to="/contact" className="text-[#1a2940]" onClick={toggleMenu}>
               Contact
             </Link>
           </div>
         )}
       </header>
-      <div className="fixed bottom-24 right-10 z-10">
-        <div
-          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center hover:bg-[#fcc729] group cursor-pointer"
+      <div className="fixed bottom-[220px] right-[43px] z-[1010]">
+    <div
+          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-[#fcc729] group"
           onClick={handleTop}
         >
-          <ArrowUpwardIcon className="text-[#fcc729] w-8 h-8 group-hover:text-white" />
+          <ArrowUpwardIcon className="text-[#fcc729] w-7 h-7 group-hover:text-white" />
         </div>
-      </div>
+</div>
     </>
   );
 };

@@ -149,7 +149,8 @@ export const PerfortedRollingShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
+            Perforated rolling shutters are made from high-quality metal sheets with evenly spaced perforations, offering the perfect balance of security and visibility. Their durable construction protects against unauthorized access while allowing air circulation and partial visibility inside the premises. Commonly used in shopping malls, showrooms, and commercial spaces, these shutters combine strength, style, and functionality for modern security needs.
+            
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">

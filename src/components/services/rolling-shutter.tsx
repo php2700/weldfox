@@ -5,31 +5,32 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
+    heading: "Effortless Operation:",
     description:
-      "Polycarbonate rolling shutters provide a robust barrier against break-ins and vandalism. Their strong construction deters potential intruders while ensuring that your property remains safe.",
+      "Gear operated rolling shutters are designed with a smooth gear mechanism that allows easy manual handling without requiring excessive force, making them ideal for medium and large openings.",
+  },
+  {
+    heading: "Reliable Security:",
+    description:
+      "Built from strong and durable materials, these shutters provide a solid barrier against unauthorized access, ensuring your property remains safe and protected.",
   },
   {
     heading: "Durability:",
     description:
-      "Unlike traditional metal shutters, polycarbonate shutters are lightweight, strong, and resistant to impact and weather damage, minimizing the need for frequent repairs or replacements.",
+      "The robust construction of gear operated shutters ensures long-lasting performance, withstanding daily usage and harsh weather conditions with minimal maintenance.",
   },
   {
-    heading: "Aesthetic Appeal:",
+    heading: "Cost-Effective Solution:",
     description:
-      "Polycarbonate's transparency allows visibility, ideal for retail stores and displays. They provide security without sacrificing natural light, keeping your property inviting.",
+      "Without the need for motors or electrical systems, gear operated shutters are an economical option while still delivering dependable security and functionality.",
   },
   {
-    heading: "Energy Efficiency:",
+    heading: "Versatility:",
     description:
-      "Polycarbonate rolling shutters can contribute to energy savings by providing insulation. They help regulate indoor temperatures, reducing reliance on heating and cooling systems.",
-  },
-  {
-    heading: "Ease of Operation:",
-    description:
-      "Available in manual and motorized options, these shutters are designed for easy operation. With the touch of a button, you can secure your space quickly and effortlessly.",
+      "Suitable for residential, commercial, and industrial spaces, these shutters offer a practical solution for securing a wide range of property types.",
   },
 ];
+
 
 const useRolling = [
   {
@@ -108,7 +109,7 @@ export const RollingShutters = () => {
           <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; Service &nbsp; - &nbsp;GEAR OPERATED ROLLING
-              SHUTTERS
+              SHUTTER
             </h2>
           </div>
         </div>
@@ -119,21 +120,16 @@ export const RollingShutters = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]text-[#181614]">
-              Transperant/Polycarbonate Rolling Shutter
+              Gear Operated Rolling Shutter
             </h2>
             <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
-              Polycarbonate Rolling Shutters: Security and Style Combined
+              Gear Operated Rolling Shutter: Strength and Convenience Combined{" "}
             </h3>
             <p
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Polycarbonate rolling shutters are an innovative solution for
-              businesses and homes seeking enhanced security, durability, and
-              aesthetic appeal. Made from high-quality polycarbonate material,
-              these shutters offer a transparent design that allows natural
-              light to enter while still providing protection against intruders
-              and harsh weather conditions.
+              Gear Operated rolling shutters are a reliable choice for businesses and homes looking for effortless operation, durability, and robust security. Designed with a smooth gear mechanism, these shutters allow easy manual handling without requiring much effort, making them ideal for medium to large openings. They provide excellent protection against intruders and harsh weather, ensuring long-lasting performance with minimal maintenance.
             </p>
           </div>
 
@@ -151,16 +147,13 @@ export const RollingShutters = () => {
       <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
           <div className="text-[23px] font-semibold my-4 text-[#181614]">
-            What Are Polycarbonate Rolling Shutters?
+            What Are Gear Operated Rolling Shutters?
           </div>
           <div
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Powder-coated rolling shutters are constructed from high-quality
-            materials and finished with a durable powder coating. This process
-            not only enhances their appearance but also provides a protective
-            layer that resists chipping, fading, and corrosion.
+            Gear Operated rolling shutters are built with strong, durable materials and feature a smooth gear mechanism for effortless manual operation. This design ensures easy handling without excessive effort, making them ideal for medium and large entrances. Along with providing reliable security, these shutters are long-lasting, low-maintenance, and well-suited for both residential and commercial use.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -175,7 +168,7 @@ export const RollingShutters = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614]">
-            Applications of Polycarbonate Rolling Shutters
+            Applications of Gear Operated Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
@@ -189,33 +182,22 @@ export const RollingShutters = () => {
             How to Operate
           </div>
           <div className=" font-semibold text-[#000] ">
-            Choosing the Right Polycarbonate Rolling Shutter:
+            Choosing the Right Gear Operated Rolling Shutter:
           </div>
           <div>
-            When selecting polycarbonate rolling shutters, consider the
-            following: Measure your openings to ensure a proper fit. Thicker
-            polycarbonate provides greater security and durability. Choose from
-            various styles to match your property’s aesthetic.
+            When selecting gear operated rolling shutters, consider the following: Measure the opening size to choose the right shutter dimensions. Ensure the gear mechanism is suitable for the shutter’s weight and frequency of use. Opt for high-quality materials for durability and long-lasting performance. Select a finish and design that complements your property’s overall style.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            Maintaining your polycarbonate rolling shutters is simple: Use a
-            mild soap solution and a soft cloth to keep them clear and free from
-            debris. Periodically check the motor and operating mechanisms for
-            smooth functionality.
+            Maintaining your gear operated rolling shutters is simple: Regularly clean the shutter surface with a mild soap solution and soft cloth to remove dust and grime. Lubricate the gear mechanism periodically to ensure smooth operation. Inspect the chains, gears, and other moving parts for wear and tear, and tighten any loose components to maintain long-lasting performance.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Polycarbonate rolling shutters are an ideal solution for those
-            looking to enhance security while maintaining aesthetic appeal.
-            Their unique combination of durability, ease of use, and design
-            flexibility makes them suitable for a wide range of applications.
-            Invest in polycarbonate rolling shutters today to protect your
-            property with style and efficiency.
+            Gear operated rolling shutters are an excellent choice for anyone seeking strong security with ease of manual operation. Their durable construction and smooth gear mechanism make them reliable, convenient, and long-lasting. Suitable for both residential and commercial spaces, these shutters combine strength with practicality. Invest in gear operated rolling shutters today to secure your property with confidence and convenience.
           </div>
         </div>
       </section>

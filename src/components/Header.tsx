@@ -6,6 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   const location = useLocation();
@@ -28,11 +29,11 @@ const Header = () => {
         </div>
       </div>
 
-      <header className="z-50 bg-white backdrop-blur-sm border-b border-border">
+      <header className="relative z-[4000] bg-white backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center px-2 justify-between">
             <div className="flex items-center space-x-3">
-              <div className=" rounded-lg flex items-center justify-center">
+              <div className="rounded-lg flex items-center justify-center">
                 <Link to="/">
                   <img
                     src="/logo-1.jpeg"
@@ -62,16 +63,44 @@ const Header = () => {
                 About Us
               </a>
 
-              <a
-                href="/services"
-                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                  pathname === "/services"
-                    ? "border-[#fcc729]"
-                    : "border-transparent"
-                }`}
+              <div
+                className="relative"
+                onMouseEnter={() => setDropdownOpen(true)}
+                onMouseLeave={() => setDropdownOpen(false)}
               >
-                Services
-              </a>
+                <a
+                  href="#"
+                  className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+                    pathname === "/services"
+                      ? "border-[#fcc729]"
+                      : "border-transparent"
+                  }`}
+                >
+                  Services
+                </a>
+                {dropdownOpen && (
+                  <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-border z-[5000]">
+                    <Link
+                      to="/services"
+                      className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                    >
+                      Rolling Shutters
+                    </Link>
+                    <Link
+                      to="/services"
+                      className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                    >
+                      Entrance Automation
+                    </Link>
+                    <Link
+                      to="/services"
+                      className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                    >
+                      General Fabrication
+                    </Link>
+                  </div>
+                )}
+              </div>
 
               <a
                 href="/blog"
@@ -111,32 +140,47 @@ const Header = () => {
             </div>
           </div>
           {menuOpen && (
-            <div className="lg:hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4">
-              <Link to="/" className="text-[#1a2940] " onClick={toggleMenu}>
+            <div className="lg-hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4 z-[5000]">
+              <Link to="/" className="text-[#1a2940]" onClick={toggleMenu}>
                 Home
               </Link>
-              <Link
-                to="/about"
-                className="text-[#1a2940] "
-                onClick={toggleMenu}
-              >
+              <Link to="/about" className="text-[#1a2940]" onClick={toggleMenu}>
                 About
               </Link>
-              <Link
-                to="/services"
-                className="text-[#1a2940] "
-                onClick={toggleMenu}
-              >
-                Services
-              </Link>
-              <Link to="/blog" className="text-[#1a2940] " onClick={toggleMenu}>
+              <div className="flex flex-col space-y-2">
+                <Link
+                  to="#"
+                  className="text-[#1a2940]"
+                  onClick={toggleMenu}
+                >
+                  Services
+                </Link>
+                <Link
+                  to="/services"
+                  className="text-[#1a2940] pl-4"
+                  onClick={toggleMenu}
+                >
+                  Rolling Shutters
+                </Link>
+                <Link
+                  to="/services"
+                  className="text-[#1a2940] pl-4"
+                  onClick={toggleMenu}
+                >
+                  Entrance Automation
+                </Link>
+                <Link
+                  to="/services"
+                  className="text-[#1a2940] pl-4"
+                  onClick={toggleMenu}
+                >
+                  General Fabrication
+                </Link>
+              </div>
+              <Link to="/blog" className="text-[#1a2940]" onClick={toggleMenu}>
                 Gallery
               </Link>
-              <Link
-                to="/contact"
-                className="text-[#1a2940] "
-                onClick={toggleMenu}
-              >
+              <Link to="/contact" className="text-[#1a2940]" onClick={toggleMenu}>
                 Contact
               </Link>
             </div>

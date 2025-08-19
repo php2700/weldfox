@@ -154,8 +154,7 @@ export const GrillShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
-          </div>
+            Grill rolling shutters are crafted from high-quality metal rods or tubes, designed to offer both security and visibility. Their sturdy construction provides effective protection against unauthorized access while allowing airflow and natural light to pass through. Ideal for showrooms, retail outlets, and display areas, these shutters combine strength with transparency, ensuring safety without compromising on visibility.          </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (

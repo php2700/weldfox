@@ -18,11 +18,13 @@ export const Offer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Card 1 */}
           <div className="bg-white shadow-md rounded overflow-hidden text-left">
-            <img
-              src="/service-1.jpeg"
-              alt="Entrance Automation"
-              className="w-full h-64 object-cover"
-            />
+            <Link to="/services">
+              <img
+                src="/service-1.jpeg"
+                alt="Entrance Automation"
+                className="w-full h-64 object-cover"
+              />
+            </Link>
             <div className="p-6">
               <h3 className="text-2xl font-bold text-[#181614] mb-2">
                 ENTRANCE AUTOMATION
@@ -33,20 +35,22 @@ export const Offer = () => {
                 access control, remote operation, and customized designs.
               </p>
               <Link to='/entrance-automation'>
-              <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
-                READ MORE
-              </div>
+                <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
+                  READ MORE
+                </div>
               </Link>
             </div>
           </div>
 
           {/* Card 2 */}
           <div className="bg-white shadow-md rounded overflow-hidden text-left">
-            <img
-              src="/service-2.jpg"
-              alt="Rolling Shutter"
-              className="w-full h-64 object-cover"
-            />
+            <Link to="/services">
+              <img
+                src="/service-2.jpg"
+                alt="Rolling Shutter"
+                className="w-full h-64 object-cover"
+              />
+            </Link>
             <div className="p-6">
               <h3 className="text-2xl font-bold text-[#181614] mb-2">
                 ROLLING SHUTTER
@@ -58,19 +62,21 @@ export const Offer = () => {
               </p>
               <Link to='/roll-shutters'>
                 <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
-                READ MORE
-              </div>
+                  READ MORE
+                </div>
               </Link>
             </div>
           </div>
 
           {/* Card 3 */}
           <div className="bg-white shadow-md rounded overflow-hidden text-left">
-            <img
-              src="/service-3.jpg"
-              alt="General Fabrication"
-              className="w-full h-64 object-cover"
-            />
+            <Link to="/services">
+              <img
+                src="/service-3.jpg"
+                alt="General Fabrication"
+                className="w-full h-64 object-cover"
+              />
+            </Link>
             <div className="p-6">
               <h3 className="text-2xl font-bold text-[#181614] mb-2">
                 GENERAL FABRICATION
@@ -83,8 +89,8 @@ export const Offer = () => {
               </p>
               <Link to='/general-fabrication'>
                 <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
-                READ MORE
-              </div>
+                  READ MORE
+                </div>
               </Link>
             </div>
           </div>
