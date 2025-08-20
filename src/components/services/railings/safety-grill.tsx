@@ -136,7 +136,7 @@ export const Safety = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/safety-grill.png"
+          src="/safety-grill.webp"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -174,7 +174,7 @@ export const Safety = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/safety-grill.png" // Change to your image path
+              src="/safety-grill.webp" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

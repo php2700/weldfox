@@ -146,7 +146,7 @@ export const Trifolding = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/Tri-Folding-gate.png"
+          src="/Tri-Folding-gate.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -184,7 +184,7 @@ export const Trifolding = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/Tri-Folding-gate.png" // Change to your image path
+              src="/Tri-Folding-gate.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

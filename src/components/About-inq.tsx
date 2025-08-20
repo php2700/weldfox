@@ -46,7 +46,7 @@ export const Enuiry = () => {
   return (
     <section className="relative min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-100 flex  justify-end overflow-hidden">
       <div>
-        <img src="/Telescopic-gate.jpeg" className="h-[100vh]" />
+        <img src="/Telescopic-gate.jpg" className="h-[100vh]" />
       </div>
 
       <div className=" px-6  bg-opacity-90">

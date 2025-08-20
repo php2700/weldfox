@@ -137,7 +137,7 @@ export const CurveSliding = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/curve-sliding-gate.jpg"
+          src="/curve-sliding-gate.png"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -175,7 +175,7 @@ export const CurveSliding = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/curve-sliding-gate.jpg" // Change to your image path
+              src="/curve-sliding-gate.png" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

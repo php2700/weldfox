@@ -157,7 +157,7 @@ export const Structural = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/structural-fabrication.jpg"
+          src="/structural-fabrication.webp"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -195,7 +195,7 @@ export const Structural = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/structural-fabrication.jpg" // Change to your image path
+              src="/structural-fabrication.webp" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

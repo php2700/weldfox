@@ -43,28 +43,28 @@ const GeneralFabrication = () => {
   const articles = [
     {
       heading: "SAFETY GRILL",
-      img: "/safety-grill.png",
+      img: "/safety-grill.webp",
       description:
         "Mangalore tiles, known for their distinct design and reliability, have been a popular choice in traditional and modern architectur",
       url: "/safety-grill",
     },
     {
       heading: "STRUCTURAL FABRICATION",
-      img: "/structural-fabrication.jpg",
+      img: "/structural-fabrication.webp",
       description:
         "Structural fabrication is a crucial process in the construction and manufacturing industries, involving the creation of metal stru",
       url: "/structural-fabrication",
     },
     {
       heading: "ROOFING WORK",
-      img: "/Roofing-work.jpg",
+      img: "/Roofing-work.webp",
       description:
         "Mild Steel (MS) roofing is an excellent choice for those seeking durability, strength, and aesthetic appeal in their roofing solut",
       url: "/roofing",
     },
     {
       heading: "BUILDING ELEVATION WORK",
-      img: "/building-elevation-work.jpg",
+      img: "/building-elevation-work.webp",
       description:
         "Building elevation work is a crucial aspect of modern architecture, focusing on enhancing the visual appeal and structural integri",
       url: "/elevation",
@@ -131,7 +131,7 @@ const GeneralFabrication = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/MS-railings.jpeg"
+          src="/SS-railings.webp"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />

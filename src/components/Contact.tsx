@@ -209,7 +209,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-md py-8 px-4 bg-white rounded-lg">
             <div
               className="bg-cover bg-center rounded-lg "
-              style={{ backgroundImage: "url('/project-1.jpg')" }}
+              style={{ backgroundImage: "url('/Contact-us1.webp')" }}
             >
               <div className="bg-opacity-50 px-6  py-12 rounded-lg">
                 <div className="flex  items-center gap-4">

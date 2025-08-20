@@ -7,7 +7,7 @@ export const Description = () => {
       {/* LEFT IMAGE */}
       <div className="w-full h-full">
         <img
-          src="/description.jpg"
+          src="/description.webp"
           alt="Building"
           className="w-full h-[600px] object-cover rounded"
         />

@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
 
 const Clients = () => {
-  const initialClients = [
-    { name: "Amazon", logo: "🏢" },
-    { name: "User", logo: "👤" },
-    { name: "Biocon", logo: "🧬" },
-    { name: "Ashirwad", logo: "🏠" },
-    { name: "Apollo Paints", logo: "🎨" },
-    { name: "ClientX", logo: "📦" },
-    { name: "ClientY", logo: "🔧" },
-    { name: "ClientZ", logo: "🚀" },
-  ];
+const initialClients = [
+  { name: "Amazon", logo: "🛒" },    
+  { name: "User", logo: "🙍‍♂️" },     
+  { name: "Biocon", logo: "🧪" },     
+  { name: "Ashirwad", logo: "🏡" },  
+  { name: "Apollo Paints", logo: "🖌️" },
+  { name: "ClientX", logo: "📈" },    
+  { name: "ClientY", logo: "⚙️" },    
+  { name: "ClientZ", logo: "🌐" },     
+];
+
 
   const [clients, setClients] = useState(initialClients);
    const [visibleCount, setVisibleCount] = useState(5);

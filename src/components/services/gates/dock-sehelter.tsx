@@ -142,7 +142,7 @@ export const Dockshelter = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/dock-shelters.webp"
+          src="/dock-shelters.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -180,7 +180,7 @@ export const Dockshelter = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/dock-shelters.webp" // Change to your image path
+              src="/dock-shelters.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

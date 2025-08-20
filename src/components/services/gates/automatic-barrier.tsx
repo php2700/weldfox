@@ -153,7 +153,7 @@ export const Automaticbarrier = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/automatic-barriers.webp"
+          src="/automatic-barriers.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -200,7 +200,7 @@ export const Automaticbarrier = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/automatic-barriers.webp" // Change to your image path
+              src="/automatic-barriers.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

@@ -7,7 +7,7 @@ export const AboutDescription = () => {
       {/* LEFT IMAGE */}
       <div className="w-full h-full">
         <img
-          src="/access-control.jpg"
+          src="/access-control.webp"
           alt="Building"
           className="w-full h-[300px] object-cover rounded"
         />

@@ -71,7 +71,9 @@ const EntranceAutomation = () => {
     },
     {
       heading: "AUTOMATIC BARRIES",
-      img: "/automatic-barriers.webp",
+      // img: "/automatic-barriers.webp",
+     img:"/automatic-barriers.jpg", 
+
       description:
         "Automatic barriers are essential for enhancing security and controlling access at various locations, including parking lots, toll",
       url: "/automatic-barries",
@@ -134,7 +136,7 @@ const EntranceAutomation = () => {
     },
     {
       heading: "TELESCOPIC GATE",
-      img: "/Telescopic-gate.jpeg",
+      img: "/Telescopic-gate.jpg",
       description:
         "Telescopic gates are an innovative solution for property access that combines space efficiency with robust security. Ideal for bot",
       url: "/telescopic-gate",
@@ -169,7 +171,7 @@ const EntranceAutomation = () => {
     },
     {
       heading: "MS GATES",
-      img: "/MS-gates.jpg",
+      img: "/ms-gate.avif",
       description:
         "Mild Steel (MS) gates are an excellent choice for enhancing security and aesthetics for residential and commercial properties. Kno",
       url: "/ms-gates",
@@ -187,7 +189,9 @@ const EntranceAutomation = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/automatic-barriers.webp"
+          // src="/automatic-barriers.webp"
+              src="/automatic-barriers.jpg" // Change to your image path
+
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />

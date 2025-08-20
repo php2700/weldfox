@@ -93,7 +93,7 @@ export const TransparentRollingShutters = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/polycarbonate-rolling-shutter.webp"
+          src="/polycarbonate-rolling-shutter.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -142,7 +142,7 @@ export const TransparentRollingShutters = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/polycarbonate-rolling-shutter.webp"
+              src="/polycarbonate-rolling-shutter.jpg"
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

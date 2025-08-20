@@ -20,7 +20,7 @@ export const Offer = () => {
           <div className="bg-white shadow-md rounded overflow-hidden text-left">
             <Link to="/services">
               <img
-                src="/service-1.jpeg"
+                src="/Staircase.webp"
                 alt="Entrance Automation"
                 className="w-full h-64 object-cover"
               />
@@ -46,7 +46,7 @@ export const Offer = () => {
           <div className="bg-white shadow-md rounded overflow-hidden text-left">
             <Link to="/services">
               <img
-                src="/service-2.jpg"
+                src="/service-2.jpeg"
                 alt="Rolling Shutter"
                 className="w-full h-64 object-cover"
               />
@@ -72,7 +72,7 @@ export const Offer = () => {
           <div className="bg-white shadow-md rounded overflow-hidden text-left">
             <Link to="/services">
               <img
-                src="/service-3.jpg"
+                src="/automatic-gates.jpg"
                 alt="General Fabrication"
                 className="w-full h-64 object-cover"
               />

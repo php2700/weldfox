@@ -66,7 +66,7 @@ const About = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full z-[1]">
         <img
-          src="/MS-gates.jpg"
+          src="/swing-gates.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />

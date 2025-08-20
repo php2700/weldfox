@@ -17,7 +17,7 @@ export const Process = () => {
           {/* Card 1 */}
           <div className="bg-white p-6 rounded shadow text-center">
             <img
-              src="/process-1.avif"
+              src="/process-1.jpg"
               alt="Customer Requirement"
               className="w-24 mx-auto mb-4"
             />
@@ -27,7 +27,7 @@ export const Process = () => {
           {/* Card 2 */}
           <div className="bg-white p-6 rounded shadow text-center">
             <img
-              src="/process-2.avif"
+              src="/process-2.jpg"
               alt="Analysis"
               className="w-24 mx-auto mb-4"
             />
@@ -37,7 +37,7 @@ export const Process = () => {
           {/* Card 3 */}
           <div className="bg-white p-6 rounded shadow text-center">
             <img
-              src="/process-3.avif"
+              src="/process-3.webp"
               alt="Designs"
               className="w-24 mx-auto mb-4"
             />
@@ -47,7 +47,7 @@ export const Process = () => {
           {/* Card 4 */}
           <div className="bg-white p-6 rounded shadow text-center">
             <img
-              src="/process-4.avif"
+              src="/process-4.png"
               alt="Manufacturing"
               className="w-24 mx-auto mb-4"
             />
@@ -67,7 +67,7 @@ export const Process = () => {
           {/* Card 6 */}
           <div className="bg-white p-6 rounded shadow text-center">
             <img
-              src="/process-6.avif"
+              src="/process-6.webp"
               alt="Completion"
               className="w-24 mx-auto mb-4"
             />

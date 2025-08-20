@@ -148,7 +148,7 @@ export const Telescopic = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/Telescopic-gate.jpeg"
+          src="/Telescopic-gate.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -189,7 +189,7 @@ export const Telescopic = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/Telescopic-gate.jpeg" // Change to your image path
+              src="/Telescopic-gate.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

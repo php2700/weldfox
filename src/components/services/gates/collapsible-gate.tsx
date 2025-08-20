@@ -158,7 +158,7 @@ export const Collapsible = () => {
       {showSticky && <StickyHeader />}
       <div className="relative w-full">
         <img
-          src="/collapsible-gate.avif"
+          src="/collapsible-gate.jpg"
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -205,7 +205,7 @@ export const Collapsible = () => {
           {/* Image */}
           <div className="flex justify-center">
             <img
-              src="/collapsible-gate.avif" // Change to your image path
+              src="/collapsible-gate.jpg" // Change to your image path
               alt="Manual Rolling Shutters"
               className=" shadow-md w-full object-cover"
             />

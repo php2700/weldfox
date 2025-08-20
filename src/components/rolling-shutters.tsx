@@ -85,7 +85,7 @@ const RollShutters = () => {
     },
     {
       heading: "MS ROLLING SHUTTER",
-      img: "/ms-rolling-shutter.webp",
+      img: "/ms-rolling-shutter.jpg",
       description:
         "MS (Mild Steel) rolling shutters are a popular choice for businesses and residential properties seeking robust security solutions.",
       url: "/ms-rolling-shtter",
@@ -120,14 +120,14 @@ const RollShutters = () => {
     },
     {
       heading: "MANNUAL ROLLING  SHUTTER",
-      img: "/manual-rolling-shutter.jpg",
+      img: "/manual-rolling-shutter.webp",
       description:
         "Manual rolling shutters are an efficient and cost-effective solution for enhancing security and privacy in both residential and co",
       url: "/mannual-rolling",
     },
     {
       heading: "TRANSPARENT/POLYCARBONATE ROLLING SHUTTER",
-      img: "/polycarbonate-rolling-shutter.webp",
+      img: "/polycarbonate-rolling-shutter.jpg",
       description:
         "Polycarbonate rolling shutters are an innovative solution for businesses and homes seeking enhanced security, durability, and aest",
       url: "/transparent-rolling-shutter",
