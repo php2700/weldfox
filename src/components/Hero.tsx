@@ -11,9 +11,13 @@ const Hero = () => {
       image: "/banner2.jpg",
       text: (
         <>
-          <span className="text-[#fff] text-7xl">SECURE, STYLISH,</span>
-          <span className="block text-white text-7xl">AND AFFORDABLE</span>
-          <span className="block text-white text-6xl md:text-7xl mt-4">
+          <span className="text-[#fff] text-5xl md:text-6xl lg:text-7xl">
+            SECURE, STYLISH,
+          </span>
+          <span className="block text-white text-5xl md:text-6xl lg:text-7xl">
+            AND AFFORDABLE
+          </span>
+          <span className="block text-white text-5xl md:text-6xl lg:text-7xl mt-4">
             YOUR FABRICATION EXPERTS!
           </span>
         </>

@@ -136,7 +136,9 @@ const Footer = () => {
             <br />
             Site No 9, Attur Village, yelahanka,
             <br />
-            Near Best Shot Badminton Academy, Yelahanka New Town,
+            Near Best Shot Badminton Academy,
+            <br />
+            Yelahanka New Town,
             <br />
             Bengaluru, Karnataka 560064
           </p>
