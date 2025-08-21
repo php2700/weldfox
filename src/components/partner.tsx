@@ -57,7 +57,7 @@ export const Partner = () => {
   };
 
   return (
-    <section className="bg-yellow-400 h-[300px] mb-36 py-12 px-4 relative ">
+    <section className="bg-secondary/90  mb-36 py-12 px-4 relative ">
       <div className="max-w-7xl mx-auto text-center">
         <p className="inline-block border-4 border-white text-white font-semibold px-3 py-1 mb-4 bg-transparent text-sm md:text-base">
           Our Partners

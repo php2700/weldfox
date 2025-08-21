@@ -5,29 +5,34 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Increased Security:",
+    heading: "Access Control:",
     description:
-      "Turnstiles act as a physical barrier, preventing unauthorized access and enhancing security in sensitive areas. This is especially important in environments where security is a top priority, such as government buildings, airports, and corporate offices.",
+      "Turnstiles regulate who can enter a specific area, ensuring only authorized individuals gain access.",
   },
   {
-    heading: "Controlled Access:",
+    heading: "One-Person Entry:",
     description:
-      "Turnstiles help manage the flow of people entering and exiting a facility, reducing congestion at entry points. This control contributes to a smoother entry process and minimizes potential safety hazards.",
+      "Designed to allow a single person to pass at a time, preventing tailgating and unauthorized entry.",
   },
   {
-    heading: "Integration with Access Control Systems:",
+    heading: "Integration with Security Systems:",
     description:
-      "Many turnstiles can be seamlessly integrated with existing access control systems, allowing for efficient monitoring and management of access points. This integration enhances overall security and provides valuable data for operational analysis.",
+      "Turnstiles can be connected to access control systems such as RFID cards, biometric scanners, or ticketing systems for enhanced security.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Traffic Flow Management:",
     description:
-      "By reducing the need for security personnel at entry points, turnstiles offer a cost-effective solution for access control. They enable businesses to allocate resources more efficiently while maintaining high-security standards.",
+      "They help manage the flow of people in high-traffic areas, reducing congestion and maintaining orderly movement.",
   },
   {
-    heading: "Improved Safety:  ",
+    heading: "Durability and Reliability:",
     description:
-      "Turnstiles help prevent overcrowding and ensure orderly access, creating a safer environment for employees and visitors. By controlling entry, they minimize the risk of accidents during peak times.",
+      "Constructed with robust materials, turnstiles are designed to withstand heavy usage and harsh environments.",
+  },
+  {
+    heading: "Customizable Options:",
+    description:
+      "Turnstiles are available in different types and designs (full-height, half-height, tripod, optical) to meet specific security and aesthetic requirements.",
   },
 ];
 
@@ -35,73 +40,81 @@ const material = [
   {
     name: "Stainless Steel:",
     description:
-      "Stainless steel is a popular material for turnstiles due to its durability and resistance to corrosion. It is suitable for both indoor and outdoor applications, providing a modern and professional appearance",
+      "Durable, corrosion-resistant, and ideal for high-traffic areas. Stainless steel turnstiles offer long-lasting performance and a sleek, professional appearance.",
   },
   {
-    name: "Aluminum :",
-    description: `Aluminum turnstiles are lightweight and resistant to rust, making them ideal for environments where weight is a concern. They offer a cost-effective solution without sacrificing security.`,
-  },
-  {
-    name: "Plastic and Composite Materials:",
+    name: "Aluminum:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "Lightweight yet strong, aluminum turnstiles are suitable for indoor or outdoor use and require minimal maintenance.",
+  },
+  {
+    name: "Glass & Acrylic Panels:",
+    description:
+      "Used in optical turnstiles to provide a modern, transparent look while integrating seamlessly with access control systems.",
   },
 ];
 
 const customization = [
   {
-    name: "Size and Configuration:",
-    description:
-      "Turnstiles can be customized to fit various entryway dimensions and operational needs, ensuring compatibility with your facility's layout.",
-  },
-  {
-    name: "Finishes and Colors:",
-    description: `Choose from different finishes and colors to match your branding and enhance the aesthetic appeal of your entry points.`,
-  },
-  {
     name: "Access Control Integration:",
-    description: "Many turnstiles can be tailored to work seamlessly with existing access control systems, such as RFID readers, biometrics, and ticketing systems, enhancing security and efficiency.",
+    description:
+      "Turnstiles can be customized with RFID card readers, biometric scanners, or QR code scanners depending on your security needs.",
+  },
+  {
+    name: "Direction & Flow Configuration:",
+    description:
+      "Configure the turnstile for one-way or two-way operation, or add features like emergency release for safety compliance.",
+  },
+  {
+    name: "Branding & Finishes:",
+    description:
+      "Customize colors, finishes, and logos to match your corporate branding or architectural style.",
   },
 ];
 
 const gates = [
   {
-    name: "Security Requirements:",
+    name: "Location Requirements:",
     description:
-      "Assess your facility's security needs to determine the appropriate type of turnstile (full height, half height, optical, or tripod) that will provide the desired level of protection.",
+      "Evaluate where the turnstile will be installed to ensure proper space, accessibility, and compliance with building codes.",
   },
   {
     name: "Traffic Volume:",
     description:
-      "Evaluate the expected traffic volume at entry points to choose a turnstile that can efficiently manage the flow of people without causing delays",
+      "Consider the expected number of people passing through the area to select a turnstile type that can handle the load efficiently.",
+  },
+  {
+    name: "Security Level:",
+    description:
+      "Choose a turnstile type based on the desired security level, whether basic access control or high-security environments.",
   },
   {
     name: "Budget:",
     description:
-      "Turnstiles vary in price, so establish a budget that includes initial costs and ongoing maintenance to ensure a high-quality product that meets your operational needs.",
+      "Turnstiles come in various price ranges. Set a budget that balances cost with security, durability, and functionality.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Full Height Turnstiles:",
+    heading: "Full-Height Turnstiles:",
     description:
-      "These robust turnstiles provide maximum security, extending from floor to ceiling. They are ideal for high-security applications, such as prisons and military installations, where unauthorized entry must be prevented.",
+      "Provide maximum security by restricting unauthorized access entirely. Ideal for high-security areas such as factories or data centers.",
   },
   {
-    heading: "Half Height Turnstiles:",
+    heading: "Half-Height Turnstiles:",
     description:
-      "Half-height turnstiles are suitable for environments where complete enclosure isn’t necessary. They provide a good balance of security and ease of access, making them popular in office buildings and transportation hubs.",
-  },
-  {
-    heading: "Optical Turnstiles:",
-    description:
-      "Optical turnstiles utilize infrared sensors to detect when an individual passes through. They allow for high-speed entry and are often used in corporate settings, museums, and high-end retail environments where aesthetics and efficiency are important.",
+      "Offer moderate security while allowing faster passage. Suitable for office buildings, gyms, or metro stations.",
   },
   {
     heading: "Tripod Turnstiles:",
     description:
-      "Tripod turnstiles feature three rotating arms, allowing only one person to enter at a time. They are commonly used in public transit systems and events, where managing access is crucial.",
+      "A cost-effective solution for low to medium security needs, commonly used in public venues and transportation hubs.",
+  },
+  {
+    heading: "Optical Turnstiles:",
+    description:
+      "Use sensors to detect passage and prevent unauthorized entry, offering a sleek and modern design for commercial spaces.",
   },
 ];
 
@@ -156,7 +169,7 @@ export const Turnstile = () => {
           <div className="text-7xl text-white font-bold">TURNSTILES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;TURNSTILES
             </h2>
@@ -172,13 +185,20 @@ export const Turnstile = () => {
               Turnstile
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-              Turnstiles – Your Solution for Enhanced Security and Access Control
+              Turnstiles – Your Solution for Enhanced Security and Access
+              Control
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-             Turnstiles are essential security features designed to control access in various settings, including corporate offices, public transportation, stadiums, and more. They provide a physical barrier to unauthorized entry while allowing seamless access for authorized individuals. By implementing high-quality turnstiles, businesses can enhance security, improve safety, and streamline the flow of foot traffic in high-traffic areas.
+              Turnstiles serve as crucial security installations that regulate
+              entry across diverse environments such as offices, transit
+              stations, and stadiums. They act as a barrier against unauthorized
+              access while permitting smooth passage for authorized personnel.
+              Using reliable turnstiles helps organizations boost security,
+              ensure safety, and efficiently manage the flow of people in busy
+              areas.
             </p>
           </div>
 
@@ -199,12 +219,16 @@ export const Turnstile = () => {
             What Are Turnstiles?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Turnstiles are mechanical gates that regulate entry into secure areas. They typically consist of rotating arms or barriers that allow only one person to pass at a time. Available in various designs, including full height, half height, optical, and tripod turnstiles, they can be integrated with various access control systems, such as RFID, biometric scanners, or ticketing systems, to enhance security further.
-
-
+            Turnstiles are mechanical access control gates designed to manage
+            entry into restricted areas. Featuring rotating arms or barriers,
+            they permit only one person to pass at a time. Available in multiple
+            types—such as full-height, half-height, tripod, and optical
+            turnstiles—they can be integrated with access control systems like
+            RFID, biometric readers, or ticketing solutions to strengthen
+            security.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-           Benefits of Using Turnstiles
+            Benefits of Using Turnstiles
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -223,7 +247,7 @@ export const Turnstile = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-           Materials Used for Turnstiles
+            Materials Used for Turnstiles
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {material?.map((ele) => (
@@ -241,7 +265,7 @@ export const Turnstile = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-           Customization Options for Turnstiles
+            Customization Options for Turnstiles
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {customization?.map((ele) => (
@@ -273,28 +297,36 @@ export const Turnstile = () => {
             ))}
           </div>
           <div className="text-[23px] font-semibold my-10 text-[#181614;]">
-           Installation & Maintenance of Turnstiles
+            Installation & Maintenance of Turnstiles
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Proper installation is crucial for optimal performance and security. It is recommended to hire experienced professionals to ensure compliance with safety standards and functionality.
+            Proper installation ensures that turnstiles operate smoothly, align
+            correctly with entry paths, and integrate seamlessly with access
+            control systems. Professional installers will also ensure compliance
+            with safety regulations and building codes.
           </div>
-           <div className="text-lg font-semibold mt-4 text-[#000]">
+          <div className="text-lg font-semibold mt-4 text-[#000]">
             Routine Maintenance:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Regular maintenance is essential to keep turnstiles in optimal condition. This includes checking mechanical components, ensuring proper alignment, and maintaining electronic systems.
+            Regular maintenance includes checking mechanical components,
+            lubricating moving parts, testing electronic access systems, and
+            inspecting sensors. This helps prevent malfunctions, extends the
+            lifespan of the turnstile, and ensures reliable security.
           </div>
-           <div className="text-lg font-semibold mt-4 text-[#000]">
+          <div className="text-lg font-semibold mt-4 text-[#000]">
             Software Updates:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            If your turnstiles are integrated with software systems, it is important to perform regular updates to ensure compatibility and security.
+            Routine inspections verify that emergency releases, anti-tailgating
+            features, and safety sensors are functioning correctly, minimizing
+            risks and protecting both users and property.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-           Types of Turnstiles
+            Types of Turnstiles
           </div>
 
           {useRolling?.map((ele) => (
@@ -309,7 +341,12 @@ export const Turnstile = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Turnstiles are a vital investment for enhancing security and managing access in various environments. By choosing high-quality turnstiles, businesses can improve safety, streamline operations, and control entry effectively. Select the right turnstile solutions to optimize your facility's security and accessibility.
+            Turnstiles provide a reliable and stylish solution for controlling
+            access in various settings. By selecting the right material, type,
+            and custom features, you can enhance security, streamline traffic
+            flow, and improve the overall efficiency of your premises. Proper
+            installation and maintenance will ensure your turnstiles operate
+            smoothly for years to come.
           </div>
         </div>
       </section>

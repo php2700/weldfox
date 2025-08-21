@@ -5,88 +5,88 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: "Exceptional Durability",
     description:
-      "MS railings are highly durable and can withstand harsh weather conditions, making them suitable for both indoor and outdoor applications. Their strength ensures long-lasting performance and minimal maintenance.",
+      "MS railings are highly durable and withstand harsh weather conditions, suitable for both indoor and outdoor use. Their strength ensures long-lasting performance with minimal maintenance.",
   },
   {
-    heading: "Versatile Designs:",
+    heading: "Versatile Designs",
     description:
-      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. This versatility makes them ideal for residential homes, commercial buildings, and public spaces.",
+      "Available in various designs, MS railings can be customized to match any architectural style, from modern and sleek to traditional and ornate. Ideal for residential, commercial, and public spaces.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Cost-Effective Solution",
     description:
-      "MS railings offer an economical choice without compromising on quality or safety. Their affordability makes them accessible for various budgets while providing robust security and long-lasting durability in both residential and commercial settings.",
+      "MS railings offer an economical choice without compromising quality or safety, providing robust security and long-lasting durability for different budgets.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Easy Installation",
     description:
-      "MS railings are relatively easy to install, reducing labor costs and project timelines. Their lightweight nature allows for quick assembly and installation, making them a preferred choice for contractors, builders, and renovation projects.",
+      "MS railings are lightweight and easy to install, reducing labor costs and project timelines. Quick assembly makes them a preferred option for contractors and renovation projects.",
   },
   {
-    heading: "Enhanced Safety:",
+    heading: "Enhanced Safety",
     description:
-      "By providing a sturdy barrier, MS railings help prevent falls and accidents, especially in elevated areas such as balconies and staircases. This safety feature is essential for both residential and commercial properties.",
+      "MS railings provide a sturdy barrier to prevent falls and accidents, especially on balconies and staircases. This safety feature is essential for both residential and commercial properties.",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Balcony Railings",
     description:
-      "MS balcony railings are designed to enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement the architectural style of your home.",
+      "MS balcony railings enhance safety and aesthetics while providing unobstructed views. They can be customized with various patterns and finishes to complement your home's architectural style.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Stair Railings",
     description:
-      "MS stair railings offer robust support and safety on staircases, ensuring stability for users. They can be designed to match the overall theme of your interior space.",
+      "MS stair railings provide robust support and ensure safety on staircases. They can be designed to match the overall theme of your interior space.",
   },
   {
-    heading: "Garden Railings:",
+    heading: "Garden Railings",
     description:
-      "Ideal for outdoor areas, MS garden railings provide a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
+      "Perfect for outdoor areas, MS garden railings add a decorative touch while ensuring safety around gardens, patios, and walkways. They can be treated for corrosion resistance to withstand outdoor conditions.",
   },
   {
-    heading: "Commercial Railings:",
+    heading: "Commercial Railings",
     description:
-      "For businesses and commercial buildings, MS railings can be designed to meet specific safety standards while enhancing the property’s overall appearance. Custom designs can include branding elements or specific color schemes.",
+      "MS railings for commercial buildings meet specific safety standards while enhancing the property’s appearance. Custom designs can include branding elements or tailored color schemes.",
   },
 ];
 
 const maintainenceRailing = [
   {
-    heading: "Professional Installation:",
+    heading: "Professional Installation",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "While MS railings are relatively easy to install, hiring a professional ensures they are mounted securely and comply with safety standards. Proper installation maximizes durability and effectiveness.",
   },
   {
-    heading: "Regular Inspections:",
+    heading: "Regular Inspections",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "Routine inspections help detect signs of wear, corrosion, or damage early. Addressing issues promptly extends the lifespan of your MS railings and preserves their appearance.",
   },
   {
-    heading: "Cleaning and Care:",
+    heading: "Cleaning and Care",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "Maintain the finish and look of your MS railings by cleaning regularly with mild soap and water. Avoid abrasive cleaners that can damage the surface.",
   },
 ];
 
 const coatingRailing = [
   {
-    heading: "Powder Coating:",
+    heading: "Powder Coating",
     description:
-      "Powder coating provides a durable and attractive finish, protecting MS railings from corrosion and wear. Available in various colors, this finish enhances the aesthetic appeal and longevity of the railings.",
+      "Powder coating provides a durable and attractive finish that protects MS railings from corrosion and wear. Available in various colors, it enhances both the aesthetic appeal and longevity of the railings.",
   },
   {
-    heading: "Galvanizing:",
+    heading: "Galvanizing",
     description:
-      "Hot-dip galvanizing is a process that coats MS railings with a layer of zinc, providing excellent corrosion resistance. This treatment is especially beneficial for outdoor applications where exposure to moisture is a concern.",
+      "Hot-dip galvanizing coats MS railings with a layer of zinc, offering excellent corrosion resistance. This treatment is ideal for outdoor applications exposed to moisture.",
   },
   {
-    heading: "Painting:",
+    heading: "Painting",
     description:
-      "A painted finish allows for a wide range of color options, making it easy to match the railings to the surrounding décor. Regular maintenance may be required to keep the paint in good condition.",
+      "A painted finish allows for a wide range of color options, making it easy to match railings with the surrounding décor. Regular maintenance helps keep the paint in good condition.",
   },
 ];
 
@@ -141,7 +141,7 @@ export const Msrailing = () => {
           <div className="text-7xl text-white font-bold">MS RAILINGS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS RAILINGS
             </h2>
@@ -163,13 +163,13 @@ export const Msrailing = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) railings are an essential addition to any
-              property, providing both safety and visual appeal. Known for their
-              durability and versatility, MS railings can be used in various
+              MS (Mild Steel) railings are a vital addition to any property,
+              offering both safety and visual appeal. Renowned for their
+              durability and versatility, they are suitable for a wide range of
               applications, including residential balconies, commercial
-              staircases, and industrial facilities. With their robust
-              construction and customizable designs, MS railings offer an ideal
-              solution for enhancing the safety and aesthetics of your space.
+              staircases, and industrial facilities. With robust construction
+              and customizable designs, MS railings provide an ideal solution to
+              enhance both the safety and aesthetics of your space.
             </p>
           </div>
 
@@ -190,13 +190,13 @@ export const Msrailing = () => {
             What Are MS Railings?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS railings are made from mild steel, a material known for its
-            excellent strength-to-weight ratio, making it an ideal choice for
-            railings that require durability and stability. These railings can
-            be fabricated in various designs, styles, and finishes to suit
-            different architectural needs. Whether for indoor or outdoor use, MS
-            railings provide reliable support and protection while enhancing the
-            overall look of your property.
+            MS railings are crafted from mild steel, a material renowned for its
+            excellent strength-to-weight ratio, making it perfect for durable
+            and stable railings. They can be fabricated in a variety of designs,
+            styles, and finishes to complement different architectural
+            requirements. Suitable for both indoor and outdoor use, MS railings
+            offer reliable support and protection while enhancing the overall
+            aesthetics of your property.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Using MS Railings
@@ -260,7 +260,12 @@ export const Msrailing = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            MS railings are a practical and stylish solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, versatility, and cost-effectiveness make them a popular choice among homeowners and builders alike. By choosing high-quality MS railings, you can protect your property while adding a touch of elegance to your space.
+            MS railings offer a practical and stylish way to enhance safety and
+            aesthetics in both residential and commercial properties. Their
+            durability, versatility, and cost-effectiveness make them a
+            preferred choice for homeowners and builders. Choosing high-quality
+            MS railings ensures reliable protection while adding a touch of
+            elegance to any space.
           </div>
         </div>
       </section>

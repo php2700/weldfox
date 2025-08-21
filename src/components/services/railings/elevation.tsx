@@ -31,11 +31,12 @@ const arr = [
   },
 ];
 
+
 const typesRailing = [
   {
     heading: "Residential Buildings:",
     description:
-      "Enhance the curb appeal of your home with stylish and durable elevation work. MS and SS elements like balconies, railings, and decorative cladding can transform your property",
+      "Enhance the curb appeal of your home with stylish and durable elevation work. MS and SS elements like balconies, railings, and decorative cladding can transform your property.",
   },
   {
     heading: "Commercial Properties:",
@@ -53,6 +54,7 @@ const typesRailing = [
       "Schools, hospitals, and government buildings can achieve both functionality and aesthetic appeal with our expert elevation work, ensuring safety while enhancing the environment.",
   },
 ];
+
 
 const maintainenceRailing = [
   {
@@ -72,6 +74,7 @@ const maintainenceRailing = [
   },
 ];
 
+
 const coatingRailing = [
   {
     heading: "Modern Facades:",
@@ -88,12 +91,13 @@ const coatingRailing = [
     description:
       "Our team can create custom-designed elements tailored to your specific requirements, ensuring your building's elevation reflects your unique style and vision.",
   },
-   {
+  {
     heading: "Decorative Railings and Balconies:",
     description:
       "Enhance safety and style with intricately designed railings and balconies made from MS and SS, adding both functionality and beauty to your property.",
   },
 ];
+
 
 export const Elevation = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -146,7 +150,7 @@ export const Elevation = () => {
           <div className="text-7xl text-white font-bold">BUILDING ELEVATION WORK</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;BUILDING ELEVATION WORK
             </h2>
@@ -168,7 +172,7 @@ export const Elevation = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-          Building elevation work is a crucial aspect of modern architecture, focusing on enhancing the visual appeal and structural integrity of a property. Utilizing materials like mild steel (MS) and stainless steel (SS), our expert team specializes in providing innovative and durable elevation solutions for residential, commercial, and industrial projects. Whether you aim for a sleek, modern design or a more traditional look, our MS and SS elevation work will ensure your property stands out while maintaining functionality and safety.
+         Building elevation work is a key element of modern architecture, aimed at enhancing both the aesthetic appeal and structural integrity of a property. Using high-quality materials like mild steel (MS) and stainless steel (SS), our expert team delivers innovative and durable elevation solutions for residential, commercial, and industrial projects. Whether you prefer a sleek, contemporary design or a classic, traditional look, our MS and SS elevation work ensures your property stands out while maintaining safety and functionality.
             </p>
           </div>
 
@@ -189,7 +193,7 @@ export const Elevation = () => {
            What is Building Elevation Work?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Building elevation work involves the design, construction, and enhancement of a building's exterior façade. This includes installing cladding, decorative elements, balconies, railings, and other architectural features. The choice of materials, such as mild steel and stainless steel, plays a significant role in both the aesthetic and structural aspects of the elevation.
+          Building elevation work encompasses the design, construction, and enhancement of a building’s exterior façade. This includes the installation of cladding, decorative elements, balconies, railings, and other architectural features. The selection of materials—such as mild steel (MS) and stainless steel (SS)—is crucial, as it influences both the aesthetic appeal and structural integrity of the elevation.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
            Benefits of Using MS and SS for Building Elevation Work
@@ -253,7 +257,7 @@ export const Elevation = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-           Building elevation work in MS and SS is essential for enhancing the aesthetics and durability of your property. With our expertise, you can achieve stunning designs that not only improve the visual appeal but also ensure the longevity and safety of your building. Trust us to transform your property with high-quality MS and SS elevation solutions that meet your specific needs.
+         Building elevation work using MS and SS is essential for enhancing both the aesthetics and durability of your property. With professional expertise, you can achieve stunning, long-lasting designs that improve visual appeal while ensuring safety and structural integrity. High-quality MS and SS elevation solutions provide a perfect balance of style, functionality, and longevity, transforming your property to meet your specific needs.
           </div>
         </div>
       </section>

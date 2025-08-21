@@ -103,9 +103,10 @@ export const PowderCoatedShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; POWDER COATED ROLLING SHUTTERS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; POWDER COATED ROLLING
+              SHUTTERS
             </h2>
           </div>
         </div>
@@ -125,7 +126,11 @@ export const PowderCoatedShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Powder-coated rolling shutters offer a perfect blend of style, strength, and functionality. Ideal for both residential and commercial applications, these shutters enhance security while providing a sleek, modern look.
+              Powder-coated rolling shutters combine durability and aesthetic
+              appeal, making them a reliable and stylish choice for homes,
+              offices, and commercial spaces. Their protective finish resists
+              chipping, fading, and corrosion, ensuring long-lasting performance
+              and minimal maintenance.
             </p>
           </div>
 
@@ -143,13 +148,16 @@ export const PowderCoatedShutters = () => {
       <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
           <div className="text-[23px] font-semibold my-4 text-[#181614]">
-           What Are Powder Coated Rolling Shutters?
+            What Are Powder Coated Rolling Shutters?
           </div>
           <div
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-     Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
+            These shutters are designed to offer both strength and elegance. The
+            powder-coated finish protects against environmental damage, ensuring
+            long-lasting durability while maintaining a sleek and polished look
+            for any property.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -164,7 +172,7 @@ export const PowderCoatedShutters = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614]">
-           Applications of Powder Coated Rolling Shutters
+            Applications of Powder Coated Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
@@ -178,34 +186,43 @@ export const PowderCoatedShutters = () => {
             How to Operate
           </div>
           <div className=" font-semibold text-[#000] mt-4">
-           Versatile Design:
+            Versatile Design:
           </div>
           <div>
-           With endless color options and finishes, these shutters can seamlessly integrate with any décor.
+            With endless color options and finishes, these shutters can
+            seamlessly integrate with any décor.
+          </div>
+          <div className=" font-semibold text-[#000] mt-4">Eco-Friendly:</div>
+          <div>
+            The powder coating process is environmentally friendly, producing
+            minimal waste and using fewer volatile organic compounds (VOCs)
+            compared to traditional paints.
           </div>
           <div className=" font-semibold text-[#000] mt-4">
-           Eco-Friendly:
+            Smooth Operation:
           </div>
           <div>
-          The powder coating process is environmentally friendly, producing minimal waste and using fewer volatile organic compounds (VOCs) compared to traditional paints.
-          </div>
-          <div className=" font-semibold text-[#000] mt-4">
-           Smooth Operation:
-          </div>
-          <div>
-          Designed for ease of use, whether manually operated or motorized, providing convenience and accessibility.
+            Designed for ease of use, whether manually operated or motorized,
+            providing convenience and accessibility.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
-          Installation and Maintenance
+            Installation and Maintenance
           </div>
           <div>
-           Proper installation by professionals is crucial to ensure functionality and performance. Regular cleaning and inspection will help maintain their appearance and efficiency.
+            Proper installation by professionals is crucial to ensure optimal
+            functionality and performance. Regular cleaning and inspection help
+            maintain their appearance and efficiency, while the durable
+            powder-coated finish provides long-lasting protection against
+            chipping, fading, and corrosion.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-           Investing in powder-coated rolling shutters is a smart decision for anyone looking to enhance security, aesthetics, and energy efficiency in their property. Explore our range of high-quality powder-coated rolling shutters today!
+            choosing powder-coated rolling shutters is a wise investment for
+            enhancing security, improving aesthetics, and boosting energy
+            efficiency. Discover our premium range today and protect your
+            property with style and durability.
           </div>
         </div>
       </section>

@@ -5,29 +5,29 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Space-Saving Design:",
+    heading: "Space Optimization:",
     description:
-      "Curve sliding gates are ideal for properties with limited space or irregular entrances. They don't swing like traditional gates, making them perfect for tight spaces.",
+      "Curve sliding gates maximize available space, making them ideal for properties with curved driveways or limited entry areas.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "These gates are sturdy and can be fitted with advanced locking systems, cameras, and other security features, ensuring your property is protected.",
+      "Robust construction and motorized operation provide reliable protection for residential and commercial properties.",
   },
   {
-    heading: "Smooth, Quiet Operation:",
+    heading: "Smooth Operation:",
     description:
-      "Curve sliding gates are designed for smooth and quiet movement, offering a seamless experience every time they open or close.",
+      "Sliding along a curved track ensures effortless movement and convenient access for vehicles and pedestrians.",
   },
   {
-    heading: "Aesthetic Appeal:",
+    heading: "Modern Aesthetic:",
     description:
-      "With their sleek design, curve sliding gates enhance your property. They can be customized in various materials, colors, and finishes to complement your style.",
+      "Sleek, curved designs enhance the visual appeal of any property while maintaining functionality.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Durability:",
     description:
-      "These gates are designed to be durable and weather-resistant, requiring minimal maintenance over time.",
+      "Built from high-quality materials, curve sliding gates withstand frequent use and resist wear over time.",
   },
 ];
 
@@ -35,37 +35,35 @@ const material = [
   {
     name: "Steel:",
     description:
-      "Known for its strength and security, steel curve sliding gates are highly durable and offer a sleek, industrial look. They can be powder-coated for corrosion resistance and are perfect for high-security applications.",
+      "Provides superior strength and durability, suitable for both residential and commercial curve sliding gates.",
   },
   {
     name: "Aluminum:",
-    description: `Aluminum is lightweight yet sturdy, making it a great option for automated curve sliding gates. It’s also rust-resistant, making it suitable for coastal properties or areas prone to moisture.`,
+    description:
+      "Lightweight, corrosion-resistant, and low-maintenance, ideal for smooth sliding operation.",
   },
   {
-    name: "Wood:",
+    name: "Stainless Steel:",
     description:
-      "Wooden curve sliding gates provide a more traditional, rustic look. While they require more maintenance than metal gates, they offer a warm, natural aesthetic that blends well with landscape designs.",
-  },
-   {
-    name: "Composite Materials:",
-    description:
-      "Composite materials offer the beauty of wood with the durability of synthetic materials. They are low-maintenance and resistant to weathering, making them a smart choice for homeowners who want both style and longevity.",
+      "Offers long-lasting performance and a sleek appearance, perfect for modern curve sliding gate designs.",
   },
 ];
 
 const customization = [
   {
-    name: "Perfect for Uneven Terrain:",
+    name: "Adaptable Design:",
     description:
-      "Curve sliding gates can easily be installed on sloped or uneven ground where traditional gates might struggle.",
+      "Curve sliding gates can be installed on uneven terrain and adapt to uniquely shaped driveways, providing solutions where traditional gates may not fit.",
   },
   {
-    name: "Greater Flexibility:",
-    description: `The curved sliding mechanism allows for flexible designs that can adapt to various property shapes and sizes.`,
+    name: "Smooth and Reliable Operation:",
+    description:
+      "The curved sliding mechanism ensures effortless movement and consistent performance, even on challenging surfaces.",
   },
   {
-    name: "Space Efficiency:",
-    description: "If you have limited space or need to maximize the available area, curve sliding gates are a superior choice.",
+    name: "Space-Saving Solution:",
+    description:
+      "Ideal for properties with limited space, these gates maximize available area while offering robust security and modern aesthetics.",
   },
 ];
 
@@ -73,12 +71,12 @@ const gates = [
   {
     name: "Professional Installation:",
     description:
-      "Always opt for professional installation to ensure the gate is aligned and operates smoothly on its track.",
+      "Professional installation ensures the gate is correctly aligned, operates smoothly on its curved track, and functions safely.",
   },
   {
     name: "Regular Maintenance:",
     description:
-      "Lubricate the track and inspect the gate for any signs of wear. Automatic gates may require periodic servicing of the motor.",
+      "Regularly lubricate the track, inspect the gate for wear, and service any automated components to maintain optimal performance and extend the gate’s lifespan.",
   },
 ];
 
@@ -86,12 +84,12 @@ const useRolling = [
   {
     heading: "Manual Curve Sliding Gates:",
     description:
-      "A cost-effective solution for smaller properties, these gates are operated by hand but still provide the benefits of space-saving and security.",
+      "A cost-effective option for smaller properties, manually operated curve sliding gates provide space-saving benefits and reliable security without automation.",
   },
   {
     heading: "Automatic Curve Sliding Gates:",
     description:
-      "These motorized gates offer the convenience of remote control or sensor-based operation. Ideal for commercial properties or homeowners seeking enhanced ease of use.",
+      "Motorized gates offer the convenience of remote control or sensor-based operation, ideal for commercial properties or homeowners seeking enhanced ease of use and efficiency.",
   },
 ];
 
@@ -143,10 +141,12 @@ export const CurveSliding = () => {
         />
         <div className="absolute inset-0 bg-[#1a2940]  opacity-20"></div>
         <div className="absolute inset-0 flex items-center justify-center z-10">
-          <div className="text-7xl text-white font-bold">CURVE SLIDING GATES</div>
+          <div className="text-7xl text-white font-bold">
+            CURVE SLIDING GATES
+          </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;CURVE SLIDING GATES
             </h2>
@@ -162,13 +162,20 @@ export const CurveSliding = () => {
               Curve Sliding Gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-             Enhance Security and Aesthetic with Curve Sliding Gates – Durable & Stylish Solutions
+              Enhance Security and Aesthetic with Curve Sliding Gates – Durable
+              & Stylish Solutions
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-            If you’re looking to upgrade your property’s entrance with a gate that combines security, functionality, and visual appeal, curve sliding gates offer the perfect solution. Unlike traditional gates, curve sliding gates are designed to slide along a curved track, providing a smooth, space-saving operation. They are ideal for properties with limited space or uniquely shaped driveways. Learn why curve sliding gates are becoming increasingly popular for both residential and commercial properties.
+              If you’re looking to upgrade your property’s entrance with a gate
+              that combines security, functionality, and visual appeal, curve
+              sliding gates offer the perfect solution. Unlike traditional
+              gates, these gates slide along a curved track, providing a smooth,
+              space-saving operation. They are ideal for properties with limited
+              space or uniquely shaped driveways and are increasingly popular
+              for both residential and commercial properties.
             </p>
           </div>
 
@@ -189,7 +196,12 @@ export const CurveSliding = () => {
             What are Curve Sliding Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           Curve sliding gates are advanced gate systems that operate by sliding along a specially designed curved track. This feature is particularly beneficial in locations where a straight track would not be feasible, such as properties with angled boundaries or curved driveways. These gates maximize space and are often motorized for ease of use and enhanced security.
+            Curve sliding gates are advanced systems that operate along a
+            specially designed curved track. This design is especially useful
+            for properties where a straight track is impractical, such as angled
+            boundaries or curved driveways. By maximizing available space, these
+            gates provide efficient operation and are often motorized for ease
+            of use and enhanced security.{" "}
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Advantages of Installing Curve Sliding Gates
@@ -267,22 +279,26 @@ export const CurveSliding = () => {
             Material:
           </div>
           <div className="text-[15px] font-[400] my-2">
-          Choose from materials like steel, aluminum, or wood, depending on your preference for durability and appearance.
+            Choose from steel, aluminum, or wood, depending on your preference
+            for durability, maintenance, and aesthetic appeal.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Automation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-          Decide if you need manual or automatic operation. Automatic gates are ideal for those seeking convenience and increased security.
+            Decide between manual or automatic operation. Automatic gates are
+            perfect for those seeking added convenience and enhanced security.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
-           Customization Options:
+            Customization Options:
           </div>
           <div className="text-[15px] font-[400] my-2">
-          Many manufacturers offer customizable options, including colors, finishes, and designs, to match your property’s style.
+            Many manufacturers provide customizable options, including colors,
+            finishes, and designs, allowing your gate to perfectly complement
+            your property’s style.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
-           Types of Curve Sliding Gates
+            Types of Curve Sliding Gates
           </div>
 
           {useRolling?.map((ele) => (
@@ -297,7 +313,12 @@ export const CurveSliding = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-          Curve sliding gates are a smart investment for anyone looking to enhance their property’s security, functionality, and curb appeal. With their space-saving design and stylish appearance, these gates are perfect for both residential and commercial applications. Choose a curve sliding gate today to transform your entrance into a secure, stylish gateway.
+            Curve sliding gates are a smart investment for enhancing your
+            property’s security, functionality, and curb appeal. Their
+            space-saving design and stylish appearance make them ideal for both
+            residential and commercial applications. Choose a curve sliding gate
+            today to transform your entrance into a secure, elegant, and
+            efficient gateway.
           </div>
         </div>
       </section>

@@ -5,100 +5,103 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
-    description:
-      "Automatic gates act as a strong deterrent against unauthorized access, providing an additional layer of security for your property.",
-  },
-  {
     heading: "Convenience:",
     description:
-      "Easily control access from the comfort of your vehicle, eliminating the need to exit your car in inclement weather or at night.",
+      "Automatic gates allow effortless entry and exit, eliminating the need to manually open or close the gate.",
   },
   {
-    heading: "Customizable Access:",
+    heading: "Enhanced Security:",
     description:
-      "Options for remote controls, keypads, and intercom systems allow you to manage entry points effectively and securely.",
+      "Equipped with advanced locking mechanisms and access control, automatic gates provide superior protection for your property.",
+  },
+  {
+    heading: "Modern Aesthetic:",
+    description:
+      "Sleek designs and customizable finishes enhance the visual appeal of your property while maintaining functionality.",
   },
   {
     heading: "Durability:",
     description:
-      "Made from materials like steel, aluminum, or wood, automatic gates are built to withstand the elements and provide long-lasting performance.",
+      "Constructed from high-quality materials, automatic gates are designed to withstand daily use and harsh weather conditions.",
   },
   {
-    heading: "Increased Property Value:",
+    heading: "Value Addition:",
     description:
-      "Installing an automatic gate can enhance your property’s curb appeal and increase its overall value.",
+      "Installing an automatic gate increases the safety, convenience, and overall value of your property.",
   },
 ];
+
 
 const material = [
   {
-    name: "Steel:",
+    name: "High-Quality Metal:",
     description:
-      "A robust material known for its strength and security, ideal for high-traffic areas.",
+      "Automatic gates are typically made from strong metals such as mild steel or stainless steel, ensuring long-lasting durability.",
   },
   {
-    name: "Aluminum:",
-    description: `Lightweight and resistant to rust, making it suitable for various weather conditions.`,
+    name: "Motor and Automation System:",
+    description:
+      "Equipped with a reliable motor and control system for smooth and efficient gate operation.",
   },
   {
-    name: "Aluminum:",
+    name: "Protective Coatings:",
     description:
-      "Offers a natural look that can enhance the aesthetic appeal of your property, though it requires regular maintenance.",
+      "Powder coating or galvanization protects the gate from rust, corrosion, and environmental wear.",
   },
 ];
+
 
 const customization = [
   {
-    name: "Color Options:",
+    name: "Design Options:",
     description:
-      "Choose from a wide range of colors to match your property’s exterior.",
+      "Choose from sliding, swing, or bi-fold gate designs to match your property’s style and space requirements.",
   },
   {
-    name: "Design Styles:",
-    description: `Select from various designs, including classic, modern, and decorative styles.`,
-  },
-  {
-    name: "Control Systems:",
-    description: "Incorporate advanced control systems, such as smartphone access and intercom integration.",
+    name: "Automation Features:",
+    description:
+      "Select from remote control, keypad access, or smartphone integration for tailored convenience and security.",
   },
 ];
 
+
 const gates = [
   {
-    name: "Advanced Technology:",
+    name: "Effortless Operation:",
     description:
-      "Many automatic gates feature smart technology, allowing for remote access via smartphones or integration with home automation systems.",
+      "Automatic gates open and close with ease, providing a smooth entry and exit experience for residents and visitors.",
   },
   {
-    name: "Aesthetic Variety:",
+    name: "High Security:",
     description:
-      "Available in multiple designs, colors, and materials, automatic gates can be customized to complement your property’s style.",
+      "Advanced locking systems and automation technology protect your property from unauthorized access.",
   },
   {
-    name: "Weather Resistance:",
+    name: "Durable and Reliable:",
     description:
-      "Built to endure various weather conditions, ensuring reliable operation year-round.",
+      "Designed to withstand frequent use and harsh weather, ensuring long-term performance and reliability.",
   },
 ];
+
 
 const useRolling = [
   {
     heading: "Residential Properties:",
     description:
-      "Ideal for homeowners seeking convenience and security for driveways and entrances.",
+      "Ideal for driveways and main entrances, offering convenience, security, and a modern look for homes.",
   },
   {
     heading: "Commercial Spaces:",
     description:
-      "Perfect for businesses that require controlled access to parking lots, service areas, and facilities.",
+      "Perfect for offices, retail outlets, and gated communities that require efficient access control and enhanced safety.",
   },
   {
     heading: "Industrial Facilities:",
     description:
-      "Suitable for warehouses and manufacturing plants where security and restricted access are crucial.",
+      "Suitable for factories, warehouses, and other industrial sites needing reliable automated access and security.",
   },
 ];
+
 
 export const Automaticgates = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -151,7 +154,7 @@ export const Automaticgates = () => {
           <div className="text-7xl text-white font-bold">AUTOMATIC GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC GATES
             </h2>
@@ -174,7 +177,7 @@ export const Automaticgates = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Automatic gates offer unparalleled convenience and security for both residential and commercial properties. With advanced technology and customizable features, these gates provide a seamless entry experience while enhancing the safety of your property.
+              Automatic gates provide unmatched convenience and security for both residential and commercial properties. Equipped with advanced technology and customizable features, these gates deliver a seamless entry experience while enhancing overall property safety.
             </p>
           </div>
 
@@ -195,7 +198,7 @@ export const Automaticgates = () => {
            What Are Automatic Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           Automatic gates offer unparalleled convenience and security for both residential and commercial properties. With advanced technology and customizable features, these gates provide a seamless entry experience while enhancing the safety of your property.
+         Automatic gates deliver unmatched convenience and security for residential and commercial properties. Featuring advanced technology and customizable options, these gates provide a smooth, seamless entry experience while boosting the overall safety of your property.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of Automatic Gates
@@ -273,7 +276,7 @@ export const Automaticgates = () => {
             Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-           Professional installation is essential to ensure proper function and safety. Regular maintenance, including checking the mechanical components and electrical systems, will help prolong the gate's lifespan and performance.
+           Professional installation is essential to ensure proper operation and safety. Regular maintenance, including inspections of mechanical components and electrical systems, helps extend the gate’s lifespan and ensures reliable performance.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Applications of Automatic Gates
@@ -291,7 +294,7 @@ export const Automaticgates = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-          Investing in automatic gates is a smart choice for enhancing security, convenience, and the overall aesthetic of your property. Explore our range of high-quality automatic gates tailored to meet your specific needs!
+         Investing in automatic gates is a wise decision for improving security, convenience, and the visual appeal of your property. Browse our selection of high-quality automatic gates to find the perfect solution tailored to your specific needs.
           </div>
         </div>
       </section>

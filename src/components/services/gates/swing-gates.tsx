@@ -5,29 +5,29 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
+    heading: "Classic Elegance:",
     description:
-      "Swing gates provide a strong physical barrier, deterring unauthorized access and enhancing your property's security.",
+      "Swing gates add a timeless, sophisticated look to any property, enhancing curb appeal and overall aesthetics.",
   },
   {
-    heading: "Aesthetic Appeal:",
+    heading: "Security:",
     description:
-      "Available in various designs and materials, swing gates can enhance the visual appeal of your property.",
+      "Sturdy construction and secure locking mechanisms provide reliable protection for homes and commercial spaces.",
   },
   {
-    heading: "Durability:",
+    heading: "Versatility:",
     description:
-      "Constructed from robust materials, swing gates are designed to withstand weather conditions and wear over time.",
+      "Available in various materials and designs, swing gates can be customized to match different architectural styles.",
   },
   {
     heading: "Ease of Use:",
     description:
-      "Swing gates are straightforward to operate, offering convenience for everyday use.",
+      "Hinged operation ensures smooth opening and closing, whether manually or with automation options.",
   },
   {
-    heading: "Space Efficiency:",
+    heading: "Durability:",
     description:
-      "They require minimal space for installation compared to sliding gates, making them suitable for a variety of locations.",
+      "Constructed from high-quality materials, swing gates withstand daily use and resist wear over time.",
   },
 ];
 
@@ -35,69 +35,66 @@ const material = [
   {
     name: "Wood:",
     description:
-      "Offers a classic look but requires regular maintenance to protect against the elements.",
+      "Provides a classic aesthetic and natural charm while offering reasonable strength for residential use.",
   },
   {
     name: "Steel:",
-    description: `Highly durable and provides excellent security; can be powder-coated for a stylish finish.`,
+    description:
+      "Offers superior strength and durability, suitable for both residential and commercial properties.",
   },
   {
     name: "Aluminum:",
     description:
-      "Lightweight and rust-resistant, making it an ideal choice for low-maintenance needs.",
+      "Lightweight yet strong, aluminum gates resist rust and require minimal maintenance.",
   },
 ];
 
 const customization = [
   {
-    name: "Residential Properties:",
+    name: "Design Options:",
     description:
-      "Perfect for driveways, gardens, and backyards, adding an element of sophistication while providing security.",
+      "Choose from a variety of styles, including classic, modern, or ornate designs to complement your property.",
   },
   {
-    name: "Commercial Spaces:",
-    description: `Ideal for businesses needing controlled access to parking lots and service areas.`,
-  },
-  {
-    name: "Industrial Facilities:",
+    name: "Automation Options:",
     description:
-      "Suitable for securing industrial premises, providing a strong physical barrier.",
+      "Swing gates can be equipped with automatic openers for enhanced convenience and safety.",
   },
 ];
 
 const gates = [
   {
-    name: "Space Efficiency:",
+    name: "Timeless Appeal:",
     description:
-      "Swing gates require minimal space for installation compared to sliding gates, making them suitable for various locations.",
+      "Swing gates offer a classic look that enhances the overall aesthetics of your property.",
   },
   {
-    name: "Customizable Features:",
+    name: "Reliable Security:",
     description:
-      "Options for decorative elements, finishes, and colors allow for personalization to match your property’s style.",
+      "Robust construction and secure hinges make swing gates a dependable choice for property protection.",
   },
   {
-    name: "Low Maintenance:",
+    name: "Flexible Operation:",
     description:
-      "With simple mechanisms, swing gates are easy to maintain, requiring occasional checks and lubrications.",
+      "Can be operated manually or automated, providing convenience and ease of access.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Single Swing Gates:",
+    heading: "Residential Properties:",
     description:
-      "Ideal for narrower openings, these gates operate on a single hinge.",
+      "Ideal for homes, gardens, and driveways, adding both security and elegance to the property.",
   },
   {
-    heading: "Double Swing Gates:",
+    heading: "Commercial Spaces:",
     description:
-      "Suitable for wider entrances, providing an elegant and grand opening.",
+      "Perfect for offices, retail areas, and gated communities requiring secure and stylish access solutions.",
   },
   {
-    heading: "Custom Swing Gates:",
+    heading: "Industrial Facilities:",
     description:
-      "Tailored designs to meet specific aesthetic and functional needs.",
+      "Suitable for lighter industrial use where controlled access and durability are important.",
   },
 ];
 
@@ -152,7 +149,7 @@ export const Swinggates = () => {
           <div className="text-7xl text-white font-bold">SWING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;SWING GATES
             </h2>
@@ -174,10 +171,10 @@ export const Swinggates = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Swing gates offer a classic and elegant solution for property
-              access. Ideal for both residential and commercial applications,
+              Swing gates provide a classic and elegant solution for property
+              access. Suitable for both residential and commercial properties,
               these gates combine functionality with aesthetic appeal, enhancing
-              your property's security and curb appeal.
+              both security and curb appeal.
             </p>
           </div>
 
@@ -198,10 +195,10 @@ export const Swinggates = () => {
             What Are Swing Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Swing gates are a type of gate that opens inward or outward on
-            hinges. Available in various materials such as wood, steel, and
-            aluminum, they come in a range of designs to suit different styles
-            and preferences.
+            Swing gates are designed to open inward or outward on hinges. They
+            are available in a variety of materials—including wood, steel, and
+            aluminum—and come in numerous designs to match different
+            architectural styles and personal preferences.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of Swing Gates
@@ -279,9 +276,10 @@ export const Swinggates = () => {
             Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Professional installation is crucial for ensuring proper function
-            and longevity. Regular maintenance, including checking the hinges
-            and gate alignment, will help keep your swing gate in top condition.
+            Professional installation is essential to ensure proper operation
+            and long-term durability. Regular maintenance, including inspecting
+            hinges and checking gate alignment, helps keep your swing gate
+            functioning smoothly and looking its best.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Types of Swing Gates
@@ -299,10 +297,10 @@ export const Swinggates = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in swing gates is a smart decision for enhancing security,
-            aesthetics, and functionality at your property. Explore our
-            collection of high-quality swing gates to find the perfect fit for
-            your needs!
+            Investing in swing gates is a smart choice for enhancing security,
+            aesthetics, and convenience. Explore our range of high-quality swing
+            gates to find the perfect solution tailored to your property’s
+            needs.
           </div>
         </div>
       </section>

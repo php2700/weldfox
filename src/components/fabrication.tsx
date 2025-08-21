@@ -9,7 +9,7 @@ export const Fabrication = () => {
           <h1 className="text-5xl md:text-6xl lg:text-[70px] font-[900] leading-tight">
             PROVIDING PREMIUM FABRICATION WORKS...
           </h1>
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <button className="bg-yellow-400 text-black rounded-full w-20 h-20 flex items-center justify-center">
               <svg
                 className="w-10 h-10"
@@ -19,9 +19,9 @@ export const Fabrication = () => {
                 <path d="M8 5v14l11-7z" />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
-        <div className="bg-yellow-600 px-10 py-10 text-left  lg:w-auto lg:text-center">
+        <div className="bg-secondary/90 px-10 py-10 text-left  lg:w-auto lg:text-center">
           <img
             src="https://abs.twimg.com/favicons/twitter.ico"
             alt="Twitter"

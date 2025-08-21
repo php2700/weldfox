@@ -40,85 +40,165 @@ const GeneralFabrication = () => {
 
   const handleView = (article, index) => {};
 
+  // const articles = [
+  //   {
+  //     heading: "SAFETY GRILL",
+  //     img: "/safety-grill.webp",
+  //     description:
+  //       "Mangalore tiles, known for their distinct design and reliability, have been a popular choice in traditional and modern architectur",
+  //     url: "/safety-grill",
+  //   },
+  //   {
+  //     heading: "STRUCTURAL FABRICATION",
+  //     img: "/structural-fabrication.webp",
+  //     description:
+  //       "Structural fabrication is a crucial process in the construction and manufacturing industries, involving the creation of metal stru",
+  //     url: "/structural-fabrication",
+  //   },
+  //   {
+  //     heading: "ROOFING WORK",
+  //     img: "/Roofing-work.webp",
+  //     description:
+  //       "Mild Steel (MS) roofing is an excellent choice for those seeking durability, strength, and aesthetic appeal in their roofing solut",
+  //     url: "/roofing",
+  //   },
+  //   {
+  //     heading: "BUILDING ELEVATION WORK",
+  //     img: "/building-elevation-work.webp",
+  //     description:
+  //       "Building elevation work is a crucial aspect of modern architecture, focusing on enhancing the visual appeal and structural integri",
+  //     url: "/elevation",
+  //   },
+  //   {
+  //     heading: "COMPOUND GRILL",
+  //     img: "/compound-grill.jpg",
+  //     description:
+  //       "Compound grills are essential for enhancing the security and visual appeal of your property. These grills, made from a combination",
+  //     url: "/compound-grill",
+  //   },
+  //   {
+  //     heading: "WINDOW GRILL",
+  //     img: "/window-grill.jpg",
+  //     description:
+  //       "SS (Stainless Steel) window grills are an excellent solution for enhancing the security and visual appeal of your property. Known",
+  //     url: "/window-grill",
+  //   },
+  //   {
+  //     heading: "COLLAPSIBLE GATE",
+  //     img: "/collapsible-ate.jpg",
+  //     description:
+  //       "MS (Mild Steel) window grills are essential for enhancing the security and aesthetic appeal of your property. These grills not onl",
+  //     url: "/collapsible",
+  //   },
+  //   {
+  //     heading: "PARGOLA",
+  //     img: "/Pargola.jpg",
+  //     description:
+  //       "An MS (Mild Steel) pergola is an excellent addition to any outdoor area, providing both beauty and functionality. Known for their",
+  //     url: "/pergola",
+  //   },
+  //   {
+  //     heading: "STAIRCASE",
+  //     img: "/Staircase.jpg",
+  //     description:
+  //       "MS (Mild Steel) staircases are a popular choice for both residential and commercial properties, offering a perfect blend of durabi",
+  //     url: "/staircase",
+  //   },
+  //   {
+  //     heading: "SS RAILINGS",
+  //     img: "/SS-railings.webp",
+  //     description:
+  //       "SS (Stainless Steel) railings are an excellent choice for enhancing the safety and visual appeal of your residential or commercial",
+  //     url: "/ss-railing",
+  //   },
+  //   {
+  //     heading: "MS RAILINGS",
+  //     img: "/MS-railings.jpeg",
+  //     description:
+  //       "MS (Mild Steel) railings are an essential addition to any property, providing both safety and visual appeal. Known for their durab",
+  //     url: "/ms-railing",
+  //   },
+  // ];
   const articles = [
     {
       heading: "SAFETY GRILL",
       img: "/safety-grill.webp",
       description:
-        "Mangalore tiles, known for their distinct design and reliability, have been a popular choice in traditional and modern architectur",
+        "Safety grills provide strong protection and durability while adding style to your property. Designed with precision, they ensure maximum safety without compromising aesthetics.",
       url: "/safety-grill",
     },
     {
       heading: "STRUCTURAL FABRICATION",
       img: "/structural-fabrication.webp",
       description:
-        "Structural fabrication is a crucial process in the construction and manufacturing industries, involving the creation of metal stru",
+        "Structural fabrication involves creating durable metal structures for construction and industrial needs. Our expert team delivers precise, strong, and long-lasting fabrication solutions.",
       url: "/structural-fabrication",
     },
     {
       heading: "ROOFING WORK",
       img: "/Roofing-work.webp",
       description:
-        "Mild Steel (MS) roofing is an excellent choice for those seeking durability, strength, and aesthetic appeal in their roofing solut",
+        "Our roofing solutions offer strength, durability, and weather resistance. Designed with high-quality materials, they provide reliable protection and enhance the overall appearance of buildings.",
       url: "/roofing",
     },
     {
       heading: "BUILDING ELEVATION WORK",
       img: "/building-elevation-work.webp",
       description:
-        "Building elevation work is a crucial aspect of modern architecture, focusing on enhancing the visual appeal and structural integri",
+        "Building elevation work enhances both the visual appeal and structural integrity of properties. Our designs combine modern aesthetics with long-lasting durability.",
       url: "/elevation",
     },
     {
       heading: "COMPOUND GRILL",
       img: "/compound-grill.jpg",
       description:
-        "Compound grills are essential for enhancing the security and visual appeal of your property. These grills, made from a combination",
+        "Compound grills add strength, security, and elegance to your property. Crafted with durable materials, they ensure long-lasting protection with stylish designs.",
       url: "/compound-grill",
     },
     {
       heading: "WINDOW GRILL",
       img: "/window-grill.jpg",
       description:
-        "SS (Stainless Steel) window grills are an excellent solution for enhancing the security and visual appeal of your property. Known",
+        "Window grills provide enhanced safety while complementing your home’s design. Our strong and stylish grills ensure security without compromising on aesthetics.",
       url: "/window-grill",
     },
     {
       heading: "COLLAPSIBLE GATE",
       img: "/collapsible-ate.jpg",
       description:
-        "MS (Mild Steel) window grills are essential for enhancing the security and aesthetic appeal of your property. These grills not onl",
+        "Collapsible gates are a versatile security solution, offering strength, durability, and space-saving functionality. Ideal for both residential and commercial properties.",
       url: "/collapsible",
     },
     {
       heading: "PARGOLA",
       img: "/Pargola.jpg",
       description:
-        "An MS (Mild Steel) pergola is an excellent addition to any outdoor area, providing both beauty and functionality. Known for their",
+        "Pergolas create stylish outdoor spaces, offering shade and elegance. Our durable metal pergolas are designed for beauty, strength, and long-lasting functionality.",
       url: "/pergola",
     },
     {
       heading: "STAIRCASE",
       img: "/Staircase.jpg",
       description:
-        "MS (Mild Steel) staircases are a popular choice for both residential and commercial properties, offering a perfect blend of durabi",
+        "Our custom staircases are designed with precision, blending durability and elegance. Perfect for residential and commercial spaces, they enhance safety and style.",
       url: "/staircase",
     },
     {
       heading: "SS RAILINGS",
       img: "/SS-railings.webp",
       description:
-        "SS (Stainless Steel) railings are an excellent choice for enhancing the safety and visual appeal of your residential or commercial",
+        "Stainless Steel (SS) railings combine modern aesthetics with durability, ensuring safety and style. Ideal for staircases, balconies, and commercial spaces.",
       url: "/ss-railing",
     },
     {
       heading: "MS RAILINGS",
       img: "/MS-railings.jpeg",
       description:
-        "MS (Mild Steel) railings are an essential addition to any property, providing both safety and visual appeal. Known for their durab",
+        "Mild Steel (MS) railings are strong, reliable, and cost-effective. They provide excellent safety and add a classic touch to residential and commercial properties.",
       url: "/ms-railing",
     },
   ];
+
   return (
     <div className="min-h-screen relative bg-background">
       <div
@@ -143,7 +223,7 @@ const GeneralFabrication = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; GENERAL FABRICATION
               SERVICES
@@ -174,7 +254,7 @@ const GeneralFabrication = () => {
                     {article.description}
                   </div>
                   <Link to={article?.url}>
-                    <button className="border text-white bg-[#fcc729] font-[14px] rounded-lg cursor-pointer py-1 font-[500] px-4">
+                    <button className="border text-white bg-secondary/90 font-[14px] rounded-lg cursor-pointer py-1 font-[500] px-4">
                       View Details
                     </button>
                   </Link>

@@ -47,7 +47,7 @@ const initialClients = [
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 border-4 border-[#fcc729] text-[#fcc729] font-bold text-[16px] rounded mb-6">
+          <div className="inline-block rounded-lg px-4 py-2 border-4 border-secondary/90 text-secondary/90 font-bold text-[16px] rounded mb-6">
             Clients
           </div>
           <h2 className="text-5xl md:text-[50px] font-[900] text-foreground mb-4">
@@ -60,7 +60,7 @@ const initialClients = [
           {clients.slice(0, visibleCount).map((client, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-8 text-center hover:shadow-lg transition-shadow"
+              className="bg-card rounded-lg p-8 text-center border  hover:border-secondary/90 transition-shadow"
             >
               <div className="text-4xl mb-4">{client.logo}</div>
               <h3 className="font-bold text-foreground">{client.name}</h3>

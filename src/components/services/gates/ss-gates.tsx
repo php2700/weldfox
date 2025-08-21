@@ -7,27 +7,27 @@ const arr = [
   {
     heading: "Durability:",
     description:
-      "Stainless steel is resistant to rust and corrosion, ensuring that your gate will withstand the elements and last for years without significant wear.",
+      "Stainless steel resists rust and corrosion, ensuring your gate withstands the elements and remains functional for years.",
   },
   {
     heading: "Security:",
     description:
-      "With their robust construction, SS gates provide a strong barrier against unauthorized access, making them an excellent choice for securing properties.",
+      "With their robust construction, SS gates provide a strong barrier against unauthorized access, offering excellent property protection.",
   },
   {
     heading: "Aesthetic Appeal:",
     description:
-      "Available in sleek, modern designs, stainless steel gates can enhance the visual appeal of any property, blending functionality with style.",
+      "Featuring sleek and modern designs, stainless steel gates enhance the visual appeal of any property, combining functionality with style.",
   },
   {
     heading: "Low Maintenance:",
     description:
-      "SS gates require minimal maintenance compared to other materials, as they do not need regular painting or treatment.",
+      "SS gates require minimal upkeep compared to other materials, eliminating the need for regular painting or treatments.",
   },
   {
     heading: "Eco-Friendly:",
     description:
-      "Stainless steel is a recyclable material, making SS gates an environmentally friendly option for conscientious homeowners and businesses.",
+      "Made from recyclable stainless steel, these gates are an environmentally responsible choice for homes and businesses.",
   },
 ];
 
@@ -35,16 +35,17 @@ const material = [
   {
     name: "High-Quality Stainless Steel:",
     description:
-      "The primary material used for SS gates, known for its strength and resistance to corrosion.",
+      "The primary material for SS gates, valued for its exceptional strength and corrosion resistance.",
   },
   {
     name: "Powder-Coated Finishes:",
-    description: `A durable finish option that enhances the gate's aesthetic appeal while providing extra protection against the elements.`,
+    description:
+      "A durable finish that enhances aesthetic appeal while providing extra protection against the elements.",
   },
   {
     name: "Reinforced Hardware:",
     description:
-      "Heavy-duty hinges, locks, and fittings that ensure the longevity and security of the gate.",
+      "Heavy-duty hinges, locks, and fittings that ensure the gate's durability, security, and long-term performance.",
   },
 ];
 
@@ -52,11 +53,12 @@ const customization = [
   {
     name: "Installation:",
     description:
-      "Professional installation is recommended to ensure that your SS gate functions effectively and meets safety standards.",
+      "Having your SS gate professionally installed ensures proper alignment, smooth operation, and long-lasting performance.",
   },
   {
     name: "Maintenance:",
-    description: `Regular cleaning with mild soap and water will keep the gate looking its best.`,
+    description:
+      "Routine cleaning and periodic inspection help preserve the gate’s finish and functionality, keeping it looking and working like new.",
   },
 ];
 
@@ -64,17 +66,17 @@ const gates = [
   {
     name: "Versatile Designs:",
     description:
-      "SS gates can be customized in various styles, finishes, and sizes, ensuring they fit your property’s aesthetic perfectly.",
+      "SS gates are available in a variety of styles, finishes, and sizes, allowing you to perfectly match your property’s aesthetic.",
   },
   {
     name: "Weather Resistance:",
     description:
-      "Designed to withstand harsh weather conditions without deterioration, ensuring long-lasting performance.",
+      "Built to endure harsh weather conditions without rust or deterioration, ensuring long-lasting performance.",
   },
   {
     name: "Easy Operation:",
     description:
-      "Available in manual and automatic options, SS gates provide convenience and ease of use.",
+      "With both manual and automatic options available, SS gates offer convenient and effortless operation.",
   },
 ];
 
@@ -82,20 +84,19 @@ const useRolling = [
   {
     heading: "Residential Properties:",
     description:
-      "Ideal for securing driveways, gardens, and entrances while adding an elegant touch.",
+      "Ideal for securing driveways, gardens, and entrances, while enhancing the property’s aesthetic appeal.",
   },
   {
     heading: "Commercial Spaces:",
     description:
-      "Perfect for retail stores, office buildings, and warehouses that require strong security solutions with a professional appearance.",
+      "Perfect for retail stores, office buildings, and warehouses that need robust security along with a sleek, professional look.",
   },
   {
     heading: "Industrial Facilities:",
     description:
-      "Suitable for fencing and access points in industrial environments, where durability and strength are crucial.",
+      "Designed for fencing and access points in industrial settings, offering maximum durability and strength.",
   },
 ];
-
 export const Ssgates = () => {
   const [showSticky, setShowSticky] = useState(false);
   const lastScrollY = useRef(0);
@@ -147,7 +148,7 @@ export const Ssgates = () => {
           <div className="text-7xl text-white font-bold">SS GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;SS GATES
             </h2>
@@ -169,10 +170,10 @@ export const Ssgates = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Stainless Steel (SS) gates are the perfect combination of
-              strength, elegance, and versatility. Ideal for both residential
-              and commercial applications, these gates not only provide security
-              but also add a touch of modern sophistication to any property.
+              Stainless Steel (SS) gates offer the perfect blend of strength,
+              elegance, and versatility. Suitable for both residential and
+              commercial properties, these gates provide robust security while
+              adding a touch of modern sophistication to any space.
             </p>
           </div>
 
@@ -193,10 +194,10 @@ export const Ssgates = () => {
             What Are SS Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            SS gates are constructed from high-quality stainless steel, a
-            material known for its corrosion resistance and durability. These
-            gates can be designed in various styles, including swing, sliding,
-            and bi-fold options, to suit diverse needs and preferences.
+            SS gates are crafted from high-quality stainless steel, renowned for
+            its corrosion resistance and durability. They are available in a
+            variety of styles, including swing, sliding, and bi-fold designs, to
+            suit diverse needs and preferences.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of SS Gates
@@ -294,10 +295,10 @@ export const Ssgates = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in stainless steel gates is a smart decision for anyone
-            looking to enhance security, aesthetics, and longevity in their
-            property. Explore our range of high-quality SS gates to find the
-            perfect solution tailored to your needs!
+            Investing in stainless steel gates is a wise choice for anyone
+            seeking to enhance security, aesthetics, and longevity on their
+            property. Browse our selection of high-quality SS gates to find the
+            perfect solution tailored to your needs.
           </div>
         </div>
       </section>

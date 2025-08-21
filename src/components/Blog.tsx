@@ -73,7 +73,7 @@ const Blog = () => {
               >
                 <img
                   src={article}
-                  className="h-80 bg-gradient-steel cursor-pointer object-cover w-full"
+                  className="h-80 bg-gradient-steel cursor-pointer object-cover w-full border hover:border-secondary/90"
                   onClick={() => {
                     setSelectedImage(article);
                   }}

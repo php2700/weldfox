@@ -7,47 +7,54 @@ const arr = [
   {
     heading: "Convenient Operation:",
     description:
-      "With the push of a button, motorized rolling shutters open or close easily. This convenience benefits large or hard-to-reach windows and doors, enabling quick access without strain.",
+      "Motorized rolling shutters open and close effortlessly at the touch of a button, making them ideal for large or hard-to-reach doors and windows.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "Motorized rolling shutters provide a formidable barrier against intruders. Their robust design and locking mechanisms offer superior protection for your property, deterring theft and vandalism.",
+      "Built with strong materials and secure locking mechanisms, motorized shutters provide reliable protection against intruders and vandalism.",
   },
   {
     heading: "Energy Efficiency:",
     description:
-      "These shutters regulate temperatures, providing insulation that reduces heating and cooling costs. By blocking heat in summer and retaining warmth in winter, they boost energy efficiency.",
+      "These shutters help maintain indoor temperatures, reducing heating and cooling costs by keeping interiors cool in summer and warm in winter.",
   },
   {
     heading: "Customizable Options:",
     description:
-      "Available in a variety of colors, materials, and designs, motorized rolling shutters can be tailored to fit the aesthetic of any property. Choose from options that best suit your style and functional needs.",
+      "Choose from a range of colors, finishes, and materials to match your property’s style while meeting your functional needs.",
   },
   {
     heading: "Automated Control Systems:",
     description:
-      "Many motorized shutters integrate into smart systems, allowing remote control and programming. Set schedules or operate them from your device.",
+      "Many motorized shutters can be integrated with smart home systems, allowing remote operation, scheduling, and automated control from your devices.",
   },
 ];
+
 
 const useRolling = [
   {
     heading: "Residential Properties:",
-    description:
-      "Secure your home with style, enhancing both security and curb appeal.",
+    description: "Enhance home security and convenience with effortless operation and reliable protection.",
   },
   {
-    heading: "Commercial Spaces:",
-    description:
-      "Ideal for storefronts and warehouses, providing a secure environment for valuable inventory.",
+    heading: "Commercial Buildings:",
+    description: "Secure shops, offices, and showrooms while allowing easy access for staff and customers.",
   },
   {
-    heading: "Garage Doors:",
-    description:
-      "Offer easy access while ensuring protection for vehicles and equipment.",
+    heading: "Warehouses & Storage:",
+    description: "Protect goods and inventory with strong, automated shutters that are easy to operate.",
+  },
+  {
+    heading: "Garages:",
+    description: "Provide safe and convenient access to vehicles with automated rolling shutters.",
+  },
+  {
+    heading: "Outdoor Areas:",
+    description: "Secure patios, balconies, or terraces without compromising aesthetics or functionality.",
   },
 ];
+
 
 export const MotorizedShutters = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -103,7 +110,7 @@ export const MotorizedShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MOTORIZED ROLLING SHUTTERS
             </h2>
@@ -125,7 +132,7 @@ export const MotorizedShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-             Motorized rolling shutters are a modern solution for enhancing security, convenience, and energy efficiency in both residential and commercial properties. Equipped with advanced motor technology, these shutters offer effortless operation and reliable protection, making them an ideal choice for today’s busy lifestyles.
+             Motorized rolling shutters provide modern security and convenience for both homes and businesses. Featuring advanced motor technology, they allow effortless operation while ensuring reliable protection and improved energy efficiency, making them perfect for today’s fast-paced lifestyles.
             </p>
           </div>
 
@@ -149,7 +156,7 @@ export const MotorizedShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-           Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
+           A motorized rolling shutter is a type of rolling shutter (or rolling door) that is operated using an electric motor instead of manually. It provides convenience, security, and efficiency for both residential and commercial properties.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -178,35 +185,22 @@ export const MotorizedShutters = () => {
             How to Operate
           </div>
           <div className=" font-semibold text-[#000] ">
-            How to Operate Manual Rolling Shutters:
+            How to Operate Motorized Rolling Shutters:
           </div>
           <div>
-            Operating manual rolling shutters is straightforward: Grasp the
-            handle and pull the shutter down smoothly to the desired position.
-            Engage the locking mechanism to secure the shutter in place. To
-            open, simply unlock and lift the shutter back into its housing
+            Operating motorized rolling shutters is effortless: Use the wall switch, remote control, or smart device to open or close the shutter. The motor smoothly raises or lowers the shutter to the desired position. Many systems also allow you to set automated schedules for daily operation, providing convenience and security without manual effort.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            To ensure the longevity of your manual rolling shutters, wipe down
-            the surface regularly to remove dust and debris. A mild soap
-            solution works best. Periodically check for wear and tear on the
-            mechanisms and replace any damaged components promptly. Apply a
-            suitable lubricant to the tracks and moving parts to ensure smooth
-            operation.
+           o keep your motorized rolling shutters in optimal condition, clean the surface regularly with a soft cloth and mild soap to remove dust and debris. Periodically inspect the motor, tracks, and moving components for wear or damage, and ensure all fasteners are secure. Apply appropriate lubrication to the tracks and mechanical parts as recommended by the manufacturer to maintain smooth and reliable operation.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Manual rolling shutters are a practical and economical choice for
-            enhancing the security of your property. With their easy operation,
-            customizable designs, and added benefits like energy efficiency,
-            they are suitable for various applications. Invest in manual rolling
-            shutters today to protect your space without compromising on style
-            or convenience.
+            Motorized rolling shutters combine effortless operation, robust security, and modern design. Ideal for both residential and commercial spaces, they provide convenience, energy efficiency, and peace of mind. Invest in motorized rolling shutters today to secure your property with style, ease, and reliability.
           </div>
         </div>
       </section>

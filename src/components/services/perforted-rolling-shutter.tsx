@@ -5,49 +5,51 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
+    heading: "Secure Yet Open:",
     description:
-      "While offering visibility, perforated rolling shutters create a formidable barrier against unauthorized access. Their sturdy construction ensures your property remains secure without sacrificing style.",
+      "Perforated rolling shutters strike the right balance between safety and openness. Their strong build ensures protection, while the perforations allow visibility and airflow.",
   },
   {
-    heading: "Visibility and Airflow:",
+    heading: "Customer-Friendly Design:",
     description:
-      "The unique design allows light and air to flow through while providing a view of the outside. This makes them ideal for storefronts and cafes, attracting customers while keeping space secure.",
+      "Ideal for storefronts, showrooms, and cafes, they let customers see inside even when closed, helping businesses attract attention after hours.",
   },
   {
-    heading: "Durability:",
+    heading: "Long-Lasting Performance:",
     description:
-      "Made from high-quality materials, perforated rolling shutters withstand harsh weather conditions and daily wear. Their robust design ensures a long lifespan, making them a reliable investment.",
+      "Crafted from durable materials, these shutters can withstand daily usage and weather challenges, ensuring reliability for years.",
   },
   {
-    heading: "Versatile Applications:",
+    heading: "Flexible Usage:",
     description:
-      "These shutters are perfect for a variety of settings, including retail stores, warehouses, and industrial facilities. Their versatility makes them a popular choice for many commercial properties.",
+      "Suitable for retail, commercial, or industrial spaces, they adapt to different environments while maintaining functionality and appeal.",
   },
   {
-    heading: "Aesthetic Appeal:",
+    heading: "Stylish Finish:",
     description:
-      "Available in various colors and finishes, perforated rolling shutters can enhance the aesthetic of any building. Customize your shutters to match your brand or personal style.",
+      "With multiple design options, colors, and finishes, perforated shutters enhance both security and aesthetics, blending practicality with style.",
   },
 ];
+
 
 const useRolling = [
   {
     heading: "Retail Stores:",
     description:
-      "Secure merchandise while allowing potential customers to see products, encouraging foot traffic.",
+      "Perforated rolling shutters allow customers to preview merchandise even after hours, boosting security while attracting foot traffic.",
   },
   {
     heading: "Cafes and Restaurants:",
     description:
-      "Protect outdoor seating areas while maintaining an open atmosphere.",
+      "They protect seating and storefront areas while keeping visibility and airflow intact, creating an inviting vibe even when closed.",
   },
   {
     heading: "Industrial Facilities:",
     description:
-      "Ensure safety and security in warehouses while allowing airflow and visibility.",
+      "Ideal for warehouses and workshops, they provide strong protection with ventilation, ensuring safety without complete isolation.",
   },
 ];
+
 
 export const PerfortedRollingShutters = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -103,7 +105,7 @@ export const PerfortedRollingShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;  PERFORATED ROLLING SHUTTERS
             </h2>
@@ -125,7 +127,7 @@ export const PerfortedRollingShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-             Perforated rolling shutters are an innovative solution that provides the perfect blend of security and visibility. Designed with a series of small holes or slits, these shutters allow for air circulation and visibility while still offering protection against intruders and the elements. They are ideal for commercial applications where aesthetics and security are equally important.
+            Perforated rolling shutters combine security with modern design, allowing visibility and ventilation without compromising protection. Their unique perforated structure makes them a preferred choice for commercial spaces, ensuring safety while maintaining an attractive and welcoming appearance. Choosing perforated shutters means balancing functionality, aesthetics, and reliable security.
             </p>
           </div>
 
@@ -149,7 +151,7 @@ export const PerfortedRollingShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Perforated rolling shutters are made from high-quality metal sheets with evenly spaced perforations, offering the perfect balance of security and visibility. Their durable construction protects against unauthorized access while allowing air circulation and partial visibility inside the premises. Commonly used in shopping malls, showrooms, and commercial spaces, these shutters combine strength, style, and functionality for modern security needs.
+            Perforated Rolling Shutters are crafted from high-quality metal sheets with evenly spaced perforations, providing an ideal balance between security and visibility. Their robust design prevents unauthorized access while allowing natural airflow and partial visibility into the premises. Widely used in shopping malls, showrooms, and commercial establishments, these shutters combine durability, style, and practicality, making them a modern solution for secure yet welcoming spaces.
             
           </div>
 
@@ -182,22 +184,19 @@ export const PerfortedRollingShutters = () => {
         How to Operate Perforated Rolling Shutters:
           </div>
           <div>
-            Operating manual rolling shutters is straightforward: Grasp the
-            handle and pull the shutter down smoothly to the desired position.
-            Engage the locking mechanism to secure the shutter in place. To
-            open, simply unlock and lift the shutter back into its housingHow to Operate Perforated Rolling Shutters:
+          Operating perforated rolling shutters is simple and user-friendly. Hold the handle firmly and pull the shutter downward until it reaches the required position. Once lowered, engage the locking mechanism to ensure security. To open, unlock the shutter and lift it smoothly back into its upper housing. The perforated design ensures easy handling while maintaining visibility and airflow during operation.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-           To ensure the longevity and functionality of your perforated rolling shutters, clean the surface with a mild detergent and water to prevent dirt buildup and maintain appearance. Regularly check the operating mechanisms for any signs of wear or malfunction. Apply lubricant to moving parts to ensure smooth operation.
+     Perforated rolling shutters require simple maintenance to stay durable and functional. Regularly clean the surface to prevent dirt buildup, check the operating parts for wear, and apply lubricant to ensure smooth operation.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-           Perforated rolling shutters offer an ideal combination of security, visibility, and durability. Perfect for commercial properties looking to enhance aesthetics while providing protection, these shutters are a smart investment. Choose perforated rolling shutters today to secure your space while maintaining an inviting atmosphere.
+           Perforated rolling shutters are the perfect balance of security and style, offering strength, visibility, and lasting durability. They not only safeguard your property but also create a welcoming and modern look, making them a smart choice for any commercial space.
           </div>
         </div>
       </section>

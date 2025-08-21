@@ -1,26 +1,27 @@
 import { useEffect, useState } from "react";
 const testimonials = [
   {
-    name: "PRIYA M.",
-    text: "The team installing our automatic sliding gate was punctual, professional, and thorough. They provided helpful advice, completed the installation smoothly and ahead of schedule, and ensured everything was perfectly aligned. We're thrilled with the exceptional product and outstanding service!",
+    name: "RAHUL K.",
+    text: "Over the past year, METAL4CRAFT AUTOMATION has consistently exceeded our expectations. From design to final installation, their team delivered precision, reliability, and unmatched professionalism. Truly a partner we can rely on for all our automation and fabrication needs.",
   },
   {
-    name: "SANJAY D",
-    text: "The team efficiently installed our boom barrier, integrating it seamlessly with our access control system. Their proactive testing and attention to detail ensured smooth operation, adding unmatched convenience and enhanced security to our property. Highly recommended for their professionalism!",
+    name: "ANITA P.",
+    text: "We’ve been working with the team for over a year, and their dedication to quality never fails to impress. Every project—big or small—has been completed with care, attention to detail, and on-time delivery. A dependable choice for long-term collaboration.",
   },
   {
-    name: "NISHAa S",
-    text: "We're thrilled with the team's exceptional quality and professionalism on our structural project. They combined expert planning, meticulous attention to detail, top-notch management, and impeccable craftsmanship, delivering a beautifully constructed and highly durable building. Highly recommended!",
+    name: "VIKAS J.",
+    text: "Our annual maintenance and upgrades were handled flawlessly by the METAL4CRAFT AUTOMATION team. They ensured smooth operation, minimal downtime, and top-notch service throughout the year. Their commitment to customer satisfaction is outstanding.",
   },
   {
-    name: "NISHA aaS",
-    text: "We'rea thrilled with the team's exceptional quality and professionalism on our structural project. They combined expert planning, meticulous attention to detail, top-notch management, and impeccable craftsmanship, delivering a beautifully constructed and highly durable building. Highly recommended!",
+    name: "SHILPA R.",
+    text: "It’s been a year since our rolling shutters were installed, and they continue to operate seamlessly. The durability, design, and after-sales support have all been exceptional. Truly a product that delivers long-term value.",
   },
   {
-    name: "NISHA S3",
-    text: "We're thrilled with the team's exceptional quality and professionalism on our structural project. They combined expert planning, meticulous attention to detail, top-notch management, and impeccable craftsmanship, delivering a beautifully constructed and highly durable building. Highly recommended!",
+    name: "ARUN M.",
+    text: "Year after year, METAL4CRAFT AUTOMATION has been our trusted partner for fabrication solutions. Their team combines technical expertise with excellent customer care, making every project a smooth and stress-free experience.",
   },
 ];
+
 const Testimonials = () => {
   const [startIndex, setStartIndex] = useState(0);
 
@@ -42,7 +43,7 @@ const Testimonials = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <div className="inline-block px-4 py-2 border-4 border-[#fcc729] text-[#fcc729] font-bold text-sm rounded mb-6">
+          <div className="inline-block px-4 py-2 border-4 border-secondary/90 text-secondary/90 font-bold text-sm rounded-lg mb-6">
             Testimonials
           </div>
           <h2 className="text-5xl md:text-[50px] font-[900] text-foreground mb-4">
@@ -54,7 +55,7 @@ const Testimonials = () => {
           {visibleTestimonials.map((testimonial, index) => (
             <div
               key={`${testimonial.name}-${index}`}
-              className="p-8 rounded-lg transition-all duration-300 hover:border-2 hover:border-[#fcc729] 
+              className="p-8 rounded-lg transition-all duration-300 hover:border-2 hover:border-secondary/90 
                   text-secondary-foreground border-2"
             >
               <p

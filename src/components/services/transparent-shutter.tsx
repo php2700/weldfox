@@ -5,49 +5,52 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
+    heading: "Robust Security:",
     description:
-      "Polycarbonate rolling shutters provide a robust barrier against break-ins and vandalism. Their strong construction deters potential intruders while ensuring that your property remains safe.",
+      "Polycarbonate rolling shutters act as a strong barrier against intrusions and vandalism. Their sturdy construction ensures your property stays protected at all times.",
   },
   {
-    heading: "Durability:",
+    heading: "Long-Lasting Durability:",
     description:
-      "Unlike traditional metal shutters, polycarbonate shutters are lightweight, strong, and resistant to impact and weather damage, minimizing the need for frequent repairs or replacements.",
+      "Lightweight yet tough, polycarbonate shutters resist impacts and weather damage better than traditional metal shutters, reducing maintenance and replacements.",
   },
   {
-    heading: "Aesthetic Appeal:",
+    heading: "Visual Appeal:",
     description:
-      "Polycarbonate's transparency allows visibility, ideal for retail stores and displays. They provide security without sacrificing natural light, keeping your property inviting.",
+      "The transparency of polycarbonate allows for clear visibility, making them ideal for shops and display areas. They provide safety without blocking natural light.",
   },
   {
-    heading: "Energy Efficiency:",
+    heading: "Energy Saving:",
     description:
-      "Polycarbonate rolling shutters can contribute to energy savings by providing insulation. They help regulate indoor temperatures, reducing reliance on heating and cooling systems.",
+      "These shutters help maintain indoor temperatures by offering insulation, reducing the need for excessive heating or cooling and improving energy efficiency.",
   },
   {
-    heading: "Ease of Operation:",
+    heading: "Simple Operation:",
     description:
-      "Available in manual and motorized options, these shutters are designed for easy operation. With the touch of a button, you can secure your space quickly and effortlessly.",
+      "Available in both manual and motorized versions, polycarbonate rolling shutters are easy to operate, letting you secure your property quickly and effortlessly.",
   },
 ];
 
 const useRolling = [
   {
     heading: "Retail Stores:",
-    description: "Protect merchandise while maintaining visibility.",
-  },
-  {
-    heading: "Restaurants:",
     description:
-      "Ideal for storefronts and warehouses, ensuring security for valuable inventory.Secure outdoor seating areas without obstructing views",
+      "Protect merchandise while allowing visibility, attracting customers even when closed.",
   },
   {
-    heading: "Warehouses",
-    description: "Safeguard goods while ensuring easy access.",
+    heading: "Restaurants and Cafes:",
+    description:
+      "Secure outdoor seating areas while maintaining an open and inviting atmosphere.",
+  },
+  {
+    heading: "Warehouses:",
+    description:
+      "Safeguard goods while allowing light and visibility for easier management.",
   },
   {
     heading: "Residential Properties:",
-    description: "Enhance home security without compromising aesthetics.",
+    description:
+      "Enhance home security while letting natural light in and preserving aesthetics.",
   },
 ];
 
@@ -105,7 +108,7 @@ export const TransparentRollingShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;POLYCARBONATE ROLLING
               SHUTTERS
@@ -130,12 +133,12 @@ export const TransparentRollingShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              olycarbonate rolling shutters are an innovative solution for
-              businesses and homes seeking enhanced security, durability, and
-              aesthetic appeal. Made from high-quality polycarbonate material,
-              these shutters offer a transparent design that allows natural
-              light to enter while still providing protection against intruders
-              and harsh weather conditions.
+              Polycarbonate rolling shutters offer a perfect combination of
+              strength, transparency, and durability. Their impact-resistant and
+              lightweight design ensures security while allowing natural light
+              to pass through, making them ideal for commercial and residential
+              spaces. Invest in polycarbonate rolling shutters today to protect
+              your property without compromising on visibility or style.
             </p>
           </div>
 
@@ -159,10 +162,12 @@ export const TransparentRollingShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Powder-coated rolling shutters are constructed from high-quality
-            materials and finished with a durable powder coating. This process
-            not only enhances their appearance but also provides a protective
-            layer that resists chipping, fading, and corrosion.
+            Polycarbonate Rolling Shutters are modern shutters made from
+            high-quality polycarbonate sheets, known for their strength,
+            transparency, and lightweight properties. They provide a secure
+            barrier against intruders while allowing natural light to pass
+            through, making them ideal for commercial spaces like showrooms,
+            storefronts, and offices.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -194,30 +199,31 @@ export const TransparentRollingShutters = () => {
             Choosing the Right Polycarbonate Rolling Shutter:
           </div>
           <div>
-            When selecting polycarbonate rolling shutters, consider the
-            following: Measure your openings to ensure a proper fit. Thicker
-            polycarbonate provides greater security and durability. Choose from
-            various styles to match your property’s aesthetic.
+            Operating polycarbonate rolling shutters is simple and convenient.
+            For manual versions, pull the shutter smoothly down or lift it up
+            using the handle, ensuring the locking mechanism engages securely.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            Maintaining your polycarbonate rolling shutters is simple: Use a
-            mild soap solution and a soft cloth to keep them clear and free from
-            debris. Periodically check the motor and operating mechanisms for
-            smooth functionality.
+            To ensure the longevity and smooth operation of polycarbonate
+            rolling shutters, clean the surface regularly with a mild detergent
+            and soft cloth to remove dust and dirt. Inspect the moving parts,
+            such as gears, chains, or motors, for signs of wear, and lubricate
+            them as needed. Regular upkeep keeps the shutters functional,
+            preserves their transparency, and maintains their aesthetic appeal.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Polycarbonate rolling shutters are an ideal solution for those
-            looking to enhance security while maintaining aesthetic appeal.
-            Their unique combination of durability, ease of use, and design
-            flexibility makes them suitable for a wide range of applications.
-            Invest in polycarbonate rolling shutters today to protect your
-            property with style and efficiency.
+            Polycarbonate rolling shutters provide a perfect balance of
+            security, durability, and visual appeal. Their strength, ease of
+            operation, and versatile design make them suitable for both
+            commercial and residential spaces. Choosing polycarbonate shutters
+            ensures your property is protected while maintaining a modern,
+            stylish look.
           </div>
         </div>
       </section>

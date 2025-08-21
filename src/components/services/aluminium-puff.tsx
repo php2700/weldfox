@@ -7,22 +7,22 @@ const arr = [
   {
     heading: "Energy Efficiency:",
     description:
-      "The insulating core helps regulate indoor temperatures, reducing reliance on heating and cooling systems and leading to lower energy bills.",
+      "The insulating core helps regulate indoor temperatures, reducing reliance on heating and cooling systems and lowering energy bills.",
   },
   {
     heading: "Superior Insulation:",
     description:
-      "These shutters effectively minimize heat transfer, keeping your space comfortable year-round.",
+      "These shutters effectively minimize heat transfer, keeping your space comfortable throughout the year.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "Constructed from robust aluminum, these shutters provide an added layer of security against break-ins and vandalism.",
+      "Constructed from robust aluminum, these shutters provide an added layer of protection against break-ins and vandalism.",
   },
   {
     heading: "Noise Reduction:",
     description:
-      "The insulated design helps dampen outside noise, creating a quieter indoor environment.",
+      "The insulated design helps dampen external noise, creating a quieter indoor environment.",
   },
   {
     heading: "Weather Resistance:",
@@ -98,7 +98,7 @@ export const AluminiumpuffShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; ALUMINIUM PULL
               INSULATED ROLLING SHUTTERS
@@ -121,10 +121,11 @@ export const AluminiumpuffShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Aluminum puff insulated rolling shutters are an innovative
-              solution for energy efficiency, security, and noise reduction.
-              Ideal for both residential and commercial properties, these
-              shutters combine durability with advanced insulation technology.
+              Aluminum puff insulated rolling shutters provide a modern solution
+              for enhancing security while improving energy efficiency and
+              reducing noise. Their robust construction and insulating
+              properties make them suitable for homes, offices, and commercial
+              spaces, offering comfort, protection, and long-term savings.
             </p>
           </div>
 
@@ -148,10 +149,11 @@ export const AluminiumpuffShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Aluminum puff insulated rolling shutters are made with a core of
-            insulating material sandwiched between aluminum layers. This design
-            enhances thermal performance while providing strength and security,
-            making them suitable for various applications.
+            These shutters feature a layered construction with insulating
+            material enclosed between aluminum sheets, delivering excellent
+            thermal insulation, durability, and protection. Their design ensures
+            both energy efficiency and security, making them ideal for
+            residential and commercial use.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -181,15 +183,17 @@ export const AluminiumpuffShutters = () => {
           </div>
           <div className=" font-semibold text-[#000] ">Durability:</div>
           <div>
-            Aluminum is resistant to rust and corrosion, ensuring a long
-            lifespan with minimal maintenance.
+            Aluminum’s natural resistance to rust and corrosion ensures that
+            puff insulated rolling shutters remain durable and low-maintenance
+            over time
           </div>
-          <div className=" font-semibold text-[#000] ">Customization:</div>
+          <div className=" font-semibold text-[#000] mt-4">Customization:</div>
           <div>
-            Available in various colors and sizes, these shutters can be
-            tailored to fit any architectural style
+            With a range of colors, finishes, and sizes, aluminum puff insulated
+            rolling shutters can be customized to complement any building design
+            while maintaining functionality and aesthetic appeal.
           </div>
-          <div className=" font-semibold text-[#000] ">Ease of Use:</div>
+          <div className=" font-semibold text-[#000] mt-4 ">Ease of Use:</div>
           <div>
             Designed for smooth operation, whether manual or motorized, making
             them user-friendly for all.
@@ -198,18 +202,19 @@ export const AluminiumpuffShutters = () => {
             Installation and Maintenance
           </div>
           <div>
-            Proper installation is crucial for optimal performance. Regular
-            maintenance, such as cleaning and inspection of the mechanical
-            components, will ensure longevity and functionality.
+            Ensuring proper installation is essential for the shutters to
+            function effectively. Routine maintenance, including cleaning and
+            checking mechanical parts, helps maintain their performance and
+            extends their lifespan.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Investing in aluminum puff insulated rolling shutters is a smart
-            choice for enhancing energy efficiency, security, and comfort in
-            your property. Explore our selection to find the perfect solution
-            tailored to your needs.
+            Aluminum puff insulated rolling shutters offer an excellent
+            combination of energy efficiency, security, and comfort. Investing
+            in them ensures long-term protection and improved living or working
+            conditions, making them a valuable addition to any property.
           </div>
         </div>
       </section>

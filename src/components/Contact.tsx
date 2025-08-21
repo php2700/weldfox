@@ -176,7 +176,7 @@ const Contact = () => {
           <div className="text-7xl font-[900] text-white">CONTACT </div>
         </div>
         <div className="absolute z-10 top-[200px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto ">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 md:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 md:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; Contact
             </h2>
@@ -194,15 +194,7 @@ const Contact = () => {
               className="text-[16px] text-muted-foreground mx-auto font-[400]"
               style={{ lineHeight: "31px" }}
             >
-              We invite you to share your project details with us using this
-              form, so we can better understand how to assist you. Providing
-              this information will help us gain an initial insight into your
-              project, enabling us to assign the right team swiftly. You can
-              simply provide your company name, your name, email, and phone
-              number, or you can complete the form with additional details. An
-              Metal4craft Automation representative will respond to your inquiry
-              promptly. For urgent assistance, please contact us directly. Thank
-              you, and we look forward to working with you!
+             We invite you to share your project details with us using this form, so we can better understand how to assist you. Providing this information will help us gain an initial insight into your project, enabling us to assign the right team swiftly. You can simply provide your company name, your name, email, and phone number, or you can complete the form with additional details. An Metal4craft Automation representative will respond to your inquiry promptly. For urgent assistance, please contact us directly. Thank you, and we look forward to working with you!
             </p>
           </div>
 
@@ -213,10 +205,10 @@ const Contact = () => {
             >
               <div className="bg-opacity-50 px-6  py-12 rounded-lg">
                 <div className="flex  items-center gap-4">
-                  <div className="bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
+                  <div className="bg-secondary/90 text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
                     Corporate Office
                   </div>
-                  {/* <div className="bg-white hover:bg-[#fcc729] text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
+                  {/* <div className="bg-white hover:bg-secondary/90 text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
                     Our Reach
                   </div> */}
                 </div>
@@ -397,7 +389,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="bg-[#fcc729] w-full text-white font-bold py-2 px-4 rounded-lg mt-4"
+                className="bg-secondary/90 w-full text-white font-bold py-2 px-4 rounded-lg mt-4"
               >
                 Submit
               </button>

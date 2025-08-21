@@ -18,11 +18,11 @@ const Header = () => {
         <div className="container mx-auto flex items-center justify-end">
           <div className="flex items-center space-x-6">
             <div className="flex items-center space-x-2">
-              <Mail className="w-4 h-4 text-[#fcc729]" />
+              <Mail className="w-4 h-4 text-secondary/90" />
               <span>info@metal4craft.com</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Phone className="w-4 h-4 text-[#fcc729]" />
+              <Phone className="w-4 h-4 text-secondary/90" />
               <span>+91 63630 91384</span>
             </div>
           </div>
@@ -46,7 +46,7 @@ const Header = () => {
               <a
                 href="/"
                 className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
-                  pathname === "/" ? "border-[#fcc729]" : "border-transparent"
+                  pathname === "/" ? "border-secondary/90" : "border-transparent"
                 }`}
               >
                 Home
@@ -56,7 +56,7 @@ const Header = () => {
                 href="/about"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                   pathname === "/about"
-                    ? "border-[#fcc729]"
+                    ? "border-secondary/90"
                     : "border-transparent"
                 }`}
               >
@@ -72,7 +72,7 @@ const Header = () => {
                   href="#"
                   className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                     pathname === "/services"
-                      ? "border-[#fcc729]"
+                      ? "border-secondary/90"
                       : "border-transparent"
                   }`}
                 >
@@ -82,19 +82,19 @@ const Header = () => {
                   <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-border z-[5000]">
                     <Link
                       to="/services"
-                      className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                      className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
                     >
                       Rolling Shutters
                     </Link>
                     <Link
                       to="/services"
-                      className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                      className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
                     >
                       Entrance Automation
                     </Link>
                     <Link
                       to="/services"
-                      className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                      className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
                     >
                       General Fabrication
                     </Link>
@@ -106,7 +106,7 @@ const Header = () => {
                 href="/blog"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                   pathname === "/blog"
-                    ? "border-[#fcc729]"
+                    ? "border-secondary/90"
                     : "border-transparent"
                 }`}
               >
@@ -117,7 +117,7 @@ const Header = () => {
                 href="/contact"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                   pathname === "/contact"
-                    ? "border-[#fcc729]"
+                    ? "border-secondary/90"
                     : "border-transparent"
                 }`}
               >
@@ -126,7 +126,7 @@ const Header = () => {
             </nav>
             <div className="hidden lg:flex items-center">
               <Link to="/contact">
-                <Button className="bg-[#fcc729] text-secondary-foreground px-6 py-3 text-sm font-bold rounded-3xl">
+                <Button className="bg-secondary/90 text-secondary-foreground px-6 py-3 text-sm font-bold rounded-3xl">
                   REQUEST A QUOTE
                 </Button>
               </Link>

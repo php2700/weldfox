@@ -5,88 +5,88 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: "Exceptional Durability",
     description:
-      "SS railings are designed to withstand the elements, making them ideal for both indoor and outdoor applications. Their durability ensures a long lifespan with minimal maintenance required.",
+      "SS railings are built to withstand the elements, making them ideal for both indoor and outdoor use. Their durability ensures a long lifespan with minimal maintenance.",
   },
   {
-    heading: "Corrosion Resistance:",
+    heading: "Corrosion Resistance",
     description:
-      "Stainless steel is inherently resistant to rust and corrosion, making SS railings perfect for environments exposed to moisture, such as coastal areas or outdoor settings.",
+      "Stainless steel is naturally resistant to rust and corrosion, making SS railings perfect for environments exposed to moisture, such as coastal or outdoor areas.",
   },
   {
-    heading: "Modern Aesthetic:",
+    heading: "Modern Aesthetic",
     description:
-      "SS railings offer a sleek and contemporary look, adding a touch of sophistication to any property. They can enhance the visual appeal of both residential and commercial spaces.",
+      "SS railings provide a sleek and contemporary look, adding sophistication to any property. They enhance the visual appeal of both residential and commercial spaces.",
   },
   {
-    heading: "Easy Maintenance:",
+    heading: "Easy Maintenance",
     description:
-      "SS railings require minimal upkeep. Regular cleaning with mild soap and water is often sufficient to keep them looking new, making them a practical choice for busy property owners.",
+      "SS railings require minimal upkeep. Regular cleaning with mild soap and water keeps them looking new, making them practical for busy property owners.",
   },
   {
-    heading: "Versatile Applications:",
+    heading: "Versatile Applications",
     description:
-      "SS railings can be used in various settings, including residential balconies, commercial staircases, and public spaces. Their versatility makes them suitable for multiple architectural styles.",
+      "SS railings are suitable for a variety of settings, including residential balconies, commercial staircases, and public spaces. Their versatility complements multiple architectural styles.",
   },
 ];
 
 const typesRailing = [
   {
-    heading: "Brushed Finish:",
+    heading: "Brushed Finish",
     description:
-      "A brushed finish provides a sleek, matte appearance, making it a popular choice for contemporary designs. This finish helps to hide fingerprints and scratches, maintaining the railing's aesthetic appeal.",
+      "A brushed finish offers a sleek, matte appearance, making it ideal for contemporary designs. It helps conceal fingerprints and minor scratches, maintaining the railing's aesthetic appeal.",
   },
   {
-    heading: "Polished Finish:",
+    heading: "Polished Finish",
     description:
-      "Polished SS railings have a shiny, reflective surface, adding a touch of elegance. This finish is often used in upscale residential and commercial properties.",
+      "Polished SS railings feature a shiny, reflective surface that adds elegance. This finish is commonly used in upscale residential and commercial properties.",
   },
   {
-    heading: "Powder Coating:",
+    heading: "Powder Coating",
     description:
-      "For added color and protection, powder coating can be applied to SS railings. Available in various colors, this finish enhances the aesthetic while providing an extra layer of corrosion resistance.",
+      "Powder coating provides added color and protection for SS railings. Available in various colors, it enhances aesthetics while offering an extra layer of corrosion resistance.",
   },
 ];
 
 const maintainenceRailing = [
   {
-    heading: "Professional Installation:",
+    heading: "Professional Installation",
     description:
-      "While MS railings are easy to install, hiring a professional ensures that they are mounted securely and meet local safety regulations. Proper installation is crucial for maximizing the railings' durability and effectiveness.",
+      "Although MS railings are relatively easy to install, hiring a professional ensures they are mounted securely and comply with safety standards. Proper installation maximizes durability and effectiveness.",
   },
   {
-    heading: "Regular Inspections:",
+    heading: "Regular Inspections",
     description:
-      "Routine inspections help identify any signs of wear, corrosion, or damage. Addressing these issues promptly can extend the lifespan of your MS railings and maintain their appearance.",
+      "Routine inspections help detect signs of wear, corrosion, or damage early. Promptly addressing these issues extends the lifespan of your MS railings and preserves their appearance.",
   },
   {
-    heading: "Cleaning and Care:",
+    heading: "Cleaning and Care",
     description:
-      "Regular cleaning with mild soap and water can help maintain the finish and appearance of MS railings. Avoid abrasive cleaners that may damage the surface.",
+      "Maintain the finish and look of MS railings by cleaning regularly with mild soap and water. Avoid abrasive cleaners that may damage the surface.",
   },
 ];
 
 const coatingRailing = [
   {
-    heading: "Balcony Railings:",
+    heading: "Balcony Railings",
     description:
-      "SS balcony railings provide safety and aesthetic appeal, allowing for unobstructed views while ensuring protection. Custom designs can include glass panels or decorative elements for added flair.",
+      "SS balcony railings enhance safety and aesthetics, providing unobstructed views while ensuring protection. Custom designs can include glass panels or decorative elements for added style.",
   },
   {
-    heading: "Stair Railings:",
+    heading: "Stair Railings",
     description:
-      "SS stair railings offer sturdy support and safety for staircases, complementing both modern and traditional interiors. They can be designed to suit the overall theme of your property.",
+      "SS stair railings offer sturdy support and safety for staircases, complementing both modern and traditional interiors. They can be tailored to match the overall theme of your property.",
   },
   {
-    heading: "Glass Railings:",
+    heading: "Glass Railings",
     description:
-      "Combining stainless steel with glass panels creates a sleek, modern look while maintaining safety. Glass railings are perfect for maximizing visibility and light while providing protection.",
+      "Combining stainless steel with glass panels creates a sleek, modern look while maintaining safety. Glass railings maximize visibility and light while providing protection.",
   },
   {
-    heading: "Pool Railings:",
+    heading: "Pool Railings",
     description:
-      "SS railings are an ideal choice for pool areas, offering safety and a stylish touch. They can withstand moisture and pool chemicals, ensuring durability and longevity.",
+      "SS railings are ideal for pool areas, offering safety and a stylish touch. They resist moisture and pool chemicals, ensuring durability and long-lasting performance.",
   },
 ];
 
@@ -141,7 +141,7 @@ export const Ssrailing = () => {
           <div className="text-7xl text-white font-bold">SS RAILINGS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;SS RAILINGS
             </h2>
@@ -163,7 +163,13 @@ export const Ssrailing = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-             SS (Stainless Steel) railings are an excellent choice for enhancing the safety and visual appeal of your residential or commercial space. Known for their superior strength, corrosion resistance, and modern look, SS railings are ideal for various applications, including balconies, staircases, and outdoor areas. By investing in high-quality SS railings, you can ensure safety while adding a touch of elegance to your property.
+              SS (Stainless Steel) railings are an excellent choice for
+              enhancing both safety and visual appeal in residential or
+              commercial spaces. Renowned for their superior strength, corrosion
+              resistance, and sleek modern look, SS railings are perfect for
+              balconies, staircases, and outdoor areas. Investing in
+              high-quality SS railings ensures reliable safety while adding a
+              touch of elegance to your property.
             </p>
           </div>
 
@@ -181,14 +187,18 @@ export const Ssrailing = () => {
       <section>
         <div className="container mx-auto max-w-6xl ">
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
-           What Are SS Railings?
+            What Are SS Railings?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           SS railings are made from stainless steel, a high-quality material known for its resistance to rust, corrosion, and staining. These railings can be customized in various designs, styles, and finishes to suit different architectural needs. Whether for indoor or outdoor use, SS railings provide reliable support and protection while enhancing the overall look of your space.
+            SS railings are crafted from stainless steel, a premium material
+            known for its resistance to rust, corrosion, and staining. They can
+            be customized in a variety of designs, styles, and finishes to suit
+            diverse architectural needs. Suitable for both indoor and outdoor
+            use, SS railings provide reliable support and protection while
+            enhancing the overall aesthetics of your space.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Using SS Railings
-
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -207,7 +217,7 @@ export const Ssrailing = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-           Finishes and Coatings for SS Railings
+            Finishes and Coatings for SS Railings
           </div>
 
           {typesRailing?.map((ele) => (
@@ -233,7 +243,7 @@ export const Ssrailing = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-           Types of SS Railings
+            Types of SS Railings
           </div>
 
           {coatingRailing?.map((ele) => (
@@ -249,7 +259,12 @@ export const Ssrailing = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-           SS railings are a stylish and practical solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, corrosion resistance, and easy maintenance make them a popular choice among homeowners and builders alike. By choosing high-quality SS railings, you can protect your property while adding a touch of elegance and sophistication.
+            SS railings provide a stylish and practical solution for enhancing
+            safety and aesthetics in residential and commercial properties.
+            Their durability, corrosion resistance, and low maintenance make
+            them a preferred choice for homeowners and builders. Choosing
+            high-quality SS railings ensures reliable protection while adding
+            elegance and sophistication to your space.
           </div>
         </div>
       </section>

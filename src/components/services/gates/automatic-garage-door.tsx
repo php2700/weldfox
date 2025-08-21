@@ -5,114 +5,109 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Convenience and Ease of Use:",
+    heading: "Convenience:",
     description:
-      "With the touch of a button, you can easily open and close your garage door without having to exit your vehicle. This feature is especially valuable during inclement weather or when your hands are full.",
-  },
-  {
-    heading: "Enhanced Security:",
-    description:
-      "Automatic overhead garage doors come with advanced security features, such as rolling code technology, which changes the access code each time you use the remote. This prevents unauthorized access and ensures your garage is secure.",
+      "Operate your garage door effortlessly with a remote, wall switch, or smartphone app.",
   },
   {
     heading: "Space-Saving Design:",
     description:
-      "Unlike traditional garage doors that swing open, overhead garage doors lift vertically, maximizing space inside and outside your garage. This design is particularly beneficial for homes with limited driveway space.",
+      "Vertical opening ensures the door doesn’t take up driveway or garage floor space.",
   },
   {
-    heading: "Energy Efficiency:",
+    heading: "Enhanced Security:",
     description:
-      "Many automatic overhead garage doors feature insulated panels that help maintain consistent indoor temperatures, reducing energy costs and improving your home's overall energy efficiency.",
+      "Sturdy construction and automated locking mechanisms help protect your home.",
   },
   {
     heading: "Aesthetic Appeal:",
     description:
-      "Automatic overhead garage doors come in various materials, styles, and colors, complementing your home’s architecture and enhancing curb appeal with modern functionality.",
+      "Available in a variety of styles, colors, and finishes to complement your home's exterior.",
+  },
+  {
+    heading: "Durable and Low Maintenance:",
+    description:
+      "Designed for long-term use with minimal maintenance, ensuring reliability over time.",
   },
 ];
+
 
 const material = [
   {
-    name: "Steel:",
+    name: "Steel Doors:",
     description:
-      "Steel is a popular choice for automatic overhead garage doors due to its strength, durability, and low maintenance requirements. Steel doors can be insulated for added energy efficiency and come in various styles and finishes.",
+      "Strong and durable, providing excellent security and resistance to wear and tear.",
   },
   {
-    name: "Aluminum:",
-    description: `Aluminum doors are lightweight and resistant to rust, making them suitable for coastal areas or environments with high humidity. They are available in various designs and can be customized to match your home’s aesthetics.`,
+    name: "Aluminum Doors:",
+    description:
+      "Lightweight and corrosion-resistant, ideal for homes in humid or coastal areas.",
   },
   {
-    name: "Wood:",
+    name: "Wood or Composite Doors:",
     description:
-      "Wooden overhead garage doors provide a classic, elegant look that enhances curb appeal. While they require more maintenance than metal doors, they can be beautifully stained or painted to match your home.",
-  },
-  {
-    name: "Fiberglass::",
-    description:
-      "Fiberglass doors are lightweight, energy-efficient, and resistant to dents and rust. They are a great option for homeowners seeking a low-maintenance solution with a range of design options.",
+      "Offer a classic or rustic appearance while maintaining durability with proper treatment.",
   },
 ];
+
 
 const customization = [
   {
-    name: "Styles and Designs:",
+    name: "Size and Dimensions:",
     description:
-      "Choose from traditional, modern, or carriage-house styles to match your home's architecture. Customize panel designs, window placements, and hardware to create the perfect look.",
+      "Doors can be custom-built to fit any garage opening, regardless of width or height.",
   },
   {
-    name: "Colors and Finishes:",
-    description: `Automatic overhead garage doors come in various colors and finishes, allowing you to select an option that complements your home's exterior. From classic whites and grays to bold colors, the choice is yours.`,
+    name: "Operation Type:",
+    description:
+      "Choose fully automatic, partially automatic, or manual backup options depending on your needs.",
   },
   {
-    name: "Insulation Levels:",
+    name: "Style and Finish:",
     description:
-      "For improved energy efficiency, select an insulated door with varying R-values based on your climate and garage usage. Insulated doors help regulate temperature and reduce energy costs.",
+      "Select from various panel designs, finishes, and colors to match your home’s aesthetic.",
   },
   {
-    name: "Smart Features:",
+    name: "Security Features:",
     description:
-      "Many modern automatic overhead garage doors offer smart technology integration, allowing you to control and monitor your door remotely through a smartphone app, providing added convenience and security.",
+      "Enhance your door with smart locks, sensors, and monitoring systems for added protection.",
   },
 ];
+
 
 const gates = [
   {
-    name: "Garage Size:",
+    name: "Efficient Operation:",
     description:
-      "Measure your garage opening accurately to ensure the door fits perfectly. Consider height and width to determine the best door style.",
+      "Automatic lifting saves time and effort, offering convenient access for vehicles and pedestrians.",
   },
   {
-    name: "Material Preference:",
+    name: "Long-Term Durability:",
     description:
-      "Choose a material based on your desired durability, maintenance level, and aesthetic preferences. Each material offers different benefits and appearances.",
+      "Built with high-quality materials and robust mechanisms, ensuring years of reliable performance.",
   },
   {
-    name: "Insulation Needs:",
+    name: "Enhanced Home Security:",
     description:
-      "If your garage is attached to your home or used as a workspace, an insulated door will help regulate temperature and reduce energy costs.",
-  },
-  {
-    name: "Budget:",
-    description:
-      "Automatic overhead garage doors come in various price ranges. Set a budget that includes installation and maintenance costs while considering long-term value and benefits.",
+      "Integrated locking systems and durable construction provide superior protection for your garage.",
   },
 ];
-
+;
 const useRolling = [
   {
-    heading: "Sectional Garage Doors:",
+    heading: "Residential Garages:",
     description:
-      "Sectional doors consist of multiple panels that slide upward and curve around the ceiling. They are versatile and can be insulated for energy efficiency, making them a popular choice among homeowners.",
+      "Ideal for single or multiple car garages, providing convenience, security, and aesthetic appeal.",
   },
   {
-    heading: "Roll-Up Garage Doors:",
+    heading: "Small Commercial Properties:",
     description:
-      "Roll-up doors are constructed from a single sheet of material that rolls up into a compact coil above the opening. They are ideal for commercial applications but can also be used in residential settings for a sleek, modern look.",
+      "Suitable for shops, workshops, and offices where vertical space is preferred over horizontal.",
   },
   {
-    heading: "Tilt-Up Garage Doors:",
+    heading: "Storage Units:",
     description:
-      "Tilt-up doors operate as a single panel that tilts out and up to open. While less common than sectional doors, they offer a straightforward, traditional design that some homeowners prefer.",
+      "Efficient for storage facilities requiring fast, secure, and space-saving access points.",
   },
 ];
 
@@ -169,7 +164,7 @@ export const Automaticgarage = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC OVERHEAD
               GARAGE GATES
@@ -193,15 +188,7 @@ export const Automaticgarage = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Automatic overhead garage doors are a popular choice for
-              homeowners looking to combine convenience, security, and aesthetic
-              appeal. Designed to open vertically, these doors save space and
-              provide easy access to your garage with just the push of a button.
-              Whether you're upgrading your existing door or installing a new
-              one, automatic overhead garage doors offer various styles and
-              features tailored to your specific needs. Experience the ultimate
-              in functionality and elegance with an automatic overhead garage
-              door for your home..
+              Automatic overhead garage doors are a popular choice for homeowners seeking convenience, security, and style. Designed to open vertically, these doors save space and provide easy access to your garage at the push of a button. Whether upgrading an existing door or installing a new one, automatic overhead garage doors offer a variety of styles and features tailored to your needs. Enjoy effortless functionality and elegant design with an automatic overhead garage door for your home.
             </p>
           </div>
 
@@ -222,13 +209,7 @@ export const Automaticgarage = () => {
             What is an Automatic Overhead Garage Door?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            An automatic overhead garage door operates by lifting vertically,
-            typically rolling up into a compartment above the garage opening.
-            These doors are equipped with an electric motor that allows for easy
-            operation via a remote control, wall switch, or smartphone app.
-            Available in various materials, styles, and sizes, automatic
-            overhead garage doors provide secure, efficient access to your
-            garage while enhancing your home's curb appeal.
+           An automatic overhead garage door operates by lifting vertically, often rolling up into a compartment above the garage opening. These doors are equipped with an electric motor, allowing for easy operation via remote control, wall switch, or smartphone app. Available in various materials, styles, and sizes, automatic overhead garage doors provide secure, efficient access to your garage while enhancing your home's curb appeal.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Installing an Automatic Overhead Garage Door
@@ -306,19 +287,13 @@ export const Automaticgarage = () => {
             Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            To ensure optimal performance and safety, it's recommended to have
-            your automatic overhead garage door installed by professionals. They
-            will ensure proper alignment, functionality, and compliance with
-            local building codes.
+           To ensure optimal performance and safety, automatic overhead garage doors should be installed by professionals. Expert installers will guarantee proper alignment, smooth functionality, and compliance with local building codes.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Routine Maintenance:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Regular maintenance is essential for keeping your automatic overhead
-            garage door in good working condition. This includes lubricating
-            moving parts, checking for wear and tear, and testing safety
-            features.
+            Regular maintenance is essential to keep your automatic overhead garage door operating smoothly. This includes lubricating moving parts, inspecting for wear and tear, and testing safety features to ensure reliable performance.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Safety Inspections:
@@ -344,12 +319,7 @@ export const Automaticgarage = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Automatic overhead garage doors provide an unparalleled combination
-            of convenience, security, and aesthetic appeal for any homeowner.
-            With various materials, styles, and advanced features, these doors
-            can enhance your home’s functionality while boosting curb appeal.
-            Invest in an automatic overhead garage door today and experience the
-            benefits of modern, efficient garage access.
+           Automatic overhead garage doors are a practical and stylish solution for homeowners seeking convenience, security, and durability. With their vertical operation, customizable features, and low maintenance requirements, these doors enhance both functionality and curb appeal for residential and small commercial properties.
           </div>
         </div>
       </section>

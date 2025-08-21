@@ -4,7 +4,7 @@ import StickyHeader from "@/components/sticky-header";
 import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
-  {
+ {
     heading: "Enhanced Security:",
     description:
       "Retractable gates serve as a formidable barrier against unauthorized access, effectively protecting your property and assets. Their robust design acts as a strong deterrent for intruders, and they can be seamlessly integrated with advanced access control systems to bolster security measures.",
@@ -33,35 +33,36 @@ const arr = [
 
 const material = [
   {
-    name: " Steel:",
-    description:
-      "Steel is a popular choice for retractable gates due to its strength and durability. Steel gates offer maximum security and can withstand harsh weather conditions, making them suitable for outdoor applications.",
+    name: "Steel:",
+    description: "Steel retractable gates are strong and durable, ideal for high-security areas and commercial properties."
   },
   {
     name: "Aluminum:",
-    description: `Aluminum retractable gates are lightweight and resistant to corrosion, making them ideal for residential and commercial properties. They offer a good balance of strength and aesthetic appeal.`,
+    description: "Aluminum gates are lightweight, rust-resistant, and perfect for residential or medium-traffic areas."
   },
   {
     name: "Composite Materials:",
-    description:
-      "Some retractable gates are constructed from composite materials that provide a combination of strength and lightweight design. These gates are often more affordable while still offering adequate security.",
-  },
+    description: "Some gates use composites for a balance of durability, lightweight operation, and aesthetic appeal."
+  }
 ];
 
 const customization = [
   {
-    name: "Finish Options:",
-    description:
-      "Choose from various finishes, such as powder coating or anodizing, to enhance the gate's appearance and resistance to corrosion.",
+    name: "Size & Dimensions:",
+    description: "Retractable gates can be custom-built to fit various driveway or entrance widths."
   },
   {
-    name: "Color Choices:",
-    description: `Select from a wide range of colors to match the gate with your property’s exterior design.`,
+    name: "Finishes & Colors:",
+    description: "Choose from powder-coated colors or other finishes to match your property's design."
   },
   {
-    name: "Access Control Integration:",
-    description: "Customize your gate to work with existing security systems, including keypads, intercoms, and remote controls for convenient access.",
+    name: "Automation:",
+    description: "Gates can be automated for remote, keypad, or app-based operation for convenience."
   },
+  {
+    name: "Security Features:",
+    description: "Add smart locks, access control, or alarm integration for enhanced security."
+  }
 ];
 
 const gates = [
@@ -82,22 +83,17 @@ const gates = [
   },
 ];
 
+
 const useRolling = [
   {
     heading: "Manual Retractable Gates:",
-    description:
-      "Manual retractable gates require users to open and close them by hand. These gates are often more affordable and suitable for areas with lower security needs.",
+    description: "Operated by hand, suitable for low-traffic areas or smaller properties.",
   },
   {
     heading: "Automatic Retractable Gates:",
-    description:
-      "Automatic retractable gates are operated using remote controls, keypads, or access control systems, providing added convenience and security. These gates are ideal for high-traffic areas or locations requiring frequent access.",
+    description: "Motorized gates operated remotely or via sensors, ideal for commercial or high-traffic properties.",
   },
-  {
-    heading: "Industrial Applications:Portable Retractable Gates:",
-    description:
-      "Portable retractable gates are designed for temporary or flexible use. They are lightweight and easy to set up, making them ideal for events, construction sites, or areas needing temporary security solutions.",
-  },
+
 ];
 
 export const Retracktable = () => {
@@ -151,7 +147,7 @@ export const Retracktable = () => {
           <div className="text-7xl text-white font-bold">RETRACKTABLE GATE</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;RETRACKTABLE GATE
             </h2>
@@ -173,7 +169,7 @@ export const Retracktable = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-             Retractable gates are innovative security solutions designed to provide both protection and accessibility for residential and commercial properties. Offering a unique combination of security and convenience, these gates can be easily opened or closed as needed, making them ideal for various applications, including driveways, parking lots, warehouses, and storefronts. By investing in high-quality retractable gates, you can enhance your property's security while maintaining easy access for authorized personnel.
+           Retractable gates are security systems that expand and contract to control access efficiently. They are designed for flexibility, allowing property owners to secure entrances without permanently occupying space. Typically made from durable materials like steel or aluminum, retractable gates are suitable for residential driveways, commercial lots, and industrial sites. They provide a balance of security, convenience, and space-saving functionality, making them an effective solution for controlling access while maintaining smooth traffic flow.
             </p>
           </div>
 
@@ -194,7 +190,7 @@ export const Retracktable = () => {
            What Are Retractable Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           Retractable gates are flexible barriers that can be extended or retracted to secure an entrance or area. Typically made of durable materials such as steel or aluminum, these gates offer a reliable solution for controlling access to your property. They are designed to be easily operated, allowing for quick deployment when security is required and effortless retraction when access is needed. Retractable gates are suitable for various environments, including residential driveways, commercial entrances, and industrial facilities.
+          Retractable gates are flexible barriers that extend or retract to secure an entrance or area. Made from durable materials like steel or aluminum, they provide a reliable solution for controlling property access. Designed for easy operation, these gates allow quick deployment for security and effortless retraction for access. Suitable for residential driveways, commercial entrances, and industrial facilities, retractable gates combine convenience, durability, and effective security.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Using Retractable Gates
@@ -272,19 +268,19 @@ export const Retracktable = () => {
            Steel:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Steel is a popular choice for retractable gates due to its strength and durability. Steel gates offer maximum security and can withstand harsh weather conditions, making them suitable for outdoor applications.
+           Steel retractable gates are highly valued for their robustness and long-lasting performance. They provide excellent security and are well-suited for outdoor use, withstanding harsh weather conditions effectively.
           </div>
             <div className="text-lg font-semibold mt-4 text-[#000]">
            Aluminum:
           </div>
           <div className="text-[15px] font-[400] my-2">
-           Aluminum retractable gates are lightweight and resistant to corrosion, making them ideal for residential and commercial properties. They offer a good balance of strength and aesthetic appeal.
+           Aluminum retractable gates are lightweight, corrosion-resistant, and well-suited for both residential and commercial properties. They provide a balance of strength and visual appeal while ensuring easy operation and long-lasting performance.
           </div>
             <div className="text-lg font-semibold mt-4 text-[#000]">
            Composite Materials:
           </div>
           <div className="text-[15px] font-[400] my-2">
-           Some retractable gates are constructed from composite materials that provide a combination of strength and lightweight design. These gates are often more affordable while still offering adequate security.
+          Composite retractable gates combine durability with a lightweight design, offering a cost-effective solution that still provides reliable security and ease of use.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
            Types of Retractable Gates
@@ -302,7 +298,7 @@ export const Retracktable = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-           Retractable gates are an excellent investment for enhancing security and accessibility at your property. Their space-saving design, ease of use, and versatility make them suitable for various applications. By choosing high-quality retractable gates, you can effectively protect your assets while ensuring convenient access for authorized personnel.
+          Retractable gates are a practical and stylish solution for controlling access while maintaining convenience. Their durable construction, customization options, and flexible operation make them ideal for residential, commercial, and industrial applications. Investing in quality retractable gates enhances security, ensures smooth operation, and provides peace of mind.
           </div>
         </div>
       </section>

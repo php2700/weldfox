@@ -1,6 +1,6 @@
 export const Process = () => {
   return (
-    <section className="bg-yellow-400 py-16 px-4 ">
+    <section className="bg-secondary/90 py-16 px-4 ">
       <div className="max-w-7xl mx-auto text-center ">
         {/* Section Tag */}
         <p className="inline-block border-4 border-white text-white font-semibold px-4 py-1 mb-4 bg-transparent">

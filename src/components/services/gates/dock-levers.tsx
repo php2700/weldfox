@@ -5,66 +5,69 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Improved Safety:",
+    heading: "Height Adjustment:",
     description:
-      "Dock levers help eliminate the gap between the trailer and the loading dock, reducing the risk of accidents and injuries. By ensuring a stable and secure loading environment, dock levers enhance safety for workers and equipment.",
+      "Dock levers allow operators to raise or lower the dock platform to match the trailer bed, ensuring safe and efficient loading and unloading.",
   },
   {
-    heading: "Increased Efficiency:",
+    heading: "Smooth Transition for Equipment:",
     description:
-      "By allowing quick adjustments to the dock height, dock levers streamline the loading and unloading process. This efficiency helps reduce downtime, increases productivity, and enhances operational flow in busy operations.",
+      "By leveling the dock with the trailer, dock levers provide a smooth transition for forklifts, pallet jacks, and other material handling equipment.",
   },
   {
-    heading: "Versatility:",
+    heading: "Versatility in Trailer Heights:",
     description:
-      "Dock levers are designed to accommodate various trailer heights and loading requirements. This versatility makes them suitable for a wide range of industries, including retail, logistics, and manufacturing.",
+      "Designed to accommodate trailers of various heights, dock levers can handle a range of loading requirements and vehicle types.",
   },
   {
-    heading: "Durability:",
+    heading: "Enhanced Safety:",
     description:
-      "Constructed from high-quality materials, dock levers are built to withstand the rigors of daily use. Their robust design ensures long-lasting performance, reducing the need for frequent replacements.",
+      "Proper use of dock levers minimizes the risk of accidents during loading and unloading by stabilizing the platform and preventing misalignment.",
   },
   {
-    heading: "Ease of Use:",
+    heading: "Operational Efficiency:",
     description:
-      "Dock levers are designed for simple operation, allowing workers to make quick adjustments without the need for complex tools or equipment. This user-friendly design enhances overall workflow efficiency.",
+      "Dock levers streamline the loading process, reducing downtime and making warehouse and distribution operations more efficient.",
   },
 ];
+
 
 const material = [
   {
     name: "Steel:",
     description:
-      "Steel is the most common material used for dock levers due to its strength and durability. Steel dock levers can withstand heavy loads and harsh working conditions, making them ideal for industrial applications.",
+      "High-strength steel construction ensures durability and the ability to handle heavy loads, ideal for industrial applications.",
   },
   {
     name: "Aluminum:",
-    description: `Aluminum dock levers are lightweight and resistant to corrosion, making them suitable for environments with high humidity or exposure to chemicals. They offer good strength-to-weight ratios and are easy to maneuver.`,
+    description:
+      "Lightweight yet sturdy, aluminum dock levers are corrosion-resistant and easy to maneuver, suitable for lighter-duty docks.",
   },
   {
     name: "Composite Materials:",
     description:
-      "Some dock levers are made from composite materials, providing a balance between durability and lightweight properties. These materials are often designed to resist wear and tear while maintaining functionality.",
+      "Some dock levers use reinforced composite materials to balance weight and strength, providing durability with easier handling.",
   },
 ];
+
 
 const customization = [
   {
-    name: "Size and Capacity:",
+    name: "Size & Weight Capacity:",
     description:
-      "Dock levers can be customized to fit specific loading dock dimensions and weight requirements, ensuring compatibility with various trailer heights and loads.",
+      "Dock levers can be customized to accommodate different trailer heights and weight requirements.",
   },
   {
-    name: "Color and Finish:",
-    description: `Choose from different colors and finishes to match your branding or enhance visibility in the workplace. Customization options can improve safety and aesthetics.`,
+    name: "Finish:",
+    description:
+      "Choose from powder-coated, galvanized, or painted finishes to protect against rust and wear in harsh environments.",
   },
   {
-    name: "Features:",
+    name: "Lever Mechanism Type:",
     description:
-      "Some dock levers come equipped with additional features, such as safety guards, non-slip grips, or integrated sensors, providing added safety, functionality, durability, and enhanced performance.",
+      "Select manual or hydraulic lever mechanisms depending on the level of automation and ease of use required.",
   },
 ];
-
 const gates = [
   {
     name: "Traffic Volume:",
@@ -87,19 +90,20 @@ const useRolling = [
   {
     heading: "Manual Dock Levers:",
     description:
-      "Manual dock levers are operated by hand, allowing workers to adjust the height of the loading dock as needed. These levers are cost-effective and ideal for operations with lower traffic volumes.",
+      "Cost-effective and reliable, manual dock levers are operated by hand and suitable for lighter loads or low-frequency operations.",
   },
   {
     heading: "Hydraulic Dock Levers:",
     description:
-      "Hydraulic dock levers use hydraulic power to raise and lower the dock platform, providing smoother and more effortless adjustments. These levers are suitable for high-traffic operations where speed and efficiency are essential.",
+      "Hydraulic levers provide smooth and effortless height adjustment for heavier loads, increasing efficiency and reducing physical strain on operators.",
   },
   {
     heading: "Electric Dock Levers:",
     description:
-      "Electric dock levers offer automated operation for quick adjustments at the touch of a button. This type of dock lever is ideal for busy environments where frequent height adjustments are necessary.",
+      "Automated electric dock levers offer maximum convenience and precision, ideal for high-volume or industrial loading environments.",
   },
 ];
+
 
 export const Docklevers = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -152,7 +156,7 @@ export const Docklevers = () => {
           <div className="text-7xl text-white font-bold">DOCK LEVERS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;DOCK LEVERS
             </h2>
@@ -174,14 +178,7 @@ export const Docklevers = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Dock levers are critical components for any loading dock,
-              providing essential support in the efficient and safe operation of
-              loading and unloading cargo. Designed to facilitate the seamless
-              movement of goods between trucks and loading bays, dock levers
-              ensure that the loading process is safe, reliable, and easy to
-              manage. Whether you operate a warehouse, distribution center, or
-              manufacturing facility, investing in high-quality dock levers can
-              enhance your operational efficiency and improve workplace safety.
+              Dock levers are essential components for loading docks, enabling safe and efficient movement of goods between trucks and loading bays. They help streamline operations, improve workplace safety, and ensure reliable handling of cargo in warehouses, distribution centers, and manufacturing facilities.
             </p>
           </div>
 
@@ -202,14 +199,7 @@ export const Docklevers = () => {
             What are Dock Levers?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Dock levers are mechanical devices used to adjust the height and
-            position of a loading dock platform to match the trailer bed. They
-            typically feature a lever mechanism that allows operators to raise
-            or lower the dock level, ensuring a smooth transition for forklifts
-            and other material handling equipment. Available in various designs
-            and weight capacities, dock levers can accommodate different trailer
-            heights and loading requirements, making them an essential tool for
-            any loading dock operation.
+           Dock levers are mechanical devices that adjust the height and position of a loading dock platform to align with a trailer bed. Using a lever mechanism, operators can raise or lower the dock level, ensuring smooth transitions for forklifts and other material handling equipment. Available in various designs and weight capacities, dock levers accommodate different trailer heights and loading needs, making them indispensable for efficient loading dock operations.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Using Dock Levers
@@ -287,25 +277,23 @@ export const Docklevers = () => {
             Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Proper installation is crucial for the safe and effective operation
-            of dock levers. It is recommended to have them installed by
-            qualified professionals to ensure compliance with safety standards.
+            Proper installation is crucial for the safe and effective operation of dock levers.
+          It is recommended to have them installed by qualified professionals to ensure
+          compliance with safety standards.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Routine Maintenance:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Regular maintenance is essential for ensuring optimal performance.
-            This includes checking for wear and tear, lubricating moving parts,
-            and inspecting safety features.
+            Proper installation is crucial for the safe and effective operation of dock levers.
+          It is recommended to have them installed by qualified professionals to ensure
+          compliance with safety standards.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Safety Inspections:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Conduct routine safety inspections to ensure that dock levers are
-            functioning correctly and to identify any potential issues before
-            they become major problems.
+            Conduct routine safety inspections to ensure that dock levers are functioning correctly and to identify any potential issues before they become major problems.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Types of Dock Levers
@@ -323,12 +311,7 @@ export const Docklevers = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Dock levers are a vital component of any loading dock operation,
-            providing safety, efficiency, and versatility. By investing in
-            high-quality dock levers, you can improve the loading and unloading
-            process, enhance workplace safety, and streamline your operations.
-            Choose dock levers that meet your specific requirements and elevate
-            the functionality of your loading dock.
+          Dock levers are a vital component of any loading dock operation, providing safety, efficiency, and versatility. By investing in high-quality dock levers, you can improve the loading and unloading process, enhance workplace safety, and streamline your operations. Choose dock levers that meet your specific requirements and elevate the functionality of your loading dock.
           </div>
         </div>
       </section>

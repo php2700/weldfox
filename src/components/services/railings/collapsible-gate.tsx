@@ -7,27 +7,27 @@ const arr = [
   {
     heading: "Enhanced Security:",
     description:
-      "MS window grills offer a reliable security solution, preventing unauthorized access and reducing the risk of burglary. Their sturdy construction makes it difficult for intruders to gain entry through windows.",
+      "MS window grills provide a strong barrier against unauthorized access, reducing the risk of break-ins and ensuring the safety of your property.",
   },
   {
     heading: "Aesthetic Appeal:",
     description:
-      "Available in various designs, MS window grills enhance the visual appeal of your property. Choose from decorative, contemporary, or traditional styles to match your architecture.",
+      "With multiple design options, MS window grills enhance the visual appeal of your property, complementing both modern and traditional architectural styles.",
   },
   {
     heading: "Durability:",
     description:
-      "Made from mild steel, MS window grills are built to last. They are resistant to wear and tear, ensuring long-term performance and security for your windows.",
+      "Constructed from high-quality mild steel, these window grills are long-lasting and resistant to wear, maintaining their structural integrity over time.",
   },
   {
     heading: "Low Maintenance:",
     description:
-      "MS window grills require minimal upkeep. With proper coating and finishes, they resist rust and corrosion, maintaining their appearance and functionality over time.",
+      "MS window grills require minimal upkeep, resisting rust and corrosion with proper coatings, ensuring lasting functionality and appearance.",
   },
   {
     heading: "Ventilation and Light:",
     description:
-      "Unlike solid barriers, window grills allow for natural light and airflow, creating a more inviting environment without compromising security.",
+      "The open design of MS window grills allows natural light and airflow to pass through, promoting a comfortable and well-lit indoor environment.",
   },
 ];
 
@@ -35,22 +35,22 @@ const typesRailing = [
   {
     heading: "Residential Properties:",
     description:
-      "Homeowners often choose MS window grills for added security and style. They protect windows while enhancing the overall aesthetic of the home.",
+      "MS window grills are widely used in homes to provide enhanced security while complementing the architectural style of the property.",
   },
   {
     heading: "Commercial Buildings:",
     description:
-      "Businesses benefit from MS window grills as a security measure, safeguarding valuable assets and providing peace of mind to owners and customers.",
+      "Businesses install MS window grills to protect valuable assets, ensuring safety for employees and customers alike.",
   },
   {
     heading: "Industrial Facilities:",
     description:
-      "MS window grills are essential in industrial settings to protect windows in warehouses and manufacturing plants from potential break-ins and vandalism.",
+      "In industrial environments, MS window grills safeguard windows against break-ins and damage, providing reliable security for warehouses and factories.",
   },
   {
     heading: "Public Buildings:",
     description:
-      "Schools, hospitals, and government buildings often utilize MS window grills to ensure safety while maintaining a welcoming atmosphere.",
+      "Schools, hospitals, and government facilities use MS window grills to maintain security without compromising accessibility or aesthetics.",
   },
 ];
 
@@ -58,22 +58,22 @@ const maintainenceRailing = [
   {
     heading: "Professional Installation:",
     description:
-      "For optimal security and functionality, it’s essential to have your MS window grills installed by professionals. They ensure proper fitting and compliance with local building codes.",
+      "Proper installation by experienced professionals ensures that MS window grills are secure, aligned, and compliant with safety standards.",
   },
   {
     heading: "Regular Inspections:",
     description:
-      "Periodically check your window grills for signs of wear, rust, or damage. Addressing minor issues early can prolong the life of your grills.",
+      "Check grills periodically for signs of wear, rust, or damage. Early detection prevents costly repairs and maintains safety.",
   },
   {
     heading: "Cleaning and Maintenance:",
     description:
-      "Regular cleaning with mild soap and water will keep your MS window grills looking new. Avoid harsh chemicals that can damage the finish.",
+      "Clean your MS window grills regularly using mild soap and water to retain their appearance and prevent corrosion.",
   },
   {
     heading: "Rust Prevention:",
     description:
-      "Inspect the grills for any signs of rust and apply protective coatings as needed to maintain their appearance and integrity.",
+      "Apply protective coatings as needed to prevent rust and maintain the durability and aesthetics of your grills.",
   },
 ];
 
@@ -81,22 +81,22 @@ const coatingRailing = [
   {
     heading: "Regular Cleaning:",
     description:
-      "Clean your MS window grills with a mild detergent and water to remove dust and dirt, especially after rain or in dusty environments.",
+      "Keep your MS window grills spotless by wiping them with a soft cloth and mild detergent to remove dust, pollen, and grime.",
   },
   {
     heading: "Inspect for Rust:",
     description:
-      "Regularly inspect the grills for signs of rust or corrosion. If you notice any, use a rust converter or apply a fresh coat of protective paint to prevent further damage.",
+      "Check the grills periodically for any signs of rust. Promptly treat affected areas with rust remover or protective coating to prevent spread.",
   },
   {
     heading: "Lubricate Hinges:",
     description:
-      "If your grills are collapsible, ensure the hinges and locking mechanisms are well-lubricated to maintain smooth operation.",
+      "For grills with moving parts, regularly apply lubricant to hinges and locks to ensure smooth operation and prevent squeaking.",
   },
-    {
+  {
     heading: "Repainting:",
     description:
-      "Over time, the protective coating on MS grills may wear off. Repainting or powder-coating the grills every few years can help maintain their appearance and rust resistance.",
+      "Reapply paint or powder coating when the finish begins to fade or chip. This helps maintain the grills’ appearance and corrosion resistance.",
   },
 ];
 
@@ -151,7 +151,7 @@ export const Collapsable = () => {
           <div className="text-7xl text-white font-bold">COLLAPSIBLE GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;COLLAPSIBLE GATES
             </h2>
@@ -164,16 +164,23 @@ export const Collapsable = () => {
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
-            collapsible gate
+              collapsible gate
             </h2>
             <h3 className="text-2xl font-[400] text-[#181614]  mb-4">
-             Enhance Security and Style with Durable MS Window Grills
+              Enhance Security and Style with Durable MS Window Grills
             </h3>
             <p
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-            MS (Mild Steel) window grills are essential for enhancing the security and aesthetic appeal of your property. These grills not only provide an additional layer of protection against break-ins but also add a touch of elegance to your windows. Available in various designs and finishes, MS window grills are suitable for residential, commercial, and industrial applications. Whether you seek a modern, minimalist look or a more intricate design, MS window grills can meet your specific needs while ensuring long-lasting performance.
+              MS (Mild Steel) window grills are a practical and stylish solution
+              to improve both security and visual appeal. They offer strong
+              protection against intrusions while enhancing the look of your
+              windows. With a variety of designs and finishes available, MS
+              window grills are suitable for homes, offices, and industrial
+              spaces. Whether you prefer a sleek modern style or an elaborate
+              design, these grills provide durability, safety, and long-lasting
+              performance.
             </p>
           </div>
 
@@ -194,7 +201,12 @@ export const Collapsable = () => {
             What Are MS Window Grills?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS window grills are protective barriers made from mild steel, designed to be installed over windows. They serve as a deterrent against unauthorized entry while allowing natural light and ventilation to flow into your space. Available in numerous styles, colors, and finishes, MS window grills can be customized to complement the architecture of your home or building while providing robust security.
+            MS window grills are sturdy barriers crafted from mild steel,
+            designed to cover windows and enhance security. They effectively
+            deter unauthorized access while still allowing natural light and
+            airflow into the interior. With a variety of designs, colors, and
+            finishes, these grills can be tailored to match the architectural
+            style of your property, providing both safety and aesthetic appeal.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of MS Window Grills
@@ -216,7 +228,7 @@ export const Collapsable = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-           Applications of MS Window Grills
+            Applications of MS Window Grills
           </div>
 
           {typesRailing?.map((ele) => (
@@ -229,7 +241,7 @@ export const Collapsable = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-           Installation and Maintenance of MS Window Grills
+            Installation and Maintenance of MS Window Grills
           </div>
 
           {maintainenceRailing?.map((ele) => (
@@ -242,7 +254,7 @@ export const Collapsable = () => {
           ))}
 
           <div className="text-[23px] font-semibold my-8 text-[#181614;]">
-           Maintenance Tips for MS Window Grills
+            Maintenance Tips for MS Window Grills
           </div>
 
           {coatingRailing?.map((ele) => (
@@ -258,7 +270,12 @@ export const Collapsable = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-           MS window grills are an excellent investment for enhancing both the security and aesthetic appeal of your property. Their durability, low maintenance requirements, and design versatility make them suitable for various applications, from residential to commercial spaces. Protect your windows while adding elegance to your property with custom-designed MS window grills.
+            MS window grills are a smart choice for improving both security and
+            style in your property. Their strength, easy upkeep, and flexible
+            design make them ideal for a wide range of settings, including
+            homes, offices, and commercial spaces. Safeguard your windows while
+            enhancing the overall aesthetic with custom-made MS window grills
+            tailored to your needs.
           </div>
         </div>
       </section>

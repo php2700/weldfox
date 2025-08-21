@@ -7,27 +7,27 @@ const arr = [
   {
     heading: "Effortless Operation:",
     description:
-      "Gear operated rolling shutters are designed with a smooth gear mechanism that allows easy manual handling without requiring excessive force, making them ideal for medium and large openings.",
+      "Gear operated rolling shutters feature a smooth gear system that allows easy manual operation, requiring minimal effort, perfect for medium and large openings.",
   },
   {
     heading: "Reliable Security:",
     description:
-      "Built from strong and durable materials, these shutters provide a solid barrier against unauthorized access, ensuring your property remains safe and protected.",
+      "Constructed from sturdy and durable materials, these shutters provide strong protection against intruders, keeping your property safe and secure.",
   },
   {
     heading: "Durability:",
     description:
-      "The robust construction of gear operated shutters ensures long-lasting performance, withstanding daily usage and harsh weather conditions with minimal maintenance.",
+      "With their solid build, gear operated shutters are built to last, handling frequent use and harsh weather while requiring minimal upkeep.",
   },
   {
     heading: "Cost-Effective Solution:",
     description:
-      "Without the need for motors or electrical systems, gear operated shutters are an economical option while still delivering dependable security and functionality.",
+      "As they do not rely on motors or electricity, gear operated shutters offer an affordable yet reliable option for secure property protection.",
   },
   {
     heading: "Versatility:",
     description:
-      "Suitable for residential, commercial, and industrial spaces, these shutters offer a practical solution for securing a wide range of property types.",
+      "Ideal for homes, businesses, and industrial spaces, these shutters provide a flexible solution for safeguarding a variety of properties.",
   },
 ];
 
@@ -35,22 +35,23 @@ const arr = [
 const useRolling = [
   {
     heading: "Retail Stores:",
-    description: "Protect merchandise while maintaining visibility.",
+    description: "Keep your products safe while allowing customers to see inside.",
   },
   {
     heading: "Restaurants:",
-    description: "Secure outdoor seating areas without obstructing views.",
+    description: "Protect outdoor dining areas while maintaining an open, welcoming view.",
   },
   {
     heading: "Warehouses:",
     description:
-      "Secure patios and balconies, allowing for versatile usage of outdoor spaces.Safeguard goods while ensuring easy access.",
+      "Secure storage areas and loading zones, ensuring protection while allowing easy access to goods.",
   },
   {
     heading: "Residential Properties:",
-    description: "Enhance home security without compromising aesthetics.",
+    description: "Boost home security while preserving the property’s aesthetic appeal.",
   },
 ];
+
 
 export const RollingShutters = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -106,7 +107,7 @@ export const RollingShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; Service &nbsp; - &nbsp;GEAR OPERATED ROLLING
               SHUTTER
@@ -123,13 +124,13 @@ export const RollingShutters = () => {
               Gear Operated Rolling Shutter
             </h2>
             <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
-              Gear Operated Rolling Shutter: Strength and Convenience Combined{" "}
+              Gear Operated Rolling Shutters: Robust Security with Smooth and Easy Operation
             </h3>
             <p
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Gear Operated rolling shutters are a reliable choice for businesses and homes looking for effortless operation, durability, and robust security. Designed with a smooth gear mechanism, these shutters allow easy manual handling without requiring much effort, making them ideal for medium to large openings. They provide excellent protection against intruders and harsh weather, ensuring long-lasting performance with minimal maintenance.
+              Gear operated rolling shutters offer a durable and secure solution for homes and businesses. Featuring a smooth gear mechanism, they enable easy manual operation even for medium to large openings. These shutters provide strong protection against intruders and harsh weather, ensuring reliable performance with minimal upkeep.
             </p>
           </div>
 
@@ -153,7 +154,7 @@ export const RollingShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Gear Operated rolling shutters are built with strong, durable materials and feature a smooth gear mechanism for effortless manual operation. This design ensures easy handling without excessive effort, making them ideal for medium and large entrances. Along with providing reliable security, these shutters are long-lasting, low-maintenance, and well-suited for both residential and commercial use.
+            Gear operated rolling shutters are crafted from sturdy, durable materials and equipped with a smooth gear system for easy manual operation. Designed for effortless handling, they are perfect for medium to large entrances. Offering strong security and long-lasting performance, these shutters require minimal maintenance and are suitable for both residential and commercial properties.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -185,7 +186,7 @@ export const RollingShutters = () => {
             Choosing the Right Gear Operated Rolling Shutter:
           </div>
           <div>
-            When selecting gear operated rolling shutters, consider the following: Measure the opening size to choose the right shutter dimensions. Ensure the gear mechanism is suitable for the shutter’s weight and frequency of use. Opt for high-quality materials for durability and long-lasting performance. Select a finish and design that complements your property’s overall style.
+            When choosing gear operated rolling shutters, keep these points in mind: accurately measure the opening to select the proper dimensions, ensure the gear system can handle the shutter’s weight and usage frequency, choose durable materials for long-lasting performance, and pick a finish and design that complements your property’s style.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
@@ -197,7 +198,7 @@ export const RollingShutters = () => {
             Conclusion
           </div>
           <div>
-            Gear operated rolling shutters are an excellent choice for anyone seeking strong security with ease of manual operation. Their durable construction and smooth gear mechanism make them reliable, convenient, and long-lasting. Suitable for both residential and commercial spaces, these shutters combine strength with practicality. Invest in gear operated rolling shutters today to secure your property with confidence and convenience.
+            Gear operated rolling shutters provide robust security with effortless manual operation. Built with durable materials and a smooth gear system, they offer reliable, convenient, and long-lasting performance. Ideal for both residential and commercial spaces, these shutters combine strength with functionality. Choose gear operated rolling shutters to protect your property with ease and confidence.
           </div>
         </div>
       </section>

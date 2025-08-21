@@ -36,7 +36,7 @@ const Hero = () => {
           </span>
         </>
       ),
-      buttonText: "DISCOVER MORE",
+      buttonText: "READ MORE",
       url: "/about",
     },
   ];
@@ -66,13 +66,13 @@ const Hero = () => {
       </div>
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2  hover:bg-[#fcc729] hover:text-white transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
+        className="absolute left-4 top-1/2  hover:bg-secondary/90 hover:text-white transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
       >
         <WestIcon />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute hover:bg-[#fcc729] hover:text-white right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
+        className="absolute hover:bg-secondary/90 hover:text-white right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
       >
         <EastIcon />
       </button>
@@ -86,7 +86,7 @@ const Hero = () => {
             <Link to={currentSlideData?.url}>
               <Button
                 size="lg"
-                className="bg-[#fcc729] hover:bg-black text-white px-12 py-10 text-lg font-bold"
+                className="bg-secondary/90 hover:bg-black text-white px-12 py-10 text-lg font-bold"
               >
                 {currentSlideData.buttonText}
               </Button>

@@ -7,47 +7,49 @@ const arr = [
   {
     heading: "Enhanced Security:",
     description:
-      "Manual rolling shutters act as a formidable deterrent against break-ins. Their robust construction makes it difficult for intruders to gain access, ensuring peace of mind for property owners.",
+      "Manual rolling shutters provide strong protection against unauthorized access. Their durable build ensures that your property remains safe, giving you confidence and peace of mind.",
   },
   {
-    heading: "Affordability:",
+    heading: "Cost-Effective:",
     description:
-      "Compared to automated options, manual rolling shutters are generally more budget-friendly. They offer an economical choice for those looking to enhance security without breaking the bank.",
+      "Manual rolling shutters are an affordable alternative to automated systems, delivering reliable security without a high investment, making them ideal for budget-conscious property owners.",
   },
   {
-    heading: "Easy Installation:",
+    heading: "Simple Installation:",
     description:
-      "Manual rolling shutters can be installed in various settings, from windows to doors. Their straightforward design allows for quick installation, making them an attractive option for property owners.",
+      "These shutters are easy to install on windows, doors, or other openings. Their practical design allows for quick setup, offering convenience to homeowners and businesses alike.",
   },
   {
-    heading: "Versatile Design:",
+    heading: "Customizable Design:",
     description:
-      "Available in various colors and styles, manual rolling shutters can complement any architecture. Customize your shutters to fit your property’s aesthetic while adding an extra layer of protection.",
+      "Manual rolling shutters come in a variety of colors and styles, allowing you to match your property’s aesthetic while maintaining high security and functionality.",
   },
   {
-    heading: "Energy Efficiency:",
+    heading: "Energy Savings:",
     description:
-      "These shutters can provide insulation, helping to regulate indoor temperatures. This can lead to lower energy costs, especially during extreme weather conditions.",
+      "By acting as an additional layer of insulation, these shutters help maintain indoor temperatures. This can reduce energy usage and costs during hot summers or cold winters.",
   },
 ];
 
+
 const useRolling = [
   {
-    heading: "Residential Use:",
+    heading: "Home Protection:",
     description:
-      "Protect windows and doors in homes, providing added security and privacy.",
+      "Safeguard windows and doors in residential properties, enhancing both security and privacy.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Commercial Use:",
     description:
-      "Ideal for storefronts and warehouses, ensuring security for valuable inventory.",
+      "Perfect for shops, offices, and warehouses, providing reliable protection for valuable goods and inventory.",
   },
   {
-    heading: "Outdoor Areas:",
+    heading: "Outdoor Spaces:",
     description:
-      "Secure patios and balconies, allowing for versatile usage of outdoor spaces.",
+      "Protect patios, balconies, and other exterior areas, allowing safe and flexible use of outdoor spaces.",
   },
 ];
+
 
 export const ManualRollingShutters = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -103,7 +105,7 @@ export const ManualRollingShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MANNUAL ROLLING
               SHUTTERS
@@ -120,18 +122,13 @@ export const ManualRollingShutters = () => {
               Manual Rolling Shutters
             </h2>
             <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
-              Manual Rolling Shutters: A Blend Of Security And Convenience
+             Manual Rolling Shutters: Combining Strength, Security, and Easy Operation for Homes and Businesses
             </h3>
             <p
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Manual rolling shutters are an efficient and cost-effective
-              solution for enhancing security and privacy in both residential
-              and commercial properties. Designed for easy operation, these
-              shutters provide a reliable barrier against intruders and adverse
-              weather while allowing you to control access and visibility as
-              needed.
+              Manual rolling shutters offer a practical and affordable way to improve security and privacy for homes and businesses. Built for smooth and easy operation, they provide a sturdy barrier against intruders and harsh weather, while giving you control over access and visibility.
             </p>
           </div>
 
@@ -155,10 +152,7 @@ export const ManualRollingShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Powder-coated rolling shutters are constructed from high-quality
-            materials and finished with a durable powder coating. This process
-            not only enhances their appearance but also provides a protective
-            layer that resists chipping, fading, and corrosion.
+            Crafted from premium materials, powder-coated rolling shutters feature a durable finish that enhances their look while offering long-lasting protection against chipping, fading, and corrosion.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -190,32 +184,19 @@ export const ManualRollingShutters = () => {
             How to Operate Manual Rolling Shutters:
           </div>
           <div>
-            Operating manual rolling shutters is straightforward: Grasp the
-            handle and pull the shutter down smoothly to the desired position.
-            Engage the locking mechanism to secure the shutter in place. To
-            open, simply unlock and lift the shutter back into its housing
+           Using manual rolling shutters is simple: pull the handle to lower the shutter to your desired position, then lock it securely in place. To open, release the lock and lift the shutter back into its housing effortlessly.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            To ensure the longevity of your manual rolling shutters, wipe down
-            the surface regularly to remove dust and debris. A mild soap
-            solution works best. Periodically check for wear and tear on the
-            mechanisms and replace any damaged components promptly. Apply a
-            suitable lubricant to the tracks and moving parts to ensure smooth
-            operation.
+            Maintain your manual rolling shutters by regularly cleaning them with a soft cloth and mild soap to remove dust and debris. Inspect the mechanisms periodically for signs of wear and replace any damaged parts. Apply appropriate lubricant to tracks and moving components to keep the shutters operating smoothly.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Manual rolling shutters are a practical and economical choice for
-            enhancing the security of your property. With their easy operation,
-            customizable designs, and added benefits like energy efficiency,
-            they are suitable for various applications. Invest in manual rolling
-            shutters today to protect your space without compromising on style
-            or convenience.
+            Manual rolling shutters offer a cost-effective and reliable way to secure your property. Easy to operate and available in customizable designs, they also provide benefits like energy efficiency. Ideal for multiple applications, these shutters combine protection, style, and convenience.
           </div>
         </div>
       </section>

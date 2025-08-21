@@ -5,111 +5,106 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
+    heading: "Professional Installation:",
     description:
-      "Automatic barriers provide a robust security solution for properties, preventing unauthorized vehicles from entering restricted areas. Their visible presence acts as a deterrent to potential intruders, enhancing overall safety, control, and peace of mind.",
+      "Automatic barriers should be installed by qualified professionals to ensure proper alignment, smooth operation, and correct integration with access control systems.",
   },
   {
-    heading: "Improved Traffic Management:",
+    heading: "Regular Maintenance:",
     description:
-      "By controlling the flow of vehicles, automatic barriers help manage congestion in busy areas. This is particularly beneficial in parking lots, event venues, and commercial properties, ensuring a smoother traffic flow.",
+      "Perform routine checks on mechanical components, lubricate moving parts, and inspect sensors to keep the barrier functioning efficiently and safely.",
   },
   {
-    heading: "Convenience and Accessibility:",
+    heading: "Safety Inspections:",
     description:
-      "With various operating mechanisms, including remote controls and automatic systems, automatic barriers offer convenient access for authorized vehicles. This reduces wait times and enhances the overall experience for users.",
-  },
-  {
-    heading: "Durability and Low Maintenance:",
-    description:
-      "Constructed from high-quality materials, automatic barriers are designed to withstand harsh weather conditions and heavy usage. They require minimal maintenance, making them a cost-effective solution for property owners.",
-  },
-  {
-    heading: "Integration with Access Control Systems:",
-    description:
-      "Automatic barriers can easily integrate with existing access control systems, allowing for seamless operation. This provides an added layer of security and allows for tracking and monitoring of vehicle access.",
+      "Regularly inspect safety features, such as sensors and emergency stop mechanisms, to prevent accidents and ensure reliable operation in high-traffic areas.",
   },
 ];
 
-const material = [
+
+const material =[
   {
     name: "Steel:",
     description:
-      "Steel barriers are known for their strength and durability, making them ideal for high-security applications. They can withstand impact and provide long-lasting performance.",
+      "Robust and impact-resistant, steel barriers provide maximum security and are ideal for areas with heavy vehicle traffic or high-security requirements.",
   },
   {
     name: "Aluminium:",
-    description: `Lightweight yet sturdy, aluminum barriers are resistant to corrosion and rust, making them suitable for various environments. They are a popular choice for commercial and residential properties.`,
+    description:
+      "Corrosion-resistant and lightweight, aluminum barriers are easy to operate and maintain, making them suitable for commercial and residential applications.",
   },
   {
     name: "Composite Materials:",
     description:
-      "Some automatic barriers are made from composite materials, offering a balance between durability and weight. These materials can be designed to resist environmental wear while maintaining aesthetic appeal.",
+      "Durable yet lightweight, composite barriers combine strength and flexibility. They are designed to withstand environmental wear while offering a sleek appearance.",
   },
 ];
 
 const customization = [
   {
-    name: "Sizes and Configurations:",
+    name: "Length and Height:",
     description:
-      "Automatic barriers can be customized in size and configuration to fit your property. Whether you require a tall barrier for security or a compact design for limited spaces, options are available.",
+      "Barriers can be customized to fit different entrance sizes, ensuring proper coverage for vehicle access points of any width.",
   },
   {
-    name: "Operating Mechanisms:",
-    description: `Choose from various operating mechanisms, including remote controls, keypad entry, or integrated access control systems, to ensure the barrier meets your operational needs.`,
+    name: "Operation Type:",
+    description:
+      "Choose between manual, semi-automatic, or fully automatic operation depending on your convenience and traffic requirements.",
   },
   {
-    name: "Finishes and Colors:",
+    name: "Control Options:",
     description:
-      "Automatic barriers can be customized with different finishes and colors to match your property’s aesthetic. This enhances visual appeal while maintaining functionality.",
+      "Automatic barriers can be integrated with remote controls, key cards, access control systems, or smartphone apps for flexible operation.",
   },
   {
     name: "Safety Features:",
     description:
-      "Many automatic barriers come equipped with safety features such as sensors to prevent accidents, ensuring safe operation for vehicles and pedestrians.",
+      "Add features such as safety sensors, warning lights, or emergency stop mechanisms to enhance user safety and prevent accidents.",
   },
 ];
+
 
 const gates = [
   {
     name: "Traffic Volume:",
     description:
-      "Assess the traffic volume at your property to determine the appropriate barrier (swing, sliding, or boom) that can efficiently manage vehicle access.",
+      "Consider the number of vehicles that will pass through daily to select a barrier that can handle high-frequency operation without wear.",
   },
   {
-    name: "Security Needs:",
+    name: "Security Level:",
     description:
-      "Evaluate your security requirements to choose a barrier that meets your specific needs. Consider durability, height, and locking mechanisms for added protection.",
+      "Determine the required level of security to choose a barrier with appropriate strength, locking mechanisms, and integration with access control systems.",
   },
   {
-    name: "Installation Space:",
+    name: "Space Availability:",
     description:
-      "Measure the space to ensure the chosen barrier fits without obstructing access or visibility. Some barriers may require additional clearance for operation.",
+      "Evaluate the available space for barrier installation to decide between swing, rising arm, or retractable designs that suit your entrance layout.",
   },
   {
-    name: "Budget:",
+    name: "Budget Considerations:",
     description:
-      "Automatic barriers come in various price ranges. Set a budget that includes both installation and long-term maintenance costs while ensuring you receive a high-quality product.",
+      "Automatic barriers come in various price ranges. Choose a solution that balances cost, functionality, and durability for long-term value.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Swing Barriers:",
+    heading: "Manual Barriers:",
     description:
-      "Swing barriers operate on a pivot system, swinging open or closed to allow vehicle access. They are suitable for wider entrances and can be customized to various heights.",
+      "Operated by hand, these barriers are a cost-effective solution for low-traffic areas or temporary installations.",
   },
   {
-    heading: "Sliding Barriers:",
+    heading: "Automatic Barriers:",
     description:
-      "Sliding barriers move horizontally to open and close, making them ideal for tighter spaces. They are often used in parking garages and commercial properties where space is limited.",
+      "Motorized barriers provide quick, effortless operation for high-traffic areas, controlled via remote, access card, or integrated systems.",
   },
   {
-    heading: "Boom Barriers:",
+    heading: "Industrial Applications:",
     description:
-      "Boom barriers consist of a long arm that raises and lowers to control access. They are commonly used in toll booths, parking lots, and security checkpoints, providing efficient and effective vehicle management.",
+      "Designed for warehouses, factories, and commercial properties where durability and frequent operation are essential.",
   },
 ];
+
 
 export const Automaticbarrier = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -162,7 +157,7 @@ export const Automaticbarrier = () => {
           <div className="text-7xl text-white font-bold">AUTOMATIC BARRIES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC BARRIES
             </h2>
@@ -184,16 +179,7 @@ export const Automaticbarrier = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Automatic barriers are essential for enhancing security and
-              controlling access at various locations, including parking lots,
-              toll booths, commercial buildings, and residential areas. These
-              systems provide a reliable method for managing vehicle entry and
-              exit while ensuring safety and convenience. With advanced
-              technology, automatic barriers can be operated remotely or through
-              automated systems, making them an excellent investment for any
-              property owner. Discover how automatic barriers can improve your
-              security and access control while offering ease of use and peace
-              of mind.
+Automatic barriers are effective solutions for enhancing security and controlling vehicle access in locations such as parking lots, toll booths, commercial buildings, and residential areas. They provide reliable management of entry and exit, ensuring safety and convenience. Equipped with advanced technology, these barriers can be operated remotely or via automated systems, offering property owners improved security, efficient access control, and peace of mind.
             </p>
           </div>
 
@@ -214,14 +200,7 @@ export const Automaticbarrier = () => {
             What Are Automatic Barriers?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Automatic barriers are mechanical gates that raise and lower to
-            control vehicle access to specific areas. These barriers can be
-            operated through various methods, including remote controls, key
-            cards, or integrated access control systems. Automatic barriers are
-            typically made from durable materials, ensuring longevity and
-            reliable performance in high-traffic environments. Designed for both
-            safety and security, these barriers prevent unauthorized entry while
-            allowing authorized vehicles easy access.
+           Automatic barriers are mechanical gates designed to control vehicle access by raising and lowering. They can be operated via remote controls, key cards, or integrated access control systems. Constructed from durable materials, these barriers ensure long-lasting performance in high-traffic areas, providing both safety and security by preventing unauthorized entry while allowing authorized vehicles seamless access.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Installing Automatic Barriers
@@ -298,27 +277,19 @@ export const Automaticbarrier = () => {
             Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            It is crucial to have automatic barriers installed by experienced
-            professionals to ensure optimal performance and compliance with
-            safety standards. Proper installation guarantees smooth operation
-            and longevity.
+          Proper installation of automatic barriers by experienced professionals is essential to ensure smooth operation, safety compliance, and long-term durability.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Routine Maintenance:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Regular maintenance is essential for keeping automatic barriers in
-            optimal condition. This includes inspecting moving parts, checking
-            electronic components, and ensuring proper alignment.
+            Regular maintenance is vital to keep automatic barriers functioning efficiently. Key tasks include inspecting moving parts, checking electronic components, and ensuring the barrier remains properly aligned.
           </div>{" "}
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Safety Inspections:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Conduct routine safety inspections to ensure that all safety
-            features, such as sensors and emergency stops, are functioning
-            correctly. Regular checks can help prevent accidents and enhance the
-            lifespan of the barrier.
+           Routine safety inspections are important to ensure all features—such as sensors and emergency stops—are working correctly. Regular checks help prevent accidents and extend the barrier’s lifespan.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Types of Automatic Barriers

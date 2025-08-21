@@ -5,29 +5,29 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Fire Resistance:",
+    heading: "Fire Protection:",
     description:
-      "Designed to withstand high temperatures, these shutters provide critical time for evacuation and minimize fire damage.",
+      "Engineered to resist high temperatures, these shutters help contain fire, giving occupants more time to evacuate safely and reducing potential damage.",
   },
   {
-    heading: "Smoke Containment:",
+    heading: "Smoke Control:",
     description:
-      "Fire-rated shutters help contain smoke, reducing its spread and improving safety for occupants.",
+      "Fire-rated shutters limit the spread of smoke throughout the building, enhancing safety and visibility during emergencies.",
   },
   {
-    heading: "Compliance with Regulations:",
+    heading: "Regulatory Compliance:",
     description:
-      "Installing fire-rated shutters ensures compliance with codes and regulations, essential for commercial properties.",
+      "Installing these shutters ensures adherence to fire safety codes and standards, which is essential for commercial and industrial properties.",
   },
   {
-    heading: "Versatility:",
+    heading: "Wide Applicability:",
     description:
-      "Suitable for a variety of applications, including warehouses, restaurants, and retail spaces.",
+      "Ideal for warehouses, restaurants, retail stores, and other high-risk areas requiring fire protection.",
   },
   {
-    heading: "Enhanced Security:",
+    heading: "Additional Security:",
     description:
-      "In addition to fire protection, these shutters offer security against unauthorized access when closed.",
+      "Beyond fire safety, these shutters provide protection against unauthorized access when closed, offering a dual benefit.",
   },
 ];
 
@@ -35,12 +35,12 @@ const useRolling = [
   {
     heading: "Commercial Buildings:",
     description:
-      "Essential for shopping malls, offices, and factories to protect assets and comply with safety regulations.",
+      "Ideal for offices, malls, and other commercial spaces, providing fire protection while safeguarding valuable assets.",
   },
   {
     heading: "Industrial Facilities:",
     description:
-      "Perfect for warehouses and manufacturing plants that require fire separation in compliance with safety standards.",
+      "Designed for warehouses and factories, these shutters ensure fire safety and regulatory compliance for high-risk areas.",
   },
 ];
 
@@ -98,7 +98,7 @@ export const FireRatedShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; FIRE RATED Rolling
               Shutters
@@ -121,15 +121,13 @@ export const FireRatedShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Manual rolling shutters are an efficient and cost-effective
-              solution for enhancing security and privacy in both residential
-              and commercial properties. Designed for easy operation, these
-              shutters provide a reliable barrier against intruders and adverse
-              weather while allowing you to control access and visibility as
-              needed.Fire-rated rolling shutters provide essential protection
-              against fire hazards, making them an ideal choice for commercial
-              and industrial applications. Learn about their benefits, features,
-              and why they are crucial for safeguarding your property.
+              Fire-rated rolling shutters are specially designed to offer both
+              security and fire protection. Constructed from fire-resistant
+              materials, they act as a barrier to slow or prevent the spread of
+              flames and smoke, safeguarding people and assets. Ideal for
+              commercial and industrial spaces, these shutters combine
+              durability, safety, and reliable operation, ensuring peace of mind
+              while meeting essential fire safety regulations.
             </p>
           </div>
 
@@ -153,10 +151,11 @@ export const FireRatedShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Fire-rated rolling shutters are specially designed barriers that
-            prevent the spread of fire and smoke. Made from durable materials,
-            these shutters comply with safety standards and are an effective
-            solution for protecting openings in buildings.
+            Fire-rated rolling shutters are engineered to provide reliable
+            protection against fire and smoke, safeguarding both property and
+            occupants. Constructed from durable, fire-resistant materials, they
+            meet stringent safety standards and are ideal for securing doors,
+            windows, and other openings in commercial and industrial buildings.
           </div>
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -184,8 +183,8 @@ export const FireRatedShutters = () => {
           </div>
           <div className=" font-semibold text-[#000] mt-4">Durability:</div>
           <div>
-            Built to last, these shutters are made from high-quality materials
-            that can withstand intense conditions.
+            They can be manually operated for simplicity or integrated with
+            motorized systems for quick and effortless control.
           </div>
           <div className=" font-semibold text-[#000] mt-4">
             Customizable Options:
@@ -203,19 +202,23 @@ export const FireRatedShutters = () => {
             Installation and Maintenance
           </div>
           <div>
-            Professional installation is crucial to ensure that fire-rated
-            rolling shutters function correctly and meet safety standards.
-            Regular inspections and maintenance will help maintain their
-            effectiveness and prolong their lifespan.
+            Proper installation of fire-rated rolling shutters is essential to
+            guarantee their performance and compliance with safety regulations.
+            It should be carried out by trained professionals who follow
+            manufacturer guidelines. Regular inspections and preventive
+            maintenance, including checking the mechanisms and seals, ensure
+            that the shutters remain fully functional and provide optimal
+            protection in case of a fire.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Investing in fire-rated rolling shutters is a proactive measure to
-            protect your property and its occupants from fire hazards. Explore
-            our range of fire-rated rolling shutters to find the perfect
-            solution for your safety needs.
+            Fire-rated rolling shutters are a smart investment for safeguarding
+            your property and occupants against fire hazards. Combining safety,
+            durability, and compliance with regulations, they offer an effective
+            solution to protect both lives and assets in commercial and
+            industrial settings.
           </div>
         </div>
       </section>

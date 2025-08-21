@@ -15,7 +15,7 @@ export const AboutDescription = () => {
 
       {/* RIGHT CONTENT */}
       <div>
-        <p className="inline-block border-4 border-[#fcc729] text-[#fcc729] font-bold px-4 py-1 mb-4">
+        <p className="inline-block border-4 border-secondary/90 rounded-lg text-secondary/90 font-bold px-4 py-1 mb-4">
           Welcome to METAL4CRAFT AUTOMATION
         </p>
 
@@ -26,20 +26,13 @@ export const AboutDescription = () => {
         </h2>
 
         <p className="text-[#000] leading-relaxed text-[16px] font-[500]">
-          At METAL4CRAFT AUTOMATION, we are dedicated to delivering high-quality
-          fabrication services tailored to meet the unique needs of our clients.
-          With a focus on Entrance Automation, Rolling Shutters, and General
-          Fabrication, our experienced team combines craftsmanship and
-          innovation to provide reliable solutions for both residential and
-          commercial projects. We pride ourselves on our commitment to quality,
-          customer satisfaction, and efficiency, ensuring that every project is
-          executed to the highest standards.
+          At METAL4CRAFT AUTOMATION, we specialize in delivering premium fabrication solutions designed around the specific requirements of our clients. Focused on Entrance Automation, Rolling Shutters, and General Fabrication, our skilled team blends innovation with craftsmanship to create dependable solutions for residential and commercial applications alike. With a strong commitment to quality, efficiency, and customer satisfaction, we ensure every project is completed to the highest standards of excellence.
         </p>
         <div className="grid grid-cols-2 gap-8 my-4">
-          <div><CheckIcon className="text-[#fcc729] mr-2"  />Entrance Automation</div>
-          <div><CheckIcon className="text-[#fcc729] mr-2"  />Quality Assurance</div>
-          <div><CheckIcon className="text-[#fcc729] mr-2"  />General Fabrication</div>
-          <div><CheckIcon className="text-[#fcc729] mr-2"  />Rolling Shutters</div>
+          <div><CheckIcon className="text-secondary/90 mr-2"  />Entrance Automation</div>
+          <div><CheckIcon className="text-secondary/90 mr-2"  />Quality Assurance</div>
+          <div><CheckIcon className="text-secondary/90 mr-2"  />General Fabrication</div>
+          <div><CheckIcon className="text-secondary/90 mr-2"  />Rolling Shutters</div>
         </div>
       </div>
     </section>

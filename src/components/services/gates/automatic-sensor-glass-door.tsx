@@ -5,111 +5,118 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Improved Accessibility:",
+    heading: "Hands-Free Convenience:",
     description:
-      "Automatic sensor glass doors provide easy access for all individuals, including those with disabilities, parents with strollers, and customers carrying items. This inclusivity enhances customer satisfaction and improves your business’s reputation.",
+      "Automatic sensor glass doors open and close automatically, providing easy access for all users.",
   },
   {
-    heading: "Enhanced Energy Efficiency:",
+    heading: "Enhanced Accessibility:",
     description:
-      "By reducing the time the door remains open, automatic sensor glass doors help minimize energy loss and maintain indoor temperatures. This can lead to significant energy savings, particularly in climate-controlled environments.",
+      "Ideal for people with mobility challenges, shopping carts, or luggage, ensuring smooth entry and exit.",
   },
   {
-    heading: "Increased Security:",
+    heading: "Energy Efficiency:",
     description:
-      "These doors often come equipped with advanced locking mechanisms and security features that prevent unauthorized access, ensuring safety and peace of mind. They can also be integrated with access control systems for added protection.",
+      "Doors close automatically after use, reducing energy loss and maintaining indoor climate control.",
   },
   {
     heading: "Aesthetic Appeal:",
     description:
-      "The sleek design of automatic sensor glass doors adds a touch of elegance to any business. Their transparent structure allows natural light to flow into the space, creating a welcoming, bright, stylish, modern, and inviting atmosphere for customers.",
+      "Glass doors create a modern, transparent look that enhances the entrance of any commercial property.",
   },
   {
-    heading: "Convenience and Hygiene:",
+    heading: "Durable and Reliable:",
     description:
-      "With hands-free operation, automatic sensor glass doors eliminate the need for manual opening, making them a hygienic option, especially in high-traffic areas. This feature is particularly beneficial in restaurants, hospitals, and retail settings.",
+      "Built with high-quality materials and sensors, these doors offer long-term performance with minimal maintenance.",
   },
 ];
+
 
 const material = [
   {
     name: "Tempered Glass:",
     description:
-      "Tempered glass is a popular choice for automatic sensor doors due to its strength and durability. It is designed to withstand impact and is resistant to thermal stress, making it a safe option for commercial applications.",
+      "Strong and shatter-resistant, ensuring safety and durability in high-traffic areas.",
   },
   {
-    name: "Laminated Glass:",
-    description: `Laminated glass consists of two or more layers of glass with an interlayer that holds the pieces together if shattered. This provides added safety, strength, and security, making it ideal for high-risk areas.`,
-  },
-  {
-    name: "Aluminum Frames:",
+    name: "Aluminum Frame:",
     description:
-      "Automatic sensor glass doors often feature aluminum frames, providing strength and lightweight properties. Aluminum is also resistant to corrosion, making it a durable choice for various weather conditions.",
+      "Lightweight, corrosion-resistant, and provides structural support for the glass panels.",
+  },
+  {
+    name: "Stainless Steel Hardware:",
+    description:
+      "Durable hinges, sensors, and fittings that enhance longevity and smooth operation.",
   },
 ];
 
+
 const customization = [
   {
-    name: "Sizes and Configurations:",
+    name: "Door Size:",
     description:
-      "Automatic sensor glass doors can be customized to fit any entryway, with various sizes and configurations to accommodate your business’s specific needs.",
+      "Customizable widths and heights to fit different entrance requirements.",
   },
   {
-    name: "Glass Types:",
-    description: `Choose from clear, tinted, or frosted glass options to achieve the desired level of visibility, privacy, durability, and security while enhancing the aesthetics of your entrance.`,
+    name: "Sensor Sensitivity:",
+    description:
+      "Adjustable motion sensors ensure accurate and responsive door operation.",
   },
   {
-    name: "Frame Finishes:",
+    name: "Frame and Finish Options:",
     description:
-      "Select from a range of frame finishes, including anodized aluminum, painted, or powder-coated options, to match your business’s branding and architectural style.",
+      "Choose from various colors and finishes for frames to match the building’s aesthetics.",
   },
   {
-    name: "Sensor Technology:",
+    name: "Automation and Access Control:",
     description:
-      "Automatic sensor glass doors can be equipped with various sensor types, including infrared, radar, or touchless sensors, providing flexibility in operation and convenience.",
+      "Integrate with keycards, remote controls, or building management systems for enhanced security.",
   },
 ];
+
 
 const gates = [
   {
     name: "Traffic Flow:",
     description:
-      "Evaluate the expected traffic flow at your entrance to determine the appropriate type of door (sliding, swinging, or telescopic) and size to accommodate high volumes of visitors.",
+      "Evaluate the expected traffic flow at your entrance to select the appropriate door type (sliding, swinging, or telescopic) and size for efficient handling of high visitor volumes.",
   },
   {
     name: "Design Preferences:",
     description:
-      "Choose a design that aligns with your business’s branding and aesthetic goals. Consider glass types, frame finishes, and overall appearance to create an inviting atmosphere.",
+      "Choose a design that aligns with your business branding and aesthetics. Consider glass types, frame finishes, and overall appearance to create a welcoming and professional entrance.",
   },
   {
     name: "Security Requirements:",
     description:
-      "Assess your security needs to ensure that the door you choose includes advanced locking mechanisms and is compatible with access control systems if necessary.",
+      "Assess your security needs to ensure the door includes advanced locking mechanisms and is compatible with access control systems if required.",
   },
   {
     name: "Budget:",
     description:
-      "Automatic sensor glass doors come in a range of price points. Establish a budget that considers both initial installation costs and long-term maintenance expenses while maximizing value.",
+      "Automatic sensor glass doors are available at various price points. Set a budget that balances initial installation costs with long-term maintenance while maximizing value.",
   },
 ];
+
 
 const useRolling = [
   {
     heading: "Sliding Automatic Glass Doors:",
     description:
-      "These doors slide open horizontally, providing a wide entrance that is perfect for busy retail environments or commercial buildings. They are easy to operate and save space compared to traditional swinging doors.",
+      "These doors slide open horizontally, offering a wide entrance ideal for busy retail environments or commercial buildings. They are space-efficient and easy to operate compared to traditional swinging doors.",
   },
   {
     heading: "Swinging Automatic Glass Doors:",
     description:
-      "Swinging doors open outward or inward, providing an elegant solution for entrances where space allows. They are ideal for hotels and upscale retail stores, offering both functionality and style.",
+      "Swinging doors open outward or inward, providing an elegant solution where space permits. Perfect for hotels and upscale retail stores, they combine functionality with a sophisticated appearance.",
   },
   {
     heading: "Telescopic Automatic Glass Doors:",
     description:
-      "Telescopic doors feature multiple panels that slide open in a compact manner, allowing for even wider openings. They are perfect for high-traffic areas that require maximum accessibility.",
+      "Telescopic doors feature multiple sliding panels that open compactly, allowing for wider entrances. Ideal for high-traffic areas that demand maximum accessibility and smooth operation.",
   },
 ];
+
 
 export const Automaticsensorglass = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -164,7 +171,7 @@ export const Automaticsensorglass = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC SENSOR GLASS
               DOORS
@@ -188,16 +195,7 @@ export const Automaticsensorglass = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Automatic sensor glass doors are an ideal solution for businesses
-              seeking to enhance accessibility, improve energy efficiency, and
-              create an inviting atmosphere. Equipped with advanced motion
-              sensors, these doors automatically open and close as customers
-              approach, providing a seamless entry experience. Suitable for a
-              variety of commercial settings, including retail stores, hotels,
-              offices, and hospitals, automatic sensor glass doors offer a
-              modern touch while ensuring security and convenience. Elevate your
-              business’s entrance with sleek, functional automatic sensor glass
-              doors.
+              Automatic sensor glass doors are an ideal solution for businesses seeking to enhance accessibility, improve energy efficiency, and create an inviting atmosphere. Equipped with advanced motion sensors, these doors automatically open and close as customers approach, providing a seamless entry experience. Suitable for retail stores, hotels, offices, and hospitals, automatic sensor glass doors combine modern design, security, and convenience. Elevate your business entrance with sleek, functional automatic sensor glass doors.
             </p>
           </div>
 
@@ -218,14 +216,7 @@ export const Automaticsensorglass = () => {
             What is an Automatic Sensor Glass Door?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            An automatic sensor glass door is a type of entrance system that
-            utilizes motion sensors to detect approaching individuals. Once
-            motion is detected, the door opens automatically, allowing for
-            hands-free access. These doors are typically made of glass,
-            providing visibility and an open feel while enhancing the overall
-            aesthetic of your building. Ideal for high-traffic areas, automatic
-            sensor glass doors are both functional and stylish, making them a
-            popular choice for businesses looking to modernize their entrances.
+            An automatic sensor glass door is an entrance system that uses motion sensors to detect approaching individuals. When motion is detected, the door opens automatically, providing hands-free access. Typically constructed of glass, these doors offer visibility, an open feel, and enhance the aesthetic appeal of your building. Ideal for high-traffic areas, automatic sensor glass doors are both functional and stylish, making them a popular choice for businesses seeking a modern, welcoming entrance.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Installing Automatic Sensor Glass Doors
@@ -304,19 +295,13 @@ export const Automaticsensorglass = () => {
             Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            To ensure optimal performance and safety, automatic sensor glass
-            doors should be installed by qualified professionals. Proper
-            installation guarantees smooth operation and compliance with safety
-            regulations.
+            Automatic sensor glass doors should be installed by qualified professionals to ensure optimal performance and safety. Proper installation guarantees smooth operation, maximizes durability, and ensures compliance with all relevant safety regulations.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Routine Maintenance:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Regular maintenance is essential for keeping your automatic sensor
-            glass doors in optimal condition. This includes checking sensor
-            functionality, lubricating moving parts, and inspecting seals for
-            wear.
+          Regular maintenance is essential to keep automatic sensor glass doors operating smoothly and safely.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Safety Inspections:
@@ -343,13 +328,7 @@ export const Automaticsensorglass = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Automatic sensor glass doors provide an exceptional blend of
-            accessibility, energy efficiency, and modern aesthetics for any
-            business. By investing in these advanced entrance systems, you can
-            create a welcoming environment for your customers while ensuring
-            safety and convenience. Upgrade your business’s entrance with
-            automatic sensor glass doors and experience the benefits of modern
-            technology and design.
+           Automatic sensor glass doors are a modern, functional, and stylish solution for commercial properties. They enhance accessibility, improve energy efficiency, and provide a hands-free, secure entrance. With their durable materials and customizable features, these doors are ideal for high-traffic areas, making them a smart investment for any business.
           </div>
         </div>
       </section>

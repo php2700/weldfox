@@ -35,32 +35,40 @@ const material = [
   {
     name: "Heavy-Duty Fabric:",
     description:
-      "Many dock shelters are constructed from heavy-duty, weather-resistant fabrics that provide durability and protection against harsh conditions. These fabrics are often treated for UV resistance and water repellency.",
+      "Durable, weather-resistant fabrics form the main body of dock shelters, providing a flexible yet strong barrier against wind, rain, and snow.",
   },
   {
-    name: "Steel Frames:",
-    description: `Rigid dock shelters typically feature robust steel frames that provide stability and support. Steel is resistant to corrosion and wear, making it an ideal choice for high-traffic environments and long-term durability.`,
-  },
-  {
-    name: "Insulated Panels:",
+    name: "Steel Frame:",
     description:
-      "Some dock shelters are equipped with insulated panels to enhance energy efficiency. These panels help maintain temperature control in loading environments, making them ideal for cold storage facilities.",
+      "Robust steel frames ensure structural integrity and longevity, supporting the shelter fabric and withstanding repeated docking impacts.",
+  },
+  {
+    name: "Insulation Panels:",
+    description:
+      "Optional insulated panels help maintain temperature control inside loading areas, reducing energy loss for temperature-sensitive goods.",
   },
 ];
 
 const customization = [
   {
-    name: "Size and Configuration:",
+    name: "Size & Fit:",
     description:
-      "Dock shelters can be customized to fit various loading dock dimensions and trailer heights, ensuring a perfect fit for your specific operational needs.",
+      "Dock shelters can be custom-sized to fit specific trailer and dock dimensions, ensuring a proper seal and efficient loading process.",
   },
   {
-    name: "Colors and Branding:",
-    description: `Choose from different colors and branding options to enhance visibility and align with your company’s branding, creating a professional appearance.`,
+    name: "Type of Shelter:",
+    description:
+      "Choose from inflatable, rigid, or curtain-style dock shelters depending on your operational needs and space constraints.",
   },
   {
-    name: "Accessories:",
-    description: "Many dock shelters can be equipped with additional features such as LED lighting, safety striping, and ventilation systems to improve functionality and safety.",
+    name: "Material & Finish:",
+    description:
+      "Select from a variety of fabrics, steel coatings, and colors to suit your aesthetic and functional requirements.",
+  },
+  {
+    name: "Automation Features:",
+    description:
+      "Some dock shelters can integrate with automated docking systems to improve efficiency and minimize manual adjustments.",
   },
 ];
 
@@ -73,7 +81,7 @@ const gates = [
   {
     name: "Environmental Conditions:",
     description:
-      "Assess the weather in your area to select a dock shelter that provides protection against rain, snow, and temperatures.",
+      "Assess the weather in your area to select a dock shelter that provides protection against rain, snow, and extreme temperatures.",
   },
   {
     name: "Budget:",
@@ -84,19 +92,19 @@ const gates = [
 
 const useRolling = [
   {
-    heading: "Rigid Dock Shelters:",
-    description:
-      "Rigid dock shelters are constructed with solid frames and rigid panels, providing a stable and durable solution for loading docks. They offer excellent weather resistance and can be customized to fit various dock heights and widths.",
-  },
-  {
-    heading: "Flexible Dock Shelters:",
-    description:
-      "Flexible dock shelters are made from heavy-duty fabric and are designed to flex and adapt to different trailer heights. These shelters provide a reliable weather seal while accommodating changes in trailer sizes.",
-  },
-  {
     heading: "Inflatable Dock Shelters:",
     description:
-      "Inflatable dock shelters feature air-filled chambers that create a seal around the trailer when inflated. These shelters are easy to deploy and offer excellent insulation and weather protection.",
+      "These shelters use inflatable seals that conform to the shape of the trailer, providing a tight seal and excellent weather protection.",
+  },
+  {
+    heading: "Rigid Dock Shelters:",
+    description:
+      "Constructed with firm frames and panels, rigid shelters offer durability and stability, ideal for high-traffic docks.",
+  },
+  {
+    heading: "Curtain-Style Dock Shelters:",
+    description:
+      "Flexible curtain shelters provide an economical solution, protecting against drafts and weather while allowing for slight trailer misalignments.",
   },
 ];
 
@@ -151,7 +159,7 @@ export const Dockshelter = () => {
           <div className="text-7xl text-white font-bold">DOCK SHELTERS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;DOCK SHELTERS
             </h2>
@@ -173,7 +181,7 @@ export const Dockshelter = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-            Dock shelters are critical components for any loading dock, providing protection and support during the loading and unloading of goods. These structures create a weather-tight seal around the trailer, ensuring that your products and workforce are shielded from the elements. With various designs and materials available, dock shelters not only enhance operational efficiency but also contribute to safety and energy savings. Explore how investing in high-quality dock shelters can optimize your loading dock operations.
+          Dock shelters are critical components for any loading dock, providing protection and support during the loading and unloading of goods. They create a weather-tight seal around the trailer, ensuring that products and personnel are shielded from the elements. Available in various designs and materials, dock shelters enhance operational efficiency, contribute to workplace safety, and help achieve energy savings. Investing in high-quality dock shelters can optimize your loading dock operations.
             </p>
           </div>
 
@@ -194,7 +202,7 @@ export const Dockshelter = () => {
             What are Dock Shelters?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           Dock shelters are flexible, weather-resistant structures positioned at loading docks to provide an effective seal between the dock and the trailer. They are typically made of durable materials, such as heavy-duty fabrics, and are designed to withstand various environmental conditions. By creating a barrier against rain, wind, snow, and dust, dock shelters improve loading conditions and protect both your cargo and employees.
+     Dock shelters are flexible, weather-resistant structures installed at loading docks to create an effective seal between the dock and the trailer. Typically made from durable materials like heavy-duty fabrics, they are designed to withstand a variety of environmental conditions. By forming a barrier against rain, wind, snow, and dust, dock shelters improve loading and unloading conditions while protecting both cargo and employees.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Using Dock Shelters
@@ -284,7 +292,7 @@ export const Dockshelter = () => {
             Accessories:
           </div>
           <div className="text-[15px] font-[400] my-2">
-           Many dock shelters can be equipped with additional features such as LED lighting, safety striping, and ventilation systems to improve functionality and safety.
+           Dock shelters can include optional enhancements like LED illumination, safety markings, and ventilation systems, which boost both operational efficiency and workplace safety.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Types of Dock Shelters
@@ -302,7 +310,7 @@ export const Dockshelter = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Dock shelters are vital for ensuring efficient and safe loading and unloading operations. By investing in high-quality dock shelters, you can protect your products, enhance energy efficiency, and create a safer working environment for your employees. Choose the right dock shelter solutions to optimize your loading dock operations and improve overall productivity.
+         Dock shelters are vital for ensuring efficient and safe loading and unloading operations. By investing in high-quality dock shelters, you can protect your products, enhance energy efficiency, and create a safer working environment for your employees. Choose the right dock shelter solutions to optimize your loading dock operations and improve overall productivity.
           </div>
         </div>
       </section>

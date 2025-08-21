@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-white text-black">
       {/* Top Contact Info Bar */}
-      <div className="bg-yellow-400 px-10 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm font-semibold rounded-md max-w-7xl mx-auto">
+      <div className="bg-secondary/90 px-10 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm font-semibold rounded-md max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
           <span className="text-orange-600 text-xl">📞</span>
           <div>
@@ -55,11 +55,10 @@ const Footer = () => {
             className="mb-4 text-[15px] font-[500]"
             style={{ lineHeight: "32px" }}
           >
-            Metal4craft Automation delivers quality craftsmanship, blending
-            timeless design with modern innovation.
+            Metal4craft Automation delivers durable, innovative, and precision-crafted fabrication solutions.
           </p>
           <Link to="/contact">
-            <button className="bg-[#fcc729] hover:bg-[black] px-10 py-6 font-semibold text-white rounded shadow">
+            <button className="bg-secondary/90 hover:bg-[black] px-10 py-6 font-semibold text-white rounded-lg shadow">
               CONTACT US
             </button>
           </Link>
@@ -72,7 +71,7 @@ const Footer = () => {
             <li>
               <a
                 href="/about"
-                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                className="hover:text-secondary/90 text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >
                 › About
@@ -81,7 +80,7 @@ const Footer = () => {
             <li>
               <a
                 href="/general-fabrication"
-                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                className="hover:text-secondary/90 text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >
                 › General Fabrication
@@ -90,7 +89,7 @@ const Footer = () => {
             <li>
               <a
                 href="/entrance-automation"
-                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                className="hover:text-secondary/90 text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >
                 › Entrance Automation
@@ -99,7 +98,7 @@ const Footer = () => {
             <li>
               <a
                 href="/roll-shutters"
-                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                className="hover:text-secondary/90 text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >
                 › Rolling Shutter
@@ -108,7 +107,7 @@ const Footer = () => {
             <li>
               <a
                 href="/blog"
-                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                className="hover:text-secondary/90 text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >
                 › Blog
@@ -117,7 +116,7 @@ const Footer = () => {
             <li>
               <a
                 href="/contact"
-                className="hover:text-[#fcc729] text-[15px] font-[500] "
+                className="hover:text-secondary/90 text-[15px] font-[500] "
                 style={{ lineHeight: "15px" }}
               >
                 › Contact Us
@@ -167,7 +166,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faFacebookF}
-              className="w-4 h-4 p-2 rounded-full hover:bg-[#fcc729]"
+              className="w-4 h-4 p-2 rounded-full hover:bg-secondary/90"
             />
           </a>
           <a
@@ -177,7 +176,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              className="w-4 h-4 p-2 rounded-full hover:bg-[#fcc729]"
+              className="w-4 h-4 p-2 rounded-full hover:bg-secondary/90"
             />
           </a>
         </div>

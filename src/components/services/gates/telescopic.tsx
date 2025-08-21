@@ -5,104 +5,96 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Space-Saving Design:",
+    heading: "Space Efficiency:",
     description:
-      "Unlike traditional sliding gates, telescopic gates open by sliding multiple panels, requiring less space along the side of the opening.",
+      "Telescopic gates slide in sections, making them ideal for properties with limited space while still allowing wide openings.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "Constructed from durable materials like steel or aluminum, telescopic gates provide a strong barrier against access, ensuring the safety of your property.",
-  },
-  {
-    heading: "Versatile Applications:",
-    description:
-      "Suitable for various environments, from residential driveways to commercial loading docks, telescopic gates can adapt to any setting.",
+      "Sturdy construction and secure locking mechanisms provide reliable protection for residential and commercial properties.",
   },
   {
     heading: "Smooth Operation:",
     description:
-      "Equipped with high-quality tracks and rollers, these gates operate smoothly and quietly, providing effortless access.",
+      "Designed to slide effortlessly, telescopic gates ensure convenient and reliable access.",
   },
   {
-    heading: "Customizable Options:",
+    heading: "Durability:",
     description:
-      "Available in a variety of styles, colors, and finishes, telescopic gates can be tailored to fit your property’s aesthetic while meeting your functional needs.",
+      "Constructed from high-quality materials, these gates withstand frequent use and harsh environmental conditions.",
+  },
+  {
+    heading: "Modern Aesthetic:",
+    description:
+      "Sleek sectional designs enhance the visual appeal of any property while maintaining functionality.",
   },
 ];
 
 const material = [
   {
-    name: "Initial Site Assessment:",
+    name: "Steel:",
     description:
-      "Before installation begins, a professional will conduct a thorough assessment of your property, including measuring the entryway, evaluating the ground’s slope, and identifying potential obstacles like walls or landscaping features. Key considerations include the width of the driveway or entrance, available space for the gate to retract, ground surface conditions (e.g., uneven terrain may require additional leveling or foundation work), and access to power supply if you plan to automate the gate.",
+      "Provides superior strength and durability, ensuring long-lasting performance for telescopic gates.",
   },
   {
-    name: "Design and Customization:",
-    description: `Once the site is assessed, you’ll work with the installer to choose the gate’s design, material, and features. Common materials for telescopic gates include steel (durable and secure, ideal for high-security needs), aluminum (lightweight, corrosion-resistant, and easy to maintain), and wood or composite (offering a more traditional look with modern strength). You can also select finishes, colors, and additional features such as automation, safety sensors, or access control systems.`,
+    name: "Aluminum:",
+    description:
+      "Lightweight yet strong, aluminum resists rust and requires minimal maintenance.",
   },
   {
-    name: "Laying the Foundation and Installing the Track:",
+    name: "Stainless Steel:",
     description:
-      "A stable foundation is crucial for the smooth operation of a telescopic gate. Installers will lay the ground track along which the gate panels will slide, which may involve digging trenches for the track, pouring concrete to create a stable base, and installing the track mechanism while ensuring it’s level. Proper alignment of the track is critical for the gate to move smoothly without unnecessary wear and tear.",
+      "Offers corrosion resistance and modern appeal, ideal for telescopic gate designs.",
   },
 ];
 
 const customization = [
   {
-    name: "Residential Properties:",
+    name: "Design Options:",
     description:
-      "Ideal for homeowners seeking a stylish and secure solution for driveways and garden entrances.",
+      "Choose from various styles, finishes, and panel configurations to suit your property’s aesthetic.",
   },
   {
-    name: "Commercial Use:",
-    description: `Perfect for businesses that require controlled access to parking lots, service areas, or loading docks where space is limited.`,
-  },
-  {
-    name: "Industrial Facilities:",
+    name: "Automation Options:",
     description:
-      "Suitable for warehouses and industrial sites needing secure and efficient entry points.",
+      "Telescopic gates can be fitted with automated openers, remote control, or smart access systems for added convenience.",
   },
 ];
 
 const gates = [
   {
-    name: "Automation Features:",
+    name: "Space-Saving Design:",
     description:
-      "Many telescopic gates can be automated for remote access, enhancing convenience and control over entry.",
+      "Telescopic gates require minimal opening space while allowing wide access, making them ideal for compact areas.",
   },
   {
-    name: "Durability:",
+    name: "Reliable Security:",
     description:
-      "Built to withstand harsh weather conditions, these gates are designed for longevity and require minimal maintenance.",
+      "Robust construction and secure locking systems ensure your property is protected at all times.",
   },
   {
-    name: "Aesthetic Appeal:",
+    name: "Effortless Operation:",
     description:
-      "The sleek design of telescopic gates adds modern elegance to any property, enhancing curb appeal.",
+      "Smooth sectional movement provides easy and convenient access, whether manually or with automation.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Steel Telescopic Gates:",
+    heading: "Residential Properties:",
     description:
-      "Steel is a popular choice for telescopic gates due to its strength and durability. Steel gates provide superior security and can be powder-coated for additional protection against rust and corrosion. They are ideal for both residential and commercial properties that require high-security solutions.",
+      "Perfect for homes with limited driveway space, offering both convenience and security.",
   },
   {
-    heading: "Aluminum Telescopic Gates:",
+    heading: "Commercial Spaces:",
     description:
-      "Aluminum is lightweight yet sturdy, making it a great option for telescopic gates. It’s also naturally resistant to rust, which makes it a good choice for properties in coastal or high-moisture areas. Aluminum gates require little maintenance and are easier to automate due to their lighter weight.",
+      "Ideal for offices, retail outlets, and gated communities requiring efficient access control in compact areas.",
   },
   {
-    heading: "Wooden Telescopic Gates:",
+    heading: "Industrial Facilities:",
     description:
-      "For those looking for a more traditional or rustic look, wooden telescopic gates are an excellent choice. While they require more maintenance compared to metal gates, they offer a warm, natural aesthetic that blends well with residential landscapes.",
-  },
-  {
-    heading: "Composite Materials:",
-    description:
-      "Composite gates combine the best properties of various materials, offering the appearance of wood with the durability of synthetic materials. They require little maintenance and are weather-resistant, making them a great choice for homeowners who want both style and longevity.",
+      "Suitable for warehouses and factories where wide openings are needed but space is limited.",
   },
 ];
 
@@ -157,7 +149,7 @@ export const Telescopic = () => {
           <div className="text-7xl text-white font-bold">TELESCOPIC GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;TELESCOPIC GATES
             </h2>
@@ -179,10 +171,11 @@ export const Telescopic = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Telescopic gates are an innovative solution for property access
-              that combines space efficiency with robust security. Ideal for
-              both residential and commercial properties, these gates offer a
-              stylish and functional way to control entry while saving space.
+              Telescopic gates provide an innovative solution for property
+              access, combining space efficiency with robust security. Suitable
+              for both residential and commercial properties, these gates offer
+              a stylish and functional way to control entry while maximizing
+              available space.
             </p>
           </div>
 
@@ -203,10 +196,10 @@ export const Telescopic = () => {
             What Are Telescopic Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Telescopic gates are designed to slide open in sections, with each
-            panel stacking neatly behind the other. This unique design allows
-            for wider openings without requiring a large area for gate
-            operation, making them perfect for locations with limited space.
+            Telescopic gates slide open in sections, with each panel stacking
+            neatly behind the next. This unique design allows for wider openings
+            without needing a large area for gate operation, making them ideal
+            for properties with limited space.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of Telescopic Gates
@@ -284,39 +277,39 @@ export const Telescopic = () => {
             Initial Site Assessment:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Before installation begins, a professional will conduct a thorough
-            assessment of your property, including measuring the entryway,
-            evaluating the ground’s slope, and identifying potential obstacles
-            like walls or landscaping features. Key considerations include the
-            width of the driveway or entrance, available space for the gate to
-            retract, ground surface conditions (e.g., uneven terrain may require
-            additional leveling or foundation work), and access to power supply
-            if you plan to automate the gate.
+            Before installation, a professional will perform a comprehensive
+            assessment of your property. This includes measuring the entryway,
+            evaluating the slope of the ground, and identifying potential
+            obstacles such as walls or landscaping features. Key factors to
+            consider include the width of the driveway or entrance, the space
+            needed for the gate to retract, ground conditions (uneven terrain
+            may require leveling or foundation adjustments), and access to a
+            power supply if the gate will be automated.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Design and Customization:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Once the site is assessed, you’ll work with the installer to choose
-            the gate’s design, material, and features. Common materials for
-            telescopic gates include steel (durable and secure, ideal for
-            high-security needs), aluminum (lightweight, corrosion-resistant,
-            and easy to maintain), and wood or composite (offering a more
-            traditional look with modern strength). You can also select
-            finishes, colors, and additional features such as automation, safety
-            sensors, or access control systems.
+            After the site assessment, you will collaborate with the installer
+            to choose the gate’s design, material, and features. Common
+            materials include steel (durable and secure, ideal for high-security
+            needs), aluminum (lightweight, corrosion-resistant, and
+            low-maintenance), and wood or composite (providing a traditional
+            look with modern strength). You can also select finishes, colors,
+            and additional features such as automation, safety sensors, or
+            access control systems to tailor the gate to your property.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
             Laying the Foundation and Installing the Track:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            A stable foundation is crucial for the smooth operation of a
+            A stable foundation is essential for the smooth operation of a
             telescopic gate. Installers will lay the ground track along which
-            the gate panels will slide, which may involve digging trenches for
-            the track, pouring concrete to create a stable base, and installing
-            the track mechanism while ensuring it’s level. Proper alignment of
-            the track is critical for the gate to move smoothly without
-            unnecessary wear and tear.
+            the gate panels slide, which may involve digging trenches, pouring
+            concrete to create a solid base, and carefully installing the track
+            mechanism. Proper alignment of the track is critical to ensure
+            smooth movement and to prevent unnecessary wear and tear on the gate
+            panels.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Materials for Telescopic Gates
@@ -334,10 +327,10 @@ export const Telescopic = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in a telescopic gate is a smart choice for those looking
-            to enhance security, save space, and improve the aesthetic appeal of
-            their property. Explore our selection of high-quality telescopic
-            gates to find the perfect fit for your needs!
+            Investing in telescopic gates is a smart choice for enhancing
+            security, space efficiency, and convenience. Explore our range of
+            high-quality telescopic gates to find the perfect solution for your
+            property.
           </div>
         </div>
       </section>

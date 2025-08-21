@@ -54,6 +54,7 @@ const typesRailing = [
   },
 ];
 
+
 const maintainenceRailing = [
   {
     heading: "Professional Installation:",
@@ -70,12 +71,13 @@ const maintainenceRailing = [
     description:
       "Regular cleaning with mild soap and water will keep your compound grills looking new. Avoid harsh chemicals that can damage the finish.",
   },
-    {
+  {
     heading: "Rust Prevention:",
     description:
       "Inspect the grills for any signs of rust and apply protective coatings as needed to maintain their appearance and integrity.",
   },
 ];
+
 
 const coatingRailing = [
   {
@@ -93,7 +95,7 @@ const coatingRailing = [
     description:
       "Traditional designs can enhance the character of older buildings, combining modern materials with classic charm.",
   },
-    {
+  {
     heading: "Color Customization:",
     description:
       "Compound grills can be painted or powder-coated in various colors to match your property’s exterior and interior décor.",
@@ -151,7 +153,7 @@ export const Compoundgrill = () => {
           <div className="text-7xl text-white font-bold">COMPOUND GRILL</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;COMPOUND GRILL
             </h2>
@@ -173,7 +175,7 @@ export const Compoundgrill = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Compound grills are essential for enhancing the security and visual appeal of your property. These grills, made from a combination of materials like mild steel and stainless steel, offer robust protection against intruders while adding a stylish touch to your windows and doors. Available in various designs and finishes, compound grills can be customized to fit any architectural style, making them a versatile choice for both residential and commercial properties.
+            Compound grills are an effective solution for improving both the security and aesthetics of your property. Constructed from a combination of materials such as mild steel and stainless steel, they provide robust protection against unauthorized access while adding a stylish accent to windows and doors. With a variety of designs and finishes available, compound grills can be customized to suit any architectural style, making them ideal for both residential and commercial applications.
             </p>
           </div>
 
@@ -194,7 +196,7 @@ export const Compoundgrill = () => {
             What Are Compound Grills?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           Compound grills are security barriers constructed from a blend of materials, primarily mild steel and stainless steel. This combination results in a strong yet aesthetically pleasing product that provides optimal security while allowing for ventilation and light. Designed to be installed over windows and doors, compound grills can be tailored to suit different styles, offering both safety and elegance to your space.
+           Compound grills are security barriers made from a combination of mild steel and stainless steel, delivering both strength and visual appeal. This blend ensures maximum protection while allowing natural light and air to flow through. Designed for installation over windows and doors, compound grills can be customized to match various architectural styles, providing a secure and elegant solution for any residential or commercial space.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
            Benefits of Compound Grills
@@ -258,7 +260,7 @@ export const Compoundgrill = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-           Compound grills are an excellent investment for enhancing both the security and aesthetic appeal of your property. Their durability, low maintenance requirements, and design versatility make them suitable for various applications, from residential to commercial. Protect your windows and doors while elevating the aesthetic appeal of your home or business with custom-designed compound grills.
+           Compound grills are a smart investment for boosting both the security and visual appeal of any property. With their durability, low maintenance, and versatile design options, they are suitable for residential, commercial, and industrial applications. By choosing high-quality, custom-designed compound grills, you can safeguard your windows and doors while enhancing the overall aesthetic of your home or business.
           </div>
         </div>
       </section>

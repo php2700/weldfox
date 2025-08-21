@@ -40,143 +40,280 @@ const EntranceAutomation = () => {
 
   const handleView = (article, index) => {};
 
+  // const articles = [
+  //   {
+  //     heading: "RETRACTABLE GATE",
+  //     img: "/retractable-gate.jpg",
+  //     description:
+  //       "Retractable gates are innovative security solutions designed to provide both protection and accessibility for residential and comm",
+  //     url: "/retracktable",
+  //   },
+  //   {
+  //     heading: "TURNSTILE",
+  //     img: "/Turnstile.jpg",
+  //     description:
+  //       "Turnstiles are essential security features designed to control access in various settings, including corporate offices, public tra",
+  //     url: "/turnstile",
+  //   },
+  //   {
+  //     heading: "DOCK SHELTERS",
+  //     img: "/dock-shelters.webp",
+  //     description:
+  //       "Dock shelters are critical components for any loading dock, providing protection and support during the loading and unloading of g",
+  //     url: "/dock-shelters",
+  //   },
+  //   {
+  //     heading: "DOCK LEVERS",
+  //     img: "/dock-levers.jpg",
+  //     description:
+  //       "Dock levers are critical components for any loading dock, providing essential support in the efficient and safe operation of loadi",
+  //     url: "/dock-levers",
+  //   },
+  //   {
+  //     heading: "AUTOMATIC BARRIES",
+  //     // img: "/automatic-barriers.webp",
+  //    img:"/automatic-barriers.jpg",
+
+  //     description:
+  //       "Automatic barriers are essential for enhancing security and controlling access at various locations, including parking lots, toll",
+  //     url: "/automatic-barries",
+  //   },
+  //   {
+  //     heading: "AUTOMATIC SENSOR GAASS DOOR",
+  //     img: "/automatic-sensor-glass-door.jpg",
+  //     description:
+  //       "Automatic sensor glass doors are an ideal solution for businesses seeking to enhance accessibility, improve energy efficiency, and",
+  //     url: "/automatic-sensor-glass-door",
+  //   },
+  //   {
+  //     heading: "AUTOMATIC OVERHEAD GARAGE DOOR",
+  //     img: "/automatic-overhead-garage-door.jpg",
+  //     description:
+  //       "Automatic overhead garage doors are a popular choice for homeowners looking to combine convenience, security, and aesthetic appeal",
+  //     url: "/automatic-garage-door",
+  //   },
+  //   {
+  //     heading: "HIGH SPEED DOOR",
+  //     img: "/high-speed-door.jpg",
+  //     description:
+  //       "High-speed doors are the go-to solution for industrial and commercial spaces that require quick access, enhanced security, and tem",
+  //     url: "/high-speed-door",
+  //   },
+  //   {
+  //     heading: "COLLAPSIBLE GATE",
+  //     img: "/collapsible-ate.jpg",
+  //     description:
+  //       "Collapsible gates, also known as retractable gates, are an excellent solution for properties that require security without sacrifi",
+  //     url: "/collapsible-gate",
+  //   },
+  //   {
+  //     heading: "TRI-FOLDING GATE",
+  //     img: "/Tri-Folding-gate.png",
+  //     description:
+  //       "Tri-folding gates are an innovative solution for properties requiring secure, space-saving entrances. These gates fold into three",
+  //     url: "/tri-folding-gate",
+  //   },
+  //   {
+  //     heading: "BI-FOLDING GATE",
+  //     img: "/Bi-Folding-gate.jpg",
+  //     description:
+  //       "Bi-folding gates, also known as folding gates or concertina gates, are the perfect blend of functionality, security, and style. Th",
+  //     url: "/bi-folding-gate",
+  //   },
+  //    {
+  //     heading: "CURVE GARAGE GATE",
+  //     img: "/curve-garage-gate.jpg",
+  //     description:
+  //       "Curve garage gates are revolutionizing the way homeowners and businesses approach garage door design. With their ability to glide",
+  //     url: "/curve-garage-gate",
+  //   },
+  //   {
+  //     heading: "CURVE SLIDING GATE",
+  //     img: "/curve-sliding-gate.jpg",
+  //     description:
+  //       "If you’re looking to upgrade your property’s entrance with a gate that combines security, functionality, and visual appeal, curve",
+  //     url: "/curve-slide-gate",
+  //   },
+  //   {
+  //     heading: "TELESCOPIC GATE",
+  //     img: "/Telescopic-gate.jpg",
+  //     description:
+  //       "Telescopic gates are an innovative solution for property access that combines space efficiency with robust security. Ideal for bot",
+  //     url: "/telescopic-gate",
+  //   },
+  //   {
+  //     heading: "SLIDING GATE",
+  //     img: "/sliding-gate-automation.jpg",
+  //     description:
+  //       "Sliding gates are an innovative and efficient solution for property access, ideal for both residential and commercial applications",
+  //     url: "/sliding-gates",
+  //   },
+  //   {
+  //     heading: "SWING GATES",
+  //     img: "/swing-gates.jpg",
+  //     description:
+  //       "Swing gates offer a classic and elegant solution for property access. Ideal for both residential and commercial applications, thes",
+  //     url: "/swing-gates",
+  //   },
+  //   {
+  //     heading: "AUTOMATIC GATES",
+  //     img: "/automatic-gates.jpg",
+  //     description:
+  //       "Automatic gates offer unparalleled convenience and security for both residential and commercial properties. With advanced technolo",
+  //     url: "/automatic-gates",
+  //   },
+  //   {
+  //     heading: "SS GATES",
+  //     img: "/SS-gates.jpg",
+  //     description:
+  //       "Stainless Steel (SS) gates are the perfect combination of strength, elegance, and versatility. Ideal for both residential and comm",
+  //     url: "/ss-gates",
+  //   },
+  //   {
+  //     heading: "MS GATES",
+  //     img: "/ms-gate.avif",
+  //     description:
+  //       "Mild Steel (MS) gates are an excellent choice for enhancing security and aesthetics for residential and commercial properties. Kno",
+  //     url: "/ms-gates",
+  //   },
+  // ];
+
   const articles = [
     {
       heading: "RETRACTABLE GATE",
       img: "/retractable-gate.jpg",
       description:
-        "Retractable gates are innovative security solutions designed to provide both protection and accessibility for residential and comm",
+        "Retractable gates are modern security solutions that provide strength, durability, and convenience. They ensure maximum protection while allowing smooth accessibility for residential and commercial spaces.",
       url: "/retracktable",
     },
     {
       heading: "TURNSTILE",
       img: "/Turnstile.jpg",
       description:
-        "Turnstiles are essential security features designed to control access in various settings, including corporate offices, public tra",
+        "Turnstiles are advanced access control systems designed to regulate entry in offices, public transport, stadiums, and high-security zones, ensuring both safety and smooth flow of people.",
       url: "/turnstile",
     },
     {
       heading: "DOCK SHELTERS",
       img: "/dock-shelters.webp",
       description:
-        "Dock shelters are critical components for any loading dock, providing protection and support during the loading and unloading of g",
+        "Dock shelters provide sealing between the building and truck during loading and unloading, ensuring protection from weather, dust, and energy loss, while enhancing efficiency at warehouses.",
       url: "/dock-shelters",
     },
     {
       heading: "DOCK LEVERS",
       img: "/dock-levers.jpg",
       description:
-        "Dock levers are critical components for any loading dock, providing essential support in the efficient and safe operation of loadi",
+        "Dock levers are essential for smooth loading and unloading operations, bridging the gap between trucks and docks. They improve safety, efficiency, and reliability in logistics operations.",
       url: "/dock-levers",
     },
     {
       heading: "AUTOMATIC BARRIES",
-      // img: "/automatic-barriers.webp",
-     img:"/automatic-barriers.jpg", 
-
+      img: "/automatic-barriers.jpg",
       description:
-        "Automatic barriers are essential for enhancing security and controlling access at various locations, including parking lots, toll",
+        "Automatic barriers are effective for controlling vehicle access in parking lots, toll plazas, and restricted areas. They combine advanced automation with durability for seamless security.",
       url: "/automatic-barries",
     },
     {
       heading: "AUTOMATIC SENSOR GAASS DOOR",
       img: "/automatic-sensor-glass-door.jpg",
       description:
-        "Automatic sensor glass doors are an ideal solution for businesses seeking to enhance accessibility, improve energy efficiency, and",
+        "Automatic sensor glass doors enhance convenience, energy efficiency, and accessibility. Commonly used in malls, offices, and hospitals, they provide a modern and professional entrance solution.",
       url: "/automatic-sensor-glass-door",
     },
     {
       heading: "AUTOMATIC OVERHEAD GARAGE DOOR",
       img: "/automatic-overhead-garage-door.jpg",
       description:
-        "Automatic overhead garage doors are a popular choice for homeowners looking to combine convenience, security, and aesthetic appeal",
+        "Automatic overhead garage doors offer convenience, security, and style. They are designed for smooth operation, durability, and aesthetic appeal, making them ideal for modern homes and businesses.",
       url: "/automatic-garage-door",
     },
     {
       heading: "HIGH SPEED DOOR",
       img: "/high-speed-door.jpg",
       description:
-        "High-speed doors are the go-to solution for industrial and commercial spaces that require quick access, enhanced security, and tem",
+        "High-speed doors are designed for industrial and commercial use, offering quick access, energy efficiency, and improved security. They are ideal for warehouses, factories, and clean rooms.",
       url: "/high-speed-door",
     },
     {
       heading: "COLLAPSIBLE GATE",
       img: "/collapsible-ate.jpg",
       description:
-        "Collapsible gates, also known as retractable gates, are an excellent solution for properties that require security without sacrifi",
+        "Collapsible gates combine security and space-saving design, making them perfect for shops, homes, and offices. They are strong, easy to operate, and ensure long-lasting protection.",
       url: "/collapsible-gate",
     },
     {
       heading: "TRI-FOLDING GATE",
       img: "/Tri-Folding-gate.png",
       description:
-        "Tri-folding gates are an innovative solution for properties requiring secure, space-saving entrances. These gates fold into three",
+        "Tri-folding gates are space-efficient security solutions that fold into three panels. They provide durability, smooth operation, and stylish designs for both residential and commercial properties.",
       url: "/tri-folding-gate",
     },
     {
       heading: "BI-FOLDING GATE",
       img: "/Bi-Folding-gate.jpg",
       description:
-        "Bi-folding gates, also known as folding gates or concertina gates, are the perfect blend of functionality, security, and style. Th",
+        "Bi-folding gates are modern entrance solutions that fold neatly to maximize space. They combine functionality, strength, and aesthetics, making them suitable for homes and businesses.",
       url: "/bi-folding-gate",
     },
-     {
+    {
       heading: "CURVE GARAGE GATE",
       img: "/curve-garage-gate.jpg",
       description:
-        "Curve garage gates are revolutionizing the way homeowners and businesses approach garage door design. With their ability to glide",
+        "Curve garage gates are innovative and stylish, designed to glide smoothly along curved tracks. They provide convenience, space efficiency, and a modern look for garages.",
       url: "/curve-garage-gate",
     },
     {
       heading: "CURVE SLIDING GATE",
       img: "/curve-sliding-gate.jpg",
       description:
-        "If you’re looking to upgrade your property’s entrance with a gate that combines security, functionality, and visual appeal, curve",
+        "Curve sliding gates combine elegance with robust security. Their unique sliding mechanism on curved tracks makes them both space-saving and visually appealing.",
       url: "/curve-slide-gate",
     },
     {
       heading: "TELESCOPIC GATE",
       img: "/Telescopic-gate.jpg",
       description:
-        "Telescopic gates are an innovative solution for property access that combines space efficiency with robust security. Ideal for bot",
+        "Telescopic gates are space-saving solutions that slide in sections, making them ideal for areas with limited space. They offer high security, smooth operation, and a sleek appearance.",
       url: "/telescopic-gate",
     },
     {
       heading: "SLIDING GATE",
       img: "/sliding-gate-automation.jpg",
       description:
-        "Sliding gates are an innovative and efficient solution for property access, ideal for both residential and commercial applications",
+        "Sliding gates are efficient and modern entrance solutions that provide maximum security with smooth operation. Suitable for both residential and commercial properties, they save space and add style.",
       url: "/sliding-gates",
     },
     {
       heading: "SWING GATES",
       img: "/swing-gates.jpg",
       description:
-        "Swing gates offer a classic and elegant solution for property access. Ideal for both residential and commercial applications, thes",
+        "Swing gates offer a classic, elegant design combined with reliable functionality. Perfect for residential driveways and commercial entrances, they provide strength, safety, and style.",
       url: "/swing-gates",
     },
     {
       heading: "AUTOMATIC GATES",
       img: "/automatic-gates.jpg",
       description:
-        "Automatic gates offer unparalleled convenience and security for both residential and commercial properties. With advanced technolo",
+        "Automatic gates combine advanced technology with convenience, offering enhanced security and ease of use. They are ideal for modern homes, offices, and industrial spaces.",
       url: "/automatic-gates",
     },
     {
       heading: "SS GATES",
       img: "/SS-gates.jpg",
       description:
-        "Stainless Steel (SS) gates are the perfect combination of strength, elegance, and versatility. Ideal for both residential and comm",
+        "Stainless Steel (SS) gates are strong, durable, and corrosion-resistant. They add elegance and security to any property, making them suitable for both residential and commercial use.",
       url: "/ss-gates",
     },
     {
       heading: "MS GATES",
       img: "/ms-gate.avif",
       description:
-        "Mild Steel (MS) gates are an excellent choice for enhancing security and aesthetics for residential and commercial properties. Kno",
+        "Mild Steel (MS) gates are a popular choice for enhancing security and aesthetics. Known for their strength and versatility, they are ideal for residential, commercial, and industrial properties.",
       url: "/ms-gates",
     },
   ];
+
   return (
     <div className="min-h-screen relative bg-background">
       <div
@@ -190,8 +327,7 @@ const EntranceAutomation = () => {
       <div className="relative w-full">
         <img
           // src="/automatic-barriers.webp"
-              src="/automatic-barriers.jpg" // Change to your image path
-
+          src="/automatic-barriers.jpg" // Change to your image path
           alt="About Us Banner"
           className="w-full h-[500px] object-cover"
         />
@@ -203,9 +339,10 @@ const EntranceAutomation = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; ENTRANCE AUTOMATION  SERVICES
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; ENTRANCE AUTOMATION
+              SERVICES
             </h2>
           </div>
         </div>
@@ -233,7 +370,7 @@ const EntranceAutomation = () => {
                     {article.description}
                   </div>
                   <Link to={article?.url}>
-                    <button className="border text-white bg-[#fcc729] font-[14px] rounded-lg cursor-pointer py-1 font-[500] px-4">
+                    <button className="border text-white bg-secondary/90 font-[14px] rounded-lg cursor-pointer py-1 font-[500] px-4">
                       View Details
                     </button>
                   </Link>

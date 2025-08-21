@@ -5,52 +5,52 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Enhanced Security:",
+    heading: "Strong Security:",
     description:
-      "Grill rolling shutters create a strong barrier against break-ins, deterring potential intruders. Their robust design ensures that your property remains safe and secure at all times.",
+      "Grill rolling shutters provide a solid barrier that deters theft and keeps your property safe.",
   },
   {
-    heading: "Visibility and Airflow:",
+    heading: "Airflow & Visibility:",
     description:
-      "Unlike traditional solid shutters, grill rolling shutters allow visibility and ventilation. This feature is beneficial for retail environments, enabling customers to see inside while maintaining security.",
+      "The open design allows fresh air and visibility while still offering strong protection.",
   },
   {
-    heading: "Durability:",
+    heading: "Long-Lasting Durability:",
     description:
-      "Made from high-quality materials, grill rolling shutters withstand the elements and daily wear. Their sturdy construction ensures long-lasting performance, making them a worthwhile investment.",
+      "Built with quality materials, these shutters resist damage and deliver years of reliable use.",
   },
   {
-    heading: "Versatile Applications:",
+    heading: "Wide Applications:",
     description:
-      "These shutters are suitable for a variety of settings, including shops, restaurants, garages, and warehouses. Their versatility makes them a popular choice for both commercial and residential use.",
+      "Ideal for shops, cafes, garages, and warehouses, offering both security and practicality.",
   },
   {
-    heading: "Customizable Design:",
+    heading: "Stylish Options:",
     description:
-      "Available in various colors and finishes, grill rolling shutters can be customized to fit the aesthetic of any property. Enhance your building's appearance while improving security.",
+      "Available in different colors and finishes to match your property’s look.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Retail Stores:",
+    heading: "Retail Shops:",
     description:
-      "Protect merchandise while allowing customers to see products from the outside, encouraging foot traffic.",
+      "Ideal for storefronts, grill shutters secure merchandise while showcasing products to passersby.",
   },
   {
-    heading: "Restaurants and Cafes:",
+    heading: "Food Outlets & Cafes:",
     description:
-      "Secure outdoor dining areas while maintaining an inviting atmosphere.",
+      "Protect serving counters or outdoor spaces while keeping the area visible and welcoming.",
   },
   {
-    heading: "Garages:",
+    heading: "Garages & Parking Areas:",
     description:
-      "Provide easy access and security for vehicles and equipment.",
+      "Offer strong security for vehicles and equipment with added ventilation.",
   },
-    {
-    heading: "Industrial Facilities:",
+  {
+    heading: "Warehouses & Industrial Units:",
     description:
-      "Ensure safety in warehouses while allowing airflow and visibility.",
+      "Maintain airflow and visibility while ensuring safety and security for stored goods.",
   },
 ];
 
@@ -108,7 +108,7 @@ export const GrillShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;GRILL ROLLING SHUTTERS
             </h2>
@@ -130,7 +130,10 @@ export const GrillShutters = () => {
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-             Grill rolling shutters are an ideal solution for businesses and homes that prioritize security without sacrificing aesthetics. Designed with a durable grill pattern, these shutters provide a high level of protection while allowing visibility and airflow, making them perfect for retail spaces, garages, and outdoor areas.
+              Grill rolling shutters combine strength and style, offering
+              reliable security while allowing natural airflow and visibility.
+              Ideal for shops, garages, and outdoor spaces, they protect your
+              property without blocking openness and aesthetics.
             </p>
           </div>
 
@@ -148,13 +151,18 @@ export const GrillShutters = () => {
       <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
           <div className="text-[23px] font-semibold my-4 text-[#181614]">
-           What Are Grill Rolling Shutters?
+            What Are Grill Rolling Shutters?
           </div>
           <div
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-            Grill rolling shutters are crafted from high-quality metal rods or tubes, designed to offer both security and visibility. Their sturdy construction provides effective protection against unauthorized access while allowing airflow and natural light to pass through. Ideal for showrooms, retail outlets, and display areas, these shutters combine strength with transparency, ensuring safety without compromising on visibility.          </div>
+            Grill rolling shutters are built with strong metal grills that
+            ensure maximum security while maintaining airflow and visibility.
+            Perfect for showrooms, retail outlets, and garages, they provide
+            reliable protection without blocking light or openness, blending
+            safety with style.{" "}
+          </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -168,7 +176,7 @@ export const GrillShutters = () => {
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614]">
-     Applications of Grill Rolling Shutters
+            Applications of Grill Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
@@ -182,22 +190,34 @@ export const GrillShutters = () => {
             How to Operate
           </div>
           <div className=" font-semibold text-[#000] ">
- How to Operate Grill Rolling Shutters:
+            How to Operate Grill Rolling Shutters:
           </div>
           <div>
-           Operating grill rolling shutters is straightforward: Choose between manual or motorized systems based on your preference and needs. For motorized options, control the shutters easily with a remote or wall switch. Designed for easy cleaning, simply wipe down the surface to keep your shutters looking great.
+            Grill rolling shutters are easy to use, available in manual or
+            motorized options. Motorized shutters can be operated with a switch
+            or remote, while the simple design makes cleaning and maintenance
+            hassle-free.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            To maximize the lifespan and functionality of your grill rolling shutters, use a mild detergent and water to clean the shutters, preventing dirt buildup. Regularly check for any signs of wear or damage and address them promptly. Apply lubricant to the moving parts to ensure smooth operation.
+            To keep your grill rolling shutters in top condition, clean them
+            with mild soap and water to avoid dust and grime buildup. Inspect
+            the shutters frequently for damage or wear and fix issues right
+            away. Lubricate hinges, tracks, and other moving parts regularly to
+            maintain smooth and long-lasting performance.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-          Grill rolling shutters provide a perfect combination of security, visibility, and durability. Their unique design makes them an excellent choice for a wide range of applications, enhancing both the safety and aesthetics of your property. Invest in grill rolling shutters today to enjoy peace of mind without compromising style.
+            Grill rolling shutters are an ideal blend of strength,
+            functionality, and modern appeal. With their sturdy structure, they
+            protect against break-ins while maintaining openness and airflow.
+            Suitable for both commercial and residential spaces, they add value
+            to your property by combining reliable security with an attractive
+            appearance.
           </div>
         </div>
       </section>

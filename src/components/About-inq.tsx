@@ -3,42 +3,62 @@ import { useState } from "react";
 export const Enuiry = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const faqs = [
-    {
-      question: "What types of entrance automation systems do you offer?",
-      answer:
-        "We provide a range of entrance automation solutions, including automated gates, sliding doors, and access control systems, all customized to suit your specific needs.",
-    },
-    {
-      question:
-        "Are your rolling shutters suitable for both residential and commercial properties?",
-      answer:
-        "Yes, our rolling shutters are designed to provide security and weather protection for both residential and commercial spaces, with various design options to match the property’s style.",
-    },
-    {
-      question:
-        "How long does it take to install an entrance automation system?",
-      answer:
-        "The installation time depends on the complexity of the project, but typically, it takes between 2-5 days. We ensure a smooth and efficient installation process.",
-    },
-    {
-      question:
-        "Can you customize fabrication projects to meet specific requirements?",
-      answer:
-        "Absolutely! Our general fabrication services are fully customizable, and we work closely with clients to deliver solutions that meet their unique specifications.",
-    },
-    {
-      question: "What materials do you use for your fabrication projects?",
-      answer:
-        "We work with a variety of materials, including steel, aluminum, and other metals, ensuring high durability and quality for all projects.",
-    },
-    {
-      question:
-        "Do you provide maintenance and repair services for rolling shutters and entrance automation systems?",
-      answer:
-        "Yes, we offer ongoing maintenance and repair services to ensure your systems operate smoothly and remain in top condition.",
-    },
-  ];
+const faqs = [
+  {
+    question: "What types of entrance automation systems do you offer?",
+    answer:
+      "We provide a range of entrance automation solutions, including automated gates, sliding doors, and access control systems, all customized to suit your specific needs.",
+  },
+  {
+    question:
+      "Are your rolling shutters suitable for both residential and commercial properties?",
+    answer:
+      "Yes, our rolling shutters are designed to provide security and weather protection for both residential and commercial spaces, with various design options to match the property’s style.",
+  },
+  {
+    question: "How long does it take to install an entrance automation system?",
+    answer:
+      "The installation time depends on the complexity of the project, but typically, it takes between 2-5 days. We ensure a smooth and efficient installation process.",
+  },
+  {
+    question:
+      "Can you customize fabrication projects to meet specific requirements?",
+    answer:
+      "Absolutely! Our general fabrication services are fully customizable, and we work closely with clients to deliver solutions that meet their unique specifications.",
+  },
+  {
+    question: "What materials do you use for your fabrication projects?",
+    answer:
+      "We work with a variety of materials, including steel, aluminum, and other metals, ensuring high durability and quality for all projects.",
+  },
+  {
+    question:
+      "Do you provide maintenance and repair services for rolling shutters and entrance automation systems?",
+    answer:
+      "Yes, we offer ongoing maintenance and repair services to ensure your systems operate smoothly and remain in top condition.",
+  },
+  {
+    question: "Can your automation systems be integrated with smart home technology?",
+    answer:
+      "Yes, our automation solutions can be integrated with smart home systems, allowing you to control gates, shutters, and doors remotely using mobile apps or voice commands.",
+  },
+  // {
+  //   question: "Do you provide warranty on your products and services?",
+  //   answer:
+  //     "Yes, all our products and installation services come with a standard warranty to ensure reliability and peace of mind for our customers.",
+  // },
+  // {
+  //   question: "What safety features are included in your automation systems?",
+  //   answer:
+  //     "Our systems are equipped with advanced safety features such as auto-reverse sensors, emergency manual operation, and obstacle detection for maximum safety.",
+  // },
+  // {
+  //   question: "Do you offer consultation before starting a project?",
+  //   answer:
+  //     "Yes, we provide free consultations to understand your requirements, assess the site, and recommend the best solutions tailored to your needs.",
+  // },
+];
+
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -51,7 +71,7 @@ export const Enuiry = () => {
 
       <div className=" px-6  bg-opacity-90">
         {/* Section Tag */}
-        <span className="inline-block border-4 text-[#fcc729] border-[#fcc729]  font-semibold py-1 px-4   mb-4 text-[16px]">
+        <span className="inline-block border-4 rounded-lg text-secondary/90 border-secondary/90  font-semibold py-1 px-4   mb-4 text-[16px]">
           Our FAQs
         </span>
 
@@ -69,7 +89,7 @@ export const Enuiry = () => {
                 className="w-full text-left py-3 flex gap-2  text-lg font-semibold text-[#181614]"
               >
                 {" "}
-                <span className="text-[#fcc729] mr-2">
+                <span className="text-secondary/90 mr-2">
                   {openIndex === index ? "−" : "+"}
                 </span>
                 <span>{faq.question}</span>

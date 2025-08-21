@@ -109,7 +109,7 @@ const Services = () => {
       <section id="services" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
-            <div className="inline-block px-4 py-2 border-2 border-[#fcc729] text-[#fcc729] font-bold text-sm rounded mb-6">
+            <div className="inline-block px-4 py-2 border-2 border-secondary/90 text-secondary/90 font-bold text-sm rounded-lg mb-6">
               Our Services
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
@@ -127,7 +127,7 @@ const Services = () => {
                 {rollingShutters.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-[#fcc729] transition-colors"
+                    className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-secondary/90 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
                     <Link to={item?.url}>
@@ -147,7 +147,7 @@ const Services = () => {
                 {entranceAutomation.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-[#fcc729] transition-colors"
+                    className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-secondary/90 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
                     <Link to={item?.url}>
@@ -167,7 +167,7 @@ const Services = () => {
                 {generalFabrication.map((item, index) => (
                   <div
                     key={index}
-                    className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-[#fcc729] transition-colors"
+                    className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-secondary/90 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
                       <Link to={item?.url}>

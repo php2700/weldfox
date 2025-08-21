@@ -7,27 +7,27 @@ const arr = [
   {
     heading: "Space Efficiency:",
     description:
-      "Sliding gates do not require additional space to swing open, making them perfect for driveways or areas with limited room.",
+      "Sliding gates move horizontally along a track, making them perfect for properties with limited driveway space.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "Built with durable materials, sliding gates provide a solid barrier against unauthorized access, increasing safety for your property.",
-  },
-  {
-    heading: "Versatile Designs:",
-    description:
-      "Available in various materials such as aluminum, steel, and wood, sliding gates can be customized to match your property's aesthetic.",
+      "Sturdy construction and secure locking mechanisms provide reliable protection for residential and commercial properties.",
   },
   {
     heading: "Smooth Operation:",
     description:
-      "Equipped with advanced mechanisms, sliding gates open and close smoothly, ensuring ease of use.",
+      "Designed for effortless opening and closing, sliding gates ensure convenient and reliable access.",
   },
   {
-    heading: "Weather Resistance:",
+    heading: "Durability:",
     description:
-      "High-quality materials and coatings protect against rust and corrosion, ensuring durability in various weather conditions.",
+      "Made from high-quality materials, sliding gates withstand frequent use and harsh environmental conditions.",
+  },
+  {
+    heading: "Modern Aesthetic:",
+    description:
+      "Sleek designs and customizable finishes enhance the visual appeal of any property.",
   },
 ];
 
@@ -35,74 +35,66 @@ const material = [
   {
     name: "Steel:",
     description:
-      "Steel sliding gates are highly durable and offer robust security, making them suitable for commercial and industrial applications.",
+      "Provides superior strength and durability, suitable for both residential and commercial sliding gates.",
   },
   {
     name: "Aluminum:",
-    description: `Lightweight and rust-resistant, aluminum sliding gates provide a stylish and durable option for residential properties.`,
+    description:
+      "Lightweight yet strong, resistant to rust, and requires minimal maintenance.",
   },
   {
-    name: "Wood:",
+    name: "Stainless Steel:",
     description:
-      "Wooden sliding gates add a classic look and can be customized for aesthetic appeal, though they may require more maintenance.",
+      "Offers corrosion resistance and long-lasting performance, ideal for modern sliding gate designs.",
   },
 ];
 
 const customization = [
   {
-    name: "Finishes:",
+    name: "Design Options:",
     description:
-      "Choose from various finishes, including powder-coated, painted, or stained options to enhance your gate's appearance.",
+      "Choose from a variety of styles, finishes, and patterns to complement your property’s architecture.",
   },
   {
-    name: "Colors:",
-    description: `Select from a wide palette of colors to match your property's design and personal preferences.`,
-  },
-  {
-    name: "Automation Features:",
+    name: "Automation Options:",
     description:
-      "Add automation features such as remote access, intercom systems, or sensors for added convenience and security.",
+      "Sliding gates can be equipped with automated openers, remote control, or smart access systems for added convenience.",
   },
 ];
 
 const gates = [
   {
-    name: "Automated Options:",
+    name: "Space-Saving Design:",
     description:
-      "Many sliding gates can be equipped with automation features, allowing for remote access and enhanced convenience.",
+      "Sliding gates are perfect for properties with limited space, allowing smooth horizontal operation without swinging.",
   },
   {
-    name: "Customization:",
+    name: "Reliable Security:",
     description:
-      "Options for finishes, colors, and additional features like intercom systems allow you to create a gate that fits your style and needs.",
+      "Robust construction and secure locking mechanisms ensure strong protection for your property.",
   },
   {
-    name: "Low Maintenance:",
+    name: "Ease of Operation:",
     description:
-      "With fewer moving parts compared to swing gates, sliding gates often require less maintenance while providing reliable performance.",
+      "Available in manual or automated options, providing convenience and effortless access.",
   },
 ];
 
 const useRolling = [
   {
-    heading: "Single Sliding Gates:",
+    heading: "Residential Properties:",
     description:
-      "A single sliding gate consists of one panel that slides open to one side, ideal for residential and smaller commercial spaces.",
+      "Ideal for homes with limited driveway space, offering both security and aesthetic appeal.",
   },
   {
-    heading: "Bi-parting Sliding Gates:",
+    heading: "Commercial Spaces:",
     description:
-      "These gates consist of two panels that slide open in opposite directions, providing a wider opening for larger vehicles.",
+      "Perfect for offices, retail outlets, and gated communities requiring efficient and secure access control.",
   },
   {
-    heading: "Telescopic Sliding Gates:",
+    heading: "Industrial Facilities:",
     description:
-      "These gates feature multiple panels that slide together, allowing for maximum opening width in limited space.",
-  },
-  {
-    heading: "Stacking Sliding Gates:",
-    description:
-      "Stacking gates fold back into a compact area when opened, offering a space-efficient solution for high-traffic locations.",
+      "Suitable for warehouses and factories needing reliable, durable, and space-efficient entry solutions.",
   },
 ];
 
@@ -157,7 +149,7 @@ export const Slidegates = () => {
           <div className="text-7xl text-white font-bold">SLIDING GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;SLIDING GATES
             </h2>
@@ -179,10 +171,10 @@ export const Slidegates = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Sliding gates are an innovative and efficient solution for
-              property access, ideal for both residential and commercial
-              applications. Designed to save space while providing robust
-              security, these gates combine practicality with style.
+              Sliding gates offer an innovative and space-efficient solution for
+              property access. Suitable for both residential and commercial
+              properties, these gates provide robust security while combining
+              practicality with stylish design.
             </p>
           </div>
 
@@ -203,10 +195,10 @@ export const Slidegates = () => {
             What Are Sliding Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            Sliding gates operate by moving along a track, sliding open
-            horizontally instead of swinging outward or inward. This design
-            makes them an excellent choice for properties with limited space for
-            gate operation.{" "}
+            Sliding gates operate by moving horizontally along a track, rather
+            than swinging inward or outward. This design makes them an ideal
+            solution for properties with limited space, providing efficient
+            operation without compromising security or style.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of Sliding Gates
@@ -285,9 +277,9 @@ export const Slidegates = () => {
           </div>
           <div className="text-[15px] font-[400] my-2">
             Professional installation is recommended to ensure the gate operates
-            smoothly and meets safety standards. Regular maintenance, including
-            checking tracks and lubrication, will help prolong the gate’s
-            lifespan.
+            smoothly and adheres to safety standards. Regular maintenance,
+            including inspecting tracks and applying lubrication, helps extend
+            the gate’s lifespan and maintain optimal performance.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Types of Sliding Gates
@@ -306,9 +298,9 @@ export const Slidegates = () => {
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
             Investing in sliding gates is a smart choice for enhancing security,
-            maximizing space, and improving the aesthetic appeal of your
-            property. Explore our selection of high-quality sliding gates to
-            find the perfect solution for your needs!
+            convenience, and aesthetics, especially in properties with limited
+            space. Explore our range of high-quality sliding gates to find the
+            perfect solution tailored to your needs.
           </div>
         </div>
       </section>

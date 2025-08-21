@@ -5,105 +5,109 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: " Durability:",
+    heading: "Durability",
     description:
-      "MS pergolas are constructed from mild steel, known for its strength and resistance to bending or breaking. This durability ensures that your pergola will withstand harsh weather conditions, providing long-lasting performance.",
+      "MS pergolas are made from mild steel, known for its strength and resistance to bending or breaking. This ensures your pergola can withstand harsh weather conditions and provide long-lasting performance.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Low Maintenance",
     description:
-      "Unlike wooden pergolas that may require frequent treatment and repair, MS pergolas require minimal upkeep. With proper coating, they resist rust, corrosion, and weathering, ensuring longevity and aesthetic appeal.",
+      "Unlike wooden pergolas, MS pergolas require minimal upkeep. Proper coatings protect against rust, corrosion, and weathering, ensuring longevity and maintaining aesthetic appeal.",
   },
   {
-    heading: "Design Flexibility:",
+    heading: "Design Flexibility",
     description:
-      "MS pergolas can be designed in various styles, sizes, and colors to complement your outdoor décor. Whether you prefer a modern, sleek look or a more traditional design, an MS pergola can be tailored to meet your specific needs.",
+      "MS pergolas can be customized in various styles, sizes, and colors to complement your outdoor décor. Whether you prefer a modern, sleek look or a traditional design, they can be tailored to meet your specific needs.",
   },
   {
-    heading: "Shade and Comfort:",
+    heading: "Shade and Comfort",
     description:
-      "An MS pergola provides a shaded area in your outdoor space, allowing you to enjoy the outdoors without the harsh effects of direct sunlight. This added comfort makes it an ideal setting for relaxation, dining, or entertaining guests.",
+      "MS pergolas provide shaded outdoor areas, allowing you to enjoy the space without direct sunlight. This makes them ideal for relaxation, dining, or entertaining guests.",
   },
   {
-    heading: "Increased Property Value:",
+    heading: "Increased Property Value",
     description:
-      "Installing an MS pergola can enhance the overall aesthetic of your property and increase its value. Potential buyers often appreciate well-designed outdoor spaces, making a pergola a worthwhile investment.",
+      "Adding an MS pergola enhances the aesthetic appeal of your property and can increase its value. Well-designed outdoor spaces are often appreciated by potential buyers, making it a smart investment.",
   },
 ];
+
 
 const typesRailing = [
   {
-    heading: "Durability:",
+    heading: "Residential Gardens",
     description:
-      "MS pergolas are constructed from mild steel, known for its strength and resistance to bending or breaking. This durability ensures that your pergola will withstand harsh weather conditions, providing long-lasting performance.",
+      "MS pergolas are perfect for gardens, patios, and backyards, providing shaded areas for relaxation, outdoor dining, or entertaining guests.",
   },
   {
-    heading: "Low Maintenance:",
+    heading: "Terraces and Rooftops",
     description:
-      "Unlike wooden pergolas that may require frequent treatment and repair, MS pergolas require minimal upkeep. With proper coating, they resist rust, corrosion, and weathering, ensuring longevity and aesthetic appeal.",
+      "Ideal for terraces and rooftop spaces, MS pergolas create stylish and functional areas to enjoy the outdoors while enhancing the property’s aesthetic appeal.",
   },
   {
-    heading: "Design Flexibility:",
+    heading: "Commercial Spaces",
     description:
-      "MS pergolas can be designed in various styles, sizes, and colors to complement your outdoor décor. Whether you prefer a modern, sleek look or a more traditional design, an MS pergola can be tailored to meet your specific needs.",
+      "In hotels, restaurants, and cafes, MS pergolas offer attractive outdoor seating areas, combining comfort and visual appeal for visitors and customers.",
   },
   {
-    heading: "Shade and Comfort:",
+    heading: "Pathways and Walkways",
     description:
-      "An MS pergola provides a shaded area in your outdoor space, allowing you to enjoy the outdoors without the harsh effects of direct sunlight. This added comfort makes it an ideal setting for relaxation, dining, or entertaining guests.",
+      "MS pergolas can be installed along garden paths or walkways, supporting climbing plants and providing shaded passageways for a visually pleasing outdoor experience.",
   },
   {
-    heading: "Increased Property Value:",
+    heading: "Event Venues",
     description:
-      "Installing an MS pergola can enhance the overall aesthetic of your property and increase its value. Potential buyers often appreciate well-designed outdoor spaces, making a pergola a worthwhile investment.",
+      "Pergolas are commonly used in event and recreational areas to create shaded and functional spaces for gatherings, weddings, and other outdoor occasions.",
   },
 ];
+  
 
 const maintainenceRailing = [
   {
-    heading: "Flat Roof Pergolas:",
+    heading: "Professional Installation",
     description:
-      "Flat roof pergolas offer a modern, minimalist look. They provide ample coverage and can be integrated with retractable canopies for adjustable shade.",
+      "Hiring trained professionals ensures that your MS pergola is installed securely and safely. Proper installation guarantees stability, durability, and compliance with local building codes.",
   },
   {
-    heading: "Arched Roof Pergolas:",
+    heading: "Regular Inspections",
     description:
-      "An arched roof design adds a touch of elegance and sophistication to your outdoor space. This style allows for a more open feel while providing a visually appealing structure.",
+      "Routine inspections help identify any signs of wear, rust, or loose components. Addressing these issues promptly can extend the life of your pergola and maintain its structural integrity.",
   },
   {
-    heading: "Lattice Pergolas:",
+    heading: "Cleaning and Care",
     description:
-      "Lattice pergolas feature a grid-like design on the roof, allowing for the growth of climbing plants while providing partial shade. This option combines functionality with natural beauty.",
+      "Regular cleaning with mild soap and water helps preserve the finish and appearance of your MS pergola. Avoid abrasive cleaners that may damage the surface.",
   },
-   {
-    heading: "Integrated Lighting:",
+  {
+    heading: "Coating Maintenance",
     description:
-      "Enhance your MS pergola with integrated lighting for nighttime enjoyment. LED lights can be added to the structure, creating a warm and inviting atmosphere for evening gatherings.",
+      "Ensure protective coatings, such as powder coating or paint, are intact. Reapply coatings as needed to prevent corrosion and maintain the pergola’s aesthetic appeal.",
   },
 ];
 
+
 const coatingRailing = [
- {
-    heading: "Flat Roof Pergolas:",
+  {
+    heading: "Flat Roof Pergolas",
     description:
-      "Flat roof pergolas offer a modern, minimalist look. They provide ample coverage and can be integrated with retractable canopies for adjustable shade.",
+      "Flat roof pergolas provide a modern, minimalist look while offering ample coverage. They can be combined with retractable canopies for adjustable shade and comfort.",
   },
   {
-    heading: "Arched Roof Pergolas:",
+    heading: "Arched Roof Pergolas",
     description:
-      "An arched roof design adds a touch of elegance and sophistication to your outdoor space. This style allows for a more open feel while providing a visually appealing structure.",
+      "Arched roof pergolas add elegance and sophistication to any outdoor space. The gentle curve creates an open, airy feel while maintaining structural beauty.",
   },
   {
-    heading: "Lattice Pergolas:",
+    heading: "Lattice Pergolas",
     description:
-      "Lattice pergolas feature a grid-like design on the roof, allowing for the growth of climbing plants while providing partial shade. This option combines functionality with natural beauty.",
+      "Lattice pergolas feature a grid-like roof design, ideal for supporting climbing plants while providing partial shade. This design blends functionality with natural aesthetics.",
   },
-   {
-    heading: "Integrated Lighting:",
+  {
+    heading: "Integrated Lighting",
     description:
-      "Enhance your MS pergola with integrated lighting for nighttime enjoyment. LED lights can be added to the structure, creating a warm and inviting atmosphere for evening gatherings.",
+      "MS pergolas can be enhanced with integrated LED lighting, creating a warm and inviting atmosphere for evening gatherings and outdoor entertainment.",
   },
 ];
+
 
 export const Pargola = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -156,7 +160,7 @@ export const Pargola = () => {
           <div className="text-7xl text-white font-bold">PARGOLA</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;PARGOLA
             </h2>
@@ -178,7 +182,7 @@ export const Pargola = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-            An MS (Mild Steel) pergola is an excellent addition to any outdoor area, providing both beauty and functionality. Known for their durability and versatility, MS pergolas are designed to enhance gardens, patios, and backyards while offering shade and protection from the elements. Whether you want to create a cozy outdoor nook, a stylish entertainment area, or a pathway through your garden, an MS pergola can elevate your outdoor living experience.
+           An MS (Mild Steel) pergola is a versatile and stylish addition to any outdoor space, offering both beauty and functionality. Known for their durability, MS pergolas enhance gardens, patios, and backyards while providing shade and protection from the elements. Whether you want a cozy outdoor nook, a stylish entertainment area, or a charming garden pathway, an MS pergola can elevate your outdoor living experience.
             </p>
           </div>
 
@@ -199,7 +203,7 @@ export const Pargola = () => {
            What Is an MS Pergola?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           An MS pergola is a structure made from mild steel, typically consisting of vertical posts supporting crossbeams and an open lattice roof. This design allows sunlight to filter through while providing support for climbing plants and vines, creating a natural, shaded environment. MS pergolas can be customized to fit various styles and dimensions, making them a perfect fit for any outdoor space.
+           MS pergolas, crafted from mild steel, feature sturdy vertical posts supporting crossbeams and an open lattice roof. This structure allows natural sunlight to filter through while providing a framework for climbing plants and vines, creating a shaded, inviting outdoor space. With customizable styles and dimensions, MS pergolas can be tailored to complement any garden, patio, or backyard setting.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
            Benefits of MS Pergolas
@@ -263,7 +267,7 @@ export const Pargola = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            MS railings are a practical and stylish solution for enhancing safety and aesthetics in both residential and commercial properties. Their durability, versatility, and cost-effectiveness make them a popular choice among homeowners and builders alike. By choosing high-quality MS railings, you can protect your property while adding a touch of elegance to your space.
+          MS pergolas are a practical and stylish addition to any outdoor space, offering both functionality and aesthetic appeal. Their durability, versatility, and low maintenance make them a popular choice for homeowners and designers alike. By investing in a high-quality MS pergola, you can create a beautiful, shaded area that enhances your property and elevates your outdoor living experience.
           </div>
         </div>
       </section>

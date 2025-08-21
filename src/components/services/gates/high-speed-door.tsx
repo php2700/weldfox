@@ -5,117 +5,112 @@ import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
   {
-    heading: "Increased Operational Efficiency:",
+    heading: "Fast Operation:",
     description:
-      "High-speed doors minimize wait times for employees, vehicles, and equipment entering or leaving a facility. Their fast operation ensures a smooth workflow, particularly in high-traffic areas like loading docks or manufacturing floors."
+      "High-speed doors open and close rapidly, reducing waiting time and improving workflow efficiency.",
   },
   {
     heading: "Energy Efficiency:",
     description:
-      "By reducing the time the door remains open, high-speed doors help maintain stable indoor temperatures, significantly lowering energy costs for climate-controlled environments such as cold storage rooms, cleanrooms, and warehouses.",
+      "Quick operation helps maintain internal temperatures, reducing energy loss in climate-controlled areas.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "With their fast operating speeds, high-speed doors reduce the risk of unauthorized access. They can be easily and seamlessly integrated with advanced security systems, offering improved protection and enhanced security for your facility.",
+      "Robust construction and controlled access options provide reliable protection for commercial and industrial spaces.",
   },
   {
-    heading: "Improved Safety:",
+    heading: "Low Maintenance:",
     description:
-      "High-speed doors come equipped with advanced safety features like sensors that prevent the door from closing if objects or people are in the way. This reduces the risk of accidents, improves efficiency, and enhances overall safety in busy work environments.",
+      "Designed for durability and frequent use, high-speed doors require minimal upkeep, saving time and costs.",
   },
   {
-    heading: "Durability and Low Maintenance:",
+    heading: "Improved Traffic Flow:",
     description:
-      "Made from high-quality materials such as reinforced PVC or stainless steel, high-speed doors are designed to withstand frequent use and harsh conditions. Their robust design ensures long-term performance with minimal maintenance.",
+      "Rapid opening and closing reduce congestion at entrances and exits, optimizing workflow and operational efficiency.",
   },
 ];
 
 const material = [
   {
-    name: "PVC Fabric:",
+    name: "PVC or Fabric Panels:",
     description:
-      "Lightweight and flexible, PVC fabric is commonly used in high-speed doors due to its durability and ability to withstand frequent use. It is ideal for interior doors and environments requiring quick, efficient access.",
+      "Lightweight and flexible, allowing rapid movement and energy-efficient operation.",
   },
   {
-    name: "Steel and Aluminum:",
-    description: `For areas requiring high security or extreme durability, high-speed doors made from steel or aluminum are an excellent choice. They provide strength and protection while still offering the benefits of rapid operation.`,
+    name: "Aluminum Frames:",
+    description:
+      "Corrosion-resistant and sturdy, providing structural support and durability for industrial applications.",
   },
   {
-    name: "Insulated Panels:",
+    name: "Stainless Steel Components:",
     description:
-      "High-speed doors with insulated panels are perfect for climate-controlled environments. These doors maintain internal temperatures while reducing energy loss, making them ideal for cold storage or freezer rooms.",
+      "Used for hinges, tracks, and mechanisms to ensure long-lasting performance and minimal wear.",
   },
 ];
+
 
 const customization = [
   {
-    name: "Size:",
+    name: "Size and Dimensions:",
     description:
-      "Many automatic overhead garage doors feature insulated panels that maintain temperatures, reducing energy costs and improving efficiency. This insulation enhances comfort year-round.",
+      "High-speed doors can be custom-built to fit any opening, accommodating specific width and height requirements.",
   },
   {
-    name: "Colors & Finishes:",
-    description: `Choose from a wide variety of colors and finishes to match your branding or facility design. Powder-coated options are available for added durability and aesthetic appeal.`,
+    name: "Operation Type:",
+    description:
+      "Choose manual, automatic, or sensor-based operation to suit your workflow needs.",
   },
   {
-    name: "Security Features:",
-    description: "High-speed doors can be integrated with advanced security systems, including keypads, card readers, or biometric access for restricted areas.",
+    name: "Color and Finish:",
+    description:
+      "Available in various colors and finishes to match your facility’s aesthetic or safety requirements.",
   },
   {
-    name: "Safety Features:",
-    description: `Equip your high-speed door with features such as motion sensors, light curtains, or emergency stop functions to ensure the safety of your staff and equipment.`,
-  },
-  {
-    name: "Insulation:",
-    description: "Insulated high-speed doors help control temperature and reduce energy costs, making them a great option for cold storage or energy-efficient buildings.",
+    name: "Security and Access Controls:",
+    description:
+      "Optional integration with keypads, card readers, or remote monitoring systems enhances security.",
   },
 ];
+
 
 const gates = [
   {
-    name: "Usage Frequency:",
+    name: "Rapid Operation:",
     description:
-      "High-speed doors are ideal for high-traffic areas. Consider how often the door will be used and choose a model that can handle frequent operation.",
+      "High-speed doors minimize downtime and improve efficiency in high-traffic environments.",
   },
   {
-    name: "Environmental Needs:",
+    name: "Durable and Reliable:",
     description:
-      "If your facility requires temperature control or contamination prevention, opt for insulated or PVC fabric high-speed doors that provide the appropriate sealing.",
+      "Engineered to withstand frequent use while maintaining smooth operation and low maintenance needs.",
   },
   {
-    name: "Security Requirements:",
+    name: "Energy and Climate Control:",
     description:
-      "For areas requiring high security, choose a rigid or sectional high-speed door made from durable materials like steel or aluminum.",
-  },{
-    name: "Security Requirements:",
-    description:
-      "High-speed doors vary in price based on material, size, and features. Choose one that meets your needs and budget while maximizing efficiency and durability.",
+      "Quick opening and closing reduce energy loss and help maintain internal climate conditions.",
   },
 ];
 
+
 const useRolling = [
   {
-    heading: "Roll-Up High-Speed Doors:",
+    heading: "Warehouses:",
     description:
-      "Roll-up high-speed doors are commonly used in industrial applications. They operate by rolling vertically into a compact housing, saving space and allowing for quick access.",
+      "Ideal for high-traffic warehouse doors where fast access and climate control are crucial.",
   },
   {
-    heading: "Sectional High-Speed Doors:",
+    heading: "Cold Storage Facilities:",
     description:
-      "These doors open by lifting individual panels into the ceiling. They provide durability and insulation, making them suitable for environments where energy efficiency and security are important.",
+      "Helps maintain temperature and prevent contamination in refrigeration and freezing areas.",
   },
   {
-    heading: "PVC Fabric High-Speed Doors:",
+    heading: "Production Areas:",
     description:
-      "Lightweight and fast, PVC fabric high-speed doors are ideal for areas where frequent access is needed. They are commonly used in food processing, cleanrooms, and temperature-sensitive environments.",
-  },
-    {
-    heading: "Rigid High-Speed Doors:",
-    description:
-      "Made from durable materials such as aluminum or steel, rigid high-speed doors offer enhanced security and insulation. They are perfect for areas that require both speed and strong protection.",
+      "Optimizes workflow in factories and manufacturing plants by reducing entry and exit delays.",
   },
 ];
+
 
 export const Highspeeddoor = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -168,7 +163,7 @@ export const Highspeeddoor = () => {
           <div className="text-7xl text-white font-bold">HIGH SPEED DOORS</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;HIGH SPEED DOORS
             </h2>
@@ -190,7 +185,7 @@ export const Highspeeddoor = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              High-speed doors are the go-to solution for industrial and commercial spaces that require quick access, enhanced security, and temperature control. These doors are designed to open and close at exceptional speeds, reducing energy loss and minimizing downtime during operations. Ideal for warehouses, factories, cleanrooms, and loading docks, high-speed doors not only improve operational efficiency but also offer long-term durability and low maintenance. Whether you’re looking to optimize your workflow or maintain strict environmental controls, high-speed doors are a smart investment for modern businesses.
+              High-speed doors are the ideal solution for industrial and commercial spaces requiring fast access, enhanced security, and temperature control. Designed to open and close at exceptional speeds, these doors reduce energy loss and minimize downtime during operations. Perfect for warehouses, factories, cleanrooms, and loading docks, high-speed doors improve operational efficiency while offering long-term durability and low maintenance. Whether you aim to optimize workflow or maintain strict environmental controls, high-speed doors are a smart investment for modern businesses.
             </p>
           </div>
 
@@ -211,7 +206,7 @@ export const Highspeeddoor = () => {
            What is a High-Speed Door?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            A high-speed door is a specialized industrial or commercial door designed for rapid opening and closing, typically operating much faster than traditional doors. They are commonly used in environments where fast access is necessary, such as warehouses, cold storage facilities, and production areas. High-speed doors help to maintain climate control, reduce air contamination, improve traffic flow, and enhance security.
+           A high-speed door is a specialized industrial or commercial door designed for rapid opening and closing, operating significantly faster than traditional doors. They are commonly used in warehouses, cold storage facilities, and production areas, where quick access is essential. High-speed doors help maintain climate control, reduce air contamination, improve traffic flow, and enhance security.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of Installing a High-Speed Door
@@ -289,19 +284,19 @@ export const Highspeeddoor = () => {
            Professional Installation:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            Due to their specialized nature, high-speed doors should be installed by professionals to ensure correct setup, alignment, and smooth operation. Proper installation also maximizes energy savings and security benefits.
+            Due to their specialized design, high-speed doors should be installed by professionals to ensure proper setup, alignment, and smooth operation. Correct installation also maximizes energy efficiency and security benefits.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
            Minimal Maintenance:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            High-speed doors are designed for durability and minimal maintenance. Regular checks of the motor, tracks, and sensors will keep the door operating efficiently. Many models feature self-repairing capabilities, further reducing downtime.
+            High-speed doors are built for durability and require minimal maintenance. Regularly inspect the motor, tracks, and sensors to ensure efficient operation. Many models include self-repairing features, further reducing downtime and maintenance needs.
           </div>
           <div className="text-lg font-semibold mt-4 text-[#000]">
            Safety Inspections:
           </div>
           <div className="text-[15px] font-[400] my-2">
-            It’s essential to conduct routine safety inspections to ensure the sensors and safety systems are functioning correctly. Regular maintenance will also prolong the life of the door and ensure it remains in optimal condition.
+           It is essential to perform routine safety inspections to ensure that sensors and safety systems are functioning correctly. Regular maintenance also prolongs the door’s lifespan and keeps it operating in optimal condition.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Types of High-Speed Doors
@@ -319,10 +314,7 @@ export const Highspeeddoor = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+           High-speed doors are a smart investment for businesses seeking efficiency, security, and energy savings. With their rapid operation, durable construction, and customizable features, these doors enhance workflow, safety, and environmental control in industrial and commercial spaces.
           </div>
         </div>
       </section>

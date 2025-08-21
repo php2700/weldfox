@@ -30,7 +30,7 @@ const StickyHeader = () => {
               <a
                 href="/"
                 className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
-                  pathname === "/" ? "border-[#fcc729]" : "border-transparent"
+                  pathname === "/" ? "border-secondary/90" : "border-transparent"
                 }`}
               >
                 Home
@@ -41,7 +41,7 @@ const StickyHeader = () => {
                 href="/about"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                   pathname === "/about"
-                    ? "border-[#fcc729]"
+                    ? "border-secondary/90"
                     : "border-transparent"
                 }`}
               >
@@ -57,7 +57,7 @@ const StickyHeader = () => {
                 href="/services"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                   pathname === "/services"
-                    ? "border-[#fcc729]"
+                    ? "border-secondary/90"
                     : "border-transparent"
                 }`}
               >
@@ -67,19 +67,19 @@ const StickyHeader = () => {
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-border z-[1010]">
                   <Link
                     to="/services"
-                    className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                    className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
                   >
                     Rolling Shutters
                   </Link>
                   <Link
                     to="/services"
-                    className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                    className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
                   >
                     Entrance Automation
                   </Link>
                   <Link
                     to="/services"
-                    className="block px-4 py-2 text-[#1a2940] hover:bg-[#fcc729] hover:text-secondary-foreground transition-colors"
+                    className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
                   >
                     General Fabrication
                   </Link>
@@ -90,7 +90,7 @@ const StickyHeader = () => {
               <a
                 href="/blog"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                  pathname === "/blog" ? "border-[#fcc729]" : "border-transparent"
+                  pathname === "/blog" ? "border-secondary/90" : "border-transparent"
                 }`}
               >
                 Gallery
@@ -101,7 +101,7 @@ const StickyHeader = () => {
                 href="/contact"
                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
                   pathname === "/contact"
-                    ? "border-[#fcc729]"
+                    ? "border-secondary/90"
                     : "border-transparent"
                 }`}
               >
@@ -169,10 +169,10 @@ const StickyHeader = () => {
       </header>
       <div className="fixed bottom-[220px] right-[43px] z-[1010]">
     <div
-          className="rounded-full border-2 border-dotted border-[#fcc729] p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-[#fcc729] group"
+          className="rounded-full border-2 border-dotted border-secondary/90 p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-secondary/90 group"
           onClick={handleTop}
         >
-          <ArrowUpwardIcon className="text-[#fcc729] w-7 h-7 group-hover:text-white" />
+          <ArrowUpwardIcon className="text-secondary/90 w-7 h-7 group-hover:text-white" />
         </div>
 </div>
     </>

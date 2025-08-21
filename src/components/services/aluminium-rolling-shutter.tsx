@@ -7,27 +7,27 @@ const arr = [
   {
     heading: "Exceptional Durability:",
     description:
-      "Galvanized rolling shutters are designed to withstand daily use. The galvanized coating protects against rust and corrosion, ensuring your shutters remain functional and attractive over time.",
+      "Aluminium rolling shutters are lightweight yet strong, offering excellent resistance to corrosion and environmental damage. Their durable construction ensures long-lasting performance with minimal maintenance.",
   },
   {
     heading: "Enhanced Security:",
     description:
-      "These shutters provide a strong barrier against unauthorized access, making them an effective deterrent to theft and vandalism. Their robust construction ensures your property is protected.",
+      "These shutters provide a reliable barrier against unauthorized access, safeguarding your property from theft and vandalism. Aluminium construction ensures strength without adding excessive weight.",
   },
   {
     heading: "Cost-Effective Solution:",
     description:
-      "Offering a great balance of affordability and durability, galvanized rolling shutters represent a smart investment for property owners. Their long lifespan reduces the need for frequent replacements.",
+      "Aluminium rolling shutters offer an economical security solution due to their long lifespan and low maintenance requirements, making them a smart investment for property owners.",
   },
   {
     heading: "Versatile Applications:",
     description:
-      "Suitable for various settings, galvanized rolling shutters can be used in retail stores, warehouses, garages, and industrial facilities. Their versatility makes them a popular choice across multiple industries.",
+      "Ideal for homes, commercial spaces, and industrial facilities, aluminium rolling shutters are suitable for windows, doors, garages, and storefronts, providing protection across multiple applications.",
   },
   {
     heading: "Customizable Designs:",
     description:
-      "Available in various colors and finishes, galvanized rolling shutters can be tailored to match any property. This customization enhances your building's visual appeal while ensuring security.",
+      "Available in a variety of colors, finishes, and slat designs, aluminium rolling shutters can be tailored to suit your property’s aesthetic while maintaining functionality and security.",
   },
 ];
 
@@ -35,23 +35,23 @@ const useRolling = [
   {
     heading: "Retail Stores:",
     description:
-      "Protect windows and doors in homes, providing added security and privacy.Protect merchandise while allowing visibility for customers, helping to attract foot traffic.",
+      "Aluminium rolling shutters protect windows and doors while allowing visibility for customers, helping to attract foot traffic and ensuring security.",
   },
   {
     heading: "Warehouses:",
     description:
-      "Secure large openings and loading docks, ensuring safety for stored goods.",
+      "Provide strong protection for goods and equipment, securing large openings and loading areas with lightweight yet durable aluminium construction.",
   },
   {
     heading: "Garages:",
     description:
-      "Provide easy access and strong protection for vehicles and equipment.",
+      "Offer easy access and reliable security for vehicles, combining strength with corrosion resistance for long-lasting performance.",
   },
-   {
+  {
     heading: "Industrial Facilities:",
     description:
-      "Ensure safety and security in environments with valuable machinery and materials.",
-  }
+      "Ensure safety and security in environments with valuable machinery and materials, while aluminium’s lightweight design makes operation easy and efficient.",
+  },
 ];
 
 export const AluminiumShutters = () => {
@@ -108,7 +108,7 @@ export const AluminiumShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;ALUMINIUM ROLLING SHUTTERS
             </h2>
@@ -124,13 +124,13 @@ export const AluminiumShutters = () => {
              Aluminum Rolling Shutter
             </h2>
             <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
-          Galvanized Rolling Shutters: Durable Security for Every Space
+          Aluminum Rolling Shutters: Durable Security for Every Space
             </h3>
             <p
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-            Galvanized rolling shutters are a reliable solution for enhancing security in both commercial and residential properties. Constructed from galvanized steel, these shutters provide excellent protection against intruders and harsh weather conditions. Their corrosion-resistant properties make them a long-lasting choice for safeguarding your assets.
+          Aluminium rolling shutters are a lightweight yet durable solution for securing commercial and residential spaces. Built from high-quality aluminium, these shutters provide reliable protection against unauthorized access while being resistant to rust and weather-related damage. Their sleek design, smooth operation, and low-maintenance nature make them an excellent choice for enhancing both security and aesthetics in modern properties.
             </p>
           </div>
 
@@ -154,7 +154,7 @@ What Are Aluminium Rolling Shutters?
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-          Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
+          Aluminium Rolling Shutters are security shutters made from high-quality aluminium sheets or slats. They provide a lightweight, durable, and corrosion-resistant solution for protecting residential, commercial, and industrial properties.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -169,7 +169,7 @@ What Are Aluminium Rolling Shutters?
           </div>
 
           <div className="text-[23px] font-semibold my-8 text-[#181614]">
-            Applications of Galvanized Rolling Shutters
+            Applications of Aluminium Rolling Shutters
           </div>
           {useRolling?.map((ele) => (
             <>
@@ -186,20 +186,20 @@ What Are Aluminium Rolling Shutters?
           Installation and Maintenance:
           </div>
           <div>
-           Operating galvanized rolling shutters is straightforward: Choose between manual operation for simplicity or motorized systems for added convenience. For motorized versions, control the shutters with a remote or wall-mounted switch. Designed for easy upkeep, simply wipe down the surface to maintain appearance.
+           Operating aluminium rolling shutters is simple and convenient. You can choose between manual operation for basic functionality or motorized systems for effortless control. Motorized shutters can be operated using a remote or wall-mounted switch, making them ideal for larger openings. Designed for easy maintenance, simply wipe the surface clean to keep the shutters looking new and ensure smooth performance.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Installation and Maintenance
 
           </div>
           <div>
-            Operating galvanized rolling shutters is straightforward: Choose between manual operation for simplicity or motorized systems for added convenience. For motorized versions, control the shutters with a remote or wall-mounted switch. Designed for easy upkeep, simply wipe down the surface to maintain appearance.
+            To ensure the longevity and smooth operation of aluminium rolling shutters, clean the surface regularly with a mild detergent to remove dust and grime. Periodically inspect the moving parts, such as tracks, rollers, and locks, for wear or damage. Apply a suitable lubricant to the mechanisms as needed to maintain effortless operation and prevent corrosion.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Galvanized rolling shutters offer an ideal combination of security, durability, and cost-effectiveness. Their robust design and corrosion resistance make them suitable for various applications, providing peace of mind for property owners. Invest in galvanized rolling shutters today to enhance the security and functionality of your space.
+           Aluminium rolling shutters provide an excellent balance of security, durability, and lightweight convenience. Their corrosion-resistant properties and sleek design make them ideal for a wide range of residential and commercial applications. Invest in aluminium rolling shutters today to safeguard your property while adding a modern and stylish touch.
           </div>
         </div>
       </section>

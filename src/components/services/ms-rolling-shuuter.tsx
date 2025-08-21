@@ -7,52 +7,54 @@ const arr = [
   {
     heading: "Exceptional Security:",
     description:
-      "MS rolling shutters provide a formidable barrier against intruders. Their strong steel construction makes them highly resistant to impact, ensuring that your property remains secure at all times.",
+      "MS rolling shutters create a strong barrier against unauthorized access. Their durable steel construction ensures maximum protection for your property.",
   },
   {
     heading: "Durability:",
     description:
-      "Built to withstand harsh weather conditions and daily wear, MS rolling shutters are specifically designed for longevity. Their robust materials ensure minimal maintenance and performance.",
+      "Designed to endure daily use and extreme weather, MS rolling shutters are long-lasting and require minimal maintenance.",
   },
   {
     heading: "Versatile Applications:",
     description:
-      "These shutters are suitable for various settings, including retail shops, warehouses, garages, and industrial facilities. Their versatility makes them a choice for commercial and residential use.",
+      "Ideal for shops, warehouses, garages, and industrial facilities, MS rolling shutters suit both commercial and residential environments.",
   },
   {
     heading: "Cost-Effective Solution:",
     description:
-      "MS rolling shutters offer a budget-friendly security option without compromising quality. They provide an effective way to safeguard your property while keeping costs manageable.",
+      "Offering reliable security at an affordable price, MS rolling shutters protect your property without straining your budget.",
   },
   {
     heading: "Customizable Designs:",
     description:
-      "Available in various colors, finishes, and sizes, MS rolling shutters can be tailored to fit the aesthetic of any property. This customization enhances your building's look while providing essential security.",
+      "Available in multiple colors, finishes, and sizes, MS rolling shutters can be tailored to match your property’s style while ensuring safety.",
   },
 ];
+
 
 const useRolling = [
   {
     heading: "Retail Stores:",
     description:
-      "Protect valuable merchandise while maintaining an appealing storefront.",
+      "Protect valuable merchandise while maintaining an attractive and secure storefront.",
   },
   {
     heading: "Warehouses:",
     description:
-      "Ideal for storefronts and warehouses, ensuring security for valuable inventory.Warehouses:",
+      "Secure goods and inventory effectively, providing reliable protection in storage facilities.",
   },
   {
     heading: "Garages:",
     description:
-      "Provide easy access and protection for vehicles and equipment.",
+      "Offer convenient access while safeguarding vehicles, tools, and equipment.",
   },
-    {
+  {
     heading: "Industrial Facilities:",
     description:
-      "Ensure safety and security in environments with heavy machinery and valuable assets.",
+      "Enhance safety and security in industrial environments with heavy machinery and valuable assets.",
   },
 ];
+
 
 export const MsRollingShutters = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -108,7 +110,7 @@ export const MsRollingShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS ROLLING SHUTTERS
             </h2>
@@ -124,13 +126,13 @@ export const MsRollingShutters = () => {
               MS Rolling shutter
             </h2>
             <h3 className="text-2xl font-[400] mb-4 text-[#181614]">
-             MS Rolling Shutters: Superior Security and Durability
+            MS Rolling Shutters offer robust security and long-lasting durability
             </h3>
             <p
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              MS (Mild Steel) rolling shutters are a popular choice for businesses and residential properties seeking robust security solutions. Made from high-quality mild steel, these shutters offer excellent protection against theft and vandalism while ensuring durability and functionality. With a range of customizable options, MS rolling shutters are ideal for various applications.
+              MS (Mild Steel) rolling shutters provide strong security and lasting durability for both residential and commercial properties. Crafted from premium mild steel, they protect against theft, vandalism, and harsh weather. With customizable designs and sizes, MS rolling shutters are suitable for a wide range of applications while ensuring reliable performance.
             </p>
           </div>
 
@@ -154,7 +156,7 @@ export const MsRollingShutters = () => {
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-           Powder-coated rolling shutters are constructed from high-quality materials and finished with a durable powder coating. This process not only enhances their appearance but also provides a protective layer that resists chipping, fading, and corrosion.
+           MS Rolling Shutters (Mild Steel Rolling Shutters) are durable, strong shutters made from mild steel, designed to provide security, protection, and privacy for both residential and commercial properties.
           </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
@@ -186,19 +188,19 @@ export const MsRollingShutters = () => {
            How to Operate MS Rolling Shutters:
           </div>
           <div>
-Operating MS rolling shutters is straightforward: Choose between manual operation for simplicity or motorized systems for added convenience. For motorized versions, easily control the shutters with a remote or wall-mounted switch. Designed for easy upkeep, simply wipe the surface clean to maintain appearance.
+Using MS rolling shutters is simple and convenient. Opt for manual operation for a straightforward approach or motorized systems for effortless control via remote or wall switch. Maintenance is easy—just wipe the surface regularly to keep the shutters looking clean and well-kept.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            To ensure the longevity and optimal performance of your MS rolling shutters, regularly clean the shutters with a mild detergent to prevent rust and dirt buildup, inspect mechanisms for wear, and apply lubricant to moving parts as needed.
+          To maintain the durability and smooth operation of MS rolling shutters, clean them regularly with a mild detergent to prevent dirt and rust buildup. Periodically check the mechanisms for wear and apply lubricant to moving parts to ensure long-lasting performance.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            MS rolling shutters are an ideal choice for those seeking a durable and secure solution for their property. With their exceptional strength, versatility, and customizable options, these shutters offer peace of mind without sacrificing aesthetics. Invest in MS rolling shutters today to enhance the security and appearance of your property.
+            MS rolling shutters provide a strong and reliable security solution for residential and commercial properties. Offering durability, versatility, and customizable designs, they ensure both protection and aesthetic appeal. Choose MS rolling shutters to safeguard your property while enhancing its overall look.
           </div>
         </div>
       </section>

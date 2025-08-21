@@ -5,7 +5,7 @@ export const Offer = () => {
     <section className="bg-white py-20 px-4">
       <div className="max-w-7xl mx-auto text-center">
         {/* Yellow Badge */}
-        <p className="inline-block border-4 border-yellow-400 text-yellow-500 font-semibold px-4 py-1 mb-4">
+        <p className="inline-block border-4 border-secondary/90 rounded-lg text-secondary/90 font-semibold px-4 py-1 mb-4">
           Our Services
         </p>
 
@@ -30,12 +30,10 @@ export const Offer = () => {
                 ENTRANCE AUTOMATION
               </h3>
               <p className="text-[#000] text-[16px] font-[400]">
-                Experience convenience and enhanced security with our
-                cutting-edge entrance automation systems, offering seamless
-                access control, remote operation, and customized designs.
+                We employ competent practices with a combination of knowledge & engineering expertise to furnish a sense of security for our customers.
               </p>
               <Link to='/entrance-automation'>
-                <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
+                <div className="text-center w-full font-[15px] font-bold hover:bg-secondary/90 hover:text-white my-2 py-4 bg-gray-100">
                   READ MORE
                 </div>
               </Link>
@@ -56,12 +54,10 @@ export const Offer = () => {
                 ROLLING SHUTTER
               </h3>
               <p className="text-[#000] text-[16px]">
-                Our durable rolling shutters provide superior protection against
-                break-ins and weather, with smooth operation, energy efficiency,
-                and versatile designs.
+                “Enhance your property with our premium rolling shutters, offering superior security, weather protection, and energy savings. With sleek designs and effortless performance, they’re the perfect blend of strength and style.”
               </p>
               <Link to='/roll-shutters'>
-                <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
+                <div className="text-center w-full font-[15px] font-bold hover:bg-secondary/90 hover:text-white my-2 py-4 bg-gray-100">
                   READ MORE
                 </div>
               </Link>
@@ -82,13 +78,10 @@ export const Offer = () => {
                 GENERAL FABRICATION
               </h3>
               <p className="text-[#000] text-[16px]">
-                We offer high-quality general fabrication services, delivering
-                custom metalwork and structural components with precision
-                engineering, tailored to meet the specific needs of your
-                project.
+              “We provide reliable general fabrication solutions, specializing in custom metalwork and structural components. With a focus on precision, durability, and innovation, our services are tailored to match the unique requirements of every project.”
               </p>
               <Link to='/general-fabrication'>
-                <div className="text-center w-full font-[15px] font-bold hover:bg-[#fcc729] hover:text-white my-2 py-4 bg-gray-100">
+                <div className="text-center w-full font-[15px] font-bold hover:bg-secondary/90 hover:text-white my-2 py-4 bg-gray-100">
                   READ MORE
                 </div>
               </Link>

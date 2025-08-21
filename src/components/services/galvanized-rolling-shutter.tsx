@@ -5,54 +5,56 @@ import Footer from "../Footer";
 
 const arr = [
   {
-    heading: "Exceptional Durability:",
+    heading: "Robust Construction:",
     description:
-      "Designed to withstand daily use, protected against rust and corrosion.",
+      "Made from premium galvanized steel, offering long-lasting performance.",
   },
   {
-    heading: "Enhanced Security:",
+    heading: "Weather Resistance:",
     description:
-      "Strong barrier against unauthorized access, deterring theft and vandalism.",
+      "Protects against rain, humidity, and extreme outdoor conditions.",
   },
   {
-    heading: "Cost-Effective Solution:",
+    heading: "Low Maintenance:",
     description:
-      "Affordable and durable, reducing the need for frequent replacements.",
+      "Requires minimal upkeep while retaining strength and appearance.",
   },
   {
-    heading: "Versatile Applications:",
+    heading: "Wide Usability:",
     description:
-      "Suitable for retail stores, warehouses, garages, and industrial facilities.",
+      "Perfect for commercial shops, warehouses, factories, and garages.",
   },
   {
-    heading: "Customizable Designs:",
+    heading: "Reliable Protection:",
     description:
-      "Available in various colors and finishes to match your property's aesthetic.",
+      "Provides a sturdy defense against corrosion, rust, and heavy usage.",
   },
 ];
+
 
 const useRolling = [
   {
     heading: "Retail Stores:",
     description:
-      "Protect merchandise while allowing visibility for customers, helping to attract foot traffic.",
+      "Galvanized shutters secure merchandise while resisting rust and ensuring long-lasting protection.",
   },
   {
     heading: "Warehouses:",
     description:
-      "Secure large openings and loading docks, ensuring safety for stored goods.",
+      "Provide durable security for large openings and loading docks with corrosion resistance.",
   },
   {
     heading: "Garages:",
     description:
-      "Provide easy access and strong protection for vehicles and equipment.",
+      "Protect vehicles and equipment with strong, rust-resistant galvanized shutters.",
   },
-    {
+  {
     heading: "Industrial Facilities:",
     description:
-      "Ensure safety and security in environments with valuable machinery and materials.",
+      "Withstand heavy usage and harsh environments, ensuring safety for machinery and materials.",
   },
 ];
+
 
 export const GalvanizedShutters = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -108,9 +110,10 @@ export const GalvanizedShutters = () => {
           </div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; GALVANIZED ROLLING SHUTTERS
+              HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp; GALVANIZED ROLLING
+              SHUTTERS
             </h2>
           </div>
         </div>
@@ -129,7 +132,8 @@ export const GalvanizedShutters = () => {
             <p
               className="text-base font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
-            >Galvanized rolling shutters are a reliable solution for enhancing security in both commercial and residential properties. Constructed from galvanized steel, these shutters provide excellent protection against intruders and harsh weather conditions. Their corrosion-resistant properties make them a long-lasting choice for safeguarding your assets.
+            >
+             Galvanized rolling shutters combine durability with functionality, making them ideal for various environments. Their robust steel construction ensures maximum strength, while the galvanized coating protects against rust and wear. Perfect for shops, warehouses, and homes, they deliver dependable security along with long-term performance.
             </p>
           </div>
 
@@ -147,13 +151,14 @@ export const GalvanizedShutters = () => {
       <section className="pb-10">
         <div className="container mx-auto max-w-6xl p-10">
           <div className="text-[23px] font-semibold my-4 text-[#181614]">
-          What Are Galvanized Rolling Shutters?
+            What Are Galvanized Rolling Shutters?
           </div>
           <div
             className="text-lg text-[14px] my-6"
             style={{ lineHeight: "30px" }}
           >
-Galvanized rolling shutters are manufactured from premium-grade steel and coated with a protective layer of zinc. This galvanization process enhances their strength, durability, and resistance to rust and corrosion. Ideal for both indoor and outdoor applications, these shutters provide long-lasting protection while withstanding harsh weather conditions and heavy usage.          </div>
+          Galvanized rolling shutters offer superior reliability with their sturdy build and zinc coating that shields against damage. Designed to endure tough conditions, they maintain their structural integrity over time. Suitable for commercial, industrial, and residential use, these shutters ensure safety, durability, and low maintenance requirements.
+          </div>
 
           <div className="grid frid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4 my-10">
             {arr?.map((ele) => (
@@ -181,22 +186,22 @@ Galvanized rolling shutters are manufactured from premium-grade steel and coated
             How to Operate
           </div>
           <div className=" font-semibold text-[#000] ">
-            How to Operate Manual Rolling ShuttersGalvanized Rolling Shutters:
+            How to Operate Galvanized Rolling Shutters:
           </div>
           <div>
-         Choose between manual operation for simplicity or motorized systems for added convenience.
+            Choose between manual operation for simplicity or motorized systems for added convenience when operating galvanized rolling shutters.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Maintenance Tips
           </div>
           <div>
-            Clean the shutters regularly with a mild detergent to prevent dirt and grime buildup.
+            Clean galvanized rolling shutters regularly with a mild detergent and water to prevent dirt, dust, and grime buildup.
           </div>
           <div className="text-[23px] text-[#181614] font-semibold mb-8 mt-4">
             Conclusion
           </div>
           <div>
-            Galvanized rolling shutters offer an ideal combination of security, durability, and cost-effectiveness. Their robust design and corrosion resistance make them suitable for various applications, providing peace of mind for property owners. Invest in galvanized rolling shutters today to enhance the security and functionality of your space.
+            Galvanized rolling shutters provide a reliable and long-lasting solution for securing your property. With their sturdy build, resistance to rust, and cost-effective nature, they not only enhance safety but also add functional value to any space. Choosing galvanized shutters is a smart investment for property owners seeking durability, protection, and peace of mind.
           </div>
         </div>
       </section>

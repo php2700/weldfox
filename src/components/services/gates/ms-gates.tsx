@@ -7,27 +7,27 @@ const arr = [
   {
     heading: "Durability:",
     description:
-      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather conditions and everyday wear and tear.",
+      "MS gates are built to last, providing a sturdy barrier that withstands harsh weather and everyday wear and tear.",
   },
   {
     heading: "Security:",
     description:
-      "With their robust construction, MS gates offer enhanced security for homes and businesses, deterring unauthorized access.",
+      "Their robust construction enhances security for homes and businesses, effectively deterring unauthorized access.",
   },
   {
     heading: "Customization:",
     description:
-      "Available in a variety of designs, colors, and finishes, MS gates can be tailored to match your property’s aesthetic.",
+      "Available in a wide range of designs, colors, and finishes, MS gates can be tailored to perfectly match your property’s aesthetic.",
   },
   {
     heading: "Cost-Effectiveness:",
     description:
-      "Compared to other materials, mild steel offers an economical solution without compromising on strength or quality.",
+      "Mild steel offers an economical solution without compromising on strength or quality, making it a smart investment.",
   },
   {
     heading: "Low Maintenance:",
     description:
-      "With proper treatment and care, MS gates require minimal maintenance, making them a practical choice for busy property owners.",
+      "With proper treatment and care, MS gates require minimal upkeep, providing long-lasting practicality for property owners.",
   },
 ];
 
@@ -35,16 +35,17 @@ const material = [
   {
     name: "Mild Steel:",
     description:
-      "The primary material used for MS gates, known for its strength and versatility.",
+      "The primary material for MS gates, valued for its exceptional strength and versatility.",
   },
   {
     name: "Galvanized Coating:",
-    description: `A protective layer that helps prevent rust and corrosion, extending the gate's lifespan.`,
+    description:
+      "A protective layer that prevents rust and corrosion, significantly extending the gate's lifespan.",
   },
   {
     name: "Powder Coating:",
     description:
-      "A durable finish option that enhances aesthetic appeal while providing additional protection.",
+      "A durable finish that enhances visual appeal while offering extra protection against the elements.",
   },
 ];
 
@@ -52,15 +53,17 @@ const customization = [
   {
     name: "Design Variations:",
     description:
-      "Choose from various styles, including modern, classic, and ornate designs.",
+      "Select from a wide range of styles, including modern, classic, and ornate designs.",
   },
   {
     name: "Color Options:",
-    description: `Available in a range of colors to suit your property's exterior.`,
+    description:
+      "Available in a variety of colors to perfectly complement your property's exterior.",
   },
   {
     name: "Sizes and Dimensions:",
-    description: "Custom sizes to fit unique openings and requirements.",
+    description:
+      "Custom sizes and dimensions to fit unique openings and specific requirements.",
   },
 ];
 
@@ -68,17 +71,17 @@ const gates = [
   {
     name: "Versatile Designs:",
     description:
-      "MS gates can be designed to fit any style, from classic to modern, ensuring they complement your property.",
+      "MS gates can be crafted in a variety of styles, from classic to modern, ensuring they complement your property perfectly.",
   },
   {
     name: "Easy Installation:",
     description:
-      "Designed for straightforward installation, these gates can be set up quickly and efficiently.",
+      "These gates are designed for straightforward installation, allowing quick and efficient setup.",
   },
   {
     name: "Weather Resistance:",
     description:
-      "With proper coating and treatment, MS gates can resist rust and corrosion, prolonging their lifespan.",
+      "With proper coatings and treatments, MS gates resist rust and corrosion, enhancing their durability and lifespan.",
   },
 ];
 
@@ -86,17 +89,17 @@ const useRolling = [
   {
     heading: "Residential Use:",
     description:
-      "Ideal for homes, providing security for driveways, backyards, and entrances.",
+      "Ideal for homes, offering security for driveways, backyards, and main entrances.",
   },
   {
-    heading: "Residential Use:",
+    heading: "Commercial Use:",
     description:
-      "Perfect for warehouses, factories, and commercial properties requiring robust security solutions.",
+      "Perfect for warehouses, factories, and commercial properties that require robust security solutions.",
   },
   {
     heading: "Industrial Applications:",
     description:
-      "Suitable for fencing and entry points in industrial settings where strength and durability are paramount.",
+      "Suitable for fencing and entry points in industrial settings where strength and durability are essential.",
   },
 ];
 
@@ -151,7 +154,7 @@ export const Msgates = () => {
           <div className="text-7xl text-white font-bold">MS GATES</div>
         </div>
         <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-[#fcc729] w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
+          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;MS GATES
             </h2>
@@ -173,10 +176,10 @@ export const Msgates = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Mild Steel (MS) gates are an excellent choice for enhancing
-              security and aesthetics for residential and commercial properties.
-              Known for their strength and versatility, MS gates offer a wide
-              range of designs to fit any need.
+              Mild Steel (MS) gates are an excellent choice for enhancing both
+              security and aesthetics in residential and commercial properties.
+              Renowned for their strength and versatility, MS gates are
+              available in a wide variety of designs to suit any requirement.
             </p>
           </div>
 
@@ -197,10 +200,10 @@ export const Msgates = () => {
             What Are MS Gates?
           </div>
           <div style={{ lineHeight: "30px" }}>
-            MS gates are made from mild steel, a versatile material that
-            provides both strength and flexibility. These gates can be
-            customized in various styles, including sliding, swing, and folding
-            designs, to suit different applications.
+            MS gates are crafted from mild steel, a versatile material that
+            offers both strength and flexibility. They can be customized in a
+            variety of styles, including sliding, swing, and folding designs,
+            making them suitable for a wide range of applications.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Key Benefits of MS Gates
@@ -279,8 +282,9 @@ export const Msgates = () => {
           </div>
           <div className="text-[15px] font-[400] my-2">
             Professional installation is recommended to ensure durability and
-            proper functioning. Regular checks and periodic painting can help
-            maintain their appearance and effectiveness.
+            optimal performance. Regular inspections and periodic painting will
+            help maintain both the appearance and functionality of your MS
+            gates.
           </div>
           <div className="text-[23px] font-semibold my-2 text-[#181614;]">
             Applications of MS Gates
@@ -298,10 +302,10 @@ export const Msgates = () => {
             Conclusion
           </div>
           <div className=" font-[400px] mt-8 mb-20 ">
-            Investing in MS gates is a smart choice for anyone looking to
-            enhance security, functionality, and aesthetics for their property.
-            Explore our selection of high-quality MS gates to find the perfect
-            solution for your needs!
+            Investing in MS gates is a smart decision for anyone seeking to
+            enhance security, functionality, and aesthetics on their property.
+            Browse our range of high-quality MS gates to find the ideal solution
+            that perfectly meets your needs.
           </div>
         </div>
       </section>
