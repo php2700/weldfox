@@ -163,7 +163,9 @@ export const Automaticgarage = () => {
             AUTOMATIC OVERHEAD GARAGE GATES
           </div>
         </div>
-        <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
+      
+      </div>
+        <div className="mt-10  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;AUTOMATIC OVERHEAD
@@ -171,10 +173,9 @@ export const Automaticgarage = () => {
             </h2>
           </div>
         </div>
-      </div>
 
-      <section className="bg-[#f8f8f8] mt-10 pt-10">
-        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2 p-10 gap-10 ">
+      <section className="bg-[#f8f8f8] mt-4 pt-4">
+        <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2  gap-10 ">
           {/* Text Content */}
           <div className="py-12">
             <h2 className="text-[40px] font-[500] mb-4 text-[#181614]">
@@ -188,7 +189,7 @@ export const Automaticgarage = () => {
               className="text-[16px] font-[400] leading-relaxed"
               style={{ lineHeight: "30px" }}
             >
-              Automatic overhead garage doors are a popular choice for homeowners seeking convenience, security, and style. Designed to open vertically, these doors save space and provide easy access to your garage at the push of a button. Whether upgrading an existing door or installing a new one, automatic overhead garage doors offer a variety of styles and features tailored to your needs. Enjoy effortless functionality and elegant design with an automatic overhead garage door for your home.
+             When choosing an automatic overhead garage door, consider factors like insulation, material, and smart technology integration. These options not only enhance energy efficiency and durability but also add a modern touch to your home while improving day-to-day convenience.
             </p>
           </div>
 
@@ -209,7 +210,7 @@ export const Automaticgarage = () => {
             What is an Automatic Overhead Garage Door?
           </div>
           <div style={{ lineHeight: "30px" }}>
-           An automatic overhead garage door operates by lifting vertically, often rolling up into a compartment above the garage opening. These doors are equipped with an electric motor, allowing for easy operation via remote control, wall switch, or smartphone app. Available in various materials, styles, and sizes, automatic overhead garage doors provide secure, efficient access to your garage while enhancing your home's curb appeal.
+       Modern automatic overhead garage doors can also be customized with advanced features such as motion sensors, battery backup systems, and smart home connectivity. These additions not only boost security and convenience but also ensure your garage door remains functional even during power outages.
           </div>
           <div className="text-[23px] font-semibold my-4 text-[#181614;] ">
             Benefits of Installing an Automatic Overhead Garage Door

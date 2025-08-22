@@ -107,7 +107,9 @@ export const TransparentRollingShutters = () => {
             POLYCARBONATE ROLLING SHUTTERS
           </div>
         </div>
-        <div className="absolute  z-10 top-[450px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto">
+      
+      </div>
+        <div className="mt-10  flex justify-center px-4 w-full md:w-auto">
           <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;POLYCARBONATE ROLLING
@@ -115,9 +117,8 @@ export const TransparentRollingShutters = () => {
             </h2>
           </div>
         </div>
-      </div>
 
-      <section className="bg-[#f8f8f8] mt-20 pt-10">
+      <section className="bg-[#f8f8f8] mt-4 pt-10">
         <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2  gap-12 ">
           {/* Text Content */}
           <div className="py-12">
