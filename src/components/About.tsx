@@ -74,15 +74,15 @@ const About = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-7xl font-[900] text-white">ABOUT</div>
         </div>
-        <div className="absolute z-[10] top-[450px] left-1/2 -translate-x-1/2 flex justify-center px-4 w-full md:w-auto">
+    
+      </div>
+    <div className="mt-10 flex justify-center px-4 w-full md:w-auto">
           <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg">
             <h2 className="text-[14px] md:text-[14px] font-bold mb-2 text-white">
               HOME &nbsp; - &nbsp; About
             </h2>
           </div>
         </div>
-      </div>
-
       <AboutDescription />
       <Partner />
       <Enuiry />

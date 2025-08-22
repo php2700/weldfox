@@ -178,14 +178,15 @@ const Contact = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-7xl font-[900] text-white">CONTACT </div>
         </div>
-        <div className="absolute z-10 top-[200px] left-1/2 -translate-x-1/2  flex justify-center px-4 w-full md:w-auto ">
+        
+      </div>
+      <div className="mt-10 flex justify-center px-4 w-full md:w-auto ">
           <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 md:p-6 text-center rounded-lg ">
             <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
               HOME &nbsp; - &nbsp; Contact
             </h2>
           </div>
         </div>
-      </div>
 
       <section id="contact" className={` pb-12 my-20 bg-muted/50`}>
         <div className="container mx-auto max-w-6xl px-6 ">
