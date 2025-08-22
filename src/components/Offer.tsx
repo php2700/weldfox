@@ -1,8 +1,17 @@
 import { Link } from "react-router-dom";
+import useScrollAnimation from "./custom-hook";
 
 export const Offer = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   return (
-    <section className="bg-white py-20 px-4">
+    <section ref={ref} className={`bg-white py-20 px-4 transform transition-all duration-1000 ease-out ${
+  isVisible
+    ? "opacity-100 translate-x-0 scale-100"
+    : "opacity-0 translate-x-20 scale-95"
+}`}
+
+>
       <div className="max-w-7xl mx-auto text-center">
         {/* Yellow Badge */}
         <p className="inline-block border-4 border-secondary/90 rounded-lg text-secondary/90 font-semibold px-4 py-1 mb-4">

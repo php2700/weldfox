@@ -1,70 +1,66 @@
 import { useState } from "react";
+import useScrollAnimation from "./custom-hook";
 
 export const Enuiry = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-const faqs = [
-  {
-    question: "What types of entrance automation systems do you offer?",
-    answer:
-      "We provide a range of entrance automation solutions, including automated gates, sliding doors, and access control systems, all customized to suit your specific needs.",
-  },
-  {
-    question:
-      "Are your rolling shutters suitable for both residential and commercial properties?",
-    answer:
-      "Yes, our rolling shutters are designed to provide security and weather protection for both residential and commercial spaces, with various design options to match the property’s style.",
-  },
-  {
-    question: "How long does it take to install an entrance automation system?",
-    answer:
-      "The installation time depends on the complexity of the project, but typically, it takes between 2-5 days. We ensure a smooth and efficient installation process.",
-  },
-  {
-    question:
-      "Can you customize fabrication projects to meet specific requirements?",
-    answer:
-      "Absolutely! Our general fabrication services are fully customizable, and we work closely with clients to deliver solutions that meet their unique specifications.",
-  },
-  {
-    question: "What materials do you use for your fabrication projects?",
-    answer:
-      "We work with a variety of materials, including steel, aluminum, and other metals, ensuring high durability and quality for all projects.",
-  },
-  {
-    question:
-      "Do you provide maintenance and repair services for rolling shutters and entrance automation systems?",
-    answer:
-      "Yes, we offer ongoing maintenance and repair services to ensure your systems operate smoothly and remain in top condition.",
-  },
-  {
-    question: "Can your automation systems be integrated with smart home technology?",
-    answer:
-      "Yes, our automation solutions can be integrated with smart home systems, allowing you to control gates, shutters, and doors remotely using mobile apps or voice commands.",
-  },
-  // {
-  //   question: "Do you provide warranty on your products and services?",
-  //   answer:
-  //     "Yes, all our products and installation services come with a standard warranty to ensure reliability and peace of mind for our customers.",
-  // },
-  // {
-  //   question: "What safety features are included in your automation systems?",
-  //   answer:
-  //     "Our systems are equipped with advanced safety features such as auto-reverse sensors, emergency manual operation, and obstacle detection for maximum safety.",
-  // },
-  // {
-  //   question: "Do you offer consultation before starting a project?",
-  //   answer:
-  //     "Yes, we provide free consultations to understand your requirements, assess the site, and recommend the best solutions tailored to your needs.",
-  // },
-];
-
+  const faqs = [
+    {
+      question: "What types of entrance automation systems do you offer?",
+      answer:
+        "We provide a range of entrance automation solutions, including automated gates, sliding doors, and access control systems, all customized to suit your specific needs.",
+    },
+    {
+      question:
+        "Are your rolling shutters suitable for both residential and commercial properties?",
+      answer:
+        "Yes, our rolling shutters are designed to provide security and weather protection for both residential and commercial spaces, with various design options to match the property’s style.",
+    },
+    {
+      question:
+        "How long does it take to install an entrance automation system?",
+      answer:
+        "The installation time depends on the complexity of the project, but typically, it takes between 2-5 days. We ensure a smooth and efficient installation process.",
+    },
+    {
+      question:
+        "Can you customize fabrication projects to meet specific requirements?",
+      answer:
+        "Absolutely! Our general fabrication services are fully customizable, and we work closely with clients to deliver solutions that meet their unique specifications.",
+    },
+    {
+      question: "What materials do you use for your fabrication projects?",
+      answer:
+        "We work with a variety of materials, including steel, aluminum, and other metals, ensuring high durability and quality for all projects.",
+    },
+    {
+      question:
+        "Do you provide maintenance and repair services for rolling shutters and entrance automation systems?",
+      answer:
+        "Yes, we offer ongoing maintenance and repair services to ensure your systems operate smoothly and remain in top condition.",
+    },
+    {
+      question:
+        "Can your automation systems be integrated with smart home technology?",
+      answer:
+        "Yes, our automation solutions can be integrated with smart home systems, allowing you to control gates, shutters, and doors remotely using mobile apps or voice commands.",
+    },
+  ];
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <section className="relative min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-100 flex  justify-end overflow-hidden">
+    <section
+      ref={ref}
+      className={`${
+        isVisible
+          ? "opacity-100 translate-x-0 scale-100"
+          : "opacity-0 translate-x-20 scale-95"
+      } transform transitions-all ease-out duration-1000  relative min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-100 flex  justify-end overflow-hidden`}
+    >
       <div>
         <img src="/Telescopic-gate.jpg" className="h-[100vh]" />
       </div>

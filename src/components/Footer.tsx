@@ -6,42 +6,53 @@ import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+import useScrollAnimation from "./custom-hook";
 
 const Footer = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.3 });
+
   return (
-    <footer className="bg-white text-black">
+    <footer
+      ref={ref}
+      className={` transform transition-all ease-out duration-1000 ${
+        isVisible
+          ? "opacity-100 translate-y-100 scale-100"
+          : "opacity-0 translate-y-20 scale-95"
+      } bg-white text-black`}
+    >
       {/* Top Contact Info Bar */}
-      <div className="bg-secondary/90 px-10 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm font-semibold rounded-md max-w-7xl mx-auto">
-        <div className="flex items-center gap-2">
-          <span className="text-orange-600 text-xl">📞</span>
-          <div>
-            <p className="text-[15px]">Give Us A Call</p>
-            <p className="text-[14px]">+91 63630 91384</p>
+      <div className="bg-secondary/90">
+        <div className=" px-10 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-sm font-semibold rounded-md max-w-7xl mx-auto">
+          <div className="flex items-center gap-2">
+            <span className="text-orange-600 text-xl">📞</span>
+            <div>
+              <p className="text-[15px]">Give Us A Call</p>
+              <p className="text-[14px]">+91 63630 91384</p>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-orange-600 text-xl">📧</span>
-          <div>
-            <p className="text-[15px]">Email Address</p>
-            <p className="text-[14px]">info@metal4craft.com</p>
+          <div className="flex items-center gap-2">
+            <span className="text-orange-600 text-xl">📧</span>
+            <div>
+              <p className="text-[15px]">Email Address</p>
+              <p className="text-[14px]">info@metal4craft.com</p>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-orange-600 text-xl">📍</span>
-          <div>
-            <p className="text-[15px]">Office Location</p>
-            <p className="text-[14px]">Bengaluru, Karnataka 560064</p>
+          <div className="flex items-center gap-2">
+            <span className="text-orange-600 text-xl">📍</span>
+            <div>
+              <p className="text-[15px]">Office Location</p>
+              <p className="text-[14px]">Bengaluru, Karnataka 560064</p>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-2">
-          <span className="text-orange-600 text-xl">⏰</span>
-          <div>
-            <p className="text-[15px]">Work Hours</p>
-            <p className="text-[14px]">Everyday 08:00 - 18:00</p>
+          <div className="flex items-center gap-2">
+            <span className="text-orange-600 text-xl">⏰</span>
+            <div>
+              <p className="text-[15px]">Work Hours</p>
+              <p className="text-[14px]">Everyday 08:00 - 18:00</p>
+            </div>
           </div>
         </div>
       </div>
-
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-10 text-sm">
         {/* Logo & About */}
@@ -55,7 +66,8 @@ const Footer = () => {
             className="mb-4 text-[15px] font-[500]"
             style={{ lineHeight: "32px" }}
           >
-            Metal4craft Automation delivers durable, innovative, and precision-crafted fabrication solutions.
+            Metal4craft Automation delivers durable, innovative, and
+            precision-crafted fabrication solutions.
           </p>
           <Link to="/contact">
             <button className="bg-secondary/90 hover:bg-[black] px-10 py-6 font-semibold text-white rounded-lg shadow">
@@ -156,9 +168,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t py-6 text-sm flex items-center justify-center gap-6">
+      <div className="border-t bg-secondary/90 py-6 text-sm flex items-center justify-center gap-6">
         <span>© Copyright 2025 by METAL4CRAFT AUTOMATION</span>
-        <div className="flex gap-4">
+        {/* <div className="flex gap-4">
           <a
             href="https://facebook.com"
             target="_blank"
@@ -179,7 +191,7 @@ const Footer = () => {
               className="w-4 h-4 p-2 rounded-full hover:bg-secondary/90"
             />
           </a>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

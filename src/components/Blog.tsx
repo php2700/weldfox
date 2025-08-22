@@ -4,8 +4,11 @@ import Footer from "./Footer";
 import { useEffect, useRef, useState } from "react";
 import StickyHeader from "./sticky-header";
 import { FaTimes } from "react-icons/fa";
+import useScrollAnimation from "./custom-hook";
 
 const Blog = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   const [showSticky, setShowSticky] = useState(false);
   const lastScrollY = useRef(0);
   const ticking = useRef(false);
@@ -65,7 +68,7 @@ const Blog = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div ref={ref} className={` transform transitions-all ease-out duration-1000 ${isVisible ? "opacity-100 translate-x-0 scale-100":"opacity-0 translate-x-20 scale-95"} grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8`}>
             {articles.map((article, index) => (
               <div
                 key={index}

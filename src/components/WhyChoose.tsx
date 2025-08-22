@@ -1,6 +1,9 @@
 import { Award, Users, Star } from "lucide-react";
+import useScrollAnimation from "./custom-hook";
 
 const WhyChoose = () => {
+        const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <div
       className="relative w-full bg-cover bg-center"
@@ -10,7 +13,7 @@ const WhyChoose = () => {
       <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col lg:flex-row  h-full gap-4 px-10 md:px-20 py-10 text-white">
+      <div ref={ref} className={`relative z-10 flex flex-col lg:flex-row transform transition-all duration-1000 ease-out ${isVisible ? "opacity-100 translate-x-0 scale-100":"opacity-0 -translate-x-20 scale-95"}   h-full gap-4 px-10 md:px-20 py-10 text-white`}>
         {/* Left Column (Empty or Placeholder) */}
         {/* <div className="w-1/2 hidden lg:block"></div> */}
 

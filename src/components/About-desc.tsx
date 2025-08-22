@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import CheckIcon from '@mui/icons-material/Check';
+import useScrollAnimation from "./custom-hook";
 
 export const AboutDescription = () => {
+  const [ref,isVisible]=useScrollAnimation({ threshold: 0.2 });
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 my-20 max-w-6xl mx-auto">
+    <section ref={ref} className={`transform transition-all ease-out duration-1000 ${isVisible ? "opacity-100 translate-x-0 scale-100":"opacity-0 translate-x-20 scale-95"} grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-6 my-20 max-w-6xl mx-auto`}>
       {/* LEFT IMAGE */}
       <div className="w-full h-full">
         <img

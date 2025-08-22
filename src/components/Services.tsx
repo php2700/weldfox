@@ -4,8 +4,10 @@ import Header from "./Header";
 import { useEffect, useRef, useState } from "react";
 import StickyHeader from "./sticky-header";
 import { Link } from "react-router-dom";
+import useScrollAnimation from "./custom-hook";
 
 const Services = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
   const rollingShutters = [
     { url: "/mannual-rolling", name: "Manual Rolling Shutters" },
     { url: "/rolling-shutter", name: "Gear Operated Rolling Shutters" },
@@ -45,7 +47,10 @@ const Services = () => {
     { url: "/collapsible-gate", name: "Collapsible Gate" },
     { url: "/high-speed-door", name: "High Speed Door" },
     { url: "/automatic-garage-door", name: "Automatic Overhead Garage Door" },
-    { url: "/automatic-sensor-glass-door", name: "Automatic Sensor Glass Door" },
+    {
+      url: "/automatic-sensor-glass-door",
+      name: "Automatic Sensor Glass Door",
+    },
     { url: "/automatic-barries", name: "Automatic Barriers" },
     { url: "/dock-levers", name: "Dock Levers" },
     { url: "/dock-shelters", name: "Dock Shelters" },
@@ -53,17 +58,17 @@ const Services = () => {
   ];
 
   const generalFabrication = [
-   {url:'/ms-railing', name: "MS Railings"},
-   {url:'/ss-railing', name: "SS Railings"},
-   {url:'/structural-fabrication', name: "Structural fabrication"},
-   {url:'/staircase', name: "Staircase"},
-   {url:'/pergola', name: "Pergola"},
-   {url:'/window-grill', name: "Window Grill"},
-   {url:'/compound-grill', name: "Compound Grill"},
-   {url:'/elevation', name: "Building Elevation Work"},
-   {url:'/roofing', name: "Roofing Work"},
-   {url:'/collapsible', name: "Collapsible Gate"},
-   {url:'/safety-grill', name: "Safety Grill"},
+    { url: "/ms-railing", name: "MS Railings" },
+    { url: "/ss-railing", name: "SS Railings" },
+    { url: "/structural-fabrication", name: "Structural fabrication" },
+    { url: "/staircase", name: "Staircase" },
+    { url: "/pergola", name: "Pergola" },
+    { url: "/window-grill", name: "Window Grill" },
+    { url: "/compound-grill", name: "Compound Grill" },
+    { url: "/elevation", name: "Building Elevation Work" },
+    { url: "/roofing", name: "Roofing Work" },
+    { url: "/collapsible", name: "Collapsible Gate" },
+    { url: "/safety-grill", name: "Safety Grill" },
   ];
 
   const [showSticky, setShowSticky] = useState(false);
@@ -117,7 +122,14 @@ const Services = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div
+            ref={ref}
+            className={`transform transitions-all ease-out duration-1000 ${
+              isVisible
+                ? "opacity-100 translate-x-0 scale-100"
+                : "opacity-0 translate-x-20 scale-20"
+            } grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12`}
+          >
             {/* Rolling Shutters */}
             <div className="bg-card rounded-lg p-8">
               <h3 className="text-2xl font-bold text-foreground mb-6">
@@ -151,7 +163,7 @@ const Services = () => {
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
                     <Link to={item?.url}>
-                    <span>{item?.name}</span>
+                      <span>{item?.name}</span>
                     </Link>
                   </div>
                 ))}
@@ -170,8 +182,8 @@ const Services = () => {
                     className="flex items-center cursor-pointer space-x-3 text-muted-foreground hover:text-secondary/90 transition-colors"
                   >
                     <ChevronRight className="w-4 h-4 text-secondary" />
-                      <Link to={item?.url}>
-                    <span>{item?.name}</span>
+                    <Link to={item?.url}>
+                      <span>{item?.name}</span>
                     </Link>
                   </div>
                 ))}

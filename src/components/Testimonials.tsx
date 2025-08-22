@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import useScrollAnimation from "./custom-hook";
 const testimonials = [
   {
     name: "RAHUL K.",
@@ -23,6 +24,8 @@ const testimonials = [
 ];
 
 const Testimonials = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   const [startIndex, setStartIndex] = useState(0);
 
   useEffect(() => {
@@ -40,7 +43,14 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section
+      ref={ref}
+      className={`py-20 bg-background transform transition-all duration-1000 ease-out  ${
+        isVisible
+          ? "opacity-100 translate-x-0 scale-100"
+          : "opacity-0 -translate-x-20 scale-95"
+      }`}
+    >
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-block px-4 py-2 border-4 border-secondary/90 text-secondary/90 font-bold text-sm rounded-lg mb-6">

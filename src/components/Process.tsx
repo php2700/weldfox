@@ -1,7 +1,18 @@
+import useScrollAnimation from "./custom-hook";
+
 export const Process = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   return (
     <section className="bg-secondary/90 py-16 px-4 ">
-      <div className="max-w-7xl mx-auto text-center ">
+      <div
+        ref={ref}
+        className={`max-w-7xl mx-auto text-center transform transition-all duration-1000 ease-out ${
+          isVisible
+            ? "opacity-100 translate-x-0 scale-100"
+            : "opacity-0 -translate-x-20 scale-95"
+        }`}
+      >
         {/* Section Tag */}
         <p className="inline-block border-4 border-white text-white font-semibold px-4 py-1 mb-4 bg-transparent">
           Our Process
@@ -15,7 +26,7 @@ export const Process = () => {
         {/* Process Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
           {/* Card 1 */}
-          <div className="bg-white p-6 rounded shadow text-center">
+          <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
               src="/process-1.jpg"
               alt="Customer Requirement"
@@ -25,7 +36,7 @@ export const Process = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-white p-6 rounded shadow text-center">
+          <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
               src="/process-2.jpg"
               alt="Analysis"
@@ -35,7 +46,7 @@ export const Process = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="bg-white p-6 rounded shadow text-center">
+          <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
               src="/process-3.webp"
               alt="Designs"
@@ -45,7 +56,7 @@ export const Process = () => {
           </div>
 
           {/* Card 4 */}
-          <div className="bg-white p-6 rounded shadow text-center">
+          <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
               src="/process-4.png"
               alt="Manufacturing"
@@ -55,7 +66,7 @@ export const Process = () => {
           </div>
 
           {/* Card 5 */}
-          <div className="bg-white p-6 rounded shadow text-center">
+          <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
               src="/process-5.avif"
               alt="Installation"
@@ -65,7 +76,7 @@ export const Process = () => {
           </div>
 
           {/* Card 6 */}
-          <div className="bg-white p-6 rounded shadow text-center">
+          <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
               src="/process-6.webp"
               alt="Completion"

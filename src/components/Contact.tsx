@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { Toast } from "./ui/toast";
 import { toast } from "react-toastify";
+import useScrollAnimation from "./custom-hook";
 const API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
 
 const checkboxArray = [
@@ -29,6 +30,8 @@ const checkboxArray = [
 ];
 
 const Contact = () => {
+  const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
@@ -184,7 +187,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <section id="contact" className="pb-12 my-20 bg-muted/50">
+      <section id="contact" className={` pb-12 my-20 bg-muted/50`}>
         <div className="container mx-auto max-w-6xl px-6 ">
           <div className=" mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -194,11 +197,26 @@ const Contact = () => {
               className="text-[16px] text-muted-foreground mx-auto font-[400]"
               style={{ lineHeight: "31px" }}
             >
-             We invite you to share your project details with us using this form, so we can better understand how to assist you. Providing this information will help us gain an initial insight into your project, enabling us to assign the right team swiftly. You can simply provide your company name, your name, email, and phone number, or you can complete the form with additional details. An Metal4craft Automation representative will respond to your inquiry promptly. For urgent assistance, please contact us directly. Thank you, and we look forward to working with you!
+              We invite you to share your project details with us using this
+              form, so we can better understand how to assist you. Providing
+              this information will help us gain an initial insight into your
+              project, enabling us to assign the right team swiftly. You can
+              simply provide your company name, your name, email, and phone
+              number, or you can complete the form with additional details. An
+              Metal4craft Automation representative will respond to your inquiry
+              promptly. For urgent assistance, please contact us directly. Thank
+              you, and we look forward to working with you!
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-md py-8 px-4 bg-white rounded-lg">
+          <div
+            ref={ref}
+            className={`${
+              isVisible
+                ? "opacity-100 translate-x-0 scale-100"
+                : "opacity-0 translate-x-20 scale-95"
+            } transform transitions-all ease-out duration-1000 grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-md py-8 px-4 bg-white rounded-lg`}
+          >
             <div
               className="bg-cover bg-center rounded-lg "
               style={{ backgroundImage: "url('/Contact-us1.webp')" }}
