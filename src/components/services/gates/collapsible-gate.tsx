@@ -1,6 +1,8 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import StickyHeader from "@/components/sticky-header";
+import { motion } from "framer-motion";
+
 import React, { useEffect, useRef, useState } from "react";
 
 const arr = [
@@ -148,7 +150,7 @@ export const Collapsible = () => {
         <Header />
       </div>
       {showSticky && <StickyHeader />}
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <img
           src="/collapsible-gate.jpg"
           alt="About Us Banner"
@@ -166,7 +168,34 @@ export const Collapsible = () => {
               HOME &nbsp; - &nbsp; SERVICE &nbsp; - &nbsp;COLLAPSING GATES
             </h2>
           </div>
-        </div>
+        </div> */}
+           <section className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
+                        <img
+                          src="/collapsible-gate.jpg"
+                          alt="About Us Banner"
+                          className="absolute inset-0 w-full h-full object-cover"
+                        />
+                
+                        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 skew-y-[-3deg] origin-top-left"></div>
+                
+                        <motion.div
+                          initial={{ opacity: 0, y: 40 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 1 }}
+                          className="relative max-w-4xl mx-auto text-center px-6"
+                        >
+                          <h1 className="text-4xl md:text-5xl font-extrabold text-secondary/90 leading-tight mb-4">
+                            COLLAPSING GATES
+                          </h1>
+                          <p className="text-white/90 text-md md:text-lg leading-relaxed">
+                            At METAL4CRAFT AUTOMATION, we specialize in delivering premium
+                            fabrication solutions designed around the specific requirements of
+                            our clients. Focused on Entrance Automation, Rolling Shutters, and
+                            General Fabrication, our skilled team blends innovation with
+                            craftsmanship.
+                          </p>
+                        </motion.div>
+                      </section>
 
       <section className="bg-[#f8f8f8] mt-4 pt-4">
         <div className="container max-w-6xl mx-auto px-6 grid grid-cols-1 items-center md:grid-cols-2  gap-10 ">

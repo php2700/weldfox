@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Globe } from "lucide-react";
 import Header from "./Header";
 import Footer from "./Footer";
 import StickyHeader from "./sticky-header";
@@ -12,6 +12,11 @@ import { Toast } from "./ui/toast";
 import { toast } from "react-toastify";
 import useScrollAnimation from "./custom-hook";
 const API_BASE_URL = import.meta.env.VITE_APP_API_BASE_URL;
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import PhoneIcon from "@mui/icons-material/Phone";
+import EmailIcon from "@mui/icons-material/Email";
+import LanguageIcon from "@mui/icons-material/Language";
+import { motion } from "framer-motion";
 
 const checkboxArray = [
   "Entrance Gates",
@@ -168,7 +173,7 @@ const Contact = () => {
         <Header />
       </div>
       {showSticky && <StickyHeader />}
-      <div className="relative w-full">
+      {/* <div className="relative w-full">
         <img
           src="/Contact-us1.jpg"
           alt="About Us Banner"
@@ -178,19 +183,37 @@ const Contact = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-7xl font-[900] text-white">CONTACT </div>
         </div>
-        
-      </div>
-      <div className="mt-10 flex justify-center px-4 w-full md:w-auto ">
-          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 md:p-6 text-center rounded-lg ">
-            <h2 className="text-[14px] md:text-[14px] font-bold  mb-2 text-white">
-              HOME &nbsp; - &nbsp; Contact
-            </h2>
-          </div>
-        </div>
+      </div> */}
 
-      <section id="contact" className={` pb-12 my-20 bg-muted/50`}>
-        <div className="container mx-auto max-w-6xl px-6 ">
-          <div className=" mb-12">
+      <section className="relative w-full min-h-[250px] flex items-center justify-center overflow-hidden">
+        <img
+          src="/Contact-us1.jpg"
+          alt="About Us Banner"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 skew-y-[-3deg] origin-top-left"></div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="relative max-w-4xl mx-auto text-center px-6"
+        >
+          <h1 className="text-4xl md:text-5xl font-extrabold text-secondary/90 leading-tight mb-4">
+            CONTACT
+          </h1>
+          <p className="text-white/90 text-md md:text-lg leading-relaxed">
+            At METAL4CRAFT AUTOMATION, we specialize in delivering premium
+            fabrication solutions designed around the specific requirements of
+            our clients. Focused on Entrance Automation, Rolling Shutters, and
+            General Fabrication, our skilled team blends innovation with
+            craftsmanship.
+          </p>
+        </motion.div>
+      </section>
+      <section className="container mx-auto mt-10  px-10">
+<div className=" mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Contact
             </h2>
@@ -209,6 +232,10 @@ const Contact = () => {
               you, and we look forward to working with you!
             </p>
           </div>
+          </section>
+      <section id="contact" className={`bg-gray-500 py-12 my-20`}>
+        <div className="container mx-auto  px-6 ">
+         
 
           <div
             ref={ref}
@@ -216,55 +243,12 @@ const Contact = () => {
               isVisible
                 ? "opacity-100 translate-x-0 scale-100"
                 : "opacity-0 translate-x-20 scale-95"
-            } transform transitions-all ease-out duration-1000 grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-md py-8 px-4 bg-white rounded-lg`}
+            } transform transitions-all ease-out duration-1000 grid grid-cols-1 lg:grid-cols-2 gap-8 shadow-md  bg-white rounded-lg`}
           >
-            <div
-              className="bg-cover bg-center rounded-lg "
-              style={{ backgroundImage: "url('/Contact-us1.webp')" }}
-            >
-              <div className="bg-opacity-50 px-6  py-12 rounded-lg">
-                <div className="flex  items-center gap-4">
-                  <div className="bg-secondary/90 text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
-                    Corporate Office
-                  </div>
-                  {/* <div className="bg-white hover:bg-secondary/90 text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
-                    Our Reach
-                  </div> */}
-                </div>
+          
 
-                <h2 className="text-2xl font-bold text-white">
-                  Bengaluru - Office and Plant
-                </h2>
-
-                <p className="text-white text-[19px]  my-4 font-[500]">
-                  Address :
-                </p>
-                <p className="text-white text-[21px] my-4 font-[500]">
-                  Metal4craft Automation
-                </p>
-                <p className="text-white font-[400] ">
-                  Metal4craft Automation Pvt. Ltd. Site No 9, Attur Village,
-                  yelahanka, Near Best Shot Badminton Academy, Yelahanka New
-                  Town, Bengaluru, Karnataka 560064
-                </p>
-
-                <p className="text-white my-4 text-[19px] font-[500]">
-                  Mobile Number
-                </p>
-                <p className="text-white text-[18px]">+91 63630 91384</p>
-
-                <p className="text-white my-4 text-[19px] font-[500]">Email</p>
-                <p className="text-white text-[18px]">info@metal4craft.com</p>
-
-                <p className="text-white my-4 text-[19px] font-[500]">
-                  Website
-                </p>
-                <p className="text-white text-[18px]">metal4craft.com</p>
-              </div>
-            </div>
-
-            <form onSubmit={handleSubmit}>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form onSubmit={handleSubmit} className="p-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
                 <div>
                   <label>Name</label>
                   <input
@@ -413,9 +397,52 @@ const Contact = () => {
                 Submit
               </button>
             </form>
+              <div
+              className="bg-cover bg-center rounded-lg p-8 "
+              style={{ backgroundImage: "url('/Contact-us1.jpg')" }}
+            >
+              <div className="bg-opacity-50 px-6  py-12 rounded-lg">
+                <div className="flex  items-center gap-4">
+                  <div className="bg-secondary/90 text-black px-4 py-2 rounded-md font-semibold inline-block mb-4">
+                    Corporate Office
+                  </div>
+                </div>
+
+                <h2 className="text-2xl font-bold text-white">
+                  Bengaluru - Office and Plant
+                </h2>
+
+                <p className="text-white text-[19px]  my-4 font-[500]">
+                  Address :
+                </p>
+                <p className="text-white text-[21px] my-4 font-[500]">
+                  Metal4craft Automation
+                </p>
+                <p className="text-white font-[400] ">
+                  Metal4craft Automation Pvt. Ltd. Site No 9, Attur Village,
+                  yelahanka, Near Best Shot Badminton Academy, Yelahanka New
+                  Town, Bengaluru, Karnataka 560064
+                </p>
+
+                <p className="text-white my-4 text-[19px] font-[500]">
+                  Mobile Number
+                </p>
+                <p className="text-white text-[18px]">+91 63630 91384</p>
+
+                <p className="text-white my-4 text-[19px] font-[500]">Email</p>
+                <p className="text-white text-[18px]">info@metal4craft.com</p>
+
+                <p className="text-white my-4 text-[19px] font-[500]">
+                  Website
+                </p>
+                <p className="text-white text-[18px]">metal4craft.com</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      
+
       <Footer />
     </div>
   );

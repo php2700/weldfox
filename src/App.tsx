@@ -60,8 +60,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import RollShutters from "./components/rolling-shutters";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
-import { FaFilePdf } from 'react-icons/fa';
-
+import { FaFilePdf } from "react-icons/fa";
 
 const queryClient = new QueryClient();
 
@@ -77,7 +76,6 @@ const handleWhatsApp = () => {
 const handleTop = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
-
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -95,10 +93,10 @@ const App = () => (
         <div
           className="rounded-full border-2 border-dotted border-secondary/90 p-3 flex items-center justify-center cursor-pointer w-14 h-14"
           onClick={() => {
-            const pdfUrl = '/Metal4Craft Brochure.pdf';
-            const link = document.createElement('a');
+            const pdfUrl = "/Metal4Craft Brochure.pdf";
+            const link = document.createElement("a");
             link.href = pdfUrl;
-            link.download = 'Metal4Craft Brochure.pdf';
+            link.download = "Metal4Craft Brochure.pdf";
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -150,7 +148,7 @@ const App = () => (
 
           <Route path="/general-fabrication" element={<GeneralFabrication />} />
           <Route path="/entrance-automation" element={<EntranceAutomation />} />
-          <Route path='/roll-shutters' element={<RollShutters/>} />
+          <Route path="/roll-shutters" element={<RollShutters />} />
 
           {/* services-ms gates */}
           <Route path="/retracktable" element={<Retracktable />} />

@@ -1,9 +1,10 @@
 import { useState } from "react";
 import useScrollAnimation from "./custom-hook";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, ChevronUp, HelpCircle } from "lucide-react";
 
 export const Enuiry = () => {
   const [ref, isVisible] = useScrollAnimation({ threshold: 0.2 });
-
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const faqs = [
@@ -52,52 +53,65 @@ export const Enuiry = () => {
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
+
   return (
     <section
       ref={ref}
       className={`${
-        isVisible
-          ? "opacity-100 translate-x-0 scale-100"
-          : "opacity-0 translate-x-20 scale-95"
-      } transform transitions-all ease-out duration-1000  relative min-h-[100vh] grid grid-cols-1 md:grid-cols-2 gap-10 bg-gray-100 flex  justify-end overflow-hidden`}
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      } transform transition-all ease-out duration-1000 relative min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100 px-6 md:px-12 lg:px-20 `}
     >
-      <div>
-        <img src="/Telescopic-gate.jpg" className="h-[100vh]" />
-      </div>
-
-      <div className=" px-6  bg-opacity-90">
-        {/* Section Tag */}
-        <span className="inline-block border-4 rounded-lg text-secondary/90 border-secondary/90  font-semibold py-1 px-4   mb-4 text-[16px]">
+      <div className="text-center mb-12">
+        <span className="inline-block border-4 border-secondary/90 text-secondary/90 font-semibold px-3 py-1 mb-4 bg-transparent text-sm md:text-base rounded-lg">
           Our FAQs
         </span>
-
-        {/* Title */}
-        <h2 className="text-[40px] font-[900] text-[#181614] mb-6">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
           FAQ FOR INQUIRY
         </h2>
+        <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Here are some of the most common questions our customers ask. If you
+          still have doubts, feel free to reach out to us anytime!
+        </p>
+      </div>
 
-        {/* FAQ List */}
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div key={index} className="border-b border-gray-200">
-              <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full text-left py-3 flex gap-2  text-lg font-semibold text-[#181614]"
-              >
-                {" "}
-                <span className="text-secondary/90 mr-2">
-                  {openIndex === index ? "−" : "+"}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {faqs.map((faq, index) => (
+          <motion.div
+            key={index}
+            className="bg-white shadow-md hover:shadow-xl transition rounded-xl p-6 border border-gray-200"
+          >
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex justify-between items-center text-left"
+            >
+              <div className="flex items-center gap-3">
+                <HelpCircle className="text-secondary/90 w-6 h-6" />
+                <span className="font-semibold text-gray-800 text-lg">
+                  {faq.question}
                 </span>
-                <span>{faq.question}</span>
-              </button>
-              {openIndex === index && (
-                <p className="text-[#7e7b7a] py-2 text-sm md:text-lg">
-                  {faq.answer}
-                </p>
+              </div>
+              {openIndex === index ? (
+                <ChevronUp className="w-6 h-6 text-secondary/90" />
+              ) : (
+                <ChevronDown className="w-6 h-6 text-gray-500" />
               )}
-            </div>
-          ))}
-        </div>
+            </button>
+
+            <AnimatePresence>
+              {openIndex === index && (
+                <motion.p
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="mt-3 text-gray-600 text-sm leading-relaxed"
+                >
+                  {faq.answer}
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        ))}
       </div>
     </section>
   );

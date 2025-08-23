@@ -118,7 +118,7 @@ const Services = () => {
               Our Services
             </div>
             <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-4">
-              WHAT WE OFFER
+              OUR EXPERTISE
             </h2>
           </div>
 
@@ -194,6 +194,11 @@ const Services = () => {
       </section>
       <Footer />
     </div>
+
+    
+
+
+
   );
 };
 

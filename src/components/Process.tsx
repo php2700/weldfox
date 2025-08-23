@@ -1,3 +1,4 @@
+
 import useScrollAnimation from "./custom-hook";
 
 export const Process = () => {
@@ -7,7 +8,7 @@ export const Process = () => {
     <section className="bg-secondary/90 py-16 px-4 ">
       <div
         ref={ref}
-        className={`max-w-7xl mx-auto text-center transform transition-all duration-1000 ease-out ${
+        className={`max-w-6xl mx-auto text-center transform transition-all duration-1000 ease-out ${
           isVisible
             ? "opacity-100 translate-x-0 scale-100"
             : "opacity-0 -translate-x-20 scale-95"
@@ -24,7 +25,7 @@ export const Process = () => {
         </h2>
 
         {/* Process Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-xl shadow text-center">
             <img
@@ -33,6 +34,7 @@ export const Process = () => {
               className="w-24 mx-auto mb-4"
             />
             <p className="font-semibold text-sm">CUSTOMER REQUIREMENT</p>
+            <p className="p-2 border rounded-full bg-yellow-500 text-white w-10 h-10 flex items-center justify-center mx-auto mt-2">1</p>
           </div>
 
           {/* Card 2 */}
@@ -43,6 +45,7 @@ export const Process = () => {
               className="w-24 mx-auto mb-4"
             />
             <p className="font-semibold text-sm">ANALYSIS & SUGGESTIONS</p>
+            <p className="p-2 border rounded-full bg-yellow-500 text-white w-10 h-10 flex items-center justify-center mx-auto mt-2">2</p>
           </div>
 
           {/* Card 3 */}
@@ -53,6 +56,7 @@ export const Process = () => {
               className="w-24 mx-auto mb-4"
             />
             <p className="font-semibold text-sm">DESIGNS AND DRAWINGS</p>
+            <p className="p-2 border rounded-full bg-yellow-500 text-white w-10 h-10 flex items-center justify-center mx-auto mt-2">3</p>
           </div>
 
           {/* Card 4 */}
@@ -63,6 +67,7 @@ export const Process = () => {
               className="w-24 mx-auto mb-4"
             />
             <p className="font-semibold text-sm">MANUFACTURING MASTERY</p>
+            <p className="p-2 border rounded-full bg-yellow-500 text-white w-10 h-10 flex items-center justify-center mx-auto mt-2">4</p>
           </div>
 
           {/* Card 5 */}
@@ -73,6 +78,7 @@ export const Process = () => {
               className="w-24 mx-auto mb-4"
             />
             <p className="font-semibold text-sm">INSTALLATION ERECTION</p>
+            <p className="p-2 border rounded-full bg-yellow-500 text-white w-10 h-10 flex items-center justify-center mx-auto mt-2">5</p>
           </div>
 
           {/* Card 6 */}
@@ -83,6 +89,7 @@ export const Process = () => {
               className="w-24 mx-auto mb-4"
             />
             <p className="font-semibold text-sm">SUCCESSFUL COMPLETION</p>
+            <p className="p-2 border rounded-full bg-yellow-500 text-white w-10 h-10 flex items-center justify-center mx-auto mt-2">6</p>
           </div>
         </div>
       </div>

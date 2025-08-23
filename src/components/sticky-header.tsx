@@ -1,3 +1,187 @@
+// import React, { useState } from "react";
+// import { Link, useLocation } from "react-router-dom";
+// import { FaBars, FaTimes } from "react-icons/fa";
+// import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+
+// const StickyHeader = () => {
+//   const [menuOpen, setMenuOpen] = useState(false);
+//   const [dropdownOpen, setDropdownOpen] = useState(false);
+//   const toggleMenu = () => setMenuOpen(!menuOpen);
+
+//   const location = useLocation();
+//   const pathname = location.pathname;
+
+//   const handleTop = () => {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: "smooth",
+//     });
+//   };
+
+//   return (
+//     <>
+//       <header className="fixed top-0 left-0 w-full z-[1000] bg-white text-black shadow-md transition-all duration-500">
+//         <div className="w-full mx-auto px-6 py-4 flex items-center justify-between">
+//           <Link to="/">
+//             <img src="/logo-1.jpeg" alt="Logo" className="h-16 w-auto" />
+//           </Link>
+//           <nav className="hidden lg:flex space-x-8 text-lg font-medium items-center">
+//             <div className="relative">
+//               <a
+//                 href="/"
+//                 className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
+//                   pathname === "/" ? "border-secondary/90" : "border-transparent"
+//                 }`}
+//               >
+//                 Home
+//               </a>
+//             </div>
+//             <div className="relative">
+//               <a
+//                 href="/about"
+//                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+//                   pathname === "/about"
+//                     ? "border-secondary/90"
+//                     : "border-transparent"
+//                 }`}
+//               >
+//                 About Us
+//               </a>
+//             </div>
+//             <div
+//               className="relative"
+//               onMouseEnter={() => setDropdownOpen(true)}
+//               onMouseLeave={() => setDropdownOpen(false)}
+//             >
+//               <a
+//                 href="/services"
+//                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+//                   pathname === "/services"
+//                     ? "border-secondary/90"
+//                     : "border-transparent"
+//                 }`}
+//               >
+//                 Services
+//               </a>
+//               {dropdownOpen && (
+//                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-border z-[1010]">
+//                   <Link
+//                     to="/services"
+//                     className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
+//                   >
+//                     Rolling Shutters
+//                   </Link>
+//                   <Link
+//                     to="/services"
+//                     className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
+//                   >
+//                     Entrance Automation
+//                   </Link>
+//                   <Link
+//                     to="/services"
+//                     className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
+//                   >
+//                     General Fabrication
+//                   </Link>
+//                 </div>
+//               )}
+//             </div>
+//             <div className="relative">
+//               <a
+//                 href="/blog"
+//                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+//                   pathname === "/blog" ? "border-secondary/90" : "border-transparent"
+//                 }`}
+//               >
+//                 Gallery
+//               </a>
+//             </div>
+//             <div className="relative">
+//               <a
+//                 href="/contact"
+//                 className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
+//                   pathname === "/contact"
+//                     ? "border-secondary/90"
+//                     : "border-transparent"
+//                 }`}
+//               >
+//                 Contact
+//               </a>
+//             </div>
+//           </nav>
+
+//           {/* Mobile Menu Icon */}
+//           <div
+//             className="lg:hidden text-2xl text-[#1a2940]"
+//             onClick={toggleMenu}
+//           >
+//             {menuOpen ? <FaTimes /> : <FaBars />}
+//           </div>
+//         </div>
+
+//         {/* Mobile Nav */}
+//         {menuOpen && (
+//           <div className="lg:hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4 z-[1010]">
+//             <Link to="/" className="text-[#1a2940]" onClick={toggleMenu}>
+//               Home
+//             </Link>
+//             <Link to="/about" className="text-[#1a2940]" onClick={toggleMenu}>
+//               About
+//             </Link>
+//             <div className="flex flex-col space-y-2">
+//               <Link
+//                 to="/services"
+//                 className="text-[#1a2940]"
+//                 onClick={toggleMenu}
+//               >
+//                 Services
+//               </Link>
+//               <Link
+//                 to="/services"
+//                 className="text-[#1a2940] pl-4"
+//                 onClick={toggleMenu}
+//               >
+//                 Rolling Shutters
+//               </Link>
+//               <Link
+//                 to="/services"
+//                 className="text-[#1a2940] pl-4"
+//                 onClick={toggleMenu}
+//               >
+//                 Entrance Automation
+//               </Link>
+//               <Link
+//                 to="/services"
+//                 className="text-[#1a2940] pl-4"
+//                 onClick={toggleMenu}
+//               >
+//                 General Fabrication
+//               </Link>
+//             </div>
+//             <Link to="/blog" className="text-[#1a2940]" onClick={toggleMenu}>
+//               Gallery
+//             </Link>
+//             <Link to="/contact" className="text-[#1a2940]" onClick={toggleMenu}>
+//               Contact
+//             </Link>
+//           </div>
+//         )}
+//       </header>
+//       <div className="fixed bottom-[220px] right-[43px] z-[1010]">
+//     <div
+//           className="rounded-full border-2 border-dotted border-secondary/90 p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-secondary/90 group"
+//           onClick={handleTop}
+//         >
+//           <ArrowUpwardIcon className="text-secondary/90 w-7 h-7 group-hover:text-white" />
+//         </div>
+// </div>
+//     </>
+//   );
+// };
+
+// export default StickyHeader;
+
+
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -12,169 +196,117 @@ const StickyHeader = () => {
   const pathname = location.pathname;
 
   const handleTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-[1000] bg-white text-black shadow-md transition-all duration-500">
-        <div className="w-full mx-auto px-6 py-4 flex items-center justify-between">
+      <header className="fixed top-0 left-0 w-full z-[1000] bg-white backdrop-blur-md shadow-md transition-all duration-500">
+        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
           <Link to="/">
             <img src="/logo-1.jpeg" alt="Logo" className="h-16 w-auto" />
           </Link>
-          <nav className="hidden lg:flex space-x-8 text-lg font-medium items-center">
-            <div className="relative">
-              <a
-                href="/"
-                className={`px-4 py-2 transition-colors font-medium rounded border-2 ${
-                  pathname === "/" ? "border-secondary/90" : "border-transparent"
+
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center space-x-6 font-medium text-lg">
+            {[
+              { path: "/", label: "Home" },
+              { path: "/about", label: "About Us" },
+              { path: "/blog", label: "Gallery" },
+              { path: "/contact", label: "Contact" },
+            ].map((link, i) => (
+              <Link
+                key={i}
+                to={link.path}
+                className={`text-[16px] relative px-3 py-1 transition-colors after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:scale-x-0 after:bg-secondary/90 after:transition-transform after:duration-300 hover:after:scale-x-100 ${
+                  pathname === link.path ? "text-secondary/90 after:scale-x-100" : "text-foreground"
                 }`}
               >
-                Home
-              </a>
-            </div>
-            <div className="relative">
-              <a
-                href="/about"
-                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                  pathname === "/about"
-                    ? "border-secondary/90"
-                    : "border-transparent"
-                }`}
-              >
-                About Us
-              </a>
-            </div>
+                {link.label}
+              </Link>
+            ))}
+
+            {/* Services Dropdown */}
             <div
               className="relative"
               onMouseEnter={() => setDropdownOpen(true)}
               onMouseLeave={() => setDropdownOpen(false)}
             >
-              <a
-                href="/services"
-                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                  pathname === "/services"
-                    ? "border-secondary/90"
-                    : "border-transparent"
+              <span
+                className={`cursor-pointer px-3 py-1 transition-colors text-[16px] ${
+                  pathname === "/services" ? "text-secondary/90" : "text-foreground"
                 }`}
               >
                 Services
-              </a>
+              </span>
               {dropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md border border-border z-[1010]">
-                  <Link
-                    to="/services"
-                    className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
-                  >
-                    Rolling Shutters
-                  </Link>
-                  <Link
-                    to="/services"
-                    className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
-                  >
-                    Entrance Automation
-                  </Link>
-                  <Link
-                    to="/services"
-                    className="block px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-secondary-foreground transition-colors"
-                  >
-                    General Fabrication
-                  </Link>
+                <div className="absolute text-[16px] top-full left-0  w-52 bg-white shadow-xl rounded-xl border border-border p-3 z-[1010] leading-tight">
+                  {["Rolling Shutters", "Entrance Automation", "General Fabrication"].map(
+                    (service, idx) => (
+                      <Link
+                        key={idx}
+                        to="/services"
+                        className="block text-[16px] px-4 py-2 text-[#1a2940] hover:bg-secondary/90 hover:text-white rounded-md transition"
+                      >
+                        {service}
+                      </Link>
+                    )
+                  )}
                 </div>
               )}
             </div>
-            <div className="relative">
-              <a
-                href="/blog"
-                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                  pathname === "/blog" ? "border-secondary/90" : "border-transparent"
-                }`}
-              >
-                Gallery
-              </a>
-            </div>
-            <div className="relative">
-              <a
-                href="/contact"
-                className={`text-foreground transition-colors font-medium px-4 py-2 border-2 rounded ${
-                  pathname === "/contact"
-                    ? "border-secondary/90"
-                    : "border-transparent"
-                }`}
-              >
-                Contact
-              </a>
-            </div>
           </nav>
 
-          {/* Mobile Menu Icon */}
-          <div
-            className="lg:hidden text-2xl text-[#1a2940]"
-            onClick={toggleMenu}
-          >
+          {/* Mobile Menu Toggle */}
+          <div className="lg:hidden text-2xl text-[#1a2940]" onClick={toggleMenu}>
             {menuOpen ? <FaTimes /> : <FaBars />}
           </div>
         </div>
 
-        {/* Mobile Nav */}
+        {/* Mobile Navigation */}
         {menuOpen && (
-          <div className="lg:hidden bg-white shadow-md px-6 py-4 flex flex-col space-y-4 z-[1010]">
-            <Link to="/" className="text-[#1a2940]" onClick={toggleMenu}>
+          <div className="lg:hidden fixed inset-0 bg-white z-[1010] flex flex-col p-8 space-y-6 overflow-y-auto">
+            <Link to="/" className="text-lg font-medium" onClick={toggleMenu}>
               Home
             </Link>
-            <Link to="/about" className="text-[#1a2940]" onClick={toggleMenu}>
+            <Link to="/about" className="text-lg font-medium" onClick={toggleMenu}>
               About
             </Link>
             <div className="flex flex-col space-y-2">
-              <Link
-                to="/services"
-                className="text-[#1a2940]"
-                onClick={toggleMenu}
-              >
-                Services
-              </Link>
-              <Link
-                to="/services"
-                className="text-[#1a2940] pl-4"
-                onClick={toggleMenu}
-              >
-                Rolling Shutters
-              </Link>
-              <Link
-                to="/services"
-                className="text-[#1a2940] pl-4"
-                onClick={toggleMenu}
-              >
-                Entrance Automation
-              </Link>
-              <Link
-                to="/services"
-                className="text-[#1a2940] pl-4"
-                onClick={toggleMenu}
-              >
-                General Fabrication
-              </Link>
+              <span className="text-lg font-medium mb-2">Services</span>
+              {["Rolling Shutters", "Entrance Automation", "General Fabrication"].map(
+                (service, idx) => (
+                  <Link
+                    key={idx}
+                    to="/services"
+                    className="pl-4 text-[#1a2940] text-base"
+                    onClick={toggleMenu}
+                  >
+                    {service}
+                  </Link>
+                )
+              )}
             </div>
-            <Link to="/blog" className="text-[#1a2940]" onClick={toggleMenu}>
+            <Link to="/blog" className="text-lg font-medium" onClick={toggleMenu}>
               Gallery
             </Link>
-            <Link to="/contact" className="text-[#1a2940]" onClick={toggleMenu}>
+            <Link to="/contact" className="text-lg font-medium" onClick={toggleMenu}>
               Contact
             </Link>
           </div>
         )}
       </header>
-      <div className="fixed bottom-[220px] right-[43px] z-[1010]">
-    <div
-          className="rounded-full border-2 border-dotted border-secondary/90 p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-secondary/90 group"
+
+      {/* Scroll to top button */}
+      <div className="fixed bottom-56 right-10 z-[1010]">
+        <div
+          className="rounded-full border-2 border-dotted border-secondary/90 p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-secondary/90 group transition"
           onClick={handleTop}
         >
           <ArrowUpwardIcon className="text-secondary/90 w-7 h-7 group-hover:text-white" />
         </div>
-</div>
+      </div>
     </>
   );
 };

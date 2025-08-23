@@ -9,6 +9,7 @@ import StickyHeader from "./sticky-header";
 import { AboutDescription } from "./About-desc";
 import { Partner } from "./partner";
 import { Enuiry } from "./About-inq";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [showSticky, setShowSticky] = useState(false);
@@ -64,25 +65,35 @@ const About = () => {
         <Header />
       </div>
       {showSticky && <StickyHeader />}
-      <div className="relative w-full z-[1]">
+
+      <section className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
         <img
           src="/swing-gates.jpg"
           alt="About Us Banner"
-          className="w-full h-[500px] object-cover"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#1a2940] opacity-20"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-7xl font-[900] text-white">ABOUT</div>
-        </div>
-    
-      </div>
-    <div className="mt-10 flex justify-center px-4 w-full md:w-auto">
-          <div className="bg-secondary/90 w-full md:w-auto shadow-lg p-4 lg:p-6 text-center rounded-lg">
-            <h2 className="text-[14px] md:text-[14px] font-bold mb-2 text-white">
-              HOME &nbsp; - &nbsp; About
-            </h2>
-          </div>
-        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 skew-y-[-3deg] origin-top-left"></div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className="relative max-w-4xl mx-auto text-center px-6"
+        >
+          <h1 className="text-4xl md:text-5xl font-extrabold text-secondary/90 leading-tight mb-4">
+            ABOUT
+          </h1>
+          <p className="text-white/90 text-md md:text-lg leading-relaxed">
+            At METAL4CRAFT AUTOMATION, we specialize in delivering premium
+            fabrication solutions designed around the specific requirements of
+            our clients. Focused on Entrance Automation, Rolling Shutters, and
+            General Fabrication, our skilled team blends innovation with
+            craftsmanship.
+          </p>
+        </motion.div>
+      </section>
+
       <AboutDescription />
       <Partner />
       <Enuiry />

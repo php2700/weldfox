@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Award, Clock } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import EastIcon from "@mui/icons-material/East";
 import WestIcon from "@mui/icons-material/West";
 import { Link } from "react-router-dom";
@@ -43,13 +43,21 @@ const Hero = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
+  // const nextSlide = () => {
+  //   setCurrentSlide((prev) => (prev + 1) % slides.length);
+  // };
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+  // const prevSlide = () => {
+  //   setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  // };
+
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(interval); 
+  }, [slides.length]);
 
   const currentSlideData = slides[currentSlide];
 
@@ -59,12 +67,12 @@ const Hero = () => {
       className="relative min-h-screen flex items-center justify-start overflow-hidden"
     >
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute transform transitions-all ease-out duration-1000 inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${currentSlideData.image})` }}
       >
         <div className="absolute inset-0 bg-gradient-hero opacity-10"></div>
       </div>
-      <button
+      {/* <button
         onClick={prevSlide}
         className="absolute left-4 top-1/2  hover:bg-secondary/90 hover:text-white transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
       >
@@ -75,14 +83,14 @@ const Hero = () => {
         className="absolute hover:bg-secondary/90 hover:text-white right-4 top-1/2 transform -translate-y-1/2 bg-white rounded-full w-14 h-14 flex items-center justify-center z-10"
       >
         <EastIcon />
-      </button>
-      <div className="relative z-10 container mx-auto px-6 text-left">
+      </button> */}
+      <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-6xl md:text-7xl font-[900] text-white mb-6 leading-tight">
             {currentSlideData.text}
           </h2>
 
-          <div className="flex flex-col sm:flex-row items-center justify-start gap-4 mb-12 mt-12">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 mt-12">
             <Link to={currentSlideData?.url}>
               <Button
                 size="lg"
