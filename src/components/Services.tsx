@@ -103,14 +103,14 @@ const Services = () => {
 
   return (
     <div className="min-h-screen relative bg-background">
-      <div
+      {/* <div
         className={`transition-opacity duration-300 ${
           showSticky ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-      >
+      > */}
         <Header />
-      </div>
-      {showSticky && <StickyHeader />}
+      {/* </div>
+      {showSticky && <StickyHeader />} */}
       <section id="services" className="py-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">

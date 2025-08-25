@@ -35,6 +35,7 @@ const Index = () => {
         lastScrollY.current = currentScroll;
         ticking.current = false;
       });
+      
 
       ticking.current = true;
     }
@@ -48,16 +49,16 @@ const Index = () => {
   return (
     <div className="min-h-screen relative bg-background">
       {/* Regular Header (always in DOM) */}
-      <div
+      {/* <div
         className={`transition-opacity duration-300 ${
           showSticky ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-      >
+      > */}
         <Header />
-      </div>
+      {/* </div> */}
 
       {/* Sticky Header */}
-      {showSticky && <StickyHeader />}
+      {/* {showSticky && <StickyHeader />} */}
  
 
       <main>

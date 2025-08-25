@@ -4,31 +4,27 @@ const testimonials = [
   {
     name: "RAHUL K.",
     text: "Over the past year, METAL4CRAFT AUTOMATION has consistently exceeded our expectations. From design to final installation, their team delivered precision, reliability, and unmatched professionalism. Truly a partner we can rely on for all our automation and fabrication needs.",
-    image:'/Tri-Folding-gate.jpg'
+    image: "/review-user-1.jpg",
   },
   {
-    name: "ANITA P.",
+    name: "RAMESH P.",
     text: "We’ve been working with the team for over a year, and their dedication to quality never fails to impress. Every project—big or small—has been completed with care, attention to detail, and on-time delivery. A dependable choice for long-term collaboration.",
-    image:'/aluminum-puff-insulated-rolling-shutter.jpg'
-
+    image: "/review-user-2.jpg",
   },
   {
     name: "VIKAS J.",
     text: "Our annual maintenance and upgrades were handled flawlessly by the METAL4CRAFT AUTOMATION team. They ensured smooth operation, minimal downtime, and top-notch service throughout the year. Their commitment to customer satisfaction is outstanding.",
-    image:'/curve-sliding-gate.jpg'
-
+    image: "/review-user-3.jpg",
   },
   {
-    name: "SHILPA R.",
+    name: "SHAILENDRA R.",
     text: "It’s been a year since our rolling shutters were installed, and they continue to operate seamlessly. The durability, design, and after-sales support have all been exceptional. Truly a product that delivers long-term value.",
-    image:'/building-elevation-work.webp'
-
+    image: "/review-user-4.jpg",
   },
   {
     name: "ARUN M.",
     text: "Year after year, METAL4CRAFT AUTOMATION has been our trusted partner for fabrication solutions. Their team combines technical expertise with excellent customer care, making every project a smooth and stress-free experience.",
-    image:'/retractable-gate.jpg'
-
+    image: "/review-user-5.jpg",
   },
 ];
 
@@ -78,7 +74,7 @@ const Testimonials = () => {
                   text-secondary-foreground border-2"
             >
               <img src={testimonial?.image} className=" object-cover rounded-lg" /> */}
-              {/* <p
+        {/* <p
                 className="text-base leading-relaxed mb-6
                    text-muted-foreground"
               >
@@ -90,25 +86,38 @@ const Testimonials = () => {
               >
                 {testimonial.name}
               </div> */}
-            {/* </div>
+        {/* </div>
           ))}
         </div> */}
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 my-2">
-  {visibleTestimonials.map((testimonial, index) => (
-    <div
-      key={`${testimonial.name}-${index}`}
-      className="rounded-lg overflow-hidden border-2 transition-all duration-300 hover:border-secondary/90"
-    >
-      <img
-        src={testimonial?.image}
-        alt={testimonial?.name || `testimonial-${index}`}
-        className="w-full h-64 object-cover"
-      />
-    </div>
-  ))}
-</div>
-
+          {visibleTestimonials.map((testimonial, index) => (
+            <div
+              key={`${testimonial.name}-${index}`}
+              className="rounded-lg overflow-hidden border-2 transition-all duration-300 hover:border-secondary/90"
+            >
+              <img
+                src={testimonial?.image}
+                alt={testimonial?.name || `testimonial-${index}`}
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-4">
+                <p
+                  className="text-base leading-relaxed mb-6
+                   text-muted-foreground"
+                >
+                  {testimonial.text}
+                </p>
+                <div
+                  className="font-bold text-lg 
+                    text-foreground"
+                >
+                  {testimonial.name}{" "}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

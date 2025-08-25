@@ -148,14 +148,14 @@ export const Structural = () => {
   }, []);
   return (
     <div className="min-h-screen relative bg-background">
-      <div
+      {/* <div
         className={`transition-opacity duration-300 ${
           showSticky ? "opacity-0 pointer-events-none" : "opacity-100"
         }`}
-      >
+      > */}
         <Header />
-      </div>
-      {showSticky && <StickyHeader />}
+      {/* </div>
+      {showSticky && <StickyHeader />} */}
       {/* <div className="relative w-full">
         <img
           src="/structural-fabrication.webp"

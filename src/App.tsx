@@ -61,6 +61,7 @@ import RollShutters from "./components/rolling-shutters";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { FaFilePdf } from "react-icons/fa";
+import { ScollTop } from "./components/scroll";
 
 const queryClient = new QueryClient();
 
@@ -106,6 +107,7 @@ const App = () => (
         </div>
       </div>
       <BrowserRouter>
+        <ScollTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/blog" element={<Blog />} />
