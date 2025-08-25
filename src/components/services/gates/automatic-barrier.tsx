@@ -169,7 +169,7 @@ export const Automaticbarrier = () => {
         </div> */}
             <section className="relative w-full min-h-[500px] flex items-center justify-center overflow-hidden">
                 <img
-                  src="/collapsible-ate.jpg"
+                  src="/automatic-barriers.jpg"
                   alt="About Us Banner"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
