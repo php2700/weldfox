@@ -109,7 +109,7 @@ export const ManualRollingShutters = () => {
           className="relative max-w-4xl mx-auto text-center px-6"
         >
           <h1 className="text-4xl md:text-5xl font-extrabold text-secondary/90 leading-tight mb-4">
-            MANNUAL ROLLING SHUTTERS
+            MANUAL ROLLING SHUTTERS
           </h1>
           <p className="text-white/90 text-md md:text-lg leading-relaxed">
             At METAL4CRAFT AUTOMATION, we specialize in delivering premium

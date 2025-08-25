@@ -41,11 +41,8 @@
 //   );
 // };
 
-
-
-
 import { Button } from "@/components/ui/button";
-import CheckIcon from '@mui/icons-material/Check';
+import CheckIcon from "@mui/icons-material/Check";
 import { motion } from "framer-motion";
 import useScrollAnimation from "./custom-hook";
 
@@ -56,13 +53,15 @@ export const AboutDescription = () => {
     "Entrance Automation",
     "Quality Assurance",
     "General Fabrication",
-    "Rolling Shutters"
+    "Rolling Shutters",
   ];
 
   return (
-    <section 
-      ref={ref} 
-      className={`relative transform transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"} py-24 bg-gradient-to-r from-blue-50 to-gray-50 overflow-hidden`}
+    <section
+      ref={ref}
+      className={`relative transform transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+      } py-24 bg-gradient-to-r from-blue-50 to-gray-50 overflow-hidden`}
     >
       {/* Header */}
       <div className="text-center max-w-3xl mx-auto mb-16">
@@ -72,7 +71,7 @@ export const AboutDescription = () => {
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl font-extrabold text-gray-800"
         >
-          About METAL4CRAFT AUTOMATION 
+          About METAL4CRAFT AUTOMATION
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -80,16 +79,18 @@ export const AboutDescription = () => {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="text-gray-700 mt-4 text-lg"
         >
-          Premium fabrication solutions for Entrance Automation, Rolling Shutters, and General Fabrication. We blend innovation with craftsmanship for residential and commercial projects.
+          Premium fabrication solutions for Entrance Automation, Rolling
+          Shutters, and General Fabrication. We blend innovation with
+          craftsmanship for residential and commercial projects.
         </motion.p>
       </div>
 
       {/* Zigzag Content */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left Text / Right Image */}
-        <motion.div 
-          initial={{ x: -50, opacity: 0 }} 
-          animate={{ x: 0, opacity: 1 }} 
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
           className="space-y-6 order-2 lg:order-1"
         >
@@ -100,13 +101,15 @@ export const AboutDescription = () => {
             Excellence in Fabrication & Automation
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Our team ensures top-notch solutions tailored to your needs. We prioritize quality, efficiency, and customer satisfaction on every project.
+            Our team ensures top-notch solutions tailored to your needs. We
+            prioritize quality, efficiency, and customer satisfaction on every
+            project.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-4">
             {features.map((feature, index) => (
-              <motion.div 
-                key={index} 
+              <motion.div
+                key={index}
                 className="flex items-center gap-3 p-4 bg-white rounded-xl shadow-lg hover:scale-105 transition-transform duration-300"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -117,24 +120,25 @@ export const AboutDescription = () => {
               </motion.div>
             ))}
           </div>
-
         </motion.div>
 
         {/* Right Image / Left on zigzag */}
-        <motion.div 
-          initial={{ x: 50, opacity: 0 }} 
-          animate={{ x: 0, opacity: 1 }} 
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
           className="order-1 lg:order-2"
         >
           <div className="relative">
-            <img 
-              src="/access-control.webp" 
-              alt="Building" 
+            <img
+              src="/access-control.jpg"
+              alt="Building"
               className="rounded-2xl shadow-2xl object-cover w-full h-full hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-blue-50 p-4 rounded-xl shadow-xl text-center">
-              <p className="text-gray-800 font-bold">Trusted & Reliable Solutions</p>
+              <p className="text-gray-800 font-bold">
+                Trusted & Reliable Solutions
+              </p>
             </div>
           </div>
         </motion.div>

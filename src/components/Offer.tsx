@@ -113,7 +113,7 @@ export const Offer = () => {
       id: 1,
       title: "ENTRANCE AUTOMATION",
       desc: "We employ competent practices with a combination of knowledge & engineering expertise to furnish a sense of security for our customers.",
-      img: "/Staircase.webp",
+      img: "/automatic-gates.jpg",
       link: "/entrance-automation",
     },
     {
@@ -127,7 +127,7 @@ export const Offer = () => {
       id: 3,
       title: "GENERAL FABRICATION",
       desc: "We provide reliable general fabrication solutions, specializing in custom metalwork and structural components. With a focus on precision, durability, and innovation, our services are tailored to match the unique requirements of every project.",
-      img: "/automatic-gates.jpg",
+      img: "/Staircase.webp",
       link: "/general-fabrication",
     },
   ];

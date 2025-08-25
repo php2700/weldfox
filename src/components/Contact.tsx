@@ -221,15 +221,7 @@ const Contact = () => {
               className="text-[16px] text-muted-foreground mx-auto font-[400]"
               style={{ lineHeight: "31px" }}
             >
-              We invite you to share your project details with us using this
-              form, so we can better understand how to assist you. Providing
-              this information will help us gain an initial insight into your
-              project, enabling us to assign the right team swiftly. You can
-              simply provide your company name, your name, email, and phone
-              number, or you can complete the form with additional details. An
-              Metal4craft Automation representative will respond to your inquiry
-              promptly. For urgent assistance, please contact us directly. Thank
-              you, and we look forward to working with you!
+              We invite you to share your fabrication requirements with us through this form, so we can better understand your project needs. Whether it’s a custom design, precision cutting, or complete fabrication support, providing these details will help us connect you with the right specialists. Once submitted, a Metal4craft Automation representative will get in touch promptly to discuss the best solutions for your project.
             </p>
           </div>
           </section>

@@ -3,6 +3,7 @@ import { Phone, Mail } from "lucide-react";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +12,15 @@ const Header = () => {
 
   const location = useLocation();
   const pathname = location.pathname;
+
+  const handleTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  
 
   return (
     <>
@@ -150,6 +160,14 @@ const Header = () => {
           </div>
         )}
       </header>
+      <div className="fixed bottom-56 right-10 z-[1010]">
+        <div
+          className="rounded-full border-2 border-dotted border-secondary/90 p-3 flex items-center justify-center cursor-pointer w-14 h-14 hover:bg-secondary/90 group transition"
+          onClick={handleTop}
+        >
+          <ArrowUpwardIcon className="text-secondary/90 w-7 h-7 group-hover:text-white" />
+        </div>
+      </div>
     </>
   );
 };
