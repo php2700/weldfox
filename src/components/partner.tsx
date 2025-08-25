@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
 const partners = [
-  { name: "OZONE", logo: "/p-1.jpg" },
-  { name: "SAINT-GOBAIN", logo: "/p-2.png" },
-  { name: "Ditec ENTREMATIC", logo: "/p-3.jpg" },
-  { name: "JSW Steel", logo: "/p-4.png" },
-  { name: "Jindal Aluminium", logo: "/p-5.png" },
-  { name: "Hettich", logo: "/p-6.png" },
-  { name: "Dormakaba", logo: "/p-7.png" },
+  { name: "Erreka", logo: "/p-1.jpg" },
+  { name: "DoorHan", logo: "/p-2.png" },
+  { name: "Tata Steel", logo: "/p-3.jpg" },
+  { name: "Honeywell", logo: "/p-4.png" },
+  { name: "Ditec ENTREMATIC", logo: "/p-5.png" },
+  { name: "OZONE", logo: "/p-6.png" },
+  { name: "SAINT-GOBAIN", logo: "/p-7.png" },
 ];
 
 export const Partner = () => {

@@ -95,7 +95,7 @@ const About = () => {
       </section>
 
       <AboutDescription />
-      <Partner />
+      <Pargittner />
       <Enuiry />
       <Footer />
     </div>
